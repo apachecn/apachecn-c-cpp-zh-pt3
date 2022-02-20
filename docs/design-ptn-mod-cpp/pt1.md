@@ -19,7 +19,7 @@ Creational Patterns
 
 如果你要返回大于一个字大小的值，有几种方法可以从函数中返回一些东西。首先，也是最明显的是:
 
-```
+```cpp
 1   Foo make_foo(int n)
 2   {
 3     return Foo{n};
@@ -29,7 +29,7 @@ Creational Patterns
 
 您可能会觉得，使用前面的方法，正在制作`Foo`的完整副本，从而浪费了宝贵的资源。但并不总是如此。假设您将`Foo`定义为:
 
-```
+```cpp
 1   struct Foo
 2   {
 3     Foo(int n) {}
@@ -42,7 +42,7 @@ Creational Patterns
 
 当然，另一种方法是简单地返回一个智能指针，比如一个`unique_ptr`:
 
-```
+```cpp
 1   unique_ptr<Foo> make_foo(int n)
 2   {
 3     return make_unique<Foo>(n);
@@ -54,7 +54,7 @@ Creational Patterns
 
 第三个也是最后一个选择是使用原始指针，可能与 GSL 的`owner<T>`一起使用。这样，您不是在强制清理分配的对象，而是在传递一个非常明确的信息，即这是调用者的责任:
 
-```
+```cpp
 1   owner<Foo*> make_foo(int n)
 2   {
 3     return new Foo(n);
