@@ -1,6 +1,6 @@
 第一部分
 
-![image](../Images/image00564.jpeg)
+![image](img/image00564.jpeg)
 
 **#包括<先决条件>**
 
