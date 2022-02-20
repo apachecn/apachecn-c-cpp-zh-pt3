@@ -1,0 +1,1754 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter07.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter07.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter07.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter07.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 7: Drawing and Printing - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter07.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter07.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter08.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html"/><meta name="description" content=" CHAPTER 7 Drawing and Printing All painting in Qt is performed through the QPainter class in one way or another. Widgets, pictures, delegates—everything uses the same mechanism. There ... "><meta property="og:title" content="CHAPTER 7: Drawing and Printing" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 7: Drawing and Printing" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 7 Drawing and Printing All painting in Qt is performed through the QPainter class in one way or another. Widgets, pictures, delegates—everything uses the same mechanism. There ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter07.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%207%3A%20Drawing%20and%20Printing&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter07.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 6: Creating Widgets</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter08.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 8: Files, Streams, and XML</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_183"></a><a id="drawing_and_printing"></a>CHAPTER 7<br><br>Drawing and Printing</h2>
+<p class="normal"><big><b>A</b></big>ll painting in Qt is performed through the <code>QPainter</code> class in one way or another. Widgets, pictures, delegates—everything uses the same mechanism. There is actually one exception to the rule (to use OpenGL directly), but you'll start with the <code>QPainter</code> class.</p>
+<h3 class="h3"><a id="drawing_widgets"></a>Drawing Widgets</h3>
+<p class="normal">Using Qt you can draw on almost anything: widgets, pictures, pixmaps, images, printers, OpenGL areas, and so on. The common base class of all these drawables is the <code>QPaintDevice</code> class.</p>
+<p class="indent">Since a widget is a paint device, you can easily create a <code>QPainter</code> for drawing onto the widget; simply pass <code>this</code> as argument to the constructor, as shown in <a href="Chapter07.html#pass_this_as_argument_to_the_qpainter_co">Listing 7-1</a>.</p>
+<div id="pass_this_as_argument_to_the_qpainter_co" class="listing">
+<p class="normal"><b>Listing 7-1.</b> <i>Pass</i> <code>this</code> <i>as argument to the</i> <code>QPainter</code> <i>constructor from a paint event handler to set everything up.</i></p>
+<code>void CircleBar::paintEvent( QPaintEvent *event )<br>
+{<br>
+...<br>
+  QPainter p( this );<br>
+...<br>
+}</code>
+</div>
+<p class="indent">To set up a painter for another paint device, just pass a pointer to it to the painter constructor. <a href="Chapter07.html#creating_a_pixmap_and_a_painter_before_s">Listing 7-2</a> shows how a painter for a pixmap is set up. The pixmap that is 200 pixels wide and 100 pixels high is created. The painter for drawing on the pixmap is then created, and a pen and a brush are set up. Pens are used to draw the boundary of whatever shape you are drawing. Brushes are used to fill the interior of the shape.</p>
+<p class="indent">Before continuing, you need to know what a pixmap is and how it is different from an image or a picture. There are three major classes for representing graphics in Qt: <code>QPixmap</code> is optimized for being shown onscreen, <code>QImage</code> is optimized for loading and saving images, and <code>QPicture</code> records painter commands and makes it possible to replay them later.</p>
+<hr>
+<p class="normal"><b>Tip</b> <a id="page_184"></a>When targeting Unix and X11, the <code>QPixmap</code> class is optimized for showing only onscreen. It can even be stored on the X server (handing the screen), meaning less communication between the application and the X server.</p>
+<hr>
+<div id="creating_a_pixmap_and_a_painter_before_s" class="listing">
+<p class="normal"><b>Listing 7-2.</b> <i>Creating a pixmap and a painter before setting up a pen and a brush</i></p>
+<code>  QPixmap pixmap( 200, 100 );<br>
+  QPainter painter( &amp;pixmap );<br>
+<br>
+  painter.setPen( Qt::red );<br>
+  painter.setBrush( Qt::yellow );<br>
+...</code>
+</div>
+<p class="indent"><a href="Chapter07.html#creating_a_pixmap_and_a_painter_before_s">Listing 7-2</a> sets the pen and brush to Qt's standard colors—a red pen and a yellow brush in this case. It is possible to create colors from the red, green, and blue components through the constructor of the <code>QColor</code> class. You can use the static methods <code>QColor::fromHsv</code> and <code>QColor::fromCmyk</code> to create a color from hue, saturation, and value; or cyan, magenta, yellow, and black. Qt also supports an alpha channel, controlling the opacity of each pixel. (You'll experiment with this later in the chapter.)</p>
+<p class="indent">If you want to clear the pen and brush setting, you can use the <code>setPen(Qt::noPen)</code> and <code>setBrush(Qt::noBrush)</code> calls. The pen is used to draw the outlines of shapes, while the brush is used to fill them. Hence, you can draw the outlines without a brush and fill the shapes without a pen.</p>
+<h4 class="h4"><a id="the_drawing_operations"></a>The Drawing Operations</h4>
+<p class="normal">The painter class enables you to draw most basic shapes that you might need. This section lists the most useful methods along with example output. First let's take a look at a few classes that are often used as arguments to the drawing method.</p>
+<p class="indent">When drawing, you must tell the painter where to draw the shapes. Each point of the screen can be specified using an <i>x</i> and a <i>y</i> value, as shown in <a href="Chapter07.html#the_x_value_increases_from_left_to_right">Figure 7-1</a>. As you can see, the y-axis goes from the top, where <i>y</i> is 0 and downward to higher values. In the same way, the x-axis grows while going from the left to the right. When talking about a point, you write (<i>x,y</i>). This means that (0,0) is your upper-left corner of the coordinate system.</p>
+<hr>
+<p class="normal"><b>Note</b> It's possible to use negative coordinates to move above and to the left of the (0,0) position.</p>
+<hr><br>
+<div id="the_x_value_increases_from_left_to_right" class="figure-contents"><a id="page_185"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0701.jpg" alt="image" width="441" height="334">
+</div>
+</div>
+<p class="normal"><b>Figure 7-1.</b> <i>The x value increases from left to right; the y value increases from the top downward.</i></p>
+<p class="indent"><a href="Chapter07.html#when_drawing_on_a_widget_comma_the_upper">Figure 7-2</a> shows how the coordinate system of a widget can be different from the screen when drawing on a widget. The coordinates used when drawing on a widget are aligned so that (0,0) is the upper-left corner of the widget (which is not always the same as (0,0) in the device's global coordinate system). The global coordinate system addresses actual pixels onscreen, dots on printers, and points on other devices.</p>
+<div id="when_drawing_on_a_widget_comma_the_upper" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0702.jpg" alt="image" width="549" height="332">
+</div>
+</div>
+<p class="normal"><b>Figure 7-2.</b> <i>When drawing on a widget, the upper-left corner of the widget is (0,0).</i></p>
+<p class="indent"><a id="page_186"></a>A point on the screen is represented by a <code>QPoint</code> object, and you can specify the <i>x</i> and <i>y</i> values for a point in the constructor. A point is usually not enough to draw something; to specify a point alongside a width and a height you can use the <code>QRect</code> class. The <code>QRect</code> constructor accepts an <i>x</i> value, a <i>y</i> value, and a width, followed by a height. <a href="Chapter07.html#a_qpoint_and_a_qrect_with_their_x_comma">Figure 7-3</a> shows a <code>QRect</code> and <code>QPoint</code> in a coordinate system.</p>
+<div id="a_qpoint_and_a_qrect_with_their_x_comma" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0703.jpg" alt="image" width="549" height="332">
+</div>
+</div>
+<p class="normal"><b>Figure 7-3.</b> <i>A</i> <code>QPoint</code> <i>and a</i> <code>QRect</code> <i>with their x, y, width, and height properties</i></p>
+<hr>
+<p class="normal"><b>Tip</b> There are two classes closely related to <code>QPoint</code> and <code>QRect</code>: <code>QPointF</code> and <code>QRectF</code>. They are equivalent, but operate on floating-point values. Almost all methods that accept a rectangle or point can accept either type of rectangle or point.</p>
+<hr>
+<p class="normal"><b>Lines</b></p>
+<p class="normal">A line is the most basic shape that you can draw using a painter. A line that goes between two points is drawn by using the <code>drawLine(QPoint,QPoint)</code> method. If you want to join more points in one go, you can use the <code>drawPolyline(QPoint*, int)</code> method. The <code>drawLines(QVector</code> &lt;<code>QPoint</code>&gt; ) method is also used to draw several lines at once, but the lines aren't continuous. The three methods are used in <a href="Chapter07.html#drawing_lines_using_drawline_comma_drawp">Listing 7-3</a> and the result is shown in <a href="Chapter07.html#lines_drawn_using_different_methods_semi">Figure 7-4</a>.</p>
+<p class="indent">In the listing, a pixmap is created and filled with white before a painter is created, and the pen is configured to draw black lines. The two vectors <code>polyPoints</code> and <code>linePoints</code> are initialized, where <code>linePoints</code> is calculated from shifting the <code>polyPoints</code> points 80 pixels to the right. You can shift the points by adding an offset <code>QPoint</code> to each <code>QPoint</code>, which adds the <i>x</i> and <i>y</i> values together separately.</p>
+<hr>
+<p class="normal"><a id="page_187"></a><b>Note</b> I refer to <code>polyPoints</code> as a vector because that is what a <code>QPolygon</code> really is. However, the <code>QPolygon</code> class also provides methods for moving all the points around at once, as well as calculating the rectangle containing all the points.</p>
+<hr>
+<p class="indent">To draw actual lines, the <code>drawLine</code>, <code>drawPolyline</code>, and <code>drawLines</code> methods are called. Compare the differences between <code>drawPolyline</code> and <code>drawLines</code>. As you can see, <code>drawPolyline</code> joins all points, while <code>drawLines</code> joins each pair of points given.</p>
+<div id="drawing_lines_using_drawline_comma_drawp" class="listing">
+<p class="normal"><b>Listing 7-3.</b> <i>Drawing lines using</i> <code>drawLine</code>, <code>drawPolyline</code>, <i>and</i> <code>drawLines</code></p>
+<code>  QPixmap pixmap( 200, 100 );<br>
+  pixmap.fill( Qt::white );<br>
+<br>
+  QPainter painter( &amp;pixmap );<br>
+  painter.setPen( Qt::black );<br>
+<br>
+  QPolygon polyPoints;<br>
+  polyPoints &lt;&lt; QPoint( 60, 10 )<br>
+             &lt;&lt; QPoint( 80, 90 )<br>
+             &lt;&lt; QPoint( 75, 10 )<br>
+             &lt;&lt; QPoint( 110, 90 );<br>
+<br>
+  QVector&lt;QPoint&gt; linePoints;<br>
+  foreach( QPoint point, polyPoints )<br>
+    linePoints &lt;&lt; point + QPoint( 80, 0 );<br>
+<br>
+  painter.drawLine( QPoint( 10, 10 ), QPoint( 30, 90 ) );<br>
+  painter.drawPolyline( polyPoints );<br>
+  painter.drawLines( linePoints );</code>
+</div><br>
+<div id="lines_drawn_using_different_methods_semi" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0704.jpg" alt="image" width="438" height="201">
+</div>
+</div>
+<p class="normal"><b>Figure 7-4.</b> <i>Lines drawn using different methods; from left to right:</i> <code>drawLine</code>, <code>drawPolylines</code>, <i>and</i> <code>drawLines</code> <i>(two lines)</i></p>
+<p class="indent"><a id="page_188"></a>A line is drawn using the pen, so you can draw the line you need by altering the properties of the pen object. The two most commonly used properties of a <code>QPen</code> object are <code>color</code> and <code>width</code>, which control the color of the line drawn and the width.</p>
+<p class="indent">When drawing continuous lines using <code>drawPolyline</code>, it is useful to be able to control how the lines are joined together—the <code>joinStyle</code> property can help. <a href="Chapter07.html#line_segments_can_be_joined_in_three_way">Figure 7-5</a> shows the available styles: bevel, miter, and rounded. The appropriate style is set by setting the <code>joinStyle</code> of your <code>QPen</code> object to <code>Qt::BevelJoin</code>, <code>Qt::MiterJoin</code>, or <code>Qt::RoundJoin</code>.</p>
+<div id="line_segments_can_be_joined_in_three_way" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0705.jpg" alt="image" width="549" height="181">
+</div>
+</div>
+<p class="normal"><b>Figure 7-5.</b> <i>Line segments can be joined in three ways: bevel, miter, and rounded.</i></p>
+<p class="indent">The <code>QPen</code> can be set up to draw dotted and dashed lines as well as completely freely dashed lines. The different variations of this are shown in <a href="Chapter07.html#lines_can_be_drawn_solid_or_dashed_in_di">Figure 7-6</a>.</p>
+<div id="lines_can_be_drawn_solid_or_dashed_in_di" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0706.jpg" alt="image" width="549" height="170">
+</div>
+</div>
+<p class="normal"><b>Figure 7-6.</b> <i>Lines can be drawn solid or dashed in different patterns—there are predefined patterns as well as capabilities to do custom patterns.</i></p>
+<p class="indent">The pattern is picked by setting the <code>style</code> property of the <code>QPen</code> object to <code>Qt::SolidLine</code>, <code>Qt::DotLine</code>, <code>Qt::DashLine</code>, <code>Qt::DotDashLine</code>, <code>Qt::DotDotDashLine</code>, or <code>Qt::CustomDashLine</code>. If you use a custom line, you must also set a custom dash pattern through the <code>dashPattern</code> property (<a href="Chapter07.html#drawing_lines_using_predefined_or_custom">Listing 7-4</a> shows how it's done). The output from the listing is shown in <a href="Chapter07.html#predefined_and_custom_patterns">Figure 7-7</a>.</p>
+<p class="indent">The <code>dashPattern</code> consists of a vector list of <code>qreal</code> values. The values determine the width of the dashes and gaps, where the first value is the first dash, then a gap, then a dash, then another gap, and so on.</p>
+<div id="drawing_lines_using_predefined_or_custom" class="listing"><a id="page_189"></a>
+<p class="normal"><b>Listing 7-4.</b> <i>Drawing lines using predefined or custom patterns</i></p>
+<code>  QPixmap pixmap( 200, 100 );<br>
+  pixmap.fill( Qt::white );<br>
+<br>
+  QPainter painter( &amp;pixmap );<br>
+<br>
+  QPen pen( Qt::black );<br>
+<br>
+  pen.setStyle( Qt::SolidLine );<br>
+  painter.setPen( pen );<br>
+  painter.drawLine( QPoint( 10, 10 ), QPoint( 190, 10 ) );<br>
+<br>
+  pen.setStyle( Qt::DashDotLine );<br>
+  painter.setPen( pen );<br>
+  painter.drawLine( QPoint( 10, 50 ), QPoint( 190, 50 ) );<br>
+<br>
+  pen.setDashPattern( QVector&lt;qreal&gt;() &lt;&lt; 1 &lt;&lt; 1 &lt;&lt; 1 &lt;&lt; 1 &lt;&lt; 2 &lt;&lt; 2<br>
+                                       &lt;&lt; 2 &lt;&lt; 2 &lt;&lt; 4 &lt;&lt; 4 &lt;&lt; 4 &lt;&lt; 4<br>
+                                       &lt;&lt; 8 &lt;&lt; 8 &lt;&lt; 8 &lt;&lt; 8 );<br>
+  pen.setStyle( Qt::CustomDashLine );<br>
+  painter.setPen( pen );<br>
+  painter.drawLine( QPoint( 10, 90 ), QPoint( 190, 90 ) );</code>
+</div><br>
+<div id="predefined_and_custom_patterns" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0707.jpg" alt="image" width="439" height="191">
+</div>
+</div>
+<p class="normal"><b>Figure 7-7.</b> <i>Predefined and custom patterns</i></p>
+<p class="normal"><b>Square Shapes</b></p>
+<p class="normal">You can draw rectangles with square or rounded corners, as shown in <a href="Chapter07.html#rectangles_with_square_and_rounded_corne">Figure 7-8</a>. The methods accept either a <code>QRect</code> or four values representing an (<i>x,y</i>) pair for the top-left corner, then the width, followed by the height of the rectangle. The methods are named <code>drawRect</code> and <code>drawRoundRect</code>.</p>
+<div id="rectangles_with_square_and_rounded_corne" class="figure-contents"><a id="page_190"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0708.jpg" alt="image" width="509" height="195">
+</div>
+</div>
+<p class="normal"><b>Figure 7-8.</b> <i>Rectangles with square and rounded corners</i></p>
+<p class="indent"><a href="Chapter07.html#drawing_rectangles_to_a_pixmap">Listing 7-5</a> shows how rectangles with rounded and square corners are drawn. The first two rectangles are drawn using coordinates specified directly in the method calls. The coordinates are specified as <i>x, y, w, h</i>; where <i>x</i> and <i>y</i> specify the top-left corner, and <i>w</i>, <i>h</i> specify the width of the rectangle.</p>
+<hr>
+<p class="normal"><b>Note</b> If <i>w</i> or <i>h</i> is less than 0, the corner specified by <i>x, y</i> is not the top-left corner of the rectangle.</p>
+<hr>
+<p class="indent">The second pair of rectangles is drawn according to a given <code>QRect</code> class, which holds the coordinates for the rectangle. In the <code>drawRoundRect</code> call, the <code>rect</code> variable is used directly. In the <code>drawRect</code> call, the rectangle specified by <code>rect</code> is <i>translated</i>, or moved, 45 pixels down. This is achieved by using the <code>translated(int x, int y)</code> method that returns a rectangle of the same size, but moved by the amount of pixels specified.</p>
+<p class="indent">The results of the drawing operations are shown in <a href="Chapter07.html#the_drawn_rectangles">Figure 7-9</a>.</p>
+<div id="drawing_rectangles_to_a_pixmap" class="listing">
+<p class="normal"><b>Listing 7-5.</b> <i>Drawing rectangles to a pixmap</i></p>
+<code>  QPixmap pixmap( 200, 100 );<br>
+  pixmap.fill( Qt::white );<br>
+<br>
+  QPainter painter( &amp;pixmap );<br>
+  painter.setPen( Qt::black );<br>
+<br>
+  painter.drawRect( 10, 10, 85, 35 );<br>
+  painter.drawRoundRect( 10, 55, 85, 35 );<br>
+<br>
+  QRect rect( 105, 10, 85, 35 );<br>
+<br>
+  painter.drawRoundRect( rect );<br>
+  painter.drawRect( rect.translated( 0, 45 ) );</code>
+</div><br>
+<div id="the_drawn_rectangles" class="figure-contents"><a id="page_191"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0709.jpg" alt="image" width="415" height="192">
+</div>
+</div>
+<p class="normal"><b>Figure 7-9.</b> <i>The drawn rectangles</i></p>
+<p class="normal"><b>Round Shapes</b></p>
+<p class="normal">Circles and ellipses are drawn by using the <code>drawEllipse</code> method (see <a href="Chapter07.html#circles_and_ellipses_are_drawn_using_the">Figure 7-10</a>). The method takes a rectangle or four values for <i>x, y</i>, width, and height (just like the rectangle drawing methods). To draw a circle, you have to make sure that the width and height are equal.</p>
+<div id="circles_and_ellipses_are_drawn_using_the" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0710.jpg" alt="image" width="196" height="103">
+</div>
+</div>
+<p class="normal"><b>Figure 7-10.</b> <i>Circles and ellipses are drawn using the</i> <code>drawEllipse</code> <i>method.</i></p>
+<p class="indent">Drawing ellipses is fun because you can also draw parts of them. Qt can draw three parts (shown in <a href="Chapter07.html#an_arc_comma_a_chord_comma_and_a_pie-sha">Figure 7-11</a>):</p>
+<ul>
+<li><code>drawArc</code> draws an arc—the part of the line around the circle.</li>
+<li><code>drawChord</code> draws a circle segment—the area enclosed between the chord and the arc outside the chord.</li>
+<li><code>drawPie</code> draws a pie segment—a pie-shaped piece of the ellipse.</li>
+</ul>
+<p class="indent">All the methods for drawing parts of ellipses take a rectangle (just like the <code>drawEllipse</code> method). They then accept a starting angle and a value indicating how many degrees the part of the ellipse is spanning over. The angles are expressed as integers, where the value is 1/16 of a degree, which means that the value 5760 corresponds to a full circle. The value 0 corresponds to three o'clock, and positive angles move counterclockwise.</p>
+<div id="an_arc_comma_a_chord_comma_and_a_pie-sha" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0711.jpg" alt="image" width="549" height="125">
+</div>
+</div>
+<p class="normal"><b>Figure 7-11.</b> <i>An arc, a chord, and a pie-shaped piece of a circle</i></p>
+<p class="indent"><a id="page_192"></a><a href="Chapter07.html#drawing_ellipses_and_arcs">Listing 7-6</a> shows how to draw ellipses and arcs (the results are shown in <a href="Chapter07.html#the_drawn_ellipses_and_arcs">Figure 7-12</a>). As you can see, the proportions of the shapes are changed, and the rightmost ellipse and arc are actually circular (the width equals the height).</p>
+<p class="indent">As the source code shows, it is possible to specify the rectangle in which the ellipse or arc is drawn by using coordinates directly or by passing a <code>QRect</code> value to the drawing method.</p>
+<p class="indent">When specifying the angles, I multiplied the different values by 16 to convert the value from actual degrees to the values that Qt expects.</p>
+<div id="drawing_ellipses_and_arcs" class="listing">
+<p class="normal"><b>Listing 7-6.</b> <i>Drawing ellipses and arcs</i></p>
+<code>  QPixmap pixmap( 200, 190 );<br>
+  pixmap.fill( Qt::white );<br>
+<br>
+  QPainter painter( &amp;pixmap );<br>
+  painter.setPen( Qt::black );<br>
+<br>
+  painter.drawEllipse( 10, 10, 10, 80 );<br>
+  painter.drawEllipse( 30, 10, 20, 80 );<br>
+  painter.drawEllipse( 60, 10, 40, 80 );<br>
+  painter.drawEllipse( QRect( 110, 10, 80, 80 ) );<br>
+<br>
+  painter.drawArc( 10, 100, 10, 80, 30*16, 240*16 );<br>
+  painter.drawArc( 30, 100, 20, 80, 45*16, 200*16 );<br>
+  painter.drawArc( 60, 100, 40, 80, 60*16, 160*16 );<br>
+  painter.drawArc( QRect( 110, 100, 80, 80 ), 75*16, 120*16 );</code>
+</div><br>
+<div id="the_drawn_ellipses_and_arcs" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0712.jpg" alt="image" width="436" height="415">
+</div>
+</div>
+<p class="normal"><b>Figure 7-12.</b> <i>The drawn ellipses and arcs</i></p>
+<p class="normal"><a id="page_193"></a><b>Text</b></p>
+<p class="normal">Qt offers several possible ways to draw text (see <a href="Chapter07.html#you_can_draw_text_in_many_different_ways">Figure 7-13</a> for some examples). Refer to the figure while you work your way through the code used to create it.</p>
+<div id="you_can_draw_text_in_many_different_ways" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0713.jpg" alt="image" width="242" height="385">
+</div>
+</div>
+<p class="normal"><b>Figure 7-13.</b> <i>You can draw text in many different ways.</i></p>
+<p class="indent">First of all, you need to create a <code>QPixmap</code> to draw to and a <code>QPainter</code> to draw with. You also have to fill the pixmap with white and set the pen of the painter to be black:</p>
+<code>  QPixmap pixmap( 200, 330 );<br>
+  pixmap.fill( Qt::white );<br>
+<br>
+  QPainter painter( &amp;pixmap );<br>
+  painter.setPen( Qt::black );</code>
+<p class="indent">Draw the text at the top of the figure, which originates at a <code>QPoint</code>. The following source code shows you the <code>drawText</code> call is used. The following <code>drawLine</code> class simply marks the point used with a cross (you can see this cross in <a href="Chapter07.html#you_can_draw_text_in_many_different_ways">Figure 7-13</a> on the left of the top text).</p>
+<code>  QPoint point = QPoint( 10, 20 );<br>
+  painter.drawText( point, "You can draw text from a point..." );<br>
+  painter.drawLine( point+QPoint(-5, 0), point+QPoint(5, 0) );<br>
+  painter.drawLine( point+QPoint(0, −5), point+QPoint(0, 5) );</code>
+<p class="indent">Drawing text from a point has its advantages—it is an easy way to get text onto the screen. If you need more control, you can draw text in a rectangle, which means that you can align the text to the right, left, or center horizontally (also at the top, bottom, or center vertically). The enumerations used for alignment are summarized in this list:</p>
+<ul>
+<li><code>Qt::AlignLeft</code>: Align left</li>
+<li><code>Qt::AlignRight</code>: Align right</li>
+<li><a id="page_194"></a><code>Qt::AlignHCenter</code>: Center-align horizontally</li>
+<li><code>Qt::AlignTop</code>: Align at the top</li>
+<li><code>Qt::AlignBottom</code>: Align at the bottom</li>
+<li><code>Qt::AlignVCenter</code>: Center-align vertically</li>
+<li><code>Qt::AlignCenter</code>: Center-align both vertically and horizontally</li>
+</ul>
+<p class="indent">Another benefit of drawing the text inside a rectangle is that the text is clipped to the rectangle, which means you can limit the area used by the text. The following source code draws a text centered in a rectangle:</p>
+<code>  QRect rect = QRect(10, 30, 180, 20);<br>
+  painter.drawText( rect, Qt::AlignCenter,<br>
+                    "...or you can draw it inside a rectangle." );<br>
+  painter.drawRect( rect );</code>
+<p class="indent">Because you can limit the text to a rectangle, you also need to be able to determine how much space the text uses. Start by translating the rectangle to a new position; you'll get the standard <code>QFont</code> from the <code>QApplication</code> object. Using the font, set a <code>pixelSize</code> to fit the rectangle before drawing text on either side of the rectangle.</p>
+<hr>
+<p class="normal"><b>Tip</b> Because you're painting to a <code>QPixmap</code>, use the font from the <code>QApplication</code>. If you were painting to a <code>QWidget</code> or to a <code>QPixmap</code> used in a specific widget, it would be more logical to get the font from the widget.</p>
+<hr>
+<p class="indent">This didn't end up as expected; instead, the text is clipped at the bottom. The pixel size of a font only defines the size above the base line on which all characters are drawn.</p>
+<code>  rect.translate( 0, 30 );<br>
+<br>
+  QFont font = QApplication::font();<br>
+  font.setPixelSize( rect.height() );<br>
+  painter.setFont( font );<br>
+<br>
+  painter.drawText( rect, Qt::AlignRight, "Right." );<br>
+  painter.drawText( rect, Qt::AlignLeft, "Left." );<br>
+  painter.drawRect( rect );</code>
+<p class="indent">To really be able to fit the text into a rectangle, use the <code>QFontMetrics</code> class to get accurate measures of the text. The font metrics class can be used to determine the width of a given text as well as its height. The height, however, is not dependent on any particular text; it's defined entirely by the font. The following code adjusts the height of the rectangle used to keep the text before drawing the text. Refer to <a href="Chapter07.html#you_can_draw_text_in_many_different_ways">Figure 7-13</a>: the text fits beautifully this time around.</p>
+<code><a id="page_195"></a>  rect.translate( 0, rect.height()+10 );<br>
+  rect.setHeight( QFontMetrics( font ).height() );<br>
+<br>
+  painter.drawText( rect, Qt::AlignRight, "Right." );<br>
+  painter.drawText( rect, Qt::AlignLeft, "Left." );<br>
+  painter.drawRect( rect );</code>
+<p class="indent">Using <code>drawText</code> to paint text has its limitations. For instance, parts of the text can't be formatted, nor can it be divided into paragraphs. You can use the <code>QTextDocument</code> class to draw formatted text (as shown in the following source code).</p>
+<p class="indent">Drawing text with a text document is slightly more complicated than using <code>drawText</code> directly. Start by creating a <code>QTextDocument</code> object that you initialize with HTML-formatted text using <code>setHTML</code>. Set up the rectangle in which you'll draw the text. Translate it to a new position below the last drawn text and then adjust the height to allow for more text.</p>
+<p class="indent">The rectangle is then used to set the width of the text document using <code>setTextWidth</code>. Before you're ready to draw the text, you must translate the painter (more about this soon) because the text document will start painting its text at the (0,0) coordinate. Before translating the painter, save the current state (it's later restored with a call to the <code>restore</code> method). Because you translated the painter, you must also translate the rectangle when you call <code>drawContents</code> to draw the text to the given painter inside the given rectangle.</p>
+<code>  QTextDocument doc;<br>
+  doc.setHtml( "&lt;p&gt;A QTextDocument can be used to present formatted text "<br>
+               "in a nice way.&lt;/p&gt;"<br>
+               "&lt;p align=center&gt;It can be &lt;b&gt;formatted&lt;/b&gt; "<br>
+               "&lt;font size=+2&gt;in&lt;/font&gt; &lt;i&gt;different&lt;/i&gt; ways.&lt;/p&gt;"<br>
+               "&lt;p&gt;The text can be really long and contain many "<br>
+               "paragraphs. It is properly wrapped and such...&lt;/p&gt;" );<br>
+<br>
+  rect.translate( 0, rect.height()+10 );<br>
+  rect.setHeight( 160 );<br>
+  doc.setTextWidth( rect.width() );<br>
+  painter.save();<br>
+  painter.translate( rect.topLeft() );<br>
+  doc.drawContents( &amp;painter, rect.translated( -rect.topLeft() ) );<br>
+  painter.restore();<br>
+  painter.drawRect( rect );</code>
+<p class="indent">As shown in <a href="Chapter07.html#you_can_draw_text_in_many_different_ways">Figure 7-13</a>, the entire contents of the text document would not fit into the given rectangle. Once again, there is a way to determine the height needed by the text. In this case, use the <code>height</code> property of the <code>size</code> property from the <code>QTextDocument</code>. In the following source code, you use this height to determine the size of the gray rectangle drawn below the rendered text document. This rectangle shows how long the text really is.</p>
+<code>  rect.translate( 0, 160 );<br>
+  rect.setHeight( doc.size().height()-160 );<br>
+  painter.setBrush( Qt::gray );<br>
+  painter.drawRect( rect );</code><br><br>
+<hr>
+<p class="normal"><a id="page_196"></a><b>Note</b> Although it is fairly easy to draw text using the <code>drawText</code> method, you might want to use the <code>QTextDocument</code> class to draw more complex texts. This class enables you to draw complex documents with various formatting and alignments in a straightforward way.</p>
+<hr>
+<p class="normal"><b>Paths</b></p>
+<p class="normal">Painter paths make it possible to draw any shape you want, but the trick is to define a path surrounding a region. You can then stroke the path with a given pen and brush. A path can contain several closed regions; for instance, it is possible to represent an entire text string using a path.</p>
+<p class="indent">The path shown in <a href="Chapter07.html#a_path_has_been_filled">Figure 7-14</a> is created in three steps. First, the <code>QPainterPath</code> object is created and the circle is added using the <code>addEllipse</code> method. This ellipse forms one closed region.</p>
+<code>  QPainterPath path;<br>
+<br>
+  path.addEllipse( 80, 80, 80, 80 );</code><br><br>
+<div id="a_path_has_been_filled" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0714.jpg" alt="image" width="167" height="172">
+</div>
+</div>
+<p class="normal"><b>Figure 7-14.</b> <i>A path has been filled.</i></p>
+<p class="indent">The next step is to add the quarter circle originating from the center of the full circle and stretching to the top and left. It is started at (100, 100), and you move to that point using a <code>moveTo</code> call. Then you draw a line straight up using <code>lineTo</code> before drawing an arc using <code>addArc</code>. The arc is drawn in a rectangle starting at (40, 40); that is, 160 pixels high and wide. It starts at 90 degrees and spans another 90 degrees counterclockwise. The region is then closed with a line that returns to the starting point. This forms another closed region.</p>
+<hr>
+<p class="normal"><b>Note</b> The arc starts at 90 degrees because 0 degrees is considered to be the point to the right of the center point and you want it to start right above the center.</p>
+<hr>
+<code>  path.moveTo( 120, 120 );<br>
+  path.lineTo( 120, 40 );<br>
+  path.arcTo( 40, 40, 160, 160, 90, 90 );<br>
+  path.lineTo( 120, 120 );</code>
+<p class="indent"><a id="page_197"></a>The last part to add is the text below the shapes. This is done by setting up a large font and then using it in a call to <code>addText</code>. The <code>addText</code> works like <code>drawText</code> but allows the text to start only from a given point (that is, no texts contained in rectangles). This forms a whole bunch of closed regions that form the text:</p>
+<code>  QFont font = QApplication::font();<br>
+  font.setPixelSize( 40 );<br>
+<br>
+  path.addText( 20, 180, font, "Path" );</code>
+<p class="indent">When the painter path is complete, all that's left to do is stroke it with a painter. In the following code, you configure a pen and a brush for a painter. Then the <code>drawPath</code> method is used to draw the actual painter path.</p>
+<p class="indent"><a href="Chapter07.html#a_path_has_been_filled">Figure 7-14</a> shows that when the regions overlap, the brush is not applied. This makes it possible to create hollow paths by putting other paths inside them.</p>
+<code>  painter.setPen( Qt::black );<br>
+  painter.setBrush( Qt::gray );<br>
+<br>
+  painter.drawPath( path );</code>
+<p class="indent">Paths can consist of more shapes than the ones used in the preceding source code. The following list mentions some of the methods that you can use to add shapes to your path:</p>
+<ul>
+<li><code>addEllipse</code>: Adds an ellipse or circle.</li>
+<li><code>addRect</code>: Adds a rectangle.</li>
+<li><code>addText</code>: Adds text.</li>
+<li><code>addPolygon</code>: Adds a polygon.</li>
+</ul>
+<p class="indent">When building a region from lines, arcs, and other components, the following methods can be useful:</p>
+<ul>
+<li><code>moveTo</code>: Moves the current position.</li>
+<li><code>lineTo</code>: Draws a line to the next position.</li>
+<li><code>arcTo</code>: Draws an arc to the next position.</li>
+<li><code>cubicTo</code>: Draws a cubic Bezier curve (a smooth line) to the next point.</li>
+<li><code>closeSubpath</code>: Closes the current region by drawing a straight line from the current position to the starting point.</li>
+</ul>
+<p class="indent">Paths can be very useful for representing shapes that you need to draw over and over again, but their true potential is shown when they are combined with brushes (discussed next).</p>
+<p class="normal"><a id="page_198"></a><b>Brushes</b></p>
+<p class="normal">Brushes are used to fill shapes and paths. Until now you used brushes to fill the designated areas using solid colors. This is only a part of what is possible. Using different patterns, gradients, or even textures, you can fill your shapes in any conceivable way.</p>
+<p class="indent">When you create a <code>QBrush</code> object, you can specify a color and a style. The constructor is defined as <code>QBrush(QColor, Qt::BrushStyle)</code>. The <code>QBrush</code> is then given to a <code>QPainter</code> using the <code>setBrush</code> method.</p>
+<p class="indent">The style of the brush controls how the color is used when filling shapes. The simplest styles are patterns, which are used when you need to fill a shape with lines or a dithered shade. The available patterns and corresponding enumerated styles are shown in <a href="Chapter07.html#the_available_patterns">Figure 7-15</a>.</p>
+<div id="the_available_patterns" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0715.jpg" alt="image" width="549" height="170">
+</div>
+</div>
+<p class="normal"><b>Figure 7-15.</b> <i>The available patterns</i></p>
+<p class="indent">A more flexible way to fill shapes is to use gradient brushes, which are brushes based on a <code>QGradient</code> object. A <i>gradient object</i> represents a blend between one or more colors according to a predefined pattern. The available patterns are shown in <a href="Chapter07.html#different_gradients_and_spread_policies">Figure 7-16</a>. The <i>linear gradient</i>, which is based on the <code>QLinearGradient</code> class, defines a two-dimensional linear gradient. The <i>radial gradient</i> is implemented through <code>QRadialGradient</code> and describes a gradient emanating from a single point where the shade depends on the distance from the point. The <i>conical gradient</i>, <code>QConicalGradient</code>, represents a gradient emanating from a single point where the shade depends on the angle from the point.</p>
+<p class="indent">The different gradients are defined as a spread between two points (except for conical gradients, which start and stop at an angle). The way the gradient is continued outside the range defined by those points is defined by the spread policy, which is set with the <code>setSpread</code> method. The results from the different spread policies are also shown in <a href="Chapter07.html#different_gradients_and_spread_policies">Figure 7-16</a>. With <i>pad spread</i> (<code>QGradient::PadSpread</code>) the gradient simply stops when the pads have been reached. With <i>repeat spread</i> (<code>QGradient::RepeatSpread</code>) the gradient is repeated. With <i>reflected spread</i> (<code>QGradient::ReflectSpread</code>) the gradient is repeated, but the direction is alternated—causing the gradient to be reflected every other time.</p>
+<hr>
+<p class="normal"><b>Note</b> The spread policy does not affect the conical gradients because they define the color of all pixels.</p>
+<hr>
+<div id="different_gradients_and_spread_policies" class="figure-contents"><a id="page_199"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0716.jpg" alt="image" width="549" height="450">
+</div>
+</div>
+<p class="normal"><b>Figure 7-16.</b> <i>Different gradients and spread policies</i></p>
+<p class="indent"><a href="Chapter07.html#setting_up_gradients">Listing 7-7</a> shows how the different gradients are configured. Notice that the linear gradient is defined between two points, forming a direction. The radial gradient is defined by a center point and a radius, while the conical gradient is defined as a center point and a starting angle. The starting angle is specified in degrees, where 0 degrees define the direction pointing right from the center point.</p>
+<p class="indent">The gradients are also assigned colors using the <code>setColorAt</code> method. The colors are set for a value ranging between 0 and 1. These values define a point between the two points for linear gradients, where one point is 0 and the other point is 1. In the same way, 0 defines the starting point, and 1 defines the full specified radius for radial gradients. For conical gradients, 0 specifies the starting angle. The value then increases in the counterclockwise direction until 1 specifies the ending angle—which is the same as the starting angle.</p>
+<hr>
+<p class="normal"><b>Note</b> It is possible to set several colors at different points; set the end colors to show the effect in a clear way.</p>
+<hr>
+<div id="setting_up_gradients" class="listing"><a id="page_200"></a>
+<p class="normal"><b>Listing 7-7.</b> <i>Setting up gradients</i></p>
+<code>  QLinearGradient linGrad( QPointF(80, 80), QPoint( 120, 120 ) );<br>
+  linGrad.setColorAt( 0, Qt::black );<br>
+  linGrad.setColorAt( 1, Qt::white );<br>
+<br>
+...<br>
+<br>
+  QRadialGradient radGrad( QPointF(100, 100), 30 );<br>
+  radGrad.setColorAt( 0, Qt::black );<br>
+  radGrad.setColorAt( 1, Qt::white );<br>
+<br>
+...<br>
+<br>
+  QConicalGradient conGrad( QPointF(100, 100), −45.0 );<br>
+  conGrad.setColorAt( 0, Qt::black );<br>
+  conGrad.setColorAt( 1, Qt::white );</code>
+</div>
+<p class="indent">To use one of the gradients as a brush, simply pass the <code>QGradient</code> object to the <code>QBrush</code> constructor. Gradient brushes are not affected by calls to the <code>setColor</code> method of the <code>QBrush</code> object.</p>
+<p class="indent">The last way to create a brush is to pass a <code>QPixmap</code> or a <code>QImage</code> object to the <code>QBrush</code> constructor or to call <code>setTexture</code> on a <code>QBrush</code> object. This process makes the brush use the given image as a texture and fill any shape by repeating the pattern (an example is shown in <a href="Chapter07.html#a_texture-based_brush">Figure 7-17</a>).</p>
+<div id="a_texture-based_brush" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0717.jpg" alt="image" width="244" height="243">
+</div>
+</div>
+<p class="normal"><b>Figure 7-17.</b> <i>A texture-based brush</i></p>
+<h4 class="h4"><a id="transforming_the_reality"></a>Transforming the Reality</h4>
+<p class="normal">As you learned during the discussion of global (device) coordinates and local (widget) coordinates, Qt can use different coordinate systems for different areas of the screen. The difference between the global and local coordinates is that the origin, the point (0,0), has been moved. In technical terms, this is known as translating the coordinate system.</p>
+<hr>
+<p class="normal"><a id="page_201"></a><b>Note</b> I refer to the device's coordinates as <i>global</i> because they are shared between all painters working on the device (and widgets, if the device happens to be a screen). Each painter is then transformed to a point relevant to its purpose. Other commonly used notations are <i>physical</i> device coordinates and <i>logical</i> local coordinates.</p>
+<hr>
+<p class="indent">The coordinate system of a painter can be translated as well (an example of such a translation is shown in <a href="Chapter07.html#translating_the_coordinate_system_means">Figure 7-18</a>). In the figure, the gray box is what is drawn in relation to the original coordinate system. The coordinate system is transformed through the following call:</p>
+<code>  painter.translate( 30, 30 );</code>
+<p class="indent">The result is that the rectangle is drawn where the black rectangle is—the coordinate system has been shifted to the right and downward.</p>
+<div id="translating_the_coordinate_system_means" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0718.jpg" alt="image" width="243" height="244">
+</div>
+</div>
+<p class="normal"><b>Figure 7-18.</b> <i>Translating the coordinate system means moving the origin (0,0).</i></p>
+<p class="indent">The painter class is capable of more translations. The coordinate system can be translated, scaled, rotated, and sheared (these transformations are shown in <a href="Chapter07.html#scaling_the_coordinate_system_moves_all">Figures 7-19</a>, <a href="Chapter07.html#rotating_the_coordinate_system_around_th">7-20</a>, and <a href="Chapter07.html#shearing_the_coordinate_system_relative">7-21</a>).</p>
+<p class="indent">To scale the painter, the following call is made:</p>
+<code>  painter.scale( 1.5, 2.0 );</code>
+<p class="indent">The first parameter is the scaling along the <i>x</i> axis (in the horizontal direction), while the second parameter is the vertical scaling (see <a href="Chapter07.html#scaling_the_coordinate_system_moves_all">Figure 7-19</a>). Notice that the pen used for painting is scaled as well—the lines are higher than they are wide.</p>
+<div id="scaling_the_coordinate_system_moves_all" class="figure-contents"><a id="page_202"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0719.jpg" alt="image" width="231" height="232">
+</div>
+</div>
+<p class="normal"><b>Figure 7-19.</b> <i>Scaling the coordinate system moves all points closer to the origin (0,0).</i></p>
+<p class="indent">When rotating, the following call is made:</p>
+<code>  painter.rotate( 30 );</code>
+<p class="indent">The parameter is the number of degrees to rotate the coordinate system in the clockwise direction. The method accepts floating-point values, so it is possible to rotate the coordinate system any number or fraction of a degree (see <a href="Chapter07.html#rotating_the_coordinate_system_around_th">Figure 7-20</a>).</p>
+<div id="rotating_the_coordinate_system_around_th" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0720.jpg" alt="image" width="231" height="232">
+</div>
+</div>
+<p class="normal"><b>Figure 7-20.</b> <i>Rotating the coordinate system around the origin (0,0)</i></p>
+<p class="indent">The last transformation—shearing—is a bit more complicated. What happens is that the coordinate system is twisted around the origin. To understand this, look at <a href="Chapter07.html#shearing_the_coordinate_system_relative">Figure 7-21</a> and the following call:</p>
+<code>  painter.shear( 0.2, 0.5 );</code>
+<p class="indent">Notice that the larger the <i>x</i> value, the larger the change of the <i>y</i> value. In the same way, a large <i>y</i> value results in a large change in the <i>x</i> value. The first parameter of the <code>shear</code> method controls how large a change of the <i>y</i> value the <i>x</i> should give, and the second parameter does the same in reverse. For example, look at the lower-right corner of the sheared rectangle and compare it with the original gray box. Then compare the upper-left corner of the sheared and original rectangles. Comparing the two points, you can see that one has moved more than the other according to the size of the parameters of the <code>shear</code> method. Because the upper-right corner has non-0 values for both <i>x</i> and <i>y</i>, that point is moved in both directions in accordance with the parameters.</p>
+<div id="shearing_the_coordinate_system_relative" class="figure-contents"><a id="page_203"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0721.jpg" alt="image" width="231" height="232">
+</div>
+</div>
+<p class="normal"><b>Figure 7-21.</b> <i>Shearing the coordinate system relative to the origin (0,0)</i></p>
+<p class="indent">When you perform a transformation of the coordinate system of a painter, you want to know that there's a way to get the original settings back. By calling <code>save</code> on your painter object, the current state is placed on a stack. To restore the last saved state, call <code>restore</code> (this is handy when you want to apply several transformations that start from the original coordinate system). It is also common to be given a pointer to a painter object; you should save the state before modifying the painter and then restore the painter before returning from the method.</p>
+<p class="normal"><b>Keep Order</b></p>
+<p class="normal">It's possible to combine several transformations by performing them in turn. When doing this, the ordering is important because all transformations are referring to the origin (0,0). For example, rotating always means rotating around the origin, so if you want to rotate a shape around a different point, you have to translate the center of rotation to (0,0), apply the rotation, and then translate the coordinate system back.</p>
+<p class="indent">Let's draw a rectangle at (0,0)—that is, 70 pixels wide and −70 pixels high—with the following line:</p>
+<code>  painter.drawRect( 0, 0, 70, −70 );</code>
+<p class="indent">Now rotate the coordinate system 45 degrees using the following line (the result is shown in <a href="Chapter07.html#simply_rotating_the_rectangle_rotates_it">Figure 7-22</a>):</p>
+<code>  painter.rotate( 45 );</code><br><br>
+<div id="simply_rotating_the_rectangle_rotates_it" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0722.jpg" alt="image" width="231" height="232">
+</div>
+</div>
+<p class="normal"><b>Figure 7-22.</b> <i>Simply rotating the rectangle rotates it around the origin.</i></p>
+<p class="indent"><a id="page_204"></a>If you instead translate the coordinate system so that the center of the rectangle (35, −35) is the origin before rotating and then retranslating the coordinate system into place, you end up like <a href="Chapter07.html#by_translating_back_and_forth_comma_it_i">Figure 7-23</a>. The code for translating and rotating and then translating back is the following:</p>
+<code>  painter.translate( 35, −35 );<br>
+  painter.rotate( 45 );<br>
+  painter.translate( −35, 35 );</code><br><br>
+<div id="by_translating_back_and_forth_comma_it_i" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0723.jpg" alt="image" width="243" height="243">
+</div>
+</div>
+<p class="normal"><b>Figure 7-23.</b> <i>By translating back and forth, it is possible to rotate around the center of the rectangle.</i></p>
+<p class="indent">If you mix up the order of the translations, you end up with <a href="Chapter07.html#mixing_up_the_order_of_the_translations">Figure 7-24</a> (you have rotated around the wrong point).</p>
+<div id="mixing_up_the_order_of_the_translations" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0724.jpg" alt="image" width="243" height="244">
+</div>
+</div>
+<p class="normal"><b>Figure 7-24.</b> <i>Mixing up the order of the translations rotates around the wrong origin.</i></p>
+<p class="indent">The order of translations is important for all translations. Both scaling and shearing are equally dependent on the origin of the coordinate system, just as rotating is.</p>
+<h4 class="h4"><a id="painting_widgets"></a>Painting Widgets</h4>
+<p class="normal">All Qt widgets are paint devices, so you can create a <code>QPainter</code> object and use it to draw to a widget. However, this can be done only from the <code>paintEvent(QPaintEvent*)</code> method.</p>
+<p class="indent"><a id="page_205"></a>The <code>paintEvent</code> method is called by the event loop when a widget needs to be redrawn. You need to tell Qt when you want to redraw your widgets, and Qt will call your <code>paintEvent</code> method. You can achieve this with two methods: <code>update</code> and <code>repaint</code>. The <code>repaint</code> method triggers and immediately redraws, while <code>update</code> places a request for an update on the event queue. The latter means that Qt gets a chance to merge <code>update</code> calls into fewer (optimally as single) calls to <code>paintEvent</code>. This can be both good and bad. It is bad because you could have created a widget that relies on <code>paintEvent</code> being called a specific number of times. It is good because it allows Qt to tune the number or repaints to the current workload of the system running your application. In almost all cases, you should use <code>update</code>. When doing so, try to avoid relying on the <code>paintEvent</code> method being called a certain number of times.</p>
+<hr>
+<p class="normal"><b>Note</b> There are more reasons for not relying on <code>paintEvent</code> being called as often as you call <code>update</code>. For instance, your widget can be completely obstructed, or something might be moving in front of it causing fewer or more calls to <code>paintEvent</code>.</p>
+<hr>
+<p class="indent">Before you get carried away and start implementing completely new widgets, let's see how a button is modified to look different. (A button is a good starting point because it has been designed for this purpose.) All buttons inherit the <code>QAbstractButton</code> class, which defines the basic mechanics and properties of a button. This class is then inherited into <code>QPushButton</code>, <code>QRadioButton</code>, and <code>QCheckBox</code>, which implement three different views of a button.</p>
+<hr>
+<p class="normal"><b>Note</b> There are more abstract widgets made to be used as a base for custom widgets, including <code>QAbstractScrollArea</code>, <code>QAbstractSlider</code>, and <code>QFrame</code>. Notice that even though the two first classes are abstract, it is not a rule. <code>QFrame</code> can be used as the basis of a new widget, but is also useful on its own.</p>
+<hr>
+<p class="normal"><b>A New Button</b></p>
+<p class="normal">The new button class doesn't create a radically different button; it simply lets the text of the button light up when the user presses it. The button class is called <code>MyButton</code>, and the class declaration is shown in <a href="Chapter07.html#the_class_declaration_of_the_custom_butt">Listing 7-8</a>.</p>
+<p class="indent">In the listing, you can see that the class inherits <code>QAbstractButton</code> class. It then implements a constructor, a <code>sizeHint</code> method, and a <code>paintEvent</code> method. The <code>sizeHint</code> and <code>paintEvent</code> methods override existing methods inherited from ancestor classes. This means that their declarations must remain exactly the same (including that the <code>sizeHint</code> method be declared as <code>const</code>).</p>
+<div id="the_class_declaration_of_the_custom_butt" class="listing">
+<p class="normal"><b>Listing 7-8.</b> <i>The class declaration of the custom button</i></p>
+<code>class MyButton : public QAbstractButton<br>
+{<br>
+  Q_OBJECT<br>
+<a id="page_206"></a>
+public:<br>
+  MyButton( QWidget *parent=0 );<br>
+<br>
+  QSize sizeHint() const;<br>
+<br>
+protected:<br>
+  void paintEvent( QPaintEvent* );<br>
+};</code>
+</div>
+<p class="indent">You can review the constructor and the <code>sizeHint</code> method in <a href="Chapter07.html#the_constructor_and_the_sizehint_method">Listing 7-9</a>. The constructor simply passes on the parent argument to the parent class. The <code>sizeHint</code> method returns the size that the widget wants. This is just a hint given to the Qt layout classes, so you can't rely on the widget getting these dimensions.</p>
+<p class="indent">Sizes are represented by <code>QSize</code> objects, which have two properties: <code>width</code> and <code>height</code>. For the button, these two measurements are dependent on the text to show and the font to use for showing it. To learn about the dimensions of a given <code>QFont</code>, use a <code>QFontMetrics</code> object. All widgets have a <code>fontMetrics</code> property returning a <code>QFontMetrics</code> object for the current font. By asking this object about the <code>width</code> and the <code>height</code> of a given string and then adding 10 pixels extra in each direction for margins, you get an appropriate size for the widget.</p>
+<hr>
+<p class="normal"><b>Note</b> The height of a given font doesn't depend on the text being entered. Instead, it takes the possible height of the font into account. The width of a given text for most fonts depends on the text because characters' widths differ.</p>
+<hr>
+<div id="the_constructor_and_the_sizehint_method" class="listing">
+<p class="normal"><b>Listing 7-9.</b> <i>The constructor and the</i> <code>sizeHint</code> <i>method of the button</i></p>
+<code>MyButton::MyButton( QWidget *parent ) : QAbstractButton( parent )<br>
+{<br>
+}<br>
+<br>
+QSize MyButton::sizeHint() const<br>
+{<br>
+  return QSize( fontMetrics().width( text() )+10, fontMetrics().height()+10 );<br>
+}</code>
+</div>
+<p class="indent">The task of painting the button is taken care of in the <code>paintEvent</code> method (see <a href="Chapter07.html#painting_the_bevel_using_a_style_and_the">Listing 7-10</a>). The method starts with the creation of a <code>QPainter</code> object for painting to the widget. All widgets are double-buffered by Qt, so when you draw to the painter, you are actually drawing to a buffer that is used to redraw the screen. This means that you do not have to worry about flickering.</p>
+<p class="indent">There are two ways to draw widgets: directly or through a style. By using a style, you can adapt the widget's look to the rest of the system. By drawing directly to the widget, you get full control. For the button you will draw the frame and background using a style and the text directly.</p>
+<p class="indent"><a id="page_207"></a>Each widget has a <code>QStyle</code> associated with it that you can reach through the <code>style</code> property. This style usually reflects the system's setting, but it might have been changed from the code instantiating widget. The widget itself should not care about the origin of the style or its relation to the current platform.</p>
+<p class="indent">Before you can use the style for drawing, you need to set up a style option object (in this case, a <code>QStyleOptionButton</code> object). The style option class to use depends on the style element to draw. By referring to the Qt documentation for the <code>drawControl</code> method, you can see which style object it expects.</p>
+<p class="indent">The style option object is initialized by passing the <code>this</code> pointer to its <code>init</code> method, which configures most of the settings. However, you still need to tell whether the button is being pressed or is toggled. These states are available from the <code>isDown</code> and <code>isChecked</code> methods implemented by the <code>QAbstractButton</code> class. If the <code>isDown</code> method returns <code>true</code>, the button is currently being pressed. If <code>isChecked</code> returns <code>true</code>, the button has been toggled and is currently checked (that is, in its on state). When the button is being pressed, set the <code>QStyle::State_Sunken</code> bit in the style option's <code>state</code> property. For checked buttons, the <code>QStyle::State_On</code> bit is set.</p>
+<hr>
+<p class="normal"><b>Note</b> The <code>state</code> bits are added using the <code>|=</code> operator (bitwise or), not clearing any bits set by the <code>init</code> method.</p>
+<hr>
+<p class="indent">When the style object has been properly set up, the <code>drawControl(ControlElement, QStyleOption*, QPainter*, QWidget*)</code> of the current style method is called. In the call, you ask for a <code>QStyle::CE_PushButtonBevel</code> to be painted, which paints all parts of the button except the text and optional icon.</p>
+<p class="indent">The second half of the <code>paintEvent</code> method takes care of painting the text directly to the widget. It starts by setting the font of the painter to the widget's current font. Then the color of the pen is determined, depending on the state of the button. Disabled buttons have gray text, pressed buttons have red text, and all other buttons have dark red text. Notice that <code>isDown</code> returns <code>true</code> when the button is actively pressed, not when toggled buttons are left in the on state. This means that the text lights up only when the mouse button is pressed.</p>
+<p class="indent">When the pen and font of the painter are configured, continue by drawing the actual text with <code>drawText</code>. The text is centered in the button and is contained by the actual rectangle that the button occupies. You don't take the margins that you added in the <code>sizeHint</code> method into account.</p>
+<p class="indent">The <code>paintEvent</code> method accepts a <code>QPaintEvent</code> pointer as argument; a pointer that you choose to ignore in this example. The event object has a member method called <code>rect()</code> that returns a <code>QRect</code>, specifying the rectangle that the <code>paintEvent</code> method needs to update. For some widgets you can limit the painting to that rectangle to improve performance.</p>
+<div id="painting_the_bevel_using_a_style_and_the" class="listing">
+<p class="normal"><b>Listing 7-10.</b> <i>Painting the bevel using a style and the text directly</i></p>
+<code>void MyButton::paintEvent( QPaintEvent* )<br>
+{<br>
+  QPainter painter( this );<br>
+<a id="page_208"></a>
+  QStyleOptionButton option;<br>
+  option.init( this );<br>
+  if( isDown() )<br>
+    option.state |= QStyle::State_Sunken;<br>
+  else if( isChecked() )<br>
+    option.state |= QStyle::State_On;<br>
+<br>
+  style()-&gt;drawControl( QStyle::CE_PushButtonBevel, &amp;option, &amp;painter, this );<br>
+<br>
+  painter.setFont( font() );<br>
+<br>
+  if( !isEnabled() )<br>
+    painter.setPen( Qt::darkGray );<br>
+  else if( isDown() )<br>
+    painter.setPen( Qt::red );<br>
+  else<br>
+    painter.setPen( Qt::darkRed );<br>
+<br>
+  painter.drawText( rect(), Qt::AlignCenter, text() );<br>
+}</code>
+</div>
+<p class="indent">To try out the button, you create a dialog with it. The resulting dialog is shown in action in <a href="Chapter07.html#the_mybutton_class_in_action">Figure 7-26</a> (but you are still a few steps away).</p>
+<p class="indent">Start by creating a new dialog in Designer. Add three <code>QPushButton</code> widgets to the dialog and set their text properties according to the figure of the dialog. Also, set the enabled property to <code>false</code> for the top button and the checkable button to <code>true</code> for the bottom one.</p>
+<p class="indent">Right-click each button and choose Promote To Custom Widget from the popup menu. This will display the dialog shown alongside the popup menu in <a href="Chapter07.html#using_mybutton_from_designer">Figure 7-25</a>. By entering <code>MyButton</code> as the custom class name in the dialog, the header file name will (correctly) be guessed to be <code>mybutton.h</code>, which will cause the user interface compiler to use the <code>MyButton</code> class when creating the buttons instead of the <code>QPushButton</code> class.</p>
+<hr>
+<p class="normal"><b>Caution</b> Because <code>MyButton</code> does not inherit <code>QPushButton</code> (it inherits the <code>QAbstractButton</code> class), it is important to leave the properties appearing under the <code>QPushButton</code> heading in the Property Editor untouched. Otherwise, you will experience compilation errors. All properties from the base class (<code>QAbstractButton</code>) and up can be used freely.</p>
+<hr>
+<p class="indent">The dialog's name is set to <code>Dialog</code>, and the middle button is named <code>clickButton</code> before the design is saved as <code>dialog.ui</code>.</p>
+<div id="using_mybutton_from_designer" class="figure-contents"><a id="page_209"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0725.jpg" alt="image" width="549" height="233">
+</div>
+</div>
+<p class="normal"><b>Figure 7-25.</b> <i>Using</i> <code>MyButton</code> <i>from Designer</i></p>
+<p class="indent">To show the dialog, declare a minimal dialog class (shown in <a href="Chapter07.html#header_of_a_minimal_dialog">Listing 7-11</a> and <a href="Chapter07.html#implementation_of_a_minimal_dialog">Listing 7-12</a>). The dialog simply sets up the user interface from the design and connects the button's <code>clicked</code> signal to a slot showing a dialog.</p>
+<div id="header_of_a_minimal_dialog" class="listing">
+<p class="normal"><b>Listing 7-11.</b> <i>Header of a minimal dialog</i></p>
+<code>class Dialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  Dialog();<br>
+<br>
+private slots:<br>
+  void buttonClicked();<br>
+<br>
+private:<br>
+  Ui::Dialog ui;<br>
+};</code>
+</div>
+<div id="implementation_of_a_minimal_dialog" class="listing">
+<p class="normal"><b>Listing 7-12.</b> <i>Implementation of a minimal dialog</i></p>
+<code>Dialog::Dialog() : QDialog()<br>
+{<br>
+  ui.setupUi( this );<br>
+<br>
+  connect( ui.clickButton, SIGNAL(clicked()), this, SLOT(buttonClicked()) );<br>
+}<br>
+<a id="page_210"></a>
+void Dialog::buttonClicked()<br>
+{<br>
+  QMessageBox::information( this, tr("Wohoo!"), tr("You clicked the button!") );<br>
+}</code>
+</div>
+<p class="indent">The dialog, combined with a minimal main function, produces the dialog shown in <a href="Chapter07.html#the_mybutton_class_in_action">Figure 7-26</a>. In the figure, the top button is disabled, the middle button is being pressed, while the bottom one is an inactive toggle button.</p>
+<div id="the_mybutton_class_in_action" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0726.jpg" alt="image" width="377" height="308">
+</div>
+</div>
+<p class="normal"><b>Figure 7-26.</b> <i>The</i> <code>MyButton</code> <i>class in action</i></p>
+<p class="normal"><b>Completely Custom</b></p>
+<p class="normal">If you need to create a completely new widget (something that does not act like any other widget), you have to subclass the <code>QWidget</code> class directly. This enables you to do anything, but that freedom also comes with responsibilities. All internal states have to be managed by you, as will all repainting and size hinting.</p>
+<p class="indent">Let's start by looking at what you're trying to do. The widget that you'll create is called <code>CircleWidget</code> and will listen to mouse events. When the mouse is pressed, a circle is created. As long as a mouse button is pressed within the circle, the circle grows. If the mouse is pressed while the pointer is kept outside the circle, the circle will shrink until it disappears, and a new circle will start to grow where the pointer was when the first circle disappeared (see <a href="Chapter07.html#a_circle_shown_by_the_circle_widget">Figure 7-27</a>).</p>
+<div id="a_circle_shown_by_the_circle_widget" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0727.jpg" alt="image" width="203" height="227">
+</div>
+</div>
+<p class="normal"><b>Figure 7-27.</b> <i>A circle shown by the circle widget</i></p>
+<p class="indent"><a id="page_211"></a>You have to track mouse events: button presses, button releases, and pointer movements. You also need to have a timer for growing and shrinking the circles over time. Finally, you have to take care of the repainting and give the Qt layout classes a size hint (all can be seen in the class declaration in <a href="Chapter07.html#the_class_declaration_of_the_custom_widg">Listing 7-13</a>).</p>
+<p class="indent">Looking at the class declaration, you can group together the contents:</p>
+<ul>
+<li>The basic necessities: Here you find the constructor and <code>sizeHint</code>.</li>
+<li>Painting: The <code>paintEvent</code> method uses the variables <code>x</code>, <code>y</code>, <code>r</code>, and <code>color</code> for keeping track of what to draw.</li>
+<li>Mouse interaction: The mouse's events are caught using <code>mousePressEvent</code>, <code>mouseMoveEvent</code>, and <code>mouseReleaseEvent</code>. The last known mouse position is kept in <code>mx</code> and <code>my</code>.</li>
+<li>Timing: The <code>QTimer</code> object pointed to by <code>timer</code> is connected to the timeout slot. It updates <code>x</code>, <code>y</code>, <code>r</code>, and <code>color</code> depending on the <code>mx</code> and <code>my</code> values.</li>
+</ul>
+<hr>
+<p class="normal"><b>Note</b> The <code>sizeHint</code> method is not necessary, but you are encouraged to implement it for all your widgets.</p>
+<hr>
+<div id="the_class_declaration_of_the_custom_widg" class="listing">
+<p class="normal"><b>Listing 7-13.</b> <i>The class declaration of the custom widget</i></p>
+<code>class CircleWidget : public QWidget<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  CircleWidget( QWidget *parent=0 );<br>
+<br>
+  QSize sizeHint() const;<br>
+<br>
+private slots:<br>
+  void timeout();<br>
+<br>
+protected:<br>
+  void paintEvent( QPaintEvent* );<br>
+<br>
+  void mousePressEvent( QMouseEvent* );<br>
+  void mouseMoveEvent( QMouseEvent* );<br>
+  void mouseReleaseEvent( QMouseEvent* );<br>
+<br>
+private:<br>
+  int x, y, r;<br>
+  QColor color;<br>
+<a id="page_212"></a>
+  int mx, my;<br>
+<br>
+  QTimer timer;<br>
+};</code>
+</div>
+<p class="indent">The constructor shown in <a href="Chapter07.html#initializing_the_custom_widget">Listing 7-14</a> initializes the radius of the current circle, <code>r</code>, to <code>0</code>, meaning no circle. It then configures and connects a <code>QTimer</code> object. The timer interval is set to 50 milliseconds, meaning that the circle will be updated roughly 20 times per second (this is often enough to imitate a continuous motion).</p>
+<div id="initializing_the_custom_widget" class="listing">
+<p class="normal"><b>Listing 7-14.</b> <i>Initializing the custom widget</i></p>
+<code>CircleWidget::CircleWidget( QWidget *parent ) : QWidget( parent )<br>
+{<br>
+  r = 0;<br>
+<br>
+  timer.setInterval( 50 );<br>
+<br>
+  connect( &amp;timer, SIGNAL(timeout()), this, SLOT(timeout()) );<br>
+}</code>
+</div>
+<p class="indent">The <code>sizeHint</code> method is the simplest one of the entire class; it simply returns a static size (see <a href="Chapter07.html#returning_a_static_size">Listing 7-15</a>).</p>
+<div id="returning_a_static_size" class="listing">
+<p class="normal"><b>Listing 7-15.</b> <i>Returning a static size</i></p>
+<code>QSize CircleWidget::sizeHint() const<br>
+{<br>
+  return QSize( 200, 200 );<br>
+}</code>
+</div>
+<p class="indent"><a href="Chapter07.html#handling_mouse_events">Listing 7-16</a> shows the three methods used to track the mouse activity. Before looking too closely at the methods it is important to know that mouse movements are reported only when the mouse buttons are pressed. This means that <code>mouseMoveEvent</code> will not be called unless a mouse button is pressed.</p>
+<hr>
+<p class="normal"><b>Tip</b> You can get mouse movement reports by setting the <code>mouseTracking</code> property to <code>true</code>.</p>
+<hr>
+<p class="indent">Both <code>mousePressEvent</code> and <code>mouseMoveEvent</code> update the <code>mx</code> and <code>my</code> variables according to the coordinates passed in the <code>QMouseEvent</code> object. They are used by the <code>timeout</code> slot when determining whether it wants to grow or shrink the current circle. The <code>timeout</code> slot is connected to the <code>timer</code>, so you can turn the <code>timeout</code> slot on and off by starting and stopping the <code>timer</code> in the <code>mousePressEvent</code> and <code>mouseReleaseEvent</code>. The timer will be active only when a mouse button is being pressed (during that time, the <code>mx</code> and <code>my</code> values are valid).</p>
+<div id="handling_mouse_events" class="listing"><a id="page_213"></a>
+<p class="normal"><b>Listing 7-16.</b> <i>Handling mouse events</i></p>
+<code>void CircleWidget::mousePressEvent( QMouseEvent *e )<br>
+{<br>
+  mx = e-&gt;x();<br>
+  my = e-&gt;y();<br>
+<br>
+  timer.start();<br>
+}<br>
+<br>
+void CircleWidget::mouseMoveEvent( QMouseEvent *e )<br>
+{<br>
+  mx = e-&gt;x();<br>
+  my = e-&gt;y();<br>
+}<br>
+<br>
+void CircleWidget::mouseReleaseEvent( QMouseEvent *e )<br>
+{<br>
+  timer.stop();<br>
+}</code>
+</div>
+<p class="indent">When the timer is active, the <code>timeout</code> slot is called about 20 times per second. The task of the slot is to determine whether it will create a new circle, grow the current circle, or shrink it. <a href="Chapter07.html#changing_the_circles_according_to_the_cu">Listing 7-17</a> shows how it's done.</p>
+<p class="indent">If the current radius, <code>r</code>, is <code>0</code>, a new circle is created with its center (<code>x</code>, <code>y</code>) in the current mouse position: <code>mx</code>, <code>my</code>. A new color is created randomly, so each new circle will have a new color.</p>
+<p class="indent">Whether working on a new circle or not, the slot then checks to see if <code>mx</code>, <code>my</code> is within the circle by using the Pythagorean Theorem (comparing the squared distance between <code>mx</code>, <code>my</code> and <code>x</code>, <code>y</code> to the radius, <code>r</code>, squared). If the mouse is within an existing circle, the radius is increased; if it is outside, the radius is decreased.</p>
+<p class="indent">When all the changes to the circle have been made, the update method is called, which puts a paint event on the Qt event queue. When that event is reached, the <code>paintEvent</code> method is invoked.</p>
+<div id="changing_the_circles_according_to_the_cu" class="listing">
+<p class="normal"><b>Listing 7-17.</b> <i>Changing the circles according to the current circle's position and size and the mouse pointer's position</i></p>
+<code>void CircleWidget::timeout()<br>
+{<br>
+  if( r == 0 )<br>
+  {<br>
+    x = mx;<br>
+    y = my;<br>
+<br>
+    color = QColor( qrand()%256, qrand()%256, qrand()%256 );<br>
+  }<br>
+<a id="page_214"></a>
+  int dx = mx-x;<br>
+  int dy = my-y;<br>
+<br>
+  if( dx*dx+dy*dy &lt;= r*r )<br>
+    r++;<br>
+  else<br>
+    r--;<br>
+<br>
+  update();<br>
+}</code>
+</div>
+<p class="indent">The <code>paintEvent</code> method is shown in <a href="Chapter07.html#painting_the_circle">Listing 7-18</a>. All the method does is paint the current circle (as defined by <code>x</code>, <code>y</code>, <code>r</code>, and <code>color</code> if <code>r</code> is more than 0). Because circle edges sometimes have a tendency to look jagged, you also tell the painter to soften the edges with antialiasing (by setting a rendering hint). As the name suggests, it is a hint, not a guaranteed operation.</p>
+<hr>
+<p class="normal"><b>Tip</b> <i>Antialiasing</i> means that the edges of a shape are smoothed. The edges sometimes appear jagged because the edge is located between the available pixels. By calculating the amount of color to add to each pixel, a smoother result can be achieved (depending on how close to the edge each pixel is located).</p>
+<hr>
+<p class="indent">Simply painting the new circle without erasing anything works because Qt always copies the background graphics by default. Because this widget isn't intended to be placed on top of other widgets, that usually means plain gray. You can force Qt to fill the background with the style's background color by setting the <code>autoFillBackground</code> property to <code>true</code>.</p>
+<div id="painting_the_circle" class="listing">
+<p class="normal"><b>Listing 7-18.</b> <i>Painting the circle</i></p>
+<code>void CircleWidget::paintEvent( QPaintEvent* )<br>
+{<br>
+  if( r &gt; 0 )<br>
+  {<br>
+    QPainter painter( this );<br>
+<br>
+    painter.setRenderHint( QPainter::Antialiasing );<br>
+<br>
+    painter.setPen( color );<br>
+    painter.setBrush( color );<br>
+    painter.drawEllipse( x-r, y-r, 2*r, 2*r );<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">When discussing paint events, there are a few widget attributes that you should be aware of—they can be used to further optimize widget painting. You can set these attributes using the <code>setAttribute(Qt::WidgetAttribute, bool)</code> method. The Boolean argument, which <a id="page_215"></a>is <code>true</code> by default, indicates that the attribute should be set. If <code>false</code> is passed instead, the attribute is cleared. You can test whether an attribute is set by using the <code>testAttribute(Qt::WidgetAttribute)</code> method. This incomplete list explains some attributes that can be used to optimize widget painting:</p>
+<ul>
+<li><code>Qt::WA_OpaquePaintEvent</code>: When the widget repaints itself, it draws all its pixels using opaque colors. This means no alpha blending, and Qt doesn't need to handle background clearing.</li>
+<li><code>Qt::WA_NoSystemBackground</code>: The same as <code>Qt::WA_OpaquePaintEvent</code>, but more definite. Widgets without system background are not event-initialized by Qt, so the underlying graphics will shine through until the widget has been painted.</li>
+<li><code>Qt::WA_StaticContents</code>: The content is static and has its center of origin in the top-left corner. When such a widget is enlarged, only the new rectangles appearing to the right and below need repainting. When being shrunk, no <code>paintEvent</code> at all is needed.</li>
+</ul>
+<h3 class="h3"><a id="the_graphics_view"></a>The Graphics View</h3>
+<p class="normal">Until now, you have managed all custom painting through the <code>paintEvent</code>. The graphics view framework takes into account that most applications are built around a two-dimensional canvas. By providing classes for handing this scenario in an optimized manner, it is possible to create a feeling of a custom widget without actually creating a custom widget.</p>
+<p class="indent">The graphics view framework is built from three basic components: the <i>view</i>, the <i>scene</i>, and the <i>items</i>. A view class, <code>QGraphicsView</code>, is a widget that shows the contents of a scene. The scene, <code>QGraphicsScene</code>, holds a collection of widgets and manages the propagation of events and states concerning the items. Each item is a subclass of <code>QGraphicsItem</code> and represents a single graphical item or a group of items.</p>
+<p class="indent">The basic idea is that you create a set of items, put it in a scene, and let a view show it. By listening to events and redrawing your items, you can create the user interface that you want. To avoid having to create a set of items, Qt comes with a range of prepared items.</p>
+<p class="indent"><a href="Chapter07.html#populating_a_scene_with_standard_shapes">Listing 7-19</a> shows a main function in which a scene is filled with standard items and shown using a view. Let's start from the top of the function and work down.</p>
+<p class="indent">Start by creating a <code>QGraphicsScene</code> object called <code>scene</code> and pass a <code>QRect</code> to the constructor. This rectangle is used to define the scene. All items are expected to appear inside of this area. Notice that the scene can start from a non-zero coordinate—it can even start from a negative coordinate.</p>
+<p class="indent">The next step is to populate the scene with items. Start by creating <code>QGraphicsRectItem (QRect,QGraphicsItem*,QGraphicsScene*)</code>. The constructor accepts a rectangle defining the dimensions and location of the item, a <code>QGraphicsItem</code> pointer to a parent item, and a <code>QGraphicsScene</code> pointer to a parent scene. Using parent items, it is possible to place items in other items (you'll learn more about this later). By passing a scene pointer, you add the item to the given scene. You can also do this with the <code>addItem(QGraphicsItem*)</code> method available from the <code>scene</code> object. When the rectangle has been added to the scene, you also set a pen and a brush for it.</p>
+<hr>
+<p class="normal"><a id="page_216"></a><b>Note</b> If you don't set a pen or a brush, you'll end up with the standard settings, which usually means no brush and black solid lines.</p>
+<hr>
+<p class="indent">The next item you create is a <code>QGraphicsSimpleTextItem</code>. The constructor takes a <code>QString</code> text and the two parent pointers. Because the constructor does not let you position the text, call the <code>setPos</code> method to position the top-left corner of the item.</p>
+<p class="indent">Add a <code>QGraphicsEllipseItem</code> with a constructor that takes a rectangle and the parent pointers. Follow with a <code>QGraphicsPolygonItem</code> that takes a <code>QPolygonF</code> object and the parent pointers. The <code>QPolygonF</code> is initialized using a vector of <code>QPointF</code> objects. These points define the points between which the edges of the polygon are drawn. Set a pen and a brush for both of these objects.</p>
+<p class="indent">When these items have been added to the scene, create a <code>QGraphicsView</code> widget and call <code>setScene(QGraphicsScene*)</code> to tell it which scene to show. You then show the view and run <code>app.exec()</code> to start the event loop. The resulting window is shown in <a href="Chapter07.html#a_graphics_view_with_some_standard_items">Figure 7-28</a>.</p>
+<div id="populating_a_scene_with_standard_shapes" class="listing">
+<p class="normal"><b>Listing 7-19.</b> <i>Populating a scene with standard shapes</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QGraphicsScene scene( QRect( −50, −50, 400, 200 ) );<br>
+<br>
+  QGraphicsRectItem *rectItem = new QGraphicsRectItem(<br>
+                                QRect( −25, 25, 200, 40 ), 0, &amp;scene );<br>
+  rectItem-&gt;setPen( QPen( Qt::red, 3, Qt::DashDotLine ) );<br>
+  rectItem-&gt;setBrush( Qt::gray );<br>
+<br>
+  QGraphicsSimpleTextItem *textItem = new QGraphicsSimpleTextItem(<br>
+                                      "Foundations of Qt", 0, &amp;scene );<br>
+  textItem-&gt;setPos( 50, 0 );<br>
+<br>
+  QGraphicsEllipseItem *ellipseItem = new QGraphicsEllipseItem(<br>
+                                      QRect( 170, 20, 100, 75 ),<br>
+                                      0, &amp;scene );<br>
+  ellipseItem-&gt;setPen( QPen(Qt::darkBlue) );<br>
+  ellipseItem-&gt;setBrush( Qt::blue );<br>
+<br>
+  QVector&lt;QPointF&gt; points;<br>
+  points &lt;&lt; QPointF( 10, 10 ) &lt;&lt; QPointF( 0, 90 ) &lt;&lt; QPointF( 40, 70 )<br>
+         &lt;&lt; QPointF( 80, 110 ) &lt;&lt; QPointF( 70, 20 );<br>
+  QGraphicsPolygonItem *polygonItem = new QGraphicsPolygonItem(<br>
+                                      QPolygonF( points() ), 0, &amp;scene );<br>
+  polygonItem-&gt;setPen( QPen(Qt::darkGreen) );<br>
+  polygonItem-&gt;setBrush( Qt::yellow );<br>
+<a id="page_217"></a>
+  QGraphicsView view;<br>
+  view.setScene( &amp;scene );<br>
+  view.show();<br>
+<br>
+  return app.exec();<br>
+}</code><br><br>
+</div>
+<div id="a_graphics_view_with_some_standard_items" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0728.jpg" alt="image" width="399" height="229">
+</div>
+</div>
+<p class="normal"><b>Figure 7-28.</b> <i>A graphics view with some standard items</i></p>
+<p class="indent"><a href="Chapter07.html#a_graphics_view_with_some_standard_items">Figure 7-28</a> and <a href="Chapter07.html#populating_a_scene_with_standard_shapes">Listing 7-19</a> show a number of interesting things:</p>
+<ul>
+<li>The view's upper-left corner corresponds to the scene coordinate −50, −50 because of the <code>QRect</code> passed to the scene's constructor.</li>
+<li>The rectangle item is obstructed by the polygon and ellipse because the scene items are drawn in the order in which they were added to the scene. It can be controlled programmatically if you don't like it.</li>
+<li>If you try running the example yourself and shrink the window containing the view, the view will automatically show sliders to let you pan over the entire scene.</li>
+</ul>
+<p class="indent">There are other standard items that come with Qt, some of which are listed here:</p>
+<ul>
+<li><code>QGraphicsPathItem</code>: Draws a painter path.</li>
+<li><code>QGraphicsLineItem</code>: Draws a single line.</li>
+<li><code>QGraphicsPixmapItem</code>: Draws a pixmap; that is, a bitmapped image.</li>
+<li><code>QGraphicsSvgtIem</code>: Draws a vector graphics image.</li>
+<li><code>QGraphicsTextItem</code>: Draws complex text such as a rich text document.</li>
+</ul>
+<p class="indent">You can transform shape items freely with a graphics view, which is also where the item's parent enters the picture. If an item's parent item is transformed, the child is transformed in the same way.</p>
+<p class="indent"><a href="Chapter07.html#a_shape_containing_two_other_shapes">Listing 7-20</a> shows the function <code>createItem</code>, which takes a parent scene pointer and an x offset as arguments. These two arguments are then used to create a rectangle containing another rectangle and an ellipse. The outer rectangle is filled with a gray brush; the inner items are filled with white.</p>
+<p class="indent"><a id="page_218"></a>The function returns a pointer to the outer rectangle, which in turn contains the other two. This means that the pointer can be used to manipulate all the shapes.</p>
+<div id="a_shape_containing_two_other_shapes" class="listing">
+<p class="normal"><b>Listing 7-20.</b> <i>A shape containing two other shapes</i></p>
+<code>QGraphicsItem *createItem( int x, QGraphicsScene *scene )<br>
+{<br>
+  QGraphicsRectItem *rectItem = new QGraphicsRectItem(<br>
+                                    QRect( x+40, 40, 120, 120 ),<br>
+                                    0, scene );<br>
+  rectItem-&gt;setPen( QPen(Qt::black) );<br>
+  rectItem-&gt;setBrush( Qt::gray );<br>
+<br>
+  QGraphicsRectItem *innerRectItem = new QGraphicsRectItem(<br>
+                                         QRect( x+50, 50, 45, 100 ),<br>
+                                         rectItem, scene );<br>
+  innerRectItem-&gt;setPen( QPen(Qt::black) );<br>
+  innerRectItem-&gt;setBrush( Qt::white );<br>
+<br>
+  QGraphicsEllipseItem *ellipseItem = new QGraphicsEllipseItem(<br>
+                                          QRect( x+105, 50, 45, 100 ),<br>
+                                          rectItem, scene );<br>
+  ellipseItem-&gt;setPen( QPen(Qt::black) );<br>
+  ellipseItem-&gt;setBrush( Qt::white );<br>
+<br>
+  return rectItem;<br>
+}</code>
+</div>
+<p class="indent">The <code>createItem</code> function is used in the <code>main</code> function shown in <a href="Chapter07.html#transforming_the_five_items">Listing 7-21</a>, in which a scene is created. Five items are then added to that scene before it is shown. Each of the items is transformed in a different manner. The resulting scene can be seen in <a href="Chapter07.html#from_the_left_colon_original_comma_rotat">Figure 7-29</a>. Refer to the figure and the source code when you look at the transformations applied on each of these items.</p>
+<div id="from_the_left_colon_original_comma_rotat" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0729.jpg" alt="image" width="549" height="104">
+</div>
+</div>
+<p class="normal"><b>Figure 7-29.</b> <i>From the left: original, rotated, scaled, sheared, and all at once</i></p>
+<p class="indent">The <code>item1</code> item is placed in the scene without any transformations being applied. It can be seen as the reference item.</p>
+<p class="indent">The <code>item2</code> item is translated, rotated 30 degrees, and then translated back to its original position so that the rotation is made around the (0,0) point. By translating the item so its center point is in the point (0,0), you can rotate it about its center before putting it back in its original position by translating it back.</p>
+<p class="indent"><a id="page_219"></a>The <code>item3</code> item is also translated so that the point (0,0) becomes the center of the item. It is scaled before it is translated back because the scaling is also relative to the coordinate system's center point. By scaling the item around its center, you change the size of the shape, but not its position.</p>
+<p class="indent">The fourth item, <code>item4</code>, is translated and retranslated as both <code>item2</code> and <code>item3</code>. Between the translations it is sheared.</p>
+<p class="indent">The fifth item, <code>item5</code>, is scaled, rotated, and sheared, which makes it distorted. This item shows how to apply all transformations to one object.</p>
+<hr>
+<p class="normal"><b>Note</b> When applying transformations, it is important to keep the order in mind. Applying the transformations in a different order will yield a different result.</p>
+<hr>
+<div id="transforming_the_five_items" class="listing">
+<p class="normal"><b>Listing 7-21.</b> <i>Transforming the five items</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QGraphicsScene scene( QRect( 0, 00, 1000, 200 ) );<br>
+<br>
+  QGraphicsItem *item1 = createItem( 0, &amp;scene );<br>
+<br>
+  QGraphicsItem *item2 = createItem( 200, &amp;scene );<br>
+  item2-&gt;translate( 300, 100 );<br>
+  item2-&gt;rotate( 30 );<br>
+  item2-&gt;translate( −300, −100 );<br>
+<br>
+  QGraphicsItem *item3 = createItem( 400, &amp;scene );<br>
+  item3-&gt;translate( 500, 100 );<br>
+  item3-&gt;scale( 0.5, 0.7 );<br>
+  item3-&gt;translate( −500, −100 );<br>
+<br>
+  QGraphicsItem *item4 = createItem( 600, &amp;scene );<br>
+  item4-&gt;translate( 700, 100 );<br>
+  item4-&gt;shear( 0.1, 0.3 );<br>
+  item4-&gt;translate( −700, −100 );<br>
+<br>
+  QGraphicsItem *item5 = createItem( 800, &amp;scene );<br>
+  item5-&gt;translate( 900, 100 );<br>
+  item5-&gt;scale( 0.5, 0.7 );<br>
+  item5-&gt;rotate( 30 );<br>
+  item5-&gt;shear( 0.1, 0.3 );<br>
+  item5-&gt;translate( −900, −100 );<br>
+<a id="page_220"></a>
+  QGraphicsView view;<br>
+  view.setScene( &amp;scene );<br>
+  view.show();<br>
+<br>
+  return app.exec();<br>
+}</code>
+</div>
+<p class="indent">When working with graphics items, you can use the Z value to control the order in which the items are drawn. You can set each item using the <code>setZValue(qreal)</code> method. The default Z value for any item is <code>0</code>.</p>
+<p class="indent">When drawing the scene, items with a high Z value appear in front of items with lower Z values. For items with the same Z value, the order is undefined.</p>
+<h4 class="h4"><a id="interacting_using_a_custom_item"></a>Interacting Using a Custom Item</h4>
+<p class="normal">With custom items you can create the kind of behavior you want by using graphics view. This flexibility and ease of implementing custom shapes are what make graphics view such a nice tool to use.</p>
+<p class="indent">The aim of this section is to create a set of handles: one central handle for moving shapes and two edge handles for resizing them. <a href="Chapter07.html#the_handles_in_action">Figure 7-30</a> shows the handles in action. Notice that you can apply handles to several shapes at once and that the shapes used are standard shapes: <code>QGraphicsRectItem</code> and <code>QGraphicsEllipseItem</code>.</p>
+<div id="the_handles_in_action" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0730.jpg" alt="image" width="549" height="534">
+</div>
+</div>
+<p class="normal"><b>Figure 7-30.</b> <i>The handles in action</i></p>
+<p class="indent"><a id="page_221"></a>Let's start looking at the code, beginning from the <code>main</code> function of the application. This shows how the handles are created, configured, and used. The <code>main</code> function is shown in <a href="Chapter07.html#using_the_handleitem_class_in_a_scene">Listing 7-22</a>.</p>
+<p class="indent">The function starts by creating the Qt classes that you need: a <code>QApplication</code>, a <code>QGraphicsScene</code>, and the two shapes represented through a <code>QGraphicsRectItem</code> and a <code>QGraphicsEllipseItem</code>. When these shapes have been added to the scene, it's time to create six <code>HandleItem</code> objects—three for each of the shapes.</p>
+<p class="indent">Each handle's constructor takes the following arguments: an item to act upon, a scene, a color, and a role. The available roles are <code>TopHandle</code>, <code>RightHandle</code>, and <code>CenterHandle</code>. When you create a <code>CenterHandle</code> you have to pass a <code>QList</code> with pointers to the two other handles. That is, if you choose to have other handles, the <code>CenterHandle</code> works perfectly on its own, as do the other two variants.</p>
+<p class="indent">The <code>main</code> function then continues by creating a <code>QGraphicsView</code> and sets it up to show the scene. The main loop is then started by calling the <code>exec</code> method on the <code>QApplication</code> object. However, you do not return the result from this directly. Because the handles refer to the other shapes without being child nodes, it is important that you delete the handles first. The remaining shapes are then deleted when the <code>QGraphicsScene</code> is destroyed.</p>
+<div id="using_the_handleitem_class_in_a_scene" class="listing">
+<p class="normal"><b>Listing 7-22.</b> <i>Using the</i> <code>HandleItem</code> <i>class in a scene</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QGraphicsScene scene( 0, 0, 200, 200 );<br>
+<br>
+  QGraphicsRectItem *rectItem = new QGraphicsRectItem(<br>
+                                    QRect( 10, 10, 50, 100 ),<br>
+                                    0, &amp;scene );<br>
+  QGraphicsEllipseItem *elItem = new QGraphicsEllipseItem(<br>
+                                     QRect( 80, 40, 100, 80 ),<br>
+                                     0, &amp;scene );<br>
+<br>
+  HandleItem *trh = new HandleItem( rectItem, &amp;scene, Qt::red,<br>
+                                    HandleItem::TopHandle );<br>
+  HandleItem *rrh = new HandleItem( rectItem, &amp;scene, Qt::red,<br>
+                                    HandleItem::RightHandle );<br>
+  HandleItem *crh = new HandleItem( rectItem, &amp;scene, Qt::red,<br>
+                                    HandleItem::CenterHandle,<br>
+                                   QList&lt;HandleItem*&gt;() &lt;&lt; trh &lt;&lt; rrh );<br>
+<br>
+  HandleItem *teh = new HandleItem( elItem, &amp;scene, Qt::green,<br>
+                                    HandleItem::TopHandle );<br>
+  HandleItem *reh = new HandleItem( elItem, &amp;scene, Qt::green,<br>
+                                    HandleItem::RightHandle );<br>
+  HandleItem *ceh = new HandleItem( elItem, &amp;scene, Qt::green,<br>
+                                    HandleItem::CenterHandle,<br>
+                                   QList&lt;HandleItem*&gt;() &lt;&lt; teh &lt;&lt; reh );<br>
+<a id="page_222"></a>
+  QGraphicsView view;<br>
+  view.setScene( &amp;scene );<br>
+  view.show();<br>
+<br>
+  return app.exec();<br>
+<br>
+<br>
+}</code>
+</div>
+<p class="indent">Now that you know how the handles look and how the class is used in a scene, it's time to have a look at the actual class. <a href="Chapter07.html#the_handle_class">Listing 7-23</a> shows the class declaration.</p>
+<p class="indent">The listing starts with a forward declaration of the class because the class will contain pointers to instances of itself. Then it defines an enumeration of the different available roles: <code>CenterHandle</code>, <code>RightHandle</code>, and <code>TopHandle</code>.</p>
+<p class="indent">The constructor that follows the <code>enum</code> contains all the expected arguments, as discussed earlier. However, the role and list of handles have default values. The default role is a center handle, and the list is empty by default.</p>
+<p class="indent">The next two methods are required when inheriting from <code>QGraphicsItem</code>. The paint method is responsible for painting the shape upon request, while <code>boundingRect</code> tells the scene how large the shape is.</p>
+<p class="indent">The class declaration then continues with a set of protected methods. You can override these methods to interact with the user through the shape. The <code>mousePressEvent</code> and <code>mouseReleaseEvent</code> methods react to the mouse buttons, while the <code>itemChange</code> method can be used to filter and react to all changes to the item. You use it to react to and limit the moving of the widget.</p>
+<p class="indent">The private section ends the class declaration. It contains all the local states and variables that are needed. The following list summarizes their roles and uses (you will look more closely at how they are used in the rest of this section):</p>
+<ul>
+<li><code>m_item</code>: The <code>QGraphicsItem</code> that the handles acts on.</li>
+<li><code>m_role</code>: The role of the handle.</li>
+<li><code>m_color</code>: The color of the handle.</li>
+<li><code>m_handles</code>: A list of other handles acting on the same <code>m_item</code>—required by center handles.</li>
+<li><code>m_pressed</code>: A Boolean that indicates whether the mouse button is pressed. This is important because you need to be able to tell whether the handle is moving because of user interaction or programmatic changes.</li>
+</ul>
+<div id="the_handle_class" class="listing">
+<p class="normal"><b>Listing 7-23.</b> <i>The handle class</i></p>
+<code>class HandleItem;<br>
+<br>
+class HandleItem : public QGraphicsItem<br>
+{<br>
+public:<br>
+<a id="page_223"></a>
+  enum HandleRole<br>
+  {<br>
+    CenterHandle,<br>
+    RightHandle,<br>
+    TopHandle<br>
+  };<br>
+<br>
+  HandleItem( QGraphicsItem *item, QGraphicsScene *scene,<br>
+              QColor color, HandleRole role = CenterHandle,<br>
+              QList&lt;HandleItem*&gt; handles = QList&lt;HandleItem*&gt;() );<br>
+<br>
+  void paint( QPainter *paint,<br>
+              const QStyleOptionGraphicsItem *option, QWidget *widget );<br>
+  QRectF boundingRect() const;<br>
+<br>
+protected:<br>
+  void mousePressEvent( QGraphicsSceneMouseEvent *event );<br>
+  void mouseReleaseEvent( QGraphicsSceneMouseEvent *event );<br>
+<br>
+  QVariant itemChange( GraphicsItemChange change, const QVariant &amp;data );<br>
+<br>
+private:<br>
+  QGraphicsItem *m_item;<br>
+<br>
+  HandleRole m_role;<br>
+  QColor m_color;<br>
+<br>
+  QList&lt;HandleItem*&gt; m_handles;<br>
+<br>
+  bool m_pressed;<br>
+};</code>
+</div>
+<p class="indent">The constructor shown in <a href="Chapter07.html#the_constructor_of_the_handle_item">Listing 7-24</a> simply initializes all the class variables before setting a high <code>zValue</code>. This ensures that the handles appear in front of the shapes that they work with. Then a flag is set to make the shapes moveable by using the <code>setFlag</code> method.</p>
+<hr>
+<p class="normal"><b>Tip</b> Other flags let you enable the shape to be allowed to be selected (<code>ItemIsSelectable</code>) or accept keyboard focus (<code>ItemIsFocusable</code>). These flags can be combined through logical or operations.</p>
+<hr>
+<div id="the_constructor_of_the_handle_item" class="listing">
+<p class="normal"><b>Listing 7-24.</b> <i>The constructor of the handle item</i></p>
+<code>HandleItem::HandleItem( QGraphicsItem *item, QGraphicsScene *scene,<br>
+                        QColor color, HandleItem::HandleRole role,<br>
+                        QList&lt;HandleItem*&gt; handles )<br>
+                        : QGraphicsItem( 0, scene )<br>
+<a id="page_224"></a>
+{<br>
+  m_role = role;<br>
+  m_color = color;<br>
+<br>
+  m_item = item;<br>
+  m_handles = handles;<br>
+<br>
+  m_pressed = false;<br>
+  setZValue( 100 );<br>
+<br>
+  setFlag( ItemIsMovable );<br>
+}</code>
+</div>
+<p class="indent">Because the class actually implements three different handles, it often uses <code>switch</code> statements to differentiate between the different roles (see <a href="Chapter07.html#determining_the_bounding_rectangle_of_th">Listing 7-25</a>, which shows the <code>boundingRect</code> method). The bounding rectangle is defined by the location of the bounding rectangle of the shape that is handled. The handles do not have a position of their own; instead they are entirely based on the location and size of the handled shape.</p>
+<div id="determining_the_bounding_rectangle_of_th" class="listing">
+<p class="normal"><b>Listing 7-25.</b> <i>Determining the bounding rectangle of the handles</i></p>
+<code>QRectF HandleItem::boundingRect() const<br>
+{<br>
+  QPointF point = m_item-&gt;boundingRect().center();<br>
+<br>
+  switch( m_role )<br>
+  {<br>
+  case CenterHandle:<br>
+    return QRectF( point-QPointF(5, 5), QSize( 10, 10 ) );<br>
+  case RightHandle:<br>
+    point.setX( m_item-&gt;boundingRect().right() );<br>
+    return QRectF( point-QPointF(3, 5), QSize( 6, 10 ) );<br>
+  case TopHandle:<br>
+    point.setY( m_item-&gt;boundingRect().top() );<br>
+    return QRectF( point-QPointF(5, 3), QSize( 10, 6 ) );<br>
+  }<br>
+<br>
+  return QRectF();<br>
+}</code>
+</div>
+<p class="indent">The paint method shown in <a href="Chapter07.html#painting_the_handles">Listing 7-26</a> uses the <code>boundingRect</code> method to determine where and how to draw the different handles. The center handle is drawn as a circle, while the top and right handles are drawn as arrows pointing up and right.</p>
+<hr>
+<p class="normal"><b>Note</b> When painting the top and right handles, use the <code>center</code> method to find the center point of the bounding rectangle.</p>
+<hr>
+<div id="painting_the_handles" class="listing"><a id="page_225"></a>
+<p class="normal"><b>Listing 7-26.</b> <i>Painting the handles</i></p>
+<code>void HandleItem::paint( QPainter *paint,<br>
+                        const QStyleOptionGraphicsItem *option,<br>
+                        QWidget *widget )<br>
+{<br>
+  paint-&gt;setPen( m_color );<br>
+  paint-&gt;setBrush( m_color );<br>
+<br>
+  QRectF rect = boundingRect();<br>
+  QVector&lt;QPointF&gt; points;<br>
+<br>
+  switch( m_role )<br>
+  {<br>
+  case CenterHandle:<br>
+    paint-&gt;drawEllipse( rect );<br>
+    break;<br>
+  case RightHandle:<br>
+    points &lt;&lt; rect.center()+QPointF(3,0) &lt;&lt; rect.center()+QPointF(-3,-5)<br>
+           &lt;&lt; rect.center()+QPointF(-3,5);<br>
+    paint-&gt;drawConvexPolygon( QPolygonF(points) );<br>
+    break;<br>
+  case TopHandle:<br>
+    points &lt;&lt; rect.center()+QPointF(0,-3) &lt;&lt; rect.center()+QPointF(-5,3)<br>
+           &lt;&lt; rect.center()+QPointF(5,3);<br>
+    paint-&gt;drawConvexPolygon( QPolygonF(points) );<br>
+    break;<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">After you determine where to paint and then paint the handles, the next step is to wait for user interaction. <a href="Chapter07.html#handling_the_mouse_press_and_release_eve">Listing 7-27</a> shows the methods for handling mouse button events such as press and release.</p>
+<p class="indent">Because you set the <code>ItemIsMoveable</code> flag earlier in the constructor, all you have to do is update the <code>m_pressed</code> variable before passing the event on the <code>QGraphicsItem</code> handler.</p>
+<div id="handling_the_mouse_press_and_release_eve" class="listing">
+<p class="normal"><b>Listing 7-27.</b> <i>Handling the mouse press and release events</i></p>
+<code>void HandleItem::mousePressEvent( QGraphicsSceneMouseEvent *event )<br>
+{<br>
+  m_pressed = true;<br>
+  QGraphicsItem::mousePressEvent( event );<br>
+}<br>
+<br>
+void HandleItem::mouseReleaseEvent( QGraphicsSceneMouseEvent *event )<br>
+{<br>
+  m_pressed = false;<br>
+  QGraphicsItem::mouseReleaseEvent( event );<br>
+}</code>
+</div>
+<p class="indent"><a id="page_226"></a>When a user chooses to move a handle, the <code>itemChange</code> method is invoked. This method gives you a chance to react to (or even stop) a change (you can see the implementation in <a href="Chapter07.html#handling_changes_to_the_handle">Listing 7-28</a>). I cut out the parts of the listing that handle movements of the different roles (you will look at them later); the listing shows only the outer framework. Simply let programmatic movements and changes that aren't related to movements pass through to the corresponding <code>QGraphicsItem</code> method. If you run into a user-invoked position change, you act differently depending on the role of the handle. But first the actual movement is calculated by comparing the new position with the current position. The new position is passed through the <code>data</code> argument, while the current position is given from the <code>pos</code> method. You also determine the center point of the shape being handled because it is used when handling both the right and top handles.</p>
+<div id="handling_changes_to_the_handle" class="listing">
+<p class="normal"><b>Listing 7-28.</b> <i>Handling changes to the handle</i></p>
+<code>QVariant HandleItem::itemChange( GraphicsItemChange change,<br>
+                                 const QVariant &amp;data )<br>
+{<br>
+  if( change == ItemPositionChange &amp;&amp; m_pressed )<br>
+  {<br>
+    QPointF movement = data.toPoint() - pos();<br>
+    QPointF center = m_item-&gt;boundingRect().center();<br>
+<br>
+    switch( m_role )<br>
+    {<br>
+...<br>
+    }<br>
+  }<br>
+<br>
+  return QGraphicsItem::itemChange( change, data );<br>
+}</code>
+</div>
+<p class="indent"><a href="Chapter07.html#handle_movements_of_a_center_handle">Listing 7-29</a> shows how to handle a user-invoked position change of a center handle. Move the item that is being handled, <code>m_item</code>, by using a <code>moveBy</code> call. All the handles in the <code>m_handles</code> list are translated into place because any right and top handles must follow the shape they are handling.</p>
+<div id="handle_movements_of_a_center_handle" class="listing">
+<p class="normal"><b>Listing 7-29.</b> <i>Handle movements of a center handle</i></p>
+<code>    switch( m_role )<br>
+    {<br>
+    case CenterHandle:<br>
+      m_item-&gt;moveBy( movement.x(), movement.y() );<br>
+<br>
+      foreach( HandleItem *handle, m_handles )<br>
+        handle-&gt;translate( movement.x(), movement.y() );<br>
+<a id="page_227"></a>
+      break;<br>
+...<br>
+    }<br>
+<br>
+    return QGraphicsItem::itemChange( change, pos()+movement );</code>
+</div>
+<p class="indent">The top and right handles affect only themselves, which means that they do not use the <code>m_handles</code> list. The center point of the shape is not affected; the horizontal direction is not affected by the top handler nor is the vertical direction affected by the right handle.</p>
+<p class="indent"><a href="Chapter07.html#handling_movements_of_a_top_handle">Listings 7-30</a> and <a href="Chapter07.html#handling_movements_of_a_right_handle">7-31</a> show how the roles are handled. The listings look very similar; the only difference is the direction in which they act.</p>
+<p class="indent">Let's look at the details of <a href="Chapter07.html#handling_movements_of_a_top_handle">Listing 7-30</a>; that is, the top handle. The listing starts with an <code>if</code> clause that ensures that the shape will not be too small. If that's the case, pass the current position as the next position to the <code>QGraphicsItem itemChange</code> method.</p>
+<p class="indent">If the handled shape is big enough, continue by limiting the movement to the direction of the handle (you don't allow horizontal movement for the top handle). Then you translate the shape being handled so the center of the shape is the origo of the coordinate system. This is a preparation for the scaling, in which you scale the shape according to the movement. The shape is translated back into its original location, the switch statement is left, and the <code>QGraphicsItemitemChange</code> method is given the event, but with the direction of limited movement.</p>
+<div id="handling_movements_of_a_top_handle" class="listing">
+<p class="normal"><b>Listing 7-30.</b> <i>Handling movements of a top handle</i></p>
+<code>    switch( m_role )<br>
+    {<br>
+...<br>
+    case TopHandle:<br>
+      if( −2*movement.y() + m_item-&gt;sceneBoundingRect().height() &lt;= 5 )<br>
+        return QGraphicsItem::itemChange( change, pos() );<br>
+<br>
+      movement.setX( 0 );<br>
+<br>
+      m_item-&gt;translate( center.x(), center.y() );<br>
+      m_item-&gt;scale( 1, 1.0-2.0*movement.y()<br>
+                           /(m_item-&gt;sceneBoundingRect().height()) );<br>
+      m_item-&gt;translate( -center.x(), -center.y() );<br>
+      break;<br>
+    }<br>
+<br>
+    return QGraphicsItem::itemChange( change, pos()+movement );</code><br>
+</div>
+<div id="handling_movements_of_a_right_handle" class="listing">
+<p class="normal"><b>Listing 7-31.</b> <i>Handling movements of a right handle</i></p>
+<code>    switch( m_role )<br>
+    {<br>
+...<br>
+    case RightHandle:<br>
+<a id="page_228"></a>
+      if( 2*movement.x() + m_item-&gt;sceneBoundingRect().width() &lt;= 5 )<br>
+        return QGraphicsItem::itemChange( change, pos() );<br>
+<br>
+      movement.setY( 0 );<br>
+<br>
+      m_item-&gt;translate( center.x(), center.y() );<br>
+      m_item-&gt;scale( 1.0+2.0*movement.x()<br>
+                        /(m_item-&gt;sceneBoundingRect().width()), 1 );<br>
+      m_item-&gt;translate( -center.x(), -center.y() );<br>
+      break;<br>
+...<br>
+    }<br>
+<br>
+    return QGraphicsItem::itemChange ( change, pos()+movement );</code>
+</div>
+<h4 class="h4"><a id="printing"></a>Printing</h4>
+<p class="normal">Qt handles printers with the <code>QPrinter</code> class, which represents a print job to a specific printer and can be used as a paint device. This means that you can create a <code>QPainter</code> for painting onto a page represented through <code>QPrinter</code>. The printer object is then used to create new pages and tell the printer when the job is ready to be printed.</p>
+<p class="indent">Take a look at some of the properties available from the class:</p>
+<ul>
+<li><code>colorMode</code>: The printer prints in color or grayscale. Can be set to either <code>QPrinter::Color</code> or <code>QPrinter::GrayScale</code>.</li>
+<li><code>orientation</code>: The page can either be positioned as a landscape (<code>QPrinter::Landscape</code>) or as a portrait (<code>QPrinter::Portrait</code>).</li>
+<li><code>outputFormat</code>: The printer can print to the platform's native printing system (<code>QPrinter::Native</code>), a PDF document (<code>QPrinter::PdfFormat</code>), or a PostScript document (<code>QPrinter::PostScriptFormat</code>). When printing to a file, which is necessary when creating PDF and PostScript documents, you must set the file name for the document using <code>setOutputFileName</code>.</li>
+<li><code>pageSize</code>: The size of the paper according to different standards. Includes the paper sizes A4 (<code>QPrinter::A4</code>) and Letter (<code>QPrinter::Letter</code>), but supports many more. Refer to the Qt documentation for details.</li>
+</ul>
+<p class="indent">Let's continue with some actual printing.</p>
+<hr>
+<p class="normal"><b>Tip</b> When experimenting with printing, it can be really useful to have a virtual printer driver or to print to a file—it can save lots of paper.</p>
+<hr>
+<p class="normal"><a id="page_229"></a><b>Painting to the Printer</b></p>
+<p class="normal">The most straightforward way to draw to a printer is to create a <code>QPainter</code> to access the <code>QPrinter</code> object directly. To configure the <code>QPrinter</code> object, use a <code>QPrintDialog</code> standard dialog (see <a href="Chapter07.html#a_printer_selection_and_configuration_di">Figure 7-31</a>), in which the user can pick a printer and also make some basic choices about the print job.</p>
+<div id="a_printer_selection_and_configuration_di" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0731.jpg" alt="image" width="549" height="381">
+</div>
+</div>
+<p class="normal"><b>Figure 7-31.</b> <i>A printer selection and configuration dialog</i></p>
+<p class="indent"><a href="Chapter07.html#painting_to_a_qprinter_object">Listing 7-32</a> shows the source code of an entire application that creates a five-page printout. The top of one of the pages from the print job is shown in <a href="Chapter07.html#a_painted_page">Figure 7-32</a>.</p>
+<div id="a_painted_page" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0732.jpg" alt="image" width="549" height="134">
+</div>
+</div>
+<p class="normal"><b>Figure 7-32.</b> <i>A painted page</i></p>
+<p class="indent"><a href="Chapter07.html#painting_to_a_qprinter_object">Listing 7-32</a> starts by creating <code>QApplication</code>, <code>QPrinter</code>, and <code>QPrintDialog</code>. The dialog is then executed; if it is accepted, you'll do some printing.</p>
+<p class="indent">The actual printing is prepared as you create a <code>QPainter</code> referring to the printer object and set it to use a black pen. Then you use a <code>for</code> loop to create five pages. For each page, draw a rectangle and two lines forming a cross in the <code>QPrinterpageRect</code>. This is a rectangle representing the printable area (the rectangle representing the entire paper is called the <code>paperRect</code>).</p>
+<p class="indent"><a id="page_230"></a>Calculate the dimensions of the <code>textArea</code> rectangle. (This rectangle has one-half inch margins on the sides and at the top, and a full inch at the bottom.) The resolution method gives the number of dots per inch, so <code>0.5*printer.resolution()</code> results in the number of dots needed to cover one-half inch. You draw a frame around the text area and then print the page number as text inside the same rectangle.</p>
+<p class="indent">If you're not on the last page, that is, the page isn't equal to four, call the <code>newPage</code> method. This page prints the current page and creates a new blank page to continue painting on.</p>
+<div id="painting_to_a_qprinter_object" class="listing">
+<p class="normal"><b>Listing 7-32.</b> <i>Painting to a</i> <code>QPrinter</code> <i>object</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QPrinter printer;<br>
+  QPrintDialog dlg( &amp;printer );<br>
+  if( dlg.exec() == QDialog::Accepted )<br>
+  {<br>
+    QPainter painter( &amp;printer );<br>
+<br>
+    painter.setPen( Qt::black );<br>
+<br>
+    for( int page=0; page&lt;5; page++ )<br>
+    {<br>
+      painter.drawRect( printer.pageRect() );x<br>
+      painter.drawLine( printer.pageRect().topLeft(),<br>
+                        printer.pageRect().bottomRight() );<br>
+      painter.drawLine( printer.pageRect().topRight(),<br>
+                        printer.pageRect().bottomLeft() );<br>
+<br>
+      QRectF textArea(<br>
+          printer.pageRect().left()  +printer.resolution() * 0.5,<br>
+          printer.pageRect().top()   +printer.resolution() * 0.5,<br>
+          printer.pageRect().width() -printer.resolution() * 1.0,<br>
+          printer.pageRect().height()-printer.resolution() * 1.5 );<br>
+<br>
+      painter.drawRect( textArea );<br>
+<br>
+      painter.drawText( textArea, Qt::AlignTop | Qt::AlignLeft,<br>
+                        QString( "Page %1" ).arg( page+1 ) );<br>
+<br>
+      if( page != 4 )<br>
+        printer.newPage();<br>
+    }<br>
+  }<br>
+<br>
+  return 0;<br>
+}</code>
+</div>
+<p class="normal"><a id="page_231"></a><b>Rendering a Graphics Scene to the Printer</b></p>
+<p class="normal">It might be easy to draw to a printer using a painter object, but it doesn't help if your entire document is based on the graphics view framework. You must be able to render your scene to the printer, which is very easy to do.</p>
+<p class="indent">Compare <a href="Chapter07.html#rendering_a_graphics_scene_to_the_printe">Listing 7-33</a> with <a href="Chapter07.html#populating_a_scene_with_standard_shapes">Listing 7-19</a>. <a href="Chapter07.html#rendering_a_graphics_scene_to_the_printe">Listing 7-33</a> uses the same scene as <a href="Chapter07.html#populating_a_scene_with_standard_shapes">Listing 7-19</a>, but instead of showing it through a scene, it prints it to a printer using the <code>render</code> method. You can compare the outputs by comparing <a href="Chapter07.html#a_printed_graphics_scene">Figure 7-33</a> with <a href="Chapter07.html#a_graphics_view_with_some_standard_items">Figure 7-28</a>. As you can see, the scene is nicely represented both on paper and onscreen.</p>
+<div id="a_printed_graphics_scene" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0733.jpg" alt="image" width="370" height="142">
+</div>
+</div>
+<p class="normal"><b>Figure 7-33.</b> <i>A printed graphics scene</i></p>
+<p class="indent">The <code>render</code> method accepts four arguments. From left to right, they are a painter to render to, a destination rectangle, a source rectangle, and a flag determining how to scale. In the listing, the painter paints to a <code>QPrinter</code> object. The destination rectangle represents the entire printable area of the page, while the source is the entire scene. The scaling flag is set to <code>Qt::KeepAspectRatio</code>, which means that the scene's height-to-width ratio will be kept.</p>
+<p class="indent">If you want the scene to stretch to fill the destination rectangle, you can use <code>Qt::IgnoreAspectRatio</code>. Another alternative is to let the scene fill the page, but still keep its height-to-width ratio by passing <code>Qt::KeepAspectRatioByExpanding</code>. This means that the scene will continue beyond the available page unless the source and destination rectangles have the same portions.</p>
+<div id="rendering_a_graphics_scene_to_the_printe" class="listing">
+<p class="normal"><b>Listing 7-33.</b> <i>Rendering a graphics scene to the printer</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QGraphicsScene scene( QRect( −50, −50, 400, 200 ) );<br>
+<br>
+...<br>
+<br>
+  QPrinter printer;<br>
+  QPrintDialog dlg( &amp;printer );<br>
+  if( dlg.exec() )<br>
+  {<br>
+    QPainter painter( &amp;printer );<br>
+<a id="page_232"></a>
+    scene.render( &amp;painter, printer.pageRect(),<br>
+                  scene.sceneRect(), Qt::KeepAspectRatio );<br>
+  }<br>
+<br>
+  return 0;<br>
+}</code>
+</div>
+<h4 class="h4"><a id="opengl"></a>OpenGL</h4>
+<p class="normal">In the very first paragraph of this chapter I mentioned that the only alternative to using the <code>QPainter</code> class is to use OpenGL directly. Because OpenGL is a programming interface and falls outside the scope of this book, you'll look at how the hardware acceleration for OpenGL can be used without actually writing OpenGL code directly.</p>
+<p class="indent">A <code>QGraphicsView</code> is a viewport to a given scene, but it also contains a viewport widget that you can reach with the <code>viewport</code> property. If you provide the view with a <code>QGLWidget</code>, the graphics will be drawn using OpenGL.</p>
+<p class="indent">In <a href="Chapter07.html#transforming_the_five_items">Listing 7-21</a>, the required change is limited to the line highlighted in <a href="Chapter07.html#drawing_a_graphics_scene_using_opengl">Listing 7-34</a>. The code creates a new <code>QGLWidget</code> and sets it as the viewport. The <code>QGraphicsView</code> item takes ownership of its viewport, so you don't need to provide a parent pointer.</p>
+<div id="drawing_a_graphics_scene_using_opengl" class="listing">
+<p class="normal"><b>Listing 7-34.</b> <i>Drawing a graphics scene using OpenGL</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+...<br>
+<br>
+  QGraphicsView view;<br>
+  view.setScene( &amp;scene );<br>
+<code class="userinput">  view.setViewport( new QGLWidget() );</code><br>
+  view.show();<br>
+<br>
+  return app.exec();<br>
+}</code>
+</div>
+<p class="indent">To build a Qt application using OpenGL, you have to include the Qt OpenGL module by adding a line reading <code>QT += opengl</code> to your project file. The differences between drawing the scene using OpenGL or to a normal widget can't be seen—that's the point. However, on systems providing hardware acceleration of OpenGL the performance will be vastly improved.</p>
+<h3 class="h3"><a id="summary-012"></a>Summary</h3>
+<p class="indent">It's easy to draw using the <code>QPainter</code> class, which can be used to paint to various devices (a screen, images, pixmaps, and printers). By scaling, rotating, shearing, and translating, it is possible to draw almost any conceivable shape.</p>
+<p class="indent"><a id="page_233"></a>The <code>QPainter</code> class is the workhorse when creating custom widgets with painting logic. If you want to represent multiple independent shapes in a single document or widget, the graphics view framework is helpful. By creating a <code>QGraphicsScene</code> and populating it with <code>QGraphicsItem</code> objects, you can easily create an interactive canvas for the users. The scene can be shown using a <code>QGraphicsView</code> widget or just as easily printed using a <code>QPainter</code> for painting to a <code>QPrinter</code>.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 6: Creating Widgets</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter08.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 8: Files, Streams, and XML</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","licenseKey":"510f1a6865","applicationTime":110,"applicationID":"3275661,67267027,67267028","agent":"","beacon":"bam.nr-data.net","queueTime":8}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

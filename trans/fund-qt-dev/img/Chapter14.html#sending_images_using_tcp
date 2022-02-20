@@ -1,0 +1,1583 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter14.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter14.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter14.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter14.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 14: Networking - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter14.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter14.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter15.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html"/><meta name="description" content=" CHAPTER 14 Networking Qt supports IP-based connections made with both transmission control protocol (TCP) and user datagram protocol (UDP) sockets. Additionally, Qt supports client-side implementations of the HTTP and FTP ... "><meta property="og:title" content="CHAPTER 14: Networking" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 14: Networking" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 14 Networking Qt supports IP-based connections made with both transmission control protocol (TCP) and user datagram protocol (UDP) sockets. Additionally, Qt supports client-side implementations of the HTTP and FTP ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter14.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%2014%3A%20Networking&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter14.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter13.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 13: Databases</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter15.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 15: Building Qt Projects</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_403"></a><a id="networking"></a>CHAPTER 14<br><br>Networking</h2>
+<p class="normal"><big><b>Qt</b></big> supports IP-based connections made with both <i>transmission control protocol (TCP)</i> and <i>user datagram protocol (UDP)</i> sockets. Additionally, Qt supports client-side implementations of the HTTP and FTP protocols, which help with creating FTP clients and HTTP-based downloading. All these classes are kept in a separate networking module of Qt.</p>
+<p class="indent">This chapter starts with a discussion of client-side protocols and how they can be used for downloading data (the client side of the protocols is the code used when interacting with a server). You will also have a quick look at the <code>QUrl</code> class, which is used for handing URLs and their different parts.</p>
+<p class="indent">The latter half of the chapter discusses TCP and UDP socket classes and how you can implement both servers and clients.</p>
+<h3 class="h3"><a id="using_the_qtnetwork_module"></a>Using the QtNetwork Module</h3>
+<p class="normal">All Qt classes used for networking are a part of the <code>QtNetwork</code> module. This module is not available in all closed source editions of Qt, but it is included in the open source release. This means that if you plan to use it in your closed source Qt project, you must have access to the module first.</p>
+<p class="indent">After you make sure that	you have access to the module, you need to include it in your build process by telling QMake that you are using it (add the line reading <code>QT += network</code> to your project file).</p>
+<h3 class="h3"><a id="working_with_client_protocols"></a>Working with Client Protocols</h3>
+<p class="normal">The <code>QFtp</code> and <code>QHttp</code> classes encapsulate the FTP and HTTP protocols. Keep in mind that both classes implement only the client side of these protocols, so if you want to create an FTP server or a HTTP server, you have to turn to the TCP server and socket classes (introduced later in this chapter).</p>
+<p class="indent">Comparing FTP and HTTP shows that although both protocols work in the same problem domain, FTP is a slightly more complex protocol. For instance, the FTP protocol depends on a state in which a connection is established and then used before it is closed. HTTP, on the other hand, is stateless—it treats every request separately from the others.</p>
+<p class="indent">However, both protocols are used in the same manner from the viewpoint of an application developer. A protocol object is created (either a <code>QFtp</code> object or a <code>QHttp</code> object). When a method is called, the requested action is performed asynchronously, meaning that the <a id="page_404"></a>method returns only a request identifier, not the actual result. Instead your application has to wait for a signal that carries the result to be emitted.</p>
+<p class="indent">Let's have a look at how this works in practice, starting by developing an FTP client.</p>
+<h4 class="h4"><a id="creating_an_ftp_client"></a>Creating an FTP Client</h4>
+<p class="normal">With the <code>QFtp</code> class you'll implement a rudimentary FTP client that enables the user to connect to <code><a href="http://ftp://ftp.trolltech.com">ftp://ftp.trolltech.com</a></code>, navigate the directory tree, and download files. <a href="Chapter14.html#the_ftp_client_in_action">Figure 14-1</a> shows the application in action.</p>
+<p class="indent">The limitation of the functionality (being able to connect to only one host, for instance) simplifies the application, but still shows how the <code>QFtp</code> class is used.</p>
+<div id="the_ftp_client_in_action" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1401.jpg" alt="image" width="446" height="445">
+</div>
+</div>
+<p class="normal"><b>Figure 14-1.</b> <i>The FTP client in action</i></p>
+<p class="indent">The FTP client consists of a single dialog that contains a <code>QFtp</code> object used to interact with the FTP site. The <code>QFtp</code> object works asynchronously with the application, so when you issue a command, you have to wait for a signal to arrive—the application keeps running while the command is being carried out.</p>
+<p class="indent">The <code>QFtp</code> class has a whole range of signals that are emitted when different events occur, including the following:</p>
+<ul>
+<li><code>commandFinished(int request, bool error)</code>: This signal is emitted when a command has finished. The <code>request</code> argument can be used to identify the command, while <code>error</code> is <code>true</code> if an <code>error</code> has occurred during the execution of the command.</li>
+<li><code>listInfo(QUrlInfo info)</code>: This signal is emitted for each file or directory found when listing the contents of a directory.</li>
+<li><a id="page_405"></a><code>dataTransferProgress(qint64 done, qint64 total)</code>: This signal is emitted during uploads and downloads. The <code>done</code> argument reports how much of the <code>total</code> that has been completed. The <code>done</code> and <code>total</code> arguments can be scaled, so you can't depend on these arguments representing bytes. If the total size is unknown, <code>total</code> is zero.</li>
+</ul>
+<p class="indent">These three signals are connected from the <code>QFtp</code> object to three private slots of the dialog in the dialog's constructor. You can find the slots in the <code>ClientDialog</code> class shown in <a href="Chapter14.html#the_clientdialog_class_declaration">Listing 14-1</a> (their names start with <code>ftp</code>).</p>
+<p class="indent">The class also includes the <code>Ui::ClientDialog</code> class generated from Designer as well as five slots ending with <code>Clicked</code>; one for each push button seen in <a href="Chapter14.html#the_ftp_client_in_action">Figure 14-1</a>. The <code>selectionChanged</code> slot is connected to the <code>itemSelectionChanged</code> signal emitted from the <code>QListWidget</code> used for showing the contents of the current directory.</p>
+<p class="indent">The class also contains a <code>QFile</code> pointer used when downloading files and a <code>QStringList</code> that is used to tell files and directories apart.</p>
+<div id="the_clientdialog_class_declaration" class="listing">
+<p class="normal"><b>Listing 14-1.</b> <i>The</i> <code>ClientDialog</code> <i>class declaration</i></p>
+<code>class FtpDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  FtpDialog();<br>
+<br>
+private slots:<br>
+  void connectClicked();<br>
+  void disconnectClicked();<br>
+  void cdClicked();<br>
+  void upClicked();<br>
+  void getClicked();<br>
+<br>
+  void selectionChanged();<br>
+<br>
+  void ftpFinished(int,bool);<br>
+  void ftpListInfo(const QUrlInfo&amp;);<br>
+  void ftpProgress(qint64,qint64);<br>
+<br>
+private:<br>
+  void getFileList();<br>
+<br>
+  Ui::FtpDialog ui;<br>
+<br>
+  QFtp ftp;<br>
+  QFile *file;<br>
+<br>
+  QStringList files;<br>
+};</code></div>
+<p class="indent"><a id="page_406"></a>Let's have a look at the application, beginning with the user starting the application and clicking the Connect button.</p>
+<p class="normal"><b>Setting up the Dialog</b></p>
+<p class="normal">The <code>ClientDialog</code> is created and shown from the <code>main</code> function (the dialog's constructor is shown in <a href="Chapter14.html#the_clientdialog_constructor_initializes">Listing 14-2</a>). It initializes the <code>QFile</code> pointer to <code>null</code>, configures the user interface, and makes the necessary connections. Then it disables all buttons except the Connect button.</p>
+<p class="indent">Throughout the application, the buttons will be enabled and disabled to reflect the available options. It is important to keep the buttons' status in sync with the <code>QFtp</code> object because there are no checks to see whether an action makes sense in the slots acting on the buttons being clicked.</p>
+<div id="the_clientdialog_constructor_initializes" class="listing">
+<p class="normal"><b>Listing 14-2.</b> <i>The</i> <code>ClientDialog</code> <i>constructor initializes, connects, and makes sure that the right buttons are enabled and that the rest are disabled.</i></p>
+<code>FtpDialog::FtpDialog() : QDialog()<br>
+{<br>
+  file = 0;<br>
+<br>
+  ui.setupUi( this );<br>
+<br>
+  connect( ui.connectButton, SIGNAL(clicked()),<br>
+           this, SLOT(connectClicked()) );<br>
+  connect( ui.disconnectButton, SIGNAL(clicked()),<br>
+           this, SLOT(disconnectClicked()) );<br>
+  connect( ui.cdButton, SIGNAL(clicked()),<br>
+           this, SLOT(cdClicked()) );<br>
+  connect( ui.upButton, SIGNAL(clicked()),<br>
+           this, SLOT(upClicked()) );<br>
+  connect( ui.getButton, SIGNAL(clicked()),<br>
+           this, SLOT(getClicked()) );<br>
+<br>
+  connect( ui.dirList, SIGNAL(itemSelectionChanged()),<br>
+           this, SLOT(selectionChanged()) );<br>
+<br>
+  connect( &amp;ftp, SIGNAL(commandFinished(int,bool)),<br>
+           this, SLOT(ftpFinished(int,bool)) );<br>
+  connect( &amp;ftp, SIGNAL(listInfo(QUrlInfo)),<br>
+           this, SLOT(ftpListInfo(QUrlInfo)) );<br>
+  connect( &amp;ftp, SIGNAL(dataTransferProgress(qint64,qint64)),<br>
+           this, SLOT(ftpProgress(qint64,qint64)) );<br>
+<br>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+}</code></div>
+<p class="normal"><a id="page_407"></a><b>Connecting to the FTP Server and Listing the Files</b></p>
+<p class="normal">When the dialog is constructed, it is being shown from the <code>main</code> function before the <code>event</code> loop is started. When the user finally decides to click the Connect button, the event will be caught by the <code>QPushButton</code> object that emits a signal that is connected to the <code>connectClicked</code> slot.</p>
+<p class="indent">The slot, shown in <a href="Chapter14.html#connecting_to_the_host_when_the_connect">Listing 14-3</a>, calls the <code>QFtp</code> object accordingly. It uses the <code>connectToHost(QString)</code> to connect to <code><a href="http://ftp.trolltech.com">ftp.trolltech.com</a></code>. Before doing this, the Connect button is disabled so that the user can't try to connect multiple times. The text of the <code>statusLabel</code> is updated to keep the user informed about what is happening.</p>
+<p class="indent">All calls to the <code>QFtp</code> objects are asynchronous, so the application can continue operating while they are processed. You can tell when the command is done because it emits a signal when it finishes.</p>
+<div id="connecting_to_the_host_when_the_connect" class="listing">
+<p class="normal"><b>Listing 14-3.</b> <i>Connecting to the host when the Connect button has been clicked</i></p>
+<code>void FtpDialog::connectClicked()<br>
+{<br>
+  ui.connectButton-&gt;setEnabled( false );<br>
+<br>
+  ftp.connectToHost( "ftp.trolltech.com" );<br>
+  ui.statusLabel-&gt;setText( tr("Connecting to host...") );<br>
+}</code></div>
+<p class="indent">When the <code>connectToHost</code> call is complete, the <code>QFtp</code> object emits a <code>commandFinished(int,bool)</code> signal. The signal is connected to the <code>ftpFinished</code> slot of the class. The relevant parts of the slot are shown in <a href="Chapter14.html#the_ftpfinished_slot_handles_connecttoho">Listing 14-4</a>.</p>
+<p class="indent">The slot is divided into two <code>switch</code> statements. The first one handles failures (that is, cases when <code>error</code> is <code>true</code>); the second one handles commands that have been successfully completed.</p>
+<p class="indent">It is possible to identify issued commands from the <code>request</code> argument given to the slot. All calls to the <code>QFtp</code> object return a request identifier, and you can tell which command has finished by matching it to the <code>request</code> argument. In the slot shown in the listing there is a different approach. Because you issue only one command of each type at a time, you can rely on the <code>currentCommand</code> method, which returns an enumerated value, indicating which command the slot refers to.</p>
+<p class="indent">In the case of the Connect button being clicked, the command finishing is a <code>ConnectToHost</code> command. If the call fails, you inform the user by using a message box and then re-enable to the Connect button so the user can try again. If the command completes successfully, you can continue the connection process by calling the <code>login</code> method. It simply issues a new command, resulting in a new call to the slot. Because the process involves several asynchronous commands, the flow can be somewhat complex to comprehend. You can view it as a flow chart in <a href="Chapter14.html#connecting_to_an_ftp_site_consists_of_th">Figure 14-2</a>.</p>
+<div id="the_ftpfinished_slot_handles_connecttoho" class="listing">
+<p class="normal"><b>Listing 14-4.</b> <i>The</i> <code>ftpFinished</code> <i>slot handles</i> <code>ConnectToHost</code>, <code>Login</code>, <code>Close</code>, <i>and</i> <code>List</code>.</p>
+<code><a id="page_408"></a>
+void FtpDialog::ftpFinished( int request, bool error )<br>
+{<br>
+  // Handle errors depending on the command causing it<br>
+  if( error )<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+      case QFtp::ConnectToHost:<br>
+        QMessageBox::warning( this, tr("Error"), tr("Failed to connect to host.") );<br>
+        ui.connectButton-&gt;setEnabled( true );<br>
+<br>
+        break;<br>
+      case QFtp::Login:<br>
+        QMessageBox::warning( this, tr("Error"), tr("Failed to login.") );<br>
+        ui.connectButton-&gt;setEnabled( true );<br>
+<br>
+        break;<br>
+      case QFtp::List:<br>
+        QMessageBox::warning( this, tr("Error"),<br>
+          tr("Failed to get file list.\nClosing connection.") )<br>
+        ftp.close();<br>
+<br>
+        break;<br>
+...<br>
+    }<br>
+<br>
+    ui.statusLabel-&gt;setText( tr("Ready.") );<br>
+  }<br>
+  // React to the current command and issue<br>
+  // more commands or update the user interface<br>
+  else<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+      case QFtp::ConnectToHost:<br>
+        ftp.login();<br>
+<br>
+        break;<br>
+      case QFtp::Login:<br>
+        getFileList();<br>
+<br>
+        break;<br>
+      case QFtp::Close:<br>
+        ui.connectButton-&gt;setEnabled( true );<br>
+        getFileList();<br>
+<a id="page_409"></a>
+<br>
+        break;<br>
+      case QFtp::List:<br>
+        ui.disconnectButton-&gt;setEnabled( true );<br>
+        ui.upButton-&gt;setEnabled( true );<br>
+        ui.statusLabel-&gt;setText( tr("Ready.") );<br>
+<br>
+        break;<br>
+...<br>
+    }<br>
+  }<br>
+}</code>
+</div><br><br>
+<div id="connecting_to_an_ftp_site_consists_of_th" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1402.jpg" alt="image" width="549" height="703">
+</div>
+</div>
+<p class="normal"><b>Figure 14-2.</b> <i>Connecting to an FTP site consists of the steps connect to host, log in, and list.</i></p>
+<p class="indent"><a id="page_410"></a>When the login command is finished, you handle an error by informing the user and re-enabling the Connect button. A successful command triggers a call to the <code>getFileList</code> method, which retrieves the contents of the current directory. You can see the implementation in <a href="Chapter14.html#getting_a_list_of_directory_items_by_cal">Listing 14-5</a>.</p>
+<p class="indent">The <code>getFileList</code> method disables all buttons (remember that you are connected, so the Connect button is already disabled). It then clears the list widget <code>dirList</code> and the <code>QStringList</code> files before calling the <code>QFtp</code> object to <code>list</code> the contents of the current directory.</p>
+<p class="indent">You check that the start of the FTP connection is <code>LoggedIn</code> because you call this method when you want the <code>dirList</code> to be cleared (when disconnecting, for example).</p>
+<p class="indent">When <code>QFtp::list</code> has been called, the <code>listInfo</code> signal is emitted once for each directory entry. This signal is connected to the <code>ftpListInfo</code> slot shown below <code>getFileList</code> in <a href="Chapter14.html#getting_a_list_of_directory_items_by_cal">Listing 14-5</a>. <code>QUrlInfo</code> contains lots of interesting information about each item, but you're interested only in the <code>name</code> property and to know whether the item is a file. If it is a file, add the name to the <code>files</code> list (you'll use this list later on to decide whether the Get File button or the Change Directory button should be enabled).</p>
+<div id="getting_a_list_of_directory_items_by_cal" class="listing">
+<p class="normal"><b>Listing 14-5.</b> <i>Getting a list of directory items by calling</i> <code>list</code> <i>and then listening to</i> <code>listInfo</code> <i>signal</i></p>
+<code>void FtpDialog::getFileList()<br>
+{<br>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ui.dirList-&gt;clear();<br>
+  files.clear();<br>
+<br>
+  if( ftp.state() == QFtp::LoggedIn )<br>
+    ftp.list();<br>
+}<br>
+<br>
+void FtpDialog::ftpListInfo( const QUrlInfo&amp;info )<br>
+{<br>
+  ui.dirList-&gt;addItem( info.name() );<br>
+  if( info.isFile() )<br>
+    files &lt;&lt; info.name();<br>
+}</code></div>
+<p class="indent">When the <code>list</code> command finishes, it emits a signal caught by the <code>ftpFinished</code> slot. The relevant parts of the <code>switch</code> statements can be seen in <a href="Chapter14.html#the_ftpfinished_slot_handles_connecttoho">Listing 14-4</a>. As you can see, the FTP connection is closed if a <code>list</code> command fails. If it succeeds, the Disconnect and Up buttons are enabled.</p>
+<p class="indent">When the connection has been closed, the <code>ftpFinished</code> slot is called again, and <code>QFtp::Close</code> will be the current command. When the <code>close</code> command has successfully finished, enable the Connect button and call <code>getFileList</code> method. Looking at the method in <a href="Chapter14.html#getting_a_list_of_directory_items_by_cal">Listing 14-5</a> you see that because the <code>QFtp</code> command is no longer <code>LoggedIn</code>, the result from the call is that the list of directory entries is cleared.</p>
+<p class="normal"><a id="page_411"></a><b>Disconnecting from the FTP Server</b></p>
+<p class="normal">When encountering a failing <code>list</code> command, call the <code>close</code> method on the <code>QFtp</code> object, which closes the connection. When users want to disconnect, they click the Disconnect button, which results in a call to the <code>disconnectClicked</code> slot shown in <a href="Chapter14.html#the_disconnectclicked_slot_is_triggered">Listing 14-6</a>.</p>
+<p class="indent">The slot simply disables all the buttons so the user can't do anything while the connection is being closed. It then calls the <code>close</code> method. When the <code>close</code> call has finished, the <code>ftpFinished</code> slot will enable the Connect button and clear the list of directory entries.</p>
+<div id="the_disconnectclicked_slot_is_triggered" class="listing">
+<p class="normal"><b>Listing 14-6.</b> <i>The</i> <code>disconnectClicked</code> <i>slot is triggered when the user clicks the Disconnect button.</i></p>
+<code>void FtpDialog::disconnectClicked()<br>
+{<br>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ftp.close();<br>
+}</code></div>
+<p class="normal"><b>File or Directory?</b></p>
+<p class="normal">When the FTP connection is established, the Disconnect and Up buttons are enabled, and the <code>dirList</code> widget contains a list of directory entries. To be able to download a file or navigate more deeply into the directory tree, the user must select an item in the <code>dirList</code>. When this happens, the <code>itemSelectionChanged</code> signal is emitted from the <code>QListWidget</code>, and the <code>selectionChanged</code> slot is invoked. The slot is shown in <a href="Chapter14.html#in_the_selectionchanged_slot_you_ensure">Listing 14-7</a>.</p>
+<p class="indent">Determine whether the current selection in the slot consists of one item or no items. The <code>QListWidget</code>'s <code>selectionMode</code> property has been set to <code>SingleSelection</code>, so you can't run into any other selection scenarios. If no items are selected, both the Get File and Change Directory buttons are disabled.</p>
+<p class="indent">If one item is selected, see whether the text of the selected item is found in the file <code>QStringList</code>. If it is, the Get File button is enabled; otherwise, the Change Directory button is enabled.</p>
+<div id="in_the_selectionchanged_slot_you_ensure" class="listing">
+<p class="normal"><b>Listing 14-7.</b> <i>In the</i> <code>selectionChanged</code> <i>slot you ensure that the right buttons are enabled.</i></p>
+<code>void FtpDialog::selectionChanged()<br>
+{<br>
+  if( !ui.dirList-&gt;selectedItems().isEmpty() )<br>
+  {<br>
+    if( files.indexOf( ui.dirList-&gt;selectedItems()[0]-&gt;text() ) == −1 )<br>
+    {<br>
+      ui.cdButton-&gt;setEnabled( ui.disconnectButton-&gt;isEnabled() );<br>
+      ui.getButton-&gt;setEnabled( false );<br>
+    }<br>
+    else<br>
+<a id="page_412"></a>
+    {<br>
+      ui.cdButton-&gt;setEnabled( false );<br>
+      ui.getButton-&gt;setEnabled( ui.disconnectButton-&gt;isEnabled() );<br>
+    }<br>
+  }<br>
+  else<br>
+  {<br>
+    ui.cdButton-&gt;setEnabled( false );<br>
+    ui.getButton-&gt;setEnabled( false );<br>
+  }<br>
+}</code></div>
+<p class="normal"><b>Navigating the FTP Server Directory Structure</b></p>
+<p class="normal">When users want to move between the directories of the FTP site, they use the Up and Change Directory buttons. The latter is available to the user only if a directory is selected in the directory contents list.</p>
+<p class="indent">Clicking these buttons results in one of the slots shown in <a href="Chapter14.html#the_slots_for_the_up_and_change_director">Listing 14-8</a> being called. Both slots work in exactly the same way: the buttons are disabled, the <code>cd</code> method of the <code>QFtp</code> object is called, and the status text is updated. The difference is that when the Up button is pressed, the <code>cd</code> call attempts to move to the parent directory (..), while the Change Directory button attempts to move to a named subdirectory.</p>
+<div id="the_slots_for_the_up_and_change_director" class="listing">
+<p class="normal"><b>Listing 14-8.</b> <i>The slots for the Up and Change Directory buttons</i></p>
+<code>void FtpDialog::cdClicked()<br>
+{<br>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ftp.cd( ui.dirList-&gt;selectedItems()[0]-&gt;text() ;)<br>
+  ui.statusLabel-&gt;setText( tr("Changing directory...") );<br>
+}<br>
+<br>
+void FtpDialog::upClicked()<br>
+{<br>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ftp.cd("..");<br>
+  ui.statusLabel-&gt;setText( tr("Changing directory...") );<br>
+}</code></div>
+<p class="indent"><a id="page_413"></a>Because both buttons result in a call to the same method in the <code>QFtp</code> object, both methods end up in the same <code>switch</code> case in the <code>ftpFinished</code> slot. (The relevant parts of the source code are shown in <a href="Chapter14.html#when_a_cd_call_is_finished_comma_the_con">Listing 14-9</a>.) The resulting action is the same, regardless of whether the <code>cd</code> call failed or succeeded—<code>getFileList</code> is called. This extra call updates the directory contents list and enables the relevant buttons. If the <code>cd</code> command fails because you were logged out or because the connection failed, it fails the <code>getFileList</code> call as well. This failure leads to closing the FTP connection (refer to <a href="Chapter14.html#the_ftpfinished_slot_handles_connecttoho">Listing 14-4</a>).</p>
+<div id="when_a_cd_call_is_finished_comma_the_con" class="listing">
+<p class="normal"><b>Listing 14-9.</b> <i>When a</i> <code>cd</code> <i>call is finished, the contents of the current directory will be updated.</i></p>
+<code>void FtpDialog::ftpFinished( int request, bool error )<br>
+{<br>
+  if( error )<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+...<br>
+      case QFtp::Cd:<br>
+        QMessageBox::warning( this, tr("Error"),<br>
+                              tr("Failed to change directory.") );<br>
+        getFileList();<br>
+<br>
+        break;<br>
+...<br>
+    }<br>
+<br>
+    ui.statusLabel-&gt;setText( tr("Ready.") );<br>
+  }<br>
+  else<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+...<br>
+      case QFtp::Cd:<br>
+        getFileList();<br>
+<br>
+        break;<br>
+...<br>
+    }<br>
+  }<br>
+}</code></div>
+<p class="indent">If the <code>getFileList</code> call fails, the FTP connection is closed, as shown in <a href="Chapter14.html#the_ftpfinished_slot_handles_connecttoho">Listing 14-4</a>. This means that if an invalid <code>cd</code> call would make the FTP connection invalid, the connection is closed, which is the safest way to get out of such a situation.</p>
+<p class="normal"><a id="page_414"></a><b>Downloading Files</b></p>
+<p class="normal">If a file is selected in the directory contents list, the Get File button is enabled. Clicking this button causes the <code>getClicked</code> slot to be called. The slot shown in <a href="Chapter14.html#starting_a_download_and_showing_progress">Listing 14-10</a> implements a three-stage operation. First, it asks what file name to use to save the file being downloaded by using <code>QFileDialog::getSaveFileName</code>. If it gets a valid file name, it attempts to create a <code>QFile</code> object for it and opens it for writing. If that succeeds, it calls the <code>get</code> method of the <code>QFtp</code> object, passing the file name and <code>QFile</code> object as arguments.</p>
+<p class="indent">The slot also disables all buttons before calling <code>get</code>. After it has called <code>get</code>, it updates the status text.</p>
+<p class="indent">The <code>get</code> method starts a download operation of the specified file. The resulting data is saved to the given <code>QIODevice</code> (superclass of <code>QFile</code>). While a <code>QFtp</code> object performs a download, the progress is reported through a series of <code>dataTransferProgress</code> signals connected to the <code>ftpProgress</code> slot (see <a href="Chapter14.html#starting_a_download_and_showing_progress">Listing 14-10</a> after the source code for the <code>getClicked</code> slot).</p>
+<p class="indent">The arguments given to <code>ftpProgress</code> do not necessarily represent bytes; they show only their relative size. In some situations, the size of the file being downloaded is unknown. Then the <code>total</code> argument is zero. If the size is known, the slot updates the status label to show the progress.</p>
+<hr>
+<p class="normal"><b>Note</b>  The <code>dataTransferProgress</code> is emitted both when downloading and uploading. When using <code>put</code> to upload a file, you can listen to the same signal as when using <code>get</code> to download when you want to show progress.</p>
+<hr>
+<div id="starting_a_download_and_showing_progress" class="listing">
+<p class="normal"><b>Listing 14-10.</b> <i>Starting a download and showing progress</i></p>
+<code>void FtpDialog::getClicked()<br>
+{<br>
+  QString fileName =<br>
+    QFileDialog::getSaveFileName( this, tr("Get File"),<br>
+                                  ui.dirList-&gt;selectedItems()[0]-&gt;text() );<br>
+  if( fileName.isEmpty() )<br>
+    return;<br>
+<br>
+  file = new QFile( fileName, this );<br>
+  if( !file-&gt;open( QIODevice::WriteOnly|QIODevice::Truncate ) )<br>
+  {<br>
+    QMessageBox::warning( this, tr("Error"),<br>
+      tr("Failed to open file %1 for writing.").arg( fileName ) );<br>
+<br>
+    delete file;<br>
+    file = 0;<br>
+<br>
+    return;<br>
+  }<br>
+<a id="page_415"></a>
+  ui.disconnectButton-&gt;setEnabled( false );<br>
+  ui.cdButton-&gt;setEnabled( false );<br>
+  ui.upButton-&gt;setEnabled( false );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ftp.get( ui.dirList-&gt;selectedItems()[0]-&gt;text(), file );<br>
+  ui.statusLabel-&gt;setText( tr("Downloading file...") );<br>
+}<br>
+<br>
+void FtpDialog::ftpProgress( qint64 done, qint64 total )<br>
+{<br>
+  if( total == 0 )<br>
+    return;<br>
+<br>
+  ui.statusLabel-&gt;setText(<br>
+    tr("Downloading file... (%1%)")<br>
+      .arg( QString::number( done*100.0/total, 'f', 1 ) ) );<br>
+}</code></div>
+<p class="indent">When the <code>get</code> command finishes, it is handled by the <code>ftpFinished</code> slot (the code is shown in <a href="Chapter14.html#taking_care_of_the_file_when_the_downloa">Listing 14-11</a>). When the download fails (and even when it succeeds), the <code>QFile</code> object is closed and deleted, the buttons are re-enabled, and the status label is updated. The call to <code>selectionUpdated</code> ensures that the buttons are enabled according to the current selection in the directory contents list. This means that either Get File or Change Directory is enabled, or neither is enabled (but not both).</p>
+<p class="indent">The difference between a failed and a successful download is that when the download fails, you call the <code>remove</code> method on the <code>QFile</code> object before deleting it. This removes the file from the disk so that you don't leave a half-finished file for the user.</p>
+<div id="taking_care_of_the_file_when_the_downloa" class="listing">
+<p class="normal"><b>Listing 14-11.</b> <i>Taking care of the file when the download has completed</i></p>
+<code>void FtpDialog::ftpFinished( int request, bool error )<br>
+{<br>
+  if( error )<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+...<br>
+      case QFtp::Get:<br>
+        QMessageBox::warning( this, tr("Error"), tr("Failed to get file?") );<br>
+        file-&gt;close();<br>
+        file-&gt;remove();<br>
+<br>
+        delete file;<br>
+        file = 0;<br>
+<a id="page_416"></a>
+        ui.disconnectButton-&gt;setEnabled( true );<br>
+        ui.upButton-&gt;setEnabled( true );<br>
+        selectionChanged();<br>
+<br>
+        break;<br>
+    }<br>
+<br>
+    ui.statusLabel-&gt;setText( tr("Ready.") );<br>
+  }<br>
+  else<br>
+  {<br>
+    switch( ftp.currentCommand() )<br>
+    {<br>
+...<br>
+      case QFtp::Get:<br>
+        file-&gt;close();<br>
+<br>
+        delete file;<br>
+        file = 0;<br>
+<br>
+        ui.disconnectButton-&gt;setEnabled( true );<br>
+        ui.upButton-&gt;setEnabled( true );<br>
+        selectionChanged();<br>
+<br>
+        ui.statusLabel-&gt;setText( tr("Ready.") );<br>
+<br>
+        break;<br>
+    }<br>
+  }<br>
+}</code></div>
+<p class="normal"><b>Putting It Together</b></p>
+<p class="normal">By combining the dialog shown in <a href="Chapter14.html#the_ftp_client_in_action">Figure 14-1</a> and the preceding listings with a simple <code>main</code> function showing the dialog, you have a complete FTP client. It is limited to one domain and can only navigate around the directories and perform downloading, but all the needed mechanisms are in place.</p>
+<p class="indent">To build the client, you must create a project file—preferably by using <code>qmake -project QT+=network</code>. Then you can build your application as usual using <code>qmake</code> and <code>make</code>.</p>
+<p class="normal"><b>Other Applications of the</b> <code>QFtp</code> <b>Class</b></p>
+<p class="normal">The <code>QFtp</code> class can be used for tasks other than building FTP client applications. Because the <code>get</code> method downloads to a <code>QIODevice</code>, you can use it to download data directly into a <code>QBuffer</code> device and show it (compare this to the way you stored images in a <code>BLOB</code> column in <a href="Chapter13.html#databases">Chapter 13</a>).</p>
+<p class="indent">It is also possible to upload data using the <code>put</code> method, which is the opposite of the <code>get</code> method. When uploading and downloading, it is important to control whether the FTP <a id="page_417"></a>connection communicates in binary mode or ASCII mode by using a third optional argument to the <code>get(QString,QIODevice*,TransferType)</code> and <code>put(QIODevice*,QString,TransferType)</code> methods. The transfer type can be either <code>QFtp::Binary</code> or <code>QFtp::Ascii</code>.</p>
+<p class="indent">If you are missing a method in the <code>QFtp</code> class, you can send any command understood by the FTP server using the raw command interface with the <code>rawCommand</code> method. If you expect a reply from a raw command, you can listen to the <code>rawCommandReply(int,QString)</code> signal.</p>
+<hr>
+<p class="normal"><b>Note</b>  It is recommended that you use the existing commands whenever possible.</p>
+<hr>
+<h4 class="h4"><a id="creating_an_http_client"></a>Creating an HTTP Client</h4>
+<p class="normal">The HTTP protocol works like the FTP protocol, but there are differences. The most obvious one is that when working with an FTP connection you connect, move around, and perform actions. When working with HTTP, you perform one request at a time, and the requests themselves are more or less independent.</p>
+<p class="indent">When it comes to similarities, both the <code>QFtp</code> and <code>QHttp</code> classes are asynchronous. They also solve similar problems—they move data across a network.</p>
+<p class="normal"><b>Parsing and Validating URLs</b></p>
+<p class="normal">Because the Web is driven by URLs, applications need to be able to properly parse these URLs into their appropriate components to put the necessary communicative commands to work. This is where <code>QUrl</code> enters the picture; it makes it easy to validate a URL and break it into the components that you need.</p>
+<p class="indent">Let's start by having a look at <a href="Chapter14.html#a_url_and_its_parts">Figure 14-3</a>, which shows a complex URL and the different parts that it comprises. The names for the parts in the figure correspond to properties of the <code>QUrl</code> class.</p>
+<div id="a_url_and_its_parts" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1403.jpg" alt="image" width="549" height="192">
+</div>
+</div>
+<p class="normal"><b>Figure 14-3.</b> <i>A URL and its parts</i></p>
+<p class="indent">When you receive a URL from the user, you can feed it to the <code>QUrl</code> constructor and then ask the <code>isValid</code> method whether the URL can be interpreted. This is what happens in the <code>getClicked</code> slot shown in <a href="Chapter14.html#parsing_the_url_and_splitting_it_into_it">Listing 14-12</a>. The dialog is shown in action in <a href="Chapter14.html#the_httpdialog_as_shown_to_the_user">Figure 14-4</a>. The URL is entered into <code>a QLineEdit</code> widget and is passed to the constructor of the <code>QUrl</code> object. The <a id="page_418"></a>second constructor arguments tell the <code>QUrl</code> class to be tolerant. The alternative to being tolerant is strict, and this mode is set by passing the <code>QUrl::StrictMode</code> value to the constructor. The tolerant mode compensates for common mistakes encountered in URLs entered by users.</p>
+<div id="the_httpdialog_as_shown_to_the_user" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1404.jpg" alt="image" width="542" height="444">
+</div>
+</div>
+<p class="normal"><b>Figure 14-4.</b> <i>The</i> <code>HttpDialog</code> <i>as shown to the user</i></p>
+<p class="indent">If the URL is found to be invalid, the <code>QLabel</code> widgets used to show the different parts of the URL are set to show no text. Then a dialog is shown before the method is left. If a valid URL has been entered, the <code>QLabel</code> widgets are updated with the URL sections.</p>
+<p class="indent">When updating the labels, the <code>port</code> property gets special treatment. If the user hasn't specified a port, the <code>port</code> property is set to −1, which means that the user wants to use the default port for HTTP communications: port 80.</p>
+<div id="parsing_the_url_and_splitting_it_into_it" class="listing">
+<p class="normal"><b>Listing 14-12.</b> <i>Parsing the URL and splitting it into its individual parts</i></p>
+<code>void HttpDialog::getClicked()<br>
+{<br>
+  QUrl url( ui.requestEdit-&gt;text(), QUrl::TolerantMode );<br>
+<br>
+  if( !url.isValid() )<br>
+  {<br>
+    ui.hostLabel-&gt;clear();<br>
+    ui.pathLabel-&gt;clear();<br>
+    ui.portLabel-&gt;clear();<br>
+    ui.userLabel-&gt;clear();<br>
+    ui.passwordLabel-&gt;clear();<br>
+<a id="page_419"></a>
+    QMessageBox::warning( this, tr("Invalid URL"),<br>
+      tr("The URL '%1' is invalid.").arg( ui.requestEdit-&gt;text() ) );<br>
+<br>
+    return;<br>
+  }<br>
+<br>
+  ui.hostLabel-&gt;setText( url.host() );<br>
+  ui.pathLabel-&gt;setText( url.path() );<br>
+  ui.portLabel-&gt;setText( QString::number(url.port()==-1 ? 80 : url.port()) );<br>
+  ui.userLabel-&gt;setText( url.userName() );<br>
+  ui.passwordLabel-&gt;setText( url.password() );<br>
+...</code></div>
+<p class="indent">The source code from <a href="Chapter14.html#parsing_the_url_and_splitting_it_into_it">Listing 14-12</a> is a part of the <code>HttpDialog</code> class shown in <a href="Chapter14.html#the_httpdialog_class_declaration">Listing 14-13</a>.</p>
+<p class="indent">The dialog is used by the user to download files using HTTP. The user enters a URL in the text field at the top and clicks the Get button. The button is connected to the <code>getClicked</code> slot shown previously. When the URL has been validated, it is used to download the file to which it points. While the file is being downloaded, the signals emitted from the <code>QHttp</code> object are listed in the list widget at the bottom of the dialog.</p>
+<p class="indent">Each of the slots starting with <code>http</code> is used for listening to the different signals that the <code>QHttp</code> object emits while working. The user interface itself has been created in Designer and is included as the <code>ui</code> member variable. Finally, a <code>QFile</code> pointer and <code>QHttp</code> object are used when downloading data.</p>
+<div id="the_httpdialog_class_declaration" class="listing">
+<p class="normal"><b>Listing 14-13.</b> <i>The</i> <code>HttpDialog</code> <i>class declaration</i></p>
+<code>class HttpDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+public:<br>
+  HttpDialog();<br>
+<br>
+private slots:<br>
+  void getClicked();<br>
+<br>
+  void httpStateChanged(int);<br>
+  void httpDataSent(int,int);<br>
+  void httpDataReceived(int,int);<br>
+  void httpHeaderDone(const QHttpResponseHeader&amp;);<br>
+  void httpDataDone(const QHttpResponseHeader&amp;);<br>
+  void httpStarted(int);<br>
+  void httpFinished(int,bool);<br>
+  void httpDone(bool);<br>
+<br>
+private:<br>
+  Ui::HttpDialog ui;<br>
+<a id="page_420"></a>
+  QHttp http;<br>
+  QFile *file;<br>
+};</code></div>
+<p class="indent">The code shown in <a href="Chapter14.html#parsing_the_url_and_splitting_it_into_it">Listing 14-12</a> manages the top half of the dialog. The interesting stuff happens in the lower half of the dialog (discussed next).</p>
+<p class="normal"><b>Dialog Internals</b></p>
+<p class="normal">The code for handling the URL handles the upper half of the dialog: the Request and URL Components group boxes and their contents (refer to <a href="Chapter14.html#the_httpdialog_as_shown_to_the_user">Figure 14-4</a>). Before you look at the lower half of the same dialog, the HTTP Status group box, let's have a look at its constructor (shown in <a href="Chapter14.html#initializing_variables_and_the_user_inte">Listing 14-14</a>). The constructor has three tasks: initialize the local variables (that is, <code>file</code>), call <code>setupUi</code> to create the user interface designed with Designer, and make all the connections needed to make the dialog work.</p>
+<p class="indent">The connections can be divided into two groups. The <code>clicked</code> signal from the <code>getButton</code> connects a user interaction to a slot; the rest of the connections connect HTTP events to slots.</p>
+<div id="initializing_variables_and_the_user_inte" class="listing">
+<p class="normal"><b>Listing 14-14.</b> <i>Initializing variables and the user interface before creating all connections</i></p>
+<code>HttpDialog::HttpDialog() : QDialog()<br>
+{<br>
+  file = 0;<br>
+<br>
+  ui.setupUi( this );<br>
+<br>
+  connect( ui.getButton, SIGNAL(clicked()), this, SLOT(getClicked()) );<br>
+<br>
+  connect( &amp;http, SIGNAL(stateChanged(int)),<br>
+           this, SLOT(httpStateChanged(int)) );<br>
+  connect( &amp;http, SIGNAL(dataSendProgress(int,int)),<br>
+           this, SLOT(httpDataSent(int,int)) );<br>
+  connect( &amp;http, SIGNAL(dataReadProgress(int,int)),<br>
+           this, SLOT(httpDataReceived(int,int)) );<br>
+  connect( &amp;http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader&amp;)),<br>
+           this, SLOT(httpHeaderDone(const QHttpResponseHeader&amp;)) );<br>
+  connect( &amp;http, SIGNAL(readyRead(const QHttpResponseHeader&amp;)),<br>
+           this, SLOT(httpDataDone(const QHttpResponseHeader&amp;)) );<br>
+  connect( &amp;http, SIGNAL(requestStarted(int)),<br>
+           this, SLOT(httpStarted(int)) );<br>
+  connect( &amp;http, SIGNAL(requestFinished(int,bool)),<br>
+           this, SLOT(httpFinished(int,bool)) );<br>
+  connect( &amp;http, SIGNAL(done(bool)),<br>
+           this, SLOT(httpDone(bool)) );<br>
+}</code></div>
+<p class="indent"><a id="page_421"></a>The URL handling code discussed earlier was the top half of a slot called <code>getClicked</code>. You saw how that method was connected to the user interface in the preceding constructor. When you left the <code>getClicked</code> method in <a href="Chapter14.html#parsing_the_url_and_splitting_it_into_it">Listing 14-12</a>, the URL had just been validated and split into its building blocks.</p>
+<p class="indent">When you continue in <a href="Chapter14.html#using_the_validated_url_to_start_downloa">Listing 14-15</a>, you use the URL to set the <code>host</code> property of the <code>QHttp</code> object. Call <code>setHost</code> and specify the hostname and port. Just as when displaying the port, port 80 is the default if nothing else has been specified. If a username was specified, it is set, along with its password, with the <code>setUser</code> method.</p>
+<p class="indent">When the <code>QHttp</code> object has been set up, continue by asking the user for a file name for storing the downloaded material by using the <code>QFileDialog</code> class' static method <code>getSaveFileName</code>. If the user cancels the dialog, return from the slot; otherwise, continue by attempting to open the file for writing. If that fails, inform the user by displaying a warning dialog and delete the <code>QFile</code> object.</p>
+<p class="indent">If the user picks a file name that could be used for writing, call the <code>get(QString,QIODevice)</code> method of the <code>QHttp</code> object to download the file. Finally, disable the Get button while the actual download is performed.</p>
+<div id="using_the_validated_url_to_start_downloa" class="listing">
+<p class="normal"><b>Listing 14-15.</b> <i>Using the validated URL to start downloading</i></p>
+<code>void HttpDialog::getClicked()<br>
+{<br>
+...<br>
+<br>
+  http.setHost( url.host(), url.port()==-1 ? 80 : url.port() );<br>
+  if( !url.userName().isEmpty() )<br>
+    http.setUser( url.userName(), url.password() );<br>
+<br>
+  QString fileName = QFileDialog::getSaveFileName( this );<br>
+  if( fileName.isEmpty() )<br>
+    return;<br>
+<br>
+  file = new QFile( fileName, this );<br>
+  if( !file-&gt;open( QIODevice::WriteOnly|QIODevice::Truncate ) )<br>
+  {<br>
+    QMessageBox::warning( this, tr("Could not write"),<br>
+      tr("Could not open the file %f for writing.").arg( fileName ) );<br>
+<br>
+    delete file;<br>
+    file = 0;<br>
+<br>
+    return;<br>
+  }<br>
+<br>
+  http.get( url.path(), file );<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+}</code>
+</div>
+<p class="indent"><a id="page_422"></a>Now the download starts; if all goes well, all you need to do is to wait for the <code>done</code> signal to be emitted. The Boolean argument is <code>true</code> if an error is encountered, so you hope it will be <code>false</code>. The signal is connected to the <code>httpDone</code> slot shown in <a href="Chapter14.html#when_the_download_is_finished_or_has_fai">Listing 14-16</a>. If the <code>error</code> argument is <code>false</code>, close the <code>QFile</code> object by using the <code>close</code> method and delete the file object.</p>
+<p class="indent">If the download operation has encountered a problem and the <code>error</code> argument is <code>true</code>, the user is warned about it before closing and removing the file and before deleting the <code>QFile</code> object. The file is removed by using the <code>remove</code> method. You have to remove the file because it can contain a partial download (which can occur if the connection is broken in the middle of a download operation).</p>
+<p class="indent">The message you use to warn the user about the problems is retrieved with the <code>errorString</code> method, which returns an error message.</p>
+<p class="indent">Regardless of whether the download was successful, re-enable the Get button before leaving the slot so the user can enter a new URL and try downloading more data.</p>
+<div id="when_the_download_is_finished_or_has_fai" class="listing">
+<p class="normal"><b>Listing 14-16.</b> <i>When the download is finished or has failed, the</i> <code>done</code> <i>signal is emitted by the</i> <code>QHttp</code> <i>object. That signal is connected to the</i> <code>httpDone</code> <i>slot.</i></p>
+<code>void HttpDialog::httpDone( bool error )<br>
+{<br>
+  ui.statusList-&gt;addItem( QString("done( %1 )").arg( error ? "True" : "False" ) );<br>
+<br>
+  if( error )<br>
+  {<br>
+    QMessageBox::warning( this, tr("Http: done"), http.errorString() );<br>
+<br>
+    if( file )<br>
+    {<br>
+      file-&gt;close();<br>
+      file-&gt;remove();<br>
+<br>
+      delete file;<br>
+      file = 0;<br>
+    }<br>
+  }<br>
+<br>
+  if( file )<br>
+  {<br>
+    file-&gt;close();<br>
+<br>
+    delete file;<br>
+    file = 0;<br>
+  }<br>
+<br>
+  ui.getButton-&gt;setEnabled( true );<br>
+}</code></div>
+<p class="indent">All remaining slots simply output their names and argument values to the list at the bottom of the dialog. This list shows the exact steps that the <code>QHttp</code> object uses to perform the <a id="page_423"></a>requested download. The <code>QHttp</code> object is very talkative and can emit the following signals while working:</p>
+<ul>
+<li><code>dataReadProgress(int done, int total)</code>: A portion of the requested data has been read. The arguments <code>done</code> and <code>total</code> show the proportions, but not necessarily the number of bytes. Notice that <code>total</code> can be zero if the total size is unknown.</li>
+<li><code>dataSendProgress(int done, int total)</code>: A portion of the data being sent has been transmitted. This argument works in the same way as <code>dataReadProgress</code>.</li>
+<li><code>done(bool error)</code>: The last pending request has been finished.</li>
+<li><code>readyRead(const QHttpResponseHeader &amp;resp)</code>: A reading request has completed. This signal is not emitted if a destination device was specified when issuing the request.</li>
+<li><code>requestFinished(int id, bool error)</code>: A request has finished. You can identify the request from the <code>id</code> argument.</li>
+<li><code>requestStarted(int id)</code>: A request has started. You can identify the request from the <code>id</code> argument.</li>
+<li><code>responseHeaderReceived(const QHttpResponseHeader &amp;resp)</code>: A response header is available.</li>
+<li><code>stateChanged(int state)</code>: The state of the <code>QHttp</code> object has changed.</li>
+</ul>
+<p class="normal"><b>Downloading Signals</b></p>
+<p class="normal">Knowing what all the signals mean is one thing, but actually knowing what to expect is something else. Let's have a look at two different downloading scenarios, starting with a successful download.</p>
+<p class="indent">It all starts with the request being made, first setting the host, and then starting the download:</p>
+<code>requestStarted( 1 )<br>
+requestFinished( 1, False )<br>
+requestStarted( 2 )<br>
+stateChanged( Connecting )<br>
+stateChanged( Sending )<br>
+dataSendProgress( done: 74, total: 74 )<br>
+stateChanged( Reading )</code>
+<p class="indent">Now start reading, which will result in a whole range of <code>dataReadProgress</code> signals (their arguments and number will differ depending on your computer):</p>
+<code>responseHeaderReceived(code: 200, reason: OK, version: 1.1 )<br>
+dataReadProgress( done: 895, total: 0 )<br>
+...<br>
+dataReadProgress( done: 32546, total: 0 )<br>
+stateChanged( Closing )<br>
+stateChanged( Unconnected )</code>
+<p class="indent"><a id="page_424"></a>Now you have disconnected and the read is finished. All that remainsfor the HTTP object is to say everything has been done and that all went well:</p>
+<code>requestFinished( 2, False )<br>
+done( False )</code>
+<p class="indent">In the next try, you'll attempt to download a file from a non-existing server. This means that you won't even get in contact with the server.</p>
+<p class="indent">It all starts just as before: set the host and then try to download a file:</p>
+<code>requestStarted( 1 )<br>
+requestFinished( 1, False )<br>
+requestStarted( 2 )<br>
+stateChanged( Connecting )</code>
+<p class="indent">The second request fails:</p>
+<code>requestFinished( 2, True )</code>
+<p class="indent">This is reflected by the <code>done</code> signal as well; its argument is <code>true</code>, indicating error:</p>
+<code>done( True )<br>
+stateChanged( Closing )<br>
+stateChanged( Unconnected )</code>
+<p class="indent">Two scenarios were shown here, but there are many other scenarios. When dealing with network applications, be careful to report success to the user when you receive the right data. Don't try to detect all the erroneous cases; try to find the successful one you were expecting.</p>
+<h3 class="h3"><a id="sockets"></a>Sockets</h3>
+<p class="normal">When using the <code>QHttp</code> and <code>QFtp</code> classes, you're actually relying on underlying protocols to handle the actual data transfers. The protocol used is TCP, which has a close relative that is slightly less reliable called UDP. Both protocols are supported by Qt.</p>
+<p class="indent">When using TCP and UDP sockets directly, you work at a far lower level than when using HTTP and FTP. When you use these technologies, you are responsible for converting the sent and received data to and from an application-friendly format and handling the data on the application side.</p>
+<p class="indent">This means more work for you, but also more control of the resulting protocol. FTP and HTTP are not always suitable protocols because there might already be a protocol for the application field. In other cases, the advantages of using a custom protocol are greater than the extra work spent. The nature of the application sometimes means that using HTTP or FTP is impossible or involves more work than implementing an application-specific protocol.</p>
+<h4 class="h4"><a id="reliability_apostrophy_s_role_with_udp_a"></a>Reliability's Role with UDP and TCP</h4>
+<p class="normal">Although there are several differences between UDP and TCP communication, most developers need to remember only their different approaches to reliability. It is crucial for TCP-transmitted data to actually reach its destination. On the other hand, when using UDP you just throw data between the computers involved—the data is in no way guaranteed to reach the destination. <a id="page_425"></a>Also, when the data arrives at the destination, the TCP protocol ensures that the data is served to your application in the right order. Data sent using UDP can arrive out of order, which is a situation applications must handle.</p>
+<p class="indent">TCP is best if you want to transfer a piece of data and need to transfer all data for it to be useful. Examples include transferring files and maintaining sessions for remotely accessing a computer. In these scenarios, a missing piece of data renders the rest of the data useless.</p>
+<p class="indent">UDP is useful for feeding out data where timing is more important than reliability. For example, when streaming video, it is better to miss a few frames than to drift in time. Other examples include multiplayer games in which the location of other players can be less important (as long as no direct interaction takes place).</p>
+<p class="indent">Sometimes the requirements involve both the properties of TCP and UDP: One common scenario is when the control over a data stream uses TCP while the actual data is being transferred using UDP. This means that user authentication, control commands, and such are handled via a connection of guaranteed quality while the actual data is sent using UDP.</p>
+<h4 class="h4"><a id="servers_comma_clients_comma_and_peers"></a>Servers, Clients, and Peers</h4>
+<p class="normal">Historically, computer communication has taken place with a server providing a service of some kind for the clients.</p>
+<hr>
+<p class="normal"><b>Note</b>  It has become more and more common for hosts to talk directly to each other. Examples include file-sharing clients as well as VoIP solutions. From a software development viewpoint, it is not difficult to do; you just need to create applications that are capable of handling both incoming and outgoing connections.</p>
+<hr>
+<p class="normal"><b>Creating Server-side Applications Using Qt</b></p>
+<p class="normal">Server applications usually don't need a graphical user interface; they tend to run in the background, invisible to the users. It is possible to write Qt applications without including the user interface module. This involves two changes: first the <code>QApplication</code> object is replaced by a <code>QCoreApplication</code> object; then you need to add a line reading <code>QT -= gui</code> to the project file.</p>
+<p class="indent">The resulting application is not linked against any of Qt's user interface classes, so it will occupy less disk space and need less memory, both at run-time and when being distributed.</p>
+<h4 class="h4"><a id="sending_images_using_tcp"></a>Sending Images Using TCP</h4>
+<p class="normal">Your first go at a client-server solution will involve a server application used to transmit images that are requested by a client and made viewable to the end user. The server picks a random image from a given directory and sends it to the clients via TCP. The client application enables the user to request a new image by clicking a button and then receives and displays the given image.</p>
+<p class="normal"><b>Creating the Server Application</b></p>
+<p class="normal">Let's start by having a look at the server side. You will look at the source code of the server in the same order as it is executed, starting with the <code>main</code> function (shown in <a href="Chapter14.html#the_main_function_attempts_to_set_up_the">Listing 14-17</a>).</p>
+<p class="indent"><a id="page_426"></a>In the <code>main</code> function, you set up a <code>Server</code> object that listens to incoming connections to port 9876. The connections might come from any source. If the <code>listen</code> call fails, tell the user about it and then exit. Otherwise, start the <code>event</code> loop by calling the <code>exec</code> method from the <code>QCoreApplication</code> object.</p>
+<hr>
+<p class="normal"><b>Note</b>  If you don't specify a port when calling <code>listen</code>, the <code>QTcpServer</code> class will pick a free port. You can find out which port the server listens to by using the <code>serverPort</code> property. This can be very useful when you don't need to control which port to use.</p>
+<hr>
+<div id="the_main_function_attempts_to_set_up_the" class="listing">
+<p class="normal"><b>Listing 14-17.</b> <i>The</i> <code>main</code> <i>function attempts to set up the server.</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QCoreApplication app( argc, argv );<br>
+<br>
+  Server server;<br>
+  if( !server.listen( QHostAddress::Any, 9876 ) )<br>
+  {<br>
+    qCritical( "Cannot listen to port 9876." );<br>
+    return 1;<br>
+  }<br>
+<br>
+  return app.exec();<br>
+}</code>
+</div>
+<p class="indent">The <code>Server</code> class, which is shown in <a href="Chapter14.html#the_server_class_inherits_qtcpserver_and">Listing 14-18</a>, inherits the <code>QTcpServer</code> class. Using Qt's TCP server class as a base for the server implementation gives you a lot for free. Right now, the <code>main</code> function creates an object instance and calls <code>listen</code> before entering the <code>event</code> loop. All attempts to connect to the server will result in <code>incomingConnection</code> method being called. By reimplementing the method, you can handle the connections.</p>
+<div id="the_server_class_inherits_qtcpserver_and" class="listing">
+<p class="normal"><b>Listing 14-18.</b> <i>The server class inherits</i> <code>QTcpServer</code> <i>and reimplements the</i> <code>incomingConnection</code> <i>method.</i></p>
+<code>class Server : public QTcpServer<br>
+{<br>
+public:<br>
+  Server();<br>
+<br>
+protected:<br>
+  void incomingConnection( int descriptor );<br>
+};</code>
+</div>
+<p class="indent">The implementation of the server is almost as simple as the class declaration because the actual work isn't performed by the <code>Server</code> class. (You can see all the source code in <a href="Chapter14.html#the_server_simply_starts_a_thread_per_co">Listing 14-19</a>.)</p>
+<p class="indent"><a id="page_427"></a>Because a server can quickly become burdened with a number of simultaneous incoming connections, sending an image can take awhile. To alleviate the load, take advantage of threading—creating a new thread for each connection. By doing so, the <code>Server</code> object can move on and process the next connection while the first one is being served.</p>
+<p class="indent">When the <code>incomingConnection</code> method is called, a <i>socket descriptor</i> is passed as an argument. This integer can be used to connect a <code>QTcpSocket</code> object handling the connection. This is passed on to the <code>ServerThread</code> object that is created and started. By connecting the finished signal to the <code>deleteLater</code> slot, the thread objects are set up to clean up after themselves when they're done. The <code>deleteLater</code> slot is available for <code>QObject</code> and deletes the object instance when the <code>event</code> loop is reached. This makes it possible for an object to delete itself—something that is usually impossible because deleting the <code>this</code> pointer from inside a class method can cause unpredictable results and disastrous crashes.</p>
+<div id="the_server_simply_starts_a_thread_per_co" class="listing">
+<p class="normal"><b>Listing 14-19.</b> <i>The server simply starts a thread per connection.</i></p>
+<code>Server::Server() : QTcpServer()<br>
+{<br>
+}<br>
+<br>
+void Server::incomingConnection( int descriptor )<br>
+{<br>
+  ServerThread *thread = new ServerThread( descriptor, this );<br>
+<br>
+  connect( thread, SIGNAL(finished()), thread, SLOT(deleteLater()) );<br>
+  thread-&gt;start();<br>
+}</code>
+</div>
+<p class="indent">The <code>Server</code> object creates a <code>ServerThread</code> object for each incoming connection. The <code>thread</code> class consists of two methods: <code>run</code> and <code>randomImage</code>. You can see them in the class declaration in <a href="Chapter14.html#each_incoming_connection_is_handled_by_a">Listing 14-20</a>.</p>
+<p class="indent">The <code>run</code> method is responsible for performing the actual task of transmitting an image over the given socket. The <code>randomImage</code> method is used by the <code>run</code> method to get an image to send.</p>
+<div id="each_incoming_connection_is_handled_by_a" class="listing">
+<p class="normal"><b>Listing 14-20.</b> <i>Each incoming connection is handled by a</i> <code>ServerThread</code> <i>object.</i></p>
+<code>class ServerThread : public QThread<br>
+{<br>
+public:<br>
+  ServerThread( int descriptor, QObject *parent );<br>
+<br>
+  void run();<br>
+<br>
+private:<br>
+  QImage randomImage();<br>
+<br>
+  int m_descriptor;<br>
+};</code>
+</div>
+<p class="indent"><a id="page_428"></a>Let's start by looking at the <code>randomImage</code> method (see <a href="Chapter14.html#pick_a_random_file_from_images_and_load">Listing 14-21</a>). The method uses a <code>QDir</code> object to look for files in the <code>./images</code> directory. It assumes that all files in that directory are valid images. It then uses the <code>qrand</code> function to generate a random number used to pick one of the files.</p>
+<p class="indent">Before using <code>qrand</code>, it is important to initialize the random number generator with a seed; otherwise, you will get the same series of numbers each time. The <code>qsrand</code> call uses the number of seconds passed since midnight as the seed.</p>
+<div id="pick_a_random_file_from_images_and_load" class="listing">
+<p class="normal"><b>Listing 14-21.</b> <i>Pick a random file from</i> <code>images</code> <i>and load it using</i> <code>QImage</code></p>
+<code>QImage ServerThread::randomImage()<br>
+{<br>
+  qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));<br>
+<br>
+  QDir dir("images");<br>
+  dir.setFilter( QDir::Files );<br>
+  QFileInfoList entries = dir.entryInfoList();<br>
+<br>
+  if( entries.size() == 0 )<br>
+  {<br>
+    qDebug( "No images to show!" );<br>
+    return QImage();<br>
+  }<br>
+<br>
+  return QImage( entries.at( qrand() % entries.size() ).absoluteFilePath() );<br>
+}</code>
+</div>
+<p class="indent">The task of actually sending the image is handled from the <code>run</code> method shown in <a href="Chapter14.html#the_run_method_sends_the_image_data_over">Listing 14-22</a>. The constructor, shown in the same listing, simply keeps the description for the <code>run</code> method. In the <code>run</code> method, the descriptor is used to set up a <code>QTcpSocket</code> object. By setting the socket descriptor using <code>setSocketDescriptor</code>, you get a socket object connected to the client connecting to the server.</p>
+<p class="indent">When the socket has been set up, it's time to prepare the data for transmittal over the socket. This is a two-stage process. First you create a <code>QBuffer</code> for writing the image to. A <code>QBuffer</code> is a <code>QIODevice</code> (just as a <code>QFile</code> is), and <code>QImageWriter</code> can write to any <code>QIODevice</code>. The call to the <code>write</code> method of <code>QImageWriter</code> leaves you with a buffer containing the image encoded as a PNG.</p>
+<p class="indent">Before you can send the contents of the buffer, you need to find a way to tell the client how much data to expect. This is the next step. Start by creating a <code>QByteArray</code> and a <code>QStreamWriter</code> to write that array. Set the version of the stream to <code>Qt_4_0</code> to ensure that the data is encoded one way. If you skip this step, a server compiled using a future version of Qt might end up being incompatible with the clients.</p>
+<p class="indent">Use the stream writer to put the size of the data contained in the <code>QBuffer</code> in the byte array. After the size, you add the contents of the buffer to the byte array and write all the data to the socket.</p>
+<p class="indent">When the data has been sent, you don't need the socket any more, so disconnect it by using <code>disconnectFromHost</code>. Then wait for the disconnection to complete by using <code>waitForDisconnect</code> before the <code>run</code> method is over. When the method returns, the <code>finished</code> <a id="page_429"></a>signal is emitted. This signal was connected to the <code>deleteLater</code> slot by the <code>Server</code> object, so the <code>ServerThread</code> object deletes itself when the data has been sent.</p>
+<div id="the_run_method_sends_the_image_data_over" class="listing">
+<p class="normal"><b>Listing 14-22.</b> <i>The</i> <code>run</code> <i>method sends the image data over a socket.</i></p>
+<code>ServerThread::ServerThread( int descriptor, QObject *parent ) : QThread( parent )<br>
+{<br>
+  m_descriptor = descriptor;<br>
+}<br>
+<br>
+void ServerThread::run()<br>
+{<br>
+  QTcpSocket socket;<br>
+<br>
+  if( !socket.setSocketDescriptor( m_descriptor ) )<br>
+  {<br>
+    qDebug( "Socket error!" );<br>
+    return;<br>
+  }<br>
+<br>
+  QBuffer buffer;<br>
+  QImageWriter writer(&amp;buffer, "PNG");<br>
+  writer.write( randomImage() );<br>
+<br>
+  QByteArray data;<br>
+  QDataStream stream( &amp;data, QIODevice::WriteOnly );<br>
+  stream.setVersion( QDataStream::Qt_4_0 );<br>
+  stream &lt;&lt; (quint32)buffer.data().size();<br>
+  data.append( buffer.data() );<br>
+<br>
+  socket.write( data );<br>
+<br>
+  socket.disconnectFromHost();<br>
+  socket.waitForDisconnected();<br>
+}</code>
+</div>
+<p class="normal"><b>Creating the Client Application</b></p>
+<p class="normal">The client side of the image viewing system is what users will encounter. To them, it will work like any other user application, showing the user interface from <a href="Chapter14.html#the_image_viewer_client_application">Figure 14-5</a>. The application enables the user to specify a server, download a new image, and view the last image.</p>
+<p class="indent">In the figure, the server is running on the <i>localhost</i> (the same computer as the client). Here you can put any computer name or an IP. When asked to get an image, the client will attempt to establish a connection to the 9876 port on the server, which is the port that the server listens to. If something goes wrong in this process (for example, no server is available), the user sees an error message.</p>
+<div id="the_image_viewer_client_application" class="figure-contents"><a id="page_430"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1405.jpg" alt="image" width="462" height="489">
+</div>
+</div>
+<p class="normal"><b>Figure 14-5.</b> <i>The image viewer client application</i></p>
+<p class="indent">The entire application consists of a single dialog implemented in the <code>ClientDialog</code> class. A simple <code>main</code> function is used to show the dialog and gets the application started. The <code>main</code> function simply creates a <code>ClientDialog</code> object, on which it calls the <code>show</code> method before it calls <code>exec</code> on its <code>QApplication</code> object.</p>
+<p class="indent"><a href="Chapter14.html#the_client_dialog_class_declaration">Listing 14-23</a> shows the class declaration of the dialog. It is built from a constructor, a slot for the Get Image button (<code>getClicked</code>), and two slots for monitoring the TCP socket (<code>tcpReady</code> and <code>tcpError</code>). The class also contains three private variables: the user interface (kept in <code>ui</code>), a <code>QTcpSocket</code> object called <code>socket</code>, and the <code>dataSize</code> variable that's used to keep track of how much data you expect when downloading an image.</p>
+<p class="indent">The user interface was created in Designer (refer to <a href="Chapter14.html#the_image_viewer_client_application">Figure 14-5</a> to see the dialog). The active parts of the user interface are a <code>QLineEdit</code> for entering the server name, a <code>QPushButton</code> to click to download a new image, and a <code>QLabel</code> used for showing images and status messages.</p>
+<div id="the_client_dialog_class_declaration" class="listing">
+<p class="normal"><b>Listing 14-23.</b> <i>The client dialog class declaration</i></p>
+<code>class ClientDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  ClientDialog();<br>
+<br>
+private slots:<br>
+  void getClicked();<br>
+<a id="page_431"></a>
+  void tcpReady();<br>
+  void tcpError( QAbstractSocket::SocketError error );<br>
+<br>
+private:<br>
+  Ui::ClientDialog ui;<br>
+<br>
+  QTcpSocket socket;<br>
+  int dataSize;<br>
+};</code>
+</div>
+<p class="indent">Before looking at socket handling and image downloading, let's start where it all begins. As soon as the client application starts, the dialog is created (the constructor is shown in <a href="Chapter14.html#constructing_the_client_dialog">Listing 14-24</a>).</p>
+<p class="indent">The constructor is extremely simple (a consequence of the dialog being so simple). All the constructor does is initialize the user interface by using a call to <code>setupUi</code>, connect the Get Image button to the <code>getClicked</code> slot, and make the needed connections around the <code>QTcpSocket</code> object.</p>
+<div id="constructing_the_client_dialog" class="listing">
+<p class="normal"><b>Listing 14-24.</b> <i>Constructing the client dialog</i></p>
+<code>ClientDialog::ClientDialog() : QDialog()<br>
+{<br>
+  ui.setupUi( this );<br>
+<br>
+  connect( ui.getButton, SIGNAL(clicked()), this, SLOT(getClicked()) );<br>
+<br>
+  connect( &amp;socket, SIGNAL(error(QAbstractSocket::SocketError)),<br>
+           this, SLOT(tcpError(QAbstractSocket::SocketError)) );<br>
+  connect( &amp;socket, SIGNAL(readyRead()),<br>
+           this, SLOT(tcpReady()) );<br>
+}</code>
+</div>
+<p class="indent">Following the application's execution from the constructor, the code waits for the user to fill out a server name and click the Get Image button. The button click brings you to the <code>getClicked</code> slot shown in <a href="Chapter14.html#the_slot_initiating_downloads">Listing 14-25</a>.</p>
+<p class="indent">The slot starts by disabling the Get Image button to prevent the user from attempting to start a new download before the first one is done. Then the <code>QLabel</code> is cleared from any previous image, and a message is shown. The previous image is cleared through a call to <code>setPixmap</code> with an empty <code>QPixmap</code> object.</p>
+<p class="indent">When the user interface has been prepared for downloading, the <code>dataSize</code> variable is initialized to zero, and the <code>abort</code> method is called on the <code>QTcpSocket</code> object to prevent any remains from previous calls from disturbing. Finally, <code>connectToHost</code> is called to connect to the 9876 port of the specified server. This process leads to an incoming connection being detected by the <code>Server</code> object shown in <a href="Chapter14.html#the_server_class_inherits_qtcpserver_and">Listing 14-18</a>, resulting in an image being sent to the client application.</p>
+<div id="the_slot_initiating_downloads" class="listing">
+<p class="normal"><b>Listing 14-25.</b> <i>The slot initiating downloads</i></p>
+<code><a id="page_432"></a>void ClientDialog::getClicked()<br>
+{<br>
+  ui.getButton-&gt;setEnabled( false );<br>
+<br>
+  ui.imageLabel-&gt;setPixmap( QPixmap() );<br>
+  ui.imageLabel-&gt;setText( tr("&lt;i&gt;Getting image...&lt;/i&gt;") );<br>
+<br>
+  dataSize = 0;<br>
+<br>
+  socket.abort();<br>
+  socket.connectToHost( ui.serverEdit-&gt;text(), 9876 );<br>
+}</code>
+</div>
+<p class="indent">When working, the <code>QTcpSocket</code> class communicates its current status by emitting signals. In the client application, you listen to the <code>readyRead</code> and <code>error</code> signals, but there are more (see the following list):</p>
+<ul>
+<li><code>connected()</code>: Emitted when a successful <code>connectToHost</code> call has been made and a connection has been established.</li>
+<li><code>disconnected()</code>: Emitted when the socket has been disconnected.</li>
+<li><code>error(QAbstractSocket::SocketError)</code>: Emitted when an error has occurred. The argument describes the cause of the error.</li>
+<li><code>hostFound()</code>: Emitted when the host to <code>connectToHost</code> call has been made, and the hostname has been looked up successfully and is resolved. It is emitted before the <code>connected</code> signal and is no guarantee for the connection to be established—the server can still refuse to accept it.</li>
+<li><code>stateChanged(QAbstractSocket::SocketState)</code>: Emitted when the state of the socket changes.</li>
+<li><code>readyRead()</code>: Emitted when data is available for reading. It is emitted only when new data is available, so if you don't read the data, the signal is not re-emitted until even more data is available.</li>
+</ul>
+<p class="indent">Notice that all these signals are defined in classes that the <code>QTcpSocket</code> class inherits. The first five in the list are defined in the <code>QAbstractSocket</code> class, whereas <code>readyRead</code> comes from the <code>QIODevice</code> class. This means that you'll have to look up the superclasses instead of <code>QTcpSocket</code> to find information about the signals when browsing the reference documentation.</p>
+<p class="indent">The socket is always in a state, even when it is not connected. State changes result in the <code>stateChanged</code> signal being emitted. The following states exist in client application sockets:</p>
+<ul>
+<li><code>QAbstractSocket::UnconnectedState</code>: The socket is not connected.</li>
+<li><code>QAbstractSocket::HostLookupState</code>: The socket is looking up the host.</li>
+<li><code>QAbstractSocket::ConnectingState</code>: The socket has looked up the host and is attempting to establish a connection.</li>
+<li><a id="page_433"></a><code>QAbstractSocket::ConnectedState</code>: The socket is connected to the server.</li>
+<li><code>QAbstractSocket::ClosingState</code>: The socket is closing the connection.</li>
+</ul>
+<p class="indent">The states listed here appear in the order in which they would occur in an actual application. The socket starts as being not connected, looks up a host, attempts to connect, and is then connected. Then the socket is closed and finally is back as being not connected. If an error occurs, the socket returns to the not connected state and is ready to start over.</p>
+<p class="indent">When discussing errors, the <code>error</code> signal carries an argument specifying the cause of the error, which is specified by an enumerated type. The different problems applicable to TCP sockets are listed as follows (if you want a human-readable version of the error, you can use the <code>errorString</code> method instead, which returns a <code>QString</code> describing the problem):</p>
+<ul>
+<li><code>QAbstractSocket::ConnectionRefusedError</code>: The connection was refused by the remote host or timed out.</li>
+<li><code>QAbstractSocket::RemoteHostClosedError</code>: The remote host closed the connection.</li>
+<li><code>QAbstractSocket::HostNotFoundError</code>: The specified host could not be found.</li>
+<li><code>QAbstractSocket::SocketAccessError</code>: The operation could not be carried out because of security restrictions.</li>
+<li><code>QAbstractSocket::SocketResourceError</code>: The socket could not be created. The operating system usually limits the number of simultaneously open sockets.</li>
+<li><code>QAbstractSocket::SocketTimeoutError</code>: The socket timed out.</li>
+<li><code>QAbstractSocket::NetworkError</code>: An error caused by the network. For instance, the connection was lost or a cable was disconnected.</li>
+<li><code>QAbstractSocket::UnsupportedSocketOperationError</code>: The socket operation is not supported by the current operating system (perhaps because the operating system does not support IPv6 and such an address is being used).</li>
+<li><code>QAbstractSocket::UnknownSocketError</code>: An error that could not be identified has occurred.</li>
+</ul>
+<p class="indent">Return now to the image-downloading client application. If all goes well when the user has clicked the Get Image button, and the connection has been made, the <code>QTcpSocket</code> object will start to emit <code>readyRead</code> signals.</p>
+<p class="indent">This leads to the <code>tcpReady</code> slot being called. The implementation of the slot can be seen in <a href="Chapter14.html#handling_the_data_received">Listing 14-26</a>. The slot can be said to work in two modes. If <code>dataSize</code> is zero, it checks to see whether there are at least four bytes (the size of a <code>quint32</code>) available to read from the socket. (The socket provides the <code>bytesAvailable</code> method for this purpose.)</p>
+<p class="indent">When the four bytes are available, set up a <code>QDataStream</code> to read from the socket. You can ensure that the stream is working with the same version as the server. If you don't do this, you can encounter strange problems in which the stream data is misinterpreted. When the stream has been set up, you read the four bytes and place them in the <code>dataSize</code> variable.</p>
+<p class="indent">Refer to the <code>run</code> method from <a href="Chapter14.html#the_run_method_sends_the_image_data_over">Listing 14-22</a>; you can tell that the <code>dataSize</code> variable contains the number of bytes that make the image that you are waiting for. All you have to do is to wait for that number of bytes to arrive.</p>
+<p class="indent"><a id="page_434"></a>As soon as <code>dataSize</code> has been set to a value, compare it with the value returned from the <code>bytesAvailable</code> method of the socket object. Keep doing this until you know that the entire image has arrived.</p>
+<p class="indent">The next step is to create a <code>QImage</code> object from the received data. As you recall, the image is transmitted as a PNG file. Because the PNG format is compressed, the amount of data to transfer is minimized.</p>
+<p class="indent">To make an image from the data, start by reading the data into a <code>QByteArray</code>. The array is placed in a <code>QBuffer</code>, from which you can read the image using a <code>QImageReader</code>. You then check so that the resulting <code>QImage</code> is valid (that is, <code>isNull</code> returns <code>false</code>).</p>
+<p class="indent">If the image is valid, show it using the <code>QLabel</code>; otherwise, an error message using the <code>QLabel</code> is shown. Regardless of the outcome, re-enable the Get Image button so the user can try downloading another image.</p>
+<div id="handling_the_data_received" class="listing">
+<p class="normal"><b>Listing 14-26.</b> <i>Handling the data received</i></p>
+<code>void ClientDialog::tcpReady()<br>
+{<br>
+  if( dataSize == 0 )<br>
+  {<br>
+    QDataStream stream( &amp;socket );<br>
+    stream.setVersion( QDataStream::Qt_4_0 );<br>
+<br>
+    if( socket.bytesAvailable() &lt; sizeof(quint32) )<br>
+      return;<br>
+<br>
+    stream &gt;&gt; dataSize;<br>
+  }<br>
+<br>
+  if( dataSize &gt; socket.bytesAvailable() )<br>
+    return;<br>
+<br>
+  QByteArray array = socket.read( dataSize );<br>
+  QBuffer buffer(&amp;array);<br>
+  buffer.open( QIODevice::ReadOnly );<br>
+<br>
+  QImageReader reader(&amp;buffer, "PNG");<br>
+  QImage image = reader.read();<br>
+<br>
+  if( !image.isNull() )<br>
+  {<br>
+    ui.imageLabel-&gt;setPixmap( QPixmap::fromImage( image ) );<br>
+    ui.imageLabel-&gt;clear();<br>
+  }<br>
+  else<br>
+  {<br>
+    ui.imageLabel-&gt;setText( tr("&lt;i&gt;Invalid image received!&lt;/i&gt;") );<br>
+  }<br>
+<a id="page_435"></a>
+    ui.getButton-&gt;setEnabled( true );<br>
+}</code>
+</div>
+<p class="indent">What was discussed previously is all valid as long as everything goes according to plan. When you deal with networks, you see that things don't always go the way you want. This happens more often as wireless connections, which are less reliable than cable connections, become more common.</p>
+<p class="indent">If an error occurs, it results in a call to the <code>tcpError</code> slot shown in <a href="Chapter14.html#tcperror_slot">Listing 14-27</a>. The slot simply shows the human readable string describing the error with a <code>QMessageBox::warning</code>. It then re-enables the Get Image button so the user can try again.</p>
+<p class="indent">However, there is one error that is ignored: when the connection is closed by the host. You don't want to show an error message for this because this is what happens when the server has transferred an image—it closes the connection.</p>
+<div id="tcperror_slot" class="listing">
+<p class="normal"><b>Listing 14-27.</b> <code>tcpError</code> <i>slot</i></p>
+<code>void ClientDialog::tcpError( QAbstractSocket::SocketError error )<br>
+{<br>
+  if( error == QAbstractSocket::RemoteHostClosedError )<br>
+    return;<br>
+<br>
+  QMessageBox::warning( this, tr("Error"),<br>
+                        tr("TCP error: %1").arg( socket.errorString() ) );<br>
+  ui.imageLabel-&gt;setText( tr("&lt;i&gt;No Image&lt;/i&gt;") );<br>
+  ui.getButton-&gt;setEnabled( true );<br>
+}</code>
+</div>
+<p class="normal"><b>Further Thoughts About the Image Application</b></p>
+<p class="normal">The entire system consists of both the client and the server, and Qt takes care of many of the details for connecting them. Let's have a quick look at the classes used.</p>
+<p class="indent">Look at the server; you see that the task of taking an incoming request and opening a <code>QTcpSocket</code> for responding is handled by the <code>QTcpServer</code> class. In the <code>Server</code> class that inherits <code>QTcpServer</code>, create a thread for each incoming request so more incoming connections can be accepted while answering earlier connections. This will increase the throughput of the server as long as the computer running it has the power to handle all the connections.</p>
+<p class="indent">The risk is that the server might get connected to so frequently that it runs out of memory. This will result in memory swapping, increasing the time needed for processing each connection—leading to even more threads being active at once and even less memory being available. This is not a Qt-specific problem, but instead is the way a server reacts when being overloaded.</p>
+<p class="indent">The client is found on the other side of the network. Using a <code>QTcpSocket</code> it is easy to connect to the host and receive data. Because the <code>QTcpSocket</code> is a <code>QIODevice</code>, it is possible to read from the socket using streams and other classes.</p>
+<p class="indent">In the end, you can see that Qt simplifies implementing both sides of a TCP connection. The code left to implement is the code specifying the protocol to use; that is the code that you want to be able to focus on when using Qt's TCP classes.</p>
+<h4 class="h4"><a id="page_436"></a><a id="broadcasting_pictures_using_udp"></a>Broadcasting Pictures Using UDP</h4>
+<p class="normal">While the reliability, or lack thereof, of UDP might lead you to believe that it's not well-suited to network-based application development, you might be surprised to learn that there are several advantages of this approach. Perhaps most notably, the sending and receiving parties are less tightly bound, meaning that it's possible to broadcast data to several receivers at once. This is what you'll see when you try out the <code>QUdpSocket</code> class.</p>
+<p class="indent">The idea is to broadcast an image, line by line, to all clients within the server's subnet. The client simply listens for a datagram message sent to a predetermined port (9988, in this case). Each datagram is a self-contained package of data containing all the data needed for a line of the image. When a line is received, the client updates the internal copy of the image by adding the new line.</p>
+<p class="indent">Because the server doesn't know about the clients, and the clients simply listen to a port, there is no real tie between them. The server can be started and stopped independently of the clients, and there can be any number of clients listening to the same server.</p>
+<p class="indent"><a href="Chapter14.html#the_upc_client_application">Figure 14-6</a> shows the client application in action. The image is not fully received, and the server transmits the lines in a random order at a limited pace, so it takes awhile to complete the picture.</p>
+<div id="the_upc_client_application" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1406.jpg" alt="image" width="397" height="549">
+</div>
+</div>
+<p class="normal"><b>Figure 14-6.</b> <i>The UPC client application</i></p>
+<p class="indent">The protocol that you use on top of UDP consists of datagrams that contain one line of graphics data. The datagrams contain the dimensions of the image being broadcast, so the <a id="page_437"></a>clients can tell whether they need to resize and which line the current datagram contains—a y-coordinate followed by the red, green, and blue values for each pixel of the line. <a href="Chapter14.html#the_structure_of_the_datagram_containing">Figure 14-7</a> shows the individual data types used for each piece of data transmitted. The protocol also determines that the data is sent over the 9988 port.</p>
+<hr>
+<p class="normal"><b>Tip</b>  You might have to open your firewall to be able to broadcast to port 9988 in your local network. Notice that you need to open UDP port 9988, not the TCP port with the same number.</p>
+<hr><br>
+<div id="the_structure_of_the_datagram_containing" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1407.jpg" alt="image" width="549" height="33">
+</div>
+</div>
+<p class="normal"><b>Figure 14-7.</b> <i>The structure of the datagram containing a line of an image</i></p>
+<p class="normal"><b>Creating the Client</b></p>
+<p class="normal">The client consists of a single widget class: <code>Listener</code>. It inherits <code>QLabel</code>, so it can show text and images. It also contains a <code>QUdpSocket</code> for listening to incoming datagrams and a <code>QImage</code> for keeping a local copy of the image being received. The entire class declaration can be seen in <a href="Chapter14.html#the_listener_class_declaration">Listing 14-28</a>. In the listing you can see that the class contains a single slot, <code>dataPending</code>, and a constructor.</p>
+<div id="the_listener_class_declaration" class="listing">
+<p class="normal"><b>Listing 14-28.</b> <i>The</i> <code>Listener</code> <i>class declaration</i></p>
+<code>class Listener : public QLabel<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  Listener( QWidget *parent=0 );<br>
+<br>
+private slots:<br>
+  void dataPending();<br>
+<br>
+private:<br>
+  QUdpSocket *socket;<br>
+  QImage *image;<br>
+};</code>
+</div>
+<p class="indent">Let's start investigating the implementation by looking at the constructor (see <a href="Chapter14.html#listening_to_incoming_datagrams">Listing 14-29</a>). It basically does three things: it sets a text to show while waiting for the first datagram to arrive, initializes the <code>image</code> variable to zero, and sets up the UDP socket.</p>
+<p class="indent">The UDP socket is an instance of the <code>QUdpSocket</code> class, which can be used to implement both a listener and a sender. For listening, bind the socket to a port (in this case, 9988). When bound to a port, the socket will receive datagrams sent to that port. When it receives such a <a id="page_438"></a>datagram, it can be read, so it emits the <code>readyRead</code> signal. That signal is connected to the <code>dataPending</code> slot of the <code>Listener</code> class.</p>
+<div id="listening_to_incoming_datagrams" class="listing">
+<p class="normal"><b>Listing 14-29.</b> <i>Listening to incoming datagrams</i></p>
+<code>Listener::Listener( QWidget *parent ) : QLabel( parent )<br>
+{<br>
+  setText( "Waiting for data." );<br>
+<br>
+  image = 0;<br>
+<br>
+  socket = new QUdpSocket( this );<br>
+  socket-&gt;bind( 9988 );<br>
+<br>
+  connect( socket, SIGNAL(readyRead()), this, SLOT(dataPending()) );<br>
+}</code>
+</div>
+<p class="indent">The <code>dataPending</code> socket, shown in <a href="Chapter14.html#handling_an_arrived_datagram">Listing 14-30</a>, consists of a <code>while</code> loop for emptying the socket. Inside it is code for handling each datagram; after it is code for updating the shown image.</p>
+<p class="indent">The <code>while</code> loop runs for as long as the socket's <code>hasPendingDatagrams</code> method returns <code>true</code>. When that method returns <code>true</code>, it is possible to get the size of the first pending datagram using the <code>pendingDatagramSize</code> method. To read the datagram, use the <code>readDatagram</code> method. You can use these two methods to first create a <code>QByteArray</code> of the right size and then read the datagram's contents into the byte array.</p>
+<p class="indent">When you have the datagram in the byte array, continue by creating a <code>QDataStream</code> object for reading from the array. Also make sure to call <code>setVersion</code> to ensure that clients and servers compiled with different Qt versions still work together. As soon as the stream has been set up, it is time to start interpreting the lump of data you just received.</p>
+<p class="indent">If you assume that the datagram contains data according to <a href="Chapter14.html#the_structure_of_the_datagram_containing">Figure 14-7</a>, start by reading three <code>quint16</code> variables from the stream: <code>width</code>, <code>height</code>, and y.</p>
+<p class="indent">The next step is to see whether you have a <code>QImage</code> object; if not, create a new one. If you do have one, ensure that the dimensions of it correspond to the received image. If not, delete it and create a new one with the right dimensions.</p>
+<p class="indent">The last step consists of a <code>for</code> loop, in which you read three <code>quint8</code> variables—<code>red</code>, <code>green</code>, and <code>blue</code>—for each pixel and then set the corresponding pixel to that color using the <code>setPixel</code> method.</p>
+<p class="indent">When the <code>hasPendingDatagrams</code> method no longer returns <code>true</code>, clear the text shown and show the received <code>QImage</code>. Call <code>resize</code> to ensure that the widget's size corresponds to the size of the image.</p>
+<p class="indent">You can use a <code>QImage</code> to keep the buffered image because you know that it stores the image using 24 bits per pixel. (This was specified when the <code>QImage</code> object was created by passing the <code>QImage::Format_RGB32</code> flag along the width and height.) The <code>setPixmap</code> method expects a <code>QPixmap</code> object, so you have to convert the <code>QImage</code> to a <code>QPixmap</code> using the static <code>QPixmap::fromImage</code> method.</p>
+<p class="indent"><a id="page_439"></a>The solution to update the shown image when the queue of pending datagrams has been emptied assumes that you can process the datagrams quicker than they arrive; otherwise, the shown image won't be updated. One trick is to use a counter to ensure that you update the shown image once every 10 lines or so. Look at the server to see why it isn't necessary in this case.</p>
+<div id="handling_an_arrived_datagram" class="listing">
+<p class="normal"><b>Listing 14-30.</b> <i>Handling an arrived datagram</i></p>
+<code>void Listener::dataPending()<br>
+{<br>
+  while( socket-&gt;hasPendingDatagrams() )<br>
+  {<br>
+    QByteArray buffer( socket-&gt;pendingDatagramSize(), 0 );<br>
+    socket-&gt;readDatagram( buffer.data(), buffer.size() );<br>
+<br>
+    QDataStream stream( buffer );<br>
+    stream.setVersion( QDataStream::Qt_4_0 );<br>
+<br>
+    quint16 width, height, y;<br>
+    stream &gt;&gt; width &gt;&gt; height &gt;&gt; y;<br>
+<br>
+    if( !image )<br>
+      image = new QImage( width, height, QImage::Format_RGB32 );<br>
+    else if( image-&gt;width() != width || image-&gt;height() != height )<br>
+    {<br>
+      delete image;<br>
+      image = new QImage( width, height, QImage::Format_RGB32 );<br>
+    }<br>
+<br>
+    for( int x=0; x&lt;width; ++x )<br>
+    {<br>
+      quint8 red, green, blue;<br>
+      stream &gt;&gt; red &gt;&gt; green &gt;&gt; blue;<br>
+<br>
+      image-&gt;setPixel( x, y, qRgb( red, green, blue ) );<br>
+    }<br>
+  }<br>
+<br>
+  setText( "" );<br>
+  setPixmap( QPixmap::fromImage( *image ) );<br>
+  resize( image-&gt;size() );<br>
+}</code>
+</div>
+<p class="indent">This was all the code needed for the client widget. The application consists of this widget and a simple <code>main</code> function showing an instance of the widget.</p>
+<p class="normal"><a id="page_440"></a><b>Creating the Server</b></p>
+<p class="normal">The server simply sends random lines from the image <code>test.png</code>, which must be located in the working directory used when launching the server. The application consists of a class that does the actual broadcasting (called <code>Sender</code>) and a minimal <code>main</code> function.</p>
+<p class="indent">The declaration of the <code>Sender</code> class is shown in <a href="Chapter14.html#the_server_apostrophy_s_class_declaratio">Listing 14-31</a>. The class inherits <code>QObject</code>, which means that it does not have a user interface (it would have inherited <code>QWidget</code> directly or indirectly). The class inherits <code>QObject</code> because it has a slot.</p>
+<p class="indent">The <code>broadcastLine</code> slot is used to broadcast a single line of the image. The class holds the image in the <code>QImage</code> object pointed to by <code>image</code>. The socket for the broadcast is a <code>QUdpSocket</code> pointed to by <code>socket</code>. Next to the slot and the two pointers the class also contains a constructor.</p>
+<div id="the_server_apostrophy_s_class_declaratio" class="listing">
+<p class="normal"><b>Listing 14-31.</b> <i>The server's class declaration</i></p>
+<code>class Sender : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  Sender();<br>
+<br>
+private slots:<br>
+  void broadcastLine();<br>
+<br>
+private:<br>
+  QUdpSocket *socket;<br>
+  QImage *image;<br>
+};</code>
+</div>
+<p class="indent">The constructor, shown in <a href="Chapter14.html#starting_the_broadcasting">Listing 14-32</a>, consists of three parts. First the socket is created; then the image is loaded. If the image doesn't load, <code>isNull</code> returns <code>true</code>. In this case, you report it by using <code>qFatal</code>, which ends the application.</p>
+<p class="indent">If the image loads properly, continue to set up a <code>QTimer</code> object. The timer's <code>timeout</code> signal is connected to the <code>broadcastLine</code> slot. The purpose of the timer is to limit the rate at which you send data to one line every 250ms, which means four lines per second.</p>
+<div id="starting_the_broadcasting" class="listing">
+<p class="normal"><b>Listing 14-32.</b> <i>Starting the broadcasting</i></p>
+<code>Sender::Sender()<br>
+{<br>
+  socket = new QUdpSocket( this );<br>
+<br>
+  image = new QImage( "test.png" );<br>
+  if( image-&gt;isNull() )<br>
+    qFatal( "Failed to open test.png" );<br>
+<br>
+  QTimer *timer = new QTimer( this );<br>
+  timer-&gt;setInterval( 250 );<br>
+  timer-&gt;start();<br>
+<a id="page_441"></a>
+  connect( timer, SIGNAL(timeout()), this, SLOT(broadcastLine()) );<br>
+}</code>
+</div>
+<p class="indent">Every time the timer times out, <code>broadcastLine</code> is called. The source code for the slot is shown in <a href="Chapter14.html#broadcasting_a_single_line">Listing 14-33</a>. When you look at the code, recall the datagram description shown in <a href="Chapter14.html#the_structure_of_the_datagram_containing">Figure 14-7</a>.</p>
+<p class="indent">The first thing that happens when the slot is called is that a <code>QByteArray</code> is allocated to use as a buffer. The size of the array can be calculated from the image width. The dimensions of the image and y-coordinate consume six bytes; you then need three bytes per pixel for the actual data, so you need <code>6+3*image-&gt;width()</code> bytes. Set up a <code>QDataStream</code> for writing to the buffer and set the version of the stream to match the version of the stream used by the client.</p>
+<p class="indent">The next step is to add the dimensions of the image to the stream before you use <code>qrand</code> to determine which line to broadcast. When you know which line to use, add the y-coordinate to the stream as well.</p>
+<hr>
+<p class="normal"><b>Note</b>  Because you use <code>qrand</code> without giving the randomizer a seed using <code>qsrand</code>, the image lines will be broadcast in the same pseudorandom order each time the server runs.</p>
+<hr>
+<p class="indent">Use a <code>for</code> loop to add the red, green, and blue values for each pixel to the stream. You use the <code>pixel</code> method to get the <code>QRgb</code> value for each pixel of the <code>QImage</code>. You then use the <code>qRed</code>, <code>qGreen</code>, and <code>qBlue</code> functions to get the individual red, green, and blue parts of the <code>QRgb</code> value.</p>
+<p class="indent">When the values for all the pixels of the given line have been added to the stream, you're ready to broadcast the entire <code>QByteArray</code> buffer using the <code>QUdpSocket</code> object. You do this with the <code>writeDatagram</code> method, which tries to send the entire given byte array as a datagram to the given address and port. The code shown in <a href="Chapter14.html#broadcasting_a_single_line">Listing 14-33</a> uses <code>QHostAddress::Broadcast</code> as host address and port 9988, so the data will be sent to port 9988 on all clients in the same subnet as the server.</p>
+<div id="broadcasting_a_single_line" class="listing">
+<p class="normal"><b>Listing 14-33.</b> <i>Broadcasting a single line</i></p>
+<code>void Sender::broadcastLine()<br>
+{<br>
+  QByteArray buffer( 6+3*image-&gt;width(), 0 );<br>
+  QDataStream stream( &amp;buffer, QIODevice::WriteOnly );<br>
+  stream.setVersion( QDataStream::Qt_4_0 );<br>
+<br>
+  stream &lt;&lt; (quint16)image-&gt;width() &lt;&lt; (quint16)image-&gt;height();<br>
+<br>
+  quint16 y = qrand() % image-&gt;height();<br>
+<br>
+  stream &lt;&lt; y;<br>
+<br>
+  for( int x=0; x&lt;image-&gt;width(); ++x )<br>
+  {<br>
+    QRgb rgb = image-&gt;pixel( x, y );<br>
+<a id="page_442"></a>
+    stream &lt;&lt; (quint8)qRed( rgb ) &lt;&lt; (quint8)qGreen( rgb ) &lt;&lt; (quint8)qBlue( rgb );<br>
+  }<br>
+<br>
+  socket-&gt;writeDatagram( buffer, QHostAddress::Broadcast, 9988 );<br>
+}</code>
+</div>
+<p class="indent">The <code>Sender</code> class is used from the <code>main</code> function shown in <a href="Chapter14.html#the_main_function_of_the_broadcaster">Listing 14-34</a>. The <code>Sender</code> object is created and then a dialog box is shown using <code>QMessageBox::information</code>. While the dialog is open, the <code>QTimer</code> in the <code>Sender</code> object triggers broadcasts. As soon as the user closes the dialog, the <code>main</code> function ends, the <code>Sender</code> object is destroyed along with the <code>QTimer</code>, and the broadcasting stops. This provides a good way to create a server that is easy to turn off.</p>
+<div id="the_main_function_of_the_broadcaster" class="listing">
+<p class="normal"><b>Listing 14-34.</b> <i>The</i> <code>main</code> <i>function of the broadcaster</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  Sender sender;<br>
+  QMessageBox::information( 0, "Info", "Broadcasting image" );<br>
+<br>
+  return 0;<br>
+}</code>
+</div>
+<p class="normal"><b>Final Thoughts About UDP</b></p>
+<p class="normal">To test the UDP server and client, start and stop both applications independently of each other. You will then see that the clients and server are truly independent. As soon as a server starts broadcasting, the clients will start receiving. As soon as a client is started, it also starts receiving. Neither cares whether the other is active.</p>
+<p class="indent">Although the client is pretty straightforward, as is the server, it can be helpful to end the images so that each client would know when it has received the full image.</p>
+<p class="indent">When looking at the whole, the protocol is what is important. Right now, you can broadcast only one image at a time (perhaps a unique image identifier value should have been prepended to each datagram so that several images could be broadcast at once). By sending a checksum for the entire image at the end of each datagram, the clients would be sure that they had the right image when they saw the whole (or could discard the datagrams with incorrect checksums).</p>
+<p class="indent">It is also important to consider what happens if a network connection is closed and later reopened. How does this affect the data received by the clients and, more importantly, how do the clients present this to the users? Because the UDP protocol doesn't guarantee any data to arrive, or which data, or in which order, it is important to consider these limitations when designing the contents of the datagrams.</p>
+<h3 class="h3"><a id="page_443"></a><a id="summary-021"></a>Summary</h3>
+<p class="normal">When using the networking module of Qt, you can choose the level on which you want to control the operations. If you need to only fetch files or make requests that can be handled via FTP or HTTP, use the <code>QHttp</code> and <code>QFtp</code> classes. These classes take care of many details and provide you with high-level operations. For instance, <code>QHttp</code> offers <code>setHost</code> and <code>get</code>. <code>QFtp</code> provides you with <code>connectToHost</code>, <code>login</code>, <code>get</code>, and <code>put</code>.</p>
+<p class="indent">When using the classes, you can listen to the <code>done</code> signal and then react to the Boolean argument. If it is <code>true</code>, an error has occurred; otherwise, all is well. If an error has occurred, you get a text to present to your users from <code>errorString</code>.</p>
+<p class="indent">If you need to control the network interactions on a lower level, Qt provides classes for sockets based on TCP and UDP. Although the differences between these two are many and outside the scope of this book, each can be greatly simplified:</p>
+<ul>
+<li>TCP is good for establishing a session between two computers and transmitting data between them in a reliable way. The data is transmitted as a stream.</li>
+<li>UDP is good for sending individual packages of data between computers. The sender does not need to know whether a receiver is receiving, and the receiver does not know if it has received all the data sent. The data is transmitted as individual independent packages called datagrams.</li>
+</ul>
+<p class="indent">When implementing a TCP server, you can inherit from the <code>QTcpServer</code> class. Simply re-implement the <code>incomingConnection</code> to handle new connections. The integer argument given is a socket descriptor. Pass this to the constructor of the <code>QTcpSocket</code> class to get a socket connected to the incoming connection.</p>
+<p class="indent">To set up the server to listen to a port, use the <code>listen</code> method. By specifying <code>QHostAddress::Any</code> as host address, the server will accept all incoming connections.</p>
+<p class="indent">A <code>QTcpSocket</code> is used both by the server—created from the socket descriptor—and the client. In the client, you use the <code>connectToHost</code> to specify the server and port to connect to. Because the <code>QTcpSocket</code> inherits from the <code>QIODevice</code> class, you can set up a <code>QDataStream</code> (or <code>QTextStream</code>) to send and receive data over the connection it represents.</p>
+<p class="indent">When implementing a UDP server, start by creating a <code>QUdpSocket</code>. You can then write to the socket using <code>writeDatagram</code>. When implementing a client, use the same class, <code>QUdpSocket</code>, but bind it to a port by using <code>bind</code>. Each time a datagram arrives to the port that the socket is bound to, it emits a <code>readyRead</code> signal. You can then read the datagram using <code>readDatagram</code>.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter13.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 13: Databases</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter15.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 15: Building Qt Projects</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","errorBeacon":"bam.nr-data.net","queueTime":9,"licenseKey":"510f1a6865","beacon":"bam.nr-data.net","agent":"","applicationID":"3275661,67267027,67267028","applicationTime":136}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

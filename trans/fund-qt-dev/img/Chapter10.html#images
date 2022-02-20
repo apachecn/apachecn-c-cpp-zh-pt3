@@ -1,0 +1,907 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter10.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter10.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter10.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter10.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 10: Internationalization and Localization - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter10.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter10.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter11.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html"/><meta name="description" content=" CHAPTER 10 Internationalization and Localization When you deploy your application for the international market you have to provide localized versions. The reasons for doing so go far beyond the ... "><meta property="og:title" content="CHAPTER 10: Internationalization and Localization" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 10: Internationalization and Localization" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 10 Internationalization and Localization When you deploy your application for the international market you have to provide localized versions. The reasons for doing so go far beyond the ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter10.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%2010%3A%20Internationalization%20and%20Localization&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter10.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter09.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 9: Providing Help</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter11.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 11: Plugins</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_279"></a><a id="internationalization_and_localization"></a>CHAPTER 10<br><br>Internationalization and<br>Localization</h2>
+<p class="normal"><big><b>W</b></big>hen you deploy your application for the international market you have to provide localized versions. The reasons for doing so go far beyond the disparate languages spoken by the world's population; in fact, there are disparities regarding how time, dates, and monetary values are represented; and even more complex written language issues such as whether text should be read from the right or the left.</p>
+<hr>
+<p class="normal"><b>Tip</b> Internationalization and localization are actually two parts of the same process. Internationalization is about freeing your application from any ties to a specific location—to make it independent of any specific language or culture. Localization is the next step—to take an internationalized application and adapt it to a specific location with a specific language and culture.</p>
+<hr>
+<p class="indent">Before you start dealing with all the details that have to be managed for a successful adaptation to different languages and cultures of your application, have a look at the tools Qt provides for managing this.</p>
+<hr>
+<p class="normal"><b>Tip</b> Did you know that internationalization is often written as i18n, where 18 is the number of characters removed? Localization can often be seen as l10n (shortened in the same way).</p>
+<hr>
+<h3 class="h3"><a id="translating_an_application"></a>Translating an Application</h3>
+<p class="normal">To get started, you need an application to translate. You'll use the SDI application from <a href="Chapter04.html#the_main_window">Chapter 4</a>, with the additional features it was extended with in <a href="Chapter08.html#files_comma_streams_comma_and_xml">Chapter 8</a> (when file handling support was added). You can see a screenshot from the application in <a href="Chapter10.html#the_sdi_application">Figure 10-1</a>. Because I'm a native Swedish speaker, the task will be to translate the application into Swedish.</p>
+<div id="the_sdi_application" class="figure-contents"><a id="page_280"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1001.jpg" alt="image" width="549" height="349">
+</div>
+</div>
+<p class="normal"><b>Figure 10-1.</b> <i>The SDI application</i></p>
+<p class="indent">The translations are kept in two different file formats: <code>ts</code> and <code>qm</code>. The <code>ts</code> files are used during development and contain all words found in the application in an easily maintainable XML file format. The <code>qm</code> files are used at run-time and contain the phrases in a portable compressed format. The idea is to use the <code>ts</code> files as source files during development. The <code>ts</code> files are then compiled into the distributable <code>qm</code> format used by the actual applications. The compilation is referred to as <i>releasing</i> the translation.</p>
+<p class="indent">Before you can start translating the application, you need to notify Qt of your intent. Since the target language is Swedish as spoken in Sweden, and the commonly used code for that locale is <code>sv_SE</code>, you can add it to the end of the application name: <code>SDI_sv_SE</code>.</p>
+<hr>
+<p class="normal"><b>Note</b> The <code>sv_SE</code> part of the name is built from combining the language code according to ISO 639-1 and the country code according to ISO 3166-1. The application name is just an informal name for the application. This naming convention is only by convention—you can name your translations any way you like.</p>
+<hr>
+<p class="indent">To add this translation to the project, simply add the following line to the project file:</p>
+<code>TRANSLATIONS += sdi_sv_SE.ts</code>
+<p class="indent">You can add any number of translations to a project by adding new <code>TRANSLATION +=</code> lines as appropriate. You can also specify several translations at once by separating them by spaces or tabs.</p>
+<h4 class="h4"><a id="page_281"></a><a id="extracting_the_strings"></a>Extracting the Strings</h4>
+<p class="normal">When the project file has been updated with one or more translations, it is time to identify the strings that need to be translated by extracting them from the various <code>tr()</code> calls found throughout the application. There are other cases, too, but they will be discussed later.</p>
+<p class="indent">The <code>lupdate</code> tool is used to extract the phrases—it creates or updates all <code>ts</code> files listed in a given project file. It is nice to know that when it updates an existing file it does not remove anything—all the translations already done are kept intact. Because the project file is called <code>sdi.pro</code>, the command to enter at the command line is <code>lupdate sdi.pro</code>. This will create the <code>sdi_sv_SE.ts</code> file from the strings found in the sources in the project file.</p>
+<p class="indent">Although Qt comes with a tool for software translators, not all translation businesses want to use custom tools. Fortunately, the <code>ts</code> files are quite easy to process because they are formatted as XML. <a href="Chapter10.html#an_example_of_the_contents_of_an_untrans">Listing 10-1</a> shows an extract of the untranslated <code>sdi_sv_SE.ts</code> file.</p>
+<div id="an_example_of_the_contents_of_an_untrans" class="listing">
+<p class="normal"><b>Listing 10-1.</b> <i>An example of the contents of an untranslated</i> <code>ts</code> <i>file</i></p>
+<code>&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
+&lt;!DOCTYPE TS&gt;&lt;TS version="1.1"&gt;<br>
+&lt;context&gt;<br>
+    &lt;name&gt;SdiWindow&lt;/name&gt;<br>
+    &lt;message&gt;<br>
+        &lt;location filename="sdiwindow.cpp" line="254"/&gt;<br>
+        &lt;source&gt;%1[*] - %2&lt;/source&gt;<br>
+        &lt;translation type="unfinished"&gt;&lt;/translation&gt;<br>
+    &lt;/message&gt;<br>
+    &lt;message&gt;<br>
+        &lt;location filename="sdiwindow.cpp" line="19"/&gt;<br>
+...<br>
+&lt;/context&gt;<br>
+&lt;/TS&gt;</code></div>
+<p class="indent">As you can see from the extraction, it shouldn't be hard to convert it into the format that your translation company prefers and back again.</p>
+<h4 class="h4"><a id="linguist_colon_a_tool_for_translating"></a>Linguist: A Tool for Translating</h4>
+<p class="normal">Qt is bundled with the <i>Linguist</i> tool, which provides the translator with a convenient overview of the strings to translate and their respective status: done, unknown, or missing. It also provides some simple checks to ensure that the translations are okay. For example, it checks that the final punctuation is the same in both the original and the translated string.</p>
+<p class="indent">Starting Linguist produces the user interface shown in <a href="Chapter10.html#linguist_with_a_fresh_translation_file_l">Figure 10-2</a>. The figure shows the application after the translation has been opened and a few strings have been translated.</p>
+<p class="indent">If you look more closely at <a href="Chapter10.html#linguist_with_a_fresh_translation_file_l">Figure 10-2</a>, you can see that the Linguist interface consists of three panels. In the Context panel (on the left) are the classes containing strings and their respective strings. The currently selected string is shown in its original and translated form in the main panel (top right). In the Phrases panel, Qt suggests translations from looking at earlier translations and a phrase book that you can load. (Phrase books are not covered here.)</p>
+<div id="linguist_with_a_fresh_translation_file_l" class="figure-contents"><a id="page_282"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1002.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-2.</b> <i>Linguist with a fresh translation file loaded</i></p>
+<p class="indent">The easiest way to work in Linguist is to pick a string from the Context panel, translate it, and press Ctrl + Enter. This brings you to the next nontranslated string if the four validators are okay. The validators can be turned on and off from the Validation menu. Their functions are listed as follows:</p>
+<ul>
+<li>Accelerators: This function ensures that there is an accelerator in the translation if there is an accelerator in the original string.</li>
+<li>Ending Punctuation: This function ensures that the ending punctuation of the original and the translated strings match.</li>
+<li>Phrase Matches: This function checks to see whether the original string matches a known phrase. In that case, the translation should be the same as the translation of the known phrase.</li>
+<li>Place Marker Matches: This function ensures that place markers (for example, <code>%1</code>, <code>%2</code>) from the original string also exist in the translation.</li>
+</ul>
+<p class="indent"><a id="page_283"></a>It is possible to keep a translation if the validators do not accept it, but the Ctrl + Enter shortcut will not move along automatically (ensuring that you make an active decision to ignore the validators). When a validator objects to a translation, it shows a message in the status bar (see <a href="Chapter10.html#the_validator_objects_to_the_translation">Figure 10-3</a>).</p>
+<div id="the_validator_objects_to_the_translation" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1003.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-3.</b> <i>The validator objects to the translation because the translation does not refer to the same place markers as in the source text.</i></p>
+<p class="indent">As you progress through the translation, you can see your status in the right side of the status bar. When all strings are translated, the numbers on both sides of the dash will match. You can save your translation at any time and resume the work later. Linguist and <code>lupdate</code> do not lose any information unless you overwrite it or remove it yourself.</p>
+<p class="indent">When your translation is ready and saved, you have to compile or <i>release</i> it to be able to use it from your application by using the <code>lrelease</code> tool. Simply pass your project name as argument. In the case of the <code>sdi.pro</code> application, you run <code>lrelease sdi.pro</code> from the command line to build the needed <code>qm</code> files from your <code>ts</code> files.</p>
+<h4 class="h4"><a id="page_284"></a><a id="set_up_a_translation_object"></a>Set Up a Translation Object</h4>
+<p class="normal">When the translations are ready and have been released, it is time to load them into the application. Since languages are set at an application level, the goal is to install a <code>QTranslator</code> object containing the right translations on the <code>QApplication</code> object.</p>
+<p class="indent">Before worrying about <code>QTranslator</code> objects, you need to determine which language the user expects the application to be written in. This information can be found in the <code>QLocale</code> class. A <code>QLocale</code> object represents a certain localization zone and language. The object is aware of most localization details for that zone and language. To obtain an object representing the zone and language of the computer, you can use the static method called <code>QLocale::system</code>.</p>
+<p class="indent">This name is used in <a href="Chapter10.html#a_translation_is_loaded_into_a_translato">Listing 10-2</a> to load a translation into a <code>QTranslator</code> object before installing it by calling <code>installTranslator(QTranslator*)</code>. As you can see in the listing, the file extension of the translation file is not specified. If the <code>load</code> call fails, the translator will not have any effect, and the application will be shown in the language used in the source code.</p>
+<div id="a_translation_is_loaded_into_a_translato" class="listing">
+<p class="normal"><b>Listing 10-2.</b> <i>A translation is loaded into a translator that is installed on the application.</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QTranslator translator;<br>
+  translator.load( QString("sdi_")+QLocale::system().name() );<br>
+  app.installTranslator( &amp;translator );<br>
+<br>
+  QTranslator qtTranslator;<br>
+  qtTranslator.load( QString("qt_")+QLocale::system().name() );<br>
+  app.installTranslator( &amp;qtTranslator );<br>
+<br>
+  SdiWindow *window = new SdiWindow;<br>
+  window-&gt;show();<br>
+<br>
+<br>
+  return app.exec();<br>
+}</code></div>
+<p class="indent">There are no rules when it comes to naming translation files. It could have been called <code>swedish.qm</code> or <code>12345.qm</code>—it doesn't matter. The nice thing about connecting the name of the locale with the translator is that you can use the <code>QLocale::system</code> to find the right language.</p>
+<hr>
+<p class="normal"><b>Tip</b> You can add your <code>qm</code> files to a resource file to integrate the translations into your application. It makes the executable heavier, but reduces the dependencies on other files. This can make the application easier to deploy.</p>
+<hr>
+<h4 class="h4"><a id="page_285"></a><a id="qt_strings"></a>Qt Strings</h4>
+<p class="normal">If you were to deploy the application now, only parts of it would be translated. With Qt's standard dialogs for opening and saving documents and the About Qt dialog, strings embedded in the Qt library are used. These strings are missed by <code>lupdate</code> since it looks only in the source code of the current project. Instead, you have to install another translator for handling the strings embedded within Qt's standard dialogs.</p>
+<p class="indent">Before you get to the code for adding such a translator, have a look at the translations available for Qt. The Qt library contains about 2200 words (you can see Linguist with a Qt translation loaded in <a href="Chapter10.html#a_qt_translation_loaded_into_linguist">Figure 10-4</a>). Translations for these words are shipped with Qt for translating the default language (English) into French and German. There are other languages included as well, but they are not officially supported by Trolltech. All translations are available from the <code>translations</code> subdirectory in your Qt installation directory. Notice that you can use the <code>qt_untranslated.ts</code> file as a starting point if you need to support a new language. You should also search online because many developers will release their translations for the use of others.</p>
+<div id="a_qt_translation_loaded_into_linguist" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1004.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-4.</b> <i>A Qt translation loaded into Linguist</i></p>
+<p class="indent"><a id="page_286"></a>Because the Qt strings are not a part of your application, you must release it manually. You can do this by opening the file using Linguist and releasing it from the File menu (as shown in <a href="Chapter10.html#you_can_release_the_current_translation">Figure 10-5</a>), or you can give the <code>ts</code> file as argument to <code>lrelease</code> instead of your project file.</p>
+<hr>
+<p class="normal"><b>Tip</b> Another way to do it is to base your <code>ts</code> files on the appropriate Qt translation. Because <code>lupdate</code> never removes anything, this is the same as merging the translations, which makes the release process easier.</p>
+<hr>
+<div id="you_can_release_the_current_translation" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1005.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-5.</b> <i>You can release the current translation with the Release option from the File menu.</i></p>
+<p class="indent">When you have created or copied a translation of Qt's strings into your project directory, released it, and given the resulting file an appropriate name, it is time to load it into a translator and install it. In the case of Swedish, the file is called <code>qt_sv_SE</code>, and the loading is shown in <a href="Chapter10.html#loading_and_installing_a_translator_for">Listing 10-3</a>. As you can see, the procedure is identical to the loading of translations for your application's strings.</p>
+<div id="loading_and_installing_a_translator_for" class="listing">
+<p class="normal"><b>Listing 10-3.</b> <i>Loading and installing a translator for Qt's strings</i></p>
+<code><a id="page_287"></a>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  QTranslator translator;<br>
+  translator.load( QString("sdi_")+QLocale::system().name() );<br>
+  app.installTranslator( &amp;translator );<br>
+<br>
+  QTranslator qtTranslator;<br>
+  qtTranslator.load( QString("qt_")+QLocale::system().name() );<br>
+  app.installTranslator( &amp;qtTranslator );<br>
+<br>
+  SdiWindow *window = new SdiWindow;<br>
+  window-&gt;show();<br>
+<br>
+<br>
+  return app.exec();<br>
+}</code></div>
+<p class="indent">When both translators have been loaded and installed, the user interface is translated. You can see the original English next to the translated Swedish in <a href="Chapter10.html#the_sdi_application_in_english_and_swedi">Figure 10-6</a>.</p>
+<div id="the_sdi_application_in_english_and_swedi" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1006.jpg" alt="image" width="540" height="297">
+</div>
+</div>
+<p class="normal"><b>Figure 10-6.</b> <i>The SDI application in English and Swedish</i></p>
+<h4 class="h4"><a id="dealing_with_other_translation_cases"></a>Dealing with Other Translation Cases</h4>
+<p class="normal">Two things happen when you enclose strings in <code>tr</code> calls: <code>lupdate</code> finds the string and gives it to the translator; the string is then passed through the <code>QApplication::translate</code> method.</p>
+<p class="indent">So there are two kinds of special cases that you need to take care of: make sure that <code>lupdate</code> can find all your strings and ensure that all strings get passed through <code>translate</code> in a way that allows the method to translate it properly.</p>
+<p class="normal"><a id="page_288"></a><b>Finding All Strings</b></p>
+<p class="normal">Sometimes you write code in which your strings do not appear inside a <code>tr</code> call. In this case you can use the macros <code>QT_TR_NOOP</code> or <code>QT_TRANSLATE_NOOP</code>. Look at <a href="Chapter10.html#strings_outside_tr_calls_can_be_made_vis">Listing 10-4</a> for an example.</p>
+<p class="indent">The difference between the two macros is that <code>QT_TR_NOOP</code> does not take a context argument. That works fine for the strings in <code>texts2</code>, which are very unlikely to be mixed up with other strings in the application. The strings in <code>texts</code> can very easily be mixed up, however. For example, does the <code>Title</code> refer to the title of a web page or to a title for a person? In Swedish, the translations would be <code>Överskrift</code> for a web page title and <code>Befattning</code> for a person's title—quite a big difference.</p>
+<p class="indent">When strings can be ambiguous, the <code>QT_TRANSLATE_NOOP</code> macro comes in handy. It makes it possible to add a context for the translator and translation mechanism. <a href="Chapter10.html#the_strings_found_using_the_qt_underscor">Figure 10-7</a> shows the strings from <a href="Chapter10.html#strings_outside_tr_calls_can_be_made_vis">Listing 10-4</a> as they appear in Linguist.</p>
+<div id="strings_outside_tr_calls_can_be_made_vis" class="listing">
+<p class="normal"><b>Listing 10-4.</b> <i>Strings outside</i> <code>tr</code> <i>calls can be made visible to</i> <code>lupdate</code> <i>using the</i> <code>QT_TR_NOOP</code> <i>and</i> <code>QT_TRANSLATE_NOOP</code> <i>macros.</i></p>
+<code>   char *texts[] = { QT_TRANSLATE_NOOP("main","URL"),<br>
+                     QT_TRANSLATE_NOOP("main","Title"),<br>
+                     QT_TRANSLATE_NOOP("main","Publisher") };<br>
+<br>
+   char *texts2[] = { QT_TR_NOOP( "This is a very special string."),<br>
+                      QT_TR_NOOP( "And this is just as special.") };</code></div>
+<p class="indent">Strings captured from within classes that inherit <code>QObject</code> starting with <code>Q_OBJECT</code> are automatically placed in a context named after the class.</p>
+<p class="indent">Using the strings from outside a <code>QObject</code> is easy. Just use the <code>translate</code> method available from your application object. If your string does not have a context, you can pass a null string (<code>0</code>); otherwise, pass the context as the first argument and the string as the second. The following line uses strings from the <code>texts</code> and <code>texts2</code> vectors:</p>
+<code>  QMessageBox::information( 0, qApp-&gt;translate("main",texts[2]), qApp-<br>
+&gt;translate(0,texts2[1]) );</code>
+<p class="normal"><b>Telling Strings Apart</b></p>
+<p class="normal">As discussed earlier, some strings can be ambiguous. For example, the word <i>address</i> can refer to a postal address, a web URL, or a memory address in the computer's main memory. The translations for the different sentences can vary depending on the meaning and context. If several of these meanings are used in one context, you can add a comment for each string to make it possible for the translator to tell them apart.</p>
+<div id="the_strings_found_using_the_qt_underscor" class="figure-contents"><a id="page_289"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1007.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-7.</b> <i>The strings found using the</i> <code>QT_TRANSLATE_NOOP</code> <i>macro are found in a context.</i></p>
+<p class="indent"><a href="Chapter10.html#adding_comments_to_tell_the_same_word_wi">Listing 10-5</a> shows an example of how comments are specified in <code>tr</code> calls. The comment is simply sent along as a second argument to the <code>tr</code> method.</p>
+<div id="adding_comments_to_tell_the_same_word_wi" class="listing">
+<p class="normal"><b>Listing 10-5.</b> <i>Adding comments to tell the same word with different meanings apart</i></p>
+<code>   new QLabel( tr("Address:", "Postal address"), this );<br>
+   new QLabel( tr("Address:", "Website address"), this );</code></div>
+<p class="indent">When the translator opens the <code>ts</code> file, the comment is shown below the actual string to translate. The strings from <a href="Chapter10.html#adding_comments_to_tell_the_same_word_wi">Listing 10-5</a> are shown in <a href="Chapter10.html#the_comment_is_shown_to_the_translator_b">Figure 10-8</a>.</p>
+<div id="the_comment_is_shown_to_the_translator_b" class="figure-contents"><a id="page_290"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1008.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-8.</b> <i>The comment is shown to the translator below the original string.</i></p>
+<p class="normal"><b>You Have Altered</b> <b><i>n</i></b> <b>File(s)</b></p>
+<p class="normal">When the <code>translate</code> method tries to translate a string, it needs to get an exact match, so only one string in <a href="Chapter10.html#three_ways_to_build_a_string_colon_one_r">Listing 10-6</a> will work. The problem with merging strings using the <code>+</code> operator inside a <code>tr</code> call (<code>line1</code>) is that <code>lupdate</code> can't properly find the string. The problem with merging the strings after the <code>tr</code> calls (<code>line2</code>) is that the word order is more or less fixed. By using the <code>arg</code> call as shown in the <code>line3</code> assignment, the translator can alter the word ordering freely, and the string is matched regardless of the value of <code>n</code>.</p>
+<div id="three_ways_to_build_a_string_colon_one_r" class="listing">
+<p class="normal"><b>Listing 10-6.</b> <i>Three ways to build a string: one right and two wrong</i></p>
+<code>   QString line1 = tr("You have altered " + QString::number(n) + " file(s).");<br>
+   QString line2 = tr("You have altered ") + QString::number(n) + tr(" file(s).");<br>
+   QString line3 = tr("You have altered %1 file(s).").arg(n);</code></div>
+<p class="indent">There is one annoying problem with the <code>line3</code> assignment: the <code>(s)</code> part. It's possible to let the translator provide strings for different values of <code>n</code>; the code for <code>line4</code> in <a href="Chapter10.html#handling_plural_strings">Listing 10-7</a> shows <a id="page_291"></a>how it is done. The <code>tr</code> call takes three arguments: the actual string, a comment, and then a value used for determining whether the string is to be in singular or plural form.</p>
+<div id="handling_plural_strings" class="listing">
+<p class="normal"><b>Listing 10-7.</b> <i>Handling plural strings</i></p>
+<code>   QString line4 = tr("You have altered %1 file.", "", n).arg(n);</code></div>
+<p class="indent">When a <code>tr</code> call with a value is found, the translator is given the capability to provide singular and plural versions of the string. Some languages have other special forms such as <i>paucal</i>—Qt handles them as well. The string for <code>line4</code> is shown in <a href="Chapter10.html#singular_and_plural_versions_of_a_string">Figure 10-9</a>.</p>
+<div id="singular_and_plural_versions_of_a_string" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1009.jpg" alt="image" width="549" height="454">
+</div>
+</div>
+<p class="normal"><b>Figure 10-9.</b> <i>Singular and plural versions of a string in Linguist</i></p>
+<h4 class="h4"><a id="find_the_missing_strings"></a>Find the Missing Strings</h4>
+<p class="normal">Sometimes it is easy to forget a call to <code>tr</code> or <code>translate</code>; or to leave out a string from the <code>tr</code>, <code>QT_TR_NOOP</code>, or <code>QT_TRANSLATE_NOOP</code> markers. This leads to the string not being translated at run-time or missed by the <code>lupdate</code> tool and thus be missing when <code>translate</code> is called.</p>
+<p class="indent"><a id="page_292"></a>There are tools to locate the missing strings. For example, Qt 4 is shipped with the <code>findtr</code> perl script. You can also use the more blunt <code>grep</code> command <code>grep -n '"' *.cpp | grep -v 'tr('</code> if you are working on a Unix system.</p>
+<p class="indent">Another method is to use a phony language in the source code (for example, adding <code>FOO</code> before all strings and <code>BAR</code> after them—so an ordinary menu bar would read <code>FOOFileBAR</code>, <code>FOOEditBAR</code>, and <code>FOOHelpBAR</code>). This makes it easy to spot strings not being translated, thus making it likely that all are located during the testing process.</p>
+<p class="indent">Neither trick is foolproof, so you need to pay attention to your strings and what you do to them. Missing a string in the translation quickly sends a message of bad quality to your users.</p>
+<hr>
+<p class="normal"><b>Tip</b> One way to find missing <code>tr()</code> calls is to stop Qt from automatically converting <code>char*</code> strings to <code>QString</code> objects, which will cause compiler errors for all the times you have missed calling <code>tr()</code>. You can disable the conversion by adding a line reading <code>DEFINES += QT_NO_CAST_FROM_ASCII</code> to your project file.</p>
+<hr>
+<h4 class="h4"><a id="translating_on_the_fly"></a>Translating on the Fly</h4>
+<p class="normal">Sometimes you might want your application to be able to switch between different languages on the fly. The user should be able to pick a language, and the entire environment is then immediately translated into the chosen language. To try this, have a look at the application shown in <a href="Chapter10.html#an_application_being_translated_on_the_f">Figure 10-10</a>. Only two languages to choose from, but the same solution applies to any number of languages.</p>
+<div id="an_application_being_translated_on_the_f" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1010.jpg" alt="image" width="372" height="171">
+</div>
+</div>
+<p class="normal"><b>Figure 10-10.</b> <i>An application being translated on the fly</i></p>
+<p class="indent">The principle is simple. When the user checks a radio button, the <code>toggled</code> signal is connected to a slot. That slot loads a new translation into the <code>QTranslator</code> object installed, which will cause all the calls to <code>tr</code> to return strings of the selected language. The only problem is that all the <code>tr</code> calls need to be done again. In this situation it is good to know that when a new translation is loaded, a <code>QEvent::LanguageChange</code> event is sent to all <code>QObject</code> s. It all works by putting all the <code>setText</code> and <code>setTitle</code> calls in one function and calling that function as soon as a language changed event occurs.</p>
+<p class="indent">This all sounds nice in theory, so let's have a look at the actual source code. <a href="Chapter10.html#the_dyndialog_class_declaration">Listing 10-8</a> shows the declaration of the <code>DynDialog</code> class, which is the dialog used in the application. You need to keep references to all widgets showing text—the <code>languages</code> group box and both radio buttons.</p>
+<div id="the_dyndialog_class_declaration" class="listing">
+<p class="normal"><b>Listing 10-8.</b> <i>The</i> <code>DynDialog</code> <i>class declaration</i></p>
+<code><a id="page_293"></a>class DynDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  DynDialog();<br>
+<br>
+protected:<br>
+  void changeEvent( QEvent* );<br>
+<br>
+private slots:<br>
+  void languageChanged();<br>
+<br>
+private:<br>
+  void translateUi();<br>
+<br>
+  QGroupBox *languages;<br>
+<br>
+  QRadioButton *english;<br>
+  QRadioButton *swedish;<br>
+};</code></div>
+<p class="indent">The constructor shows that this dialog is intended to be translated dynamically. In the source code shown in <a href="Chapter10.html#the_constructor_of_the_dyndialog_dialogm">Listing 10-9</a> the widgets are created, configured, and placed in layouts, but not a single call to <code>setText</code> or <code>setTitle</code> is made. Instead the <code>translateUi</code> method is called at the very end.</p>
+<div id="the_constructor_of_the_dyndialog_dialogm" class="listing">
+<p class="normal"><b>Listing 10-9.</b> <i>The constructor of the</i> <code>DynDialog</code> <i>dialog—notice that no texts are set</i></p>
+<code>DynDialog::DynDialog() : QDialog( 0 )<br>
+{<br>
+  languages = new QGroupBox( this );<br>
+  english = new QRadioButton( this );<br>
+  swedish = new QRadioButton( this );<br>
+<br>
+  english-&gt;setChecked( true );<br>
+  qTranslator-&gt;load( "english" );<br>
+<br>
+  QVBoxLayout *baseLayout = new QVBoxLayout( this );<br>
+  baseLayout-&gt;addWidget( languages );<br>
+<br>
+  QVBoxLayout *radioLayout = new QVBoxLayout( languages );<br>
+  radioLayout-&gt;addWidget( english );<br>
+  radioLayout-&gt;addWidget( swedish );<br>
+<a id="page_294"></a>
+  connect( english, SIGNAL(toggled(bool)), this, SLOT(languageChanged()) );<br>
+  connect( swedish, SIGNAL(toggled(bool)), this, SLOT(languageChanged()) );<br>
+<br>
+  translateUi();<br>
+}</code></div>
+<p class="indent">The <code>translateUi</code> method is shown in <a href="Chapter10.html#updating_all_the_user_visible_strings_at">Listing 10-10</a>. Here all the strings visible to the user are passed through <code>tr</code> and then set.</p>
+<div id="updating_all_the_user_visible_strings_at" class="listing">
+<p class="normal"><b>Listing 10-10.</b> <i>Updating all the user visible strings at once</i></p>
+<code>void DynDialog::translateUi()<br>
+{<br>
+  languages-&gt;setTitle( tr("Languages") );<br>
+<br>
+  english-&gt;setText( tr("English") );<br>
+  swedish-&gt;setText( tr("Swedish") );<br>
+}</code></div>
+<p class="indent">Refer to <a href="Chapter10.html#the_constructor_of_the_dyndialog_dialogm">Listing 10-9</a> to see that when the user picks another language (that is, toggles one of the radio buttons), the <code>languageChanged</code> slot is invoked. The slot implementation is shown in <a href="Chapter10.html#loading_translations">Listing 10-11</a>. As you can see, the <code>qTranslator</code> loads a different translator for the different user choices. The <code>qTranslator</code> pointer is an application global pointer that points to the installed <code>QTranslation</code> object. The object is created and installed in the <code>main</code> function.</p>
+<div id="loading_translations" class="listing">
+<p class="normal"><b>Listing 10-11.</b> <i>Loading translations</i></p>
+<code>void DynDialog::languageChanged()<br>
+{<br>
+  if( english-&gt;isChecked() )<br>
+    qTranslator-&gt;load( "english" );<br>
+  else<br>
+    qTranslator-&gt;load( "swedish" );<br>
+}</code></div>
+<p class="indent">When a new translation is loaded, the <code>QEvent::LanguageChanged</code> event is sent to all <code>QObject</code> instances. This event can be caught in the protected <code>changeEvent</code> method, as shown in <a href="Chapter10.html#watch_for_the_qevent_colon_colon_languag">Listing 10-12</a>. As soon as the event is encountered, the <code>translateUi</code> method is called again, updating all visible texts using the newly loaded translator.</p>
+<div id="watch_for_the_qevent_colon_colon_languag" class="listing">
+<p class="normal"><b>Listing 10-12.</b> <i>Watch for the</i> <code>QEvent::LanguageChanged</code> <i>event and update the user interface when encountered.</i></p>
+<code>void DynDialog::changeEvent( QEvent *event )<br>
+{<br>
+  if( event-&gt;type() == QEvent::LanguageChange )<br>
+  {<br>
+    translateUi();<br>
+  }<br>
+<a id="page_295"></a>
+  else<br>
+    QDialog::changeEvent( event );<br>
+}</code><br><br>
+</div>
+<hr>
+<p class="normal"><b>Tip</b> You can watch for more internationalization events in the <code>changeEvent</code> method. When the locale changes, the <code>QEvent::LocaleChange</code> is sent.</p>
+<hr>
+<p class="indent">To be able to build the system, a project file with the line <code>TRANSLATIONS += english.ts swedish.ts</code> is used. Use <code>lupdate</code> to generate the <code>ts</code> files, Linguist to translate the strings, and <code>lrelease</code> to generate the <code>qm</code> files. Then run <code>qmake</code> and <code>make</code> to build the application.</p>
+<h3 class="h3"><a id="other_considerations"></a>Other Considerations</h3>
+<p class="normal">When performing the actual localization of your application, there are several issues to be aware of. It is not only a matter of translating text; you must also handle different ways of typing numbers, showing images, handling currencies, and handling time and dates.</p>
+<h4 class="h4"><a id="dealing_with_text"></a>Dealing with Text</h4>
+<p class="normal">Because Qt works with Unicode characters internally, the <code>QString</code> and <code>QChar</code> classes can handle almost any conceivable character. But this means that the standard libraries <code>isalpha</code>, <code>isdigit</code>, <code>isspace</code>, and so on will not work correctly on all platforms because they sometimes operate in a western European or American setting.</p>
+<hr>
+<p class="normal"><b>Note</b> I sometimes run into trouble registering my street address on English-speaking websites because the town I live in is called Alingsås. The letter å is not recognized as a legal character.</p>
+<hr>
+<p class="indent">The solution is to stick to the Qt-specific implementation of these methods. The <code>QChar</code> class contains the methods <code>isAlpha</code>, <code>isDigit</code>, <code>isSpace</code>, and more that are equivalent to the standard functions.</p>
+<p class="indent">Taking Unicode into consideration is important not only when validating user input but also when parsing files. To convert a Unicode <code>QString</code> to a <code>char*</code> vector (through a <code>QByteArray</code>), you can use <code>toAscii</code> or <code>toLatin1</code> to convert the string to an 8-bits-per-character format. The result is either an ASCII string or a Latin1 (ISO 8859-1) string. If you want to convert to your current 8-bit format, you can use the <code>toLocal8Bit</code> method, which converts to the 8-bit encoding as indicated by the system's settings.</p>
+<p class="indent">You can also use the <code>toUtf8</code> to convert it to UTF8. The UTF8 format represents many characters, just as in ASCII, but supports all Unicode characters through encoding them as multibyte sequences.</p>
+<p class="indent"><a id="page_296"></a>When drawing text, Qt respects the direction of the text. Some languages are written from right to left, so you must respect this in your custom widgets. The easiest way to do it is to specify the location of the text using a rectangle instead of a point. In this way Qt can place the text where the user expects it.</p>
+<h4 class="h4"><a id="images"></a>Images</h4>
+<p class="normal">There are two important things to think about when it comes to images: be careful about using images to communicate plays on words and avoid sensitive symbols. Designing effective icons is an art, and having to follow these rules can make it even harder.</p>
+<p class="indent">A classic example of a play on words is to show a log of a tree as an icon for a log viewer. This is very logical in an English setting, but the word for a log of a tree in Swedish is stock. The icon can then be said to represent a stock market trading tool—which would be a bad play on words in an English setting.</p>
+<p class="indent">When it comes to sensitive symbols, there are numerous things to avoid. On the top of the list are religious symbols. Another example of an image that has a cultural charge is the red cross (in some countries, the red crescent is more common). Avoiding political and military symbols is also wise because they tend to vary widely among countries. The key is to use your judgment and keep in mind that people are very easily offended.</p>
+<h4 class="h4"><a id="numbers"></a>Numbers</h4>
+<p class="normal">Numbers can be a tricky issue—both to print and to interpret. The <code>QLocale</code> class can handle different negative signs, decimal points, group separators, exponential characters, and characters representing zero. All this gives you quite a number of details to get wrong.</p>
+<p class="indent">In my experience the most commonly confused issues regarding the representation of numbers are the characters used for the decimal point and as a group separator (dividing digits in groups of three). Take the number 1.234 and 1,234, for example. The interpretation of how these numbers are read depends on your country—in some countries, the first reads as <i>one thousand two hundred and thirty four</i>; in others it reads as <i>one point two three four</i>. Adding two decimals makes it better, but not perfect: 1.234,00 and 1,234.00. Both are valid, but the decimal point and group separator are different.</p>
+<hr>
+<p class="normal"><b>Tip</b> Being able to handle the system's decimal point character is very important. Different keyboards have different characters for the decimal point on the numeric keypad. It can be <i>very</i> annoying to have to move between the numeric keypad and the main keypad to write a decimal point.</p>
+<hr>
+<p class="indent">Use the <code>QLocale</code> class and its method <code>toString</code> to convert numbers into text; use <code>toFloat</code>, <code>toInt</code>, and so on to convert strings to numbers. Although this works for handling numbers and strings shown to the user, remember to stick to one format when storing numbers as text in files because the files can be moved between different countries (and you still have to be able to read the numbers correctly, regardless of the current locale).</p>
+<hr>
+<p class="normal"><a id="page_297"></a><b>Tip</b> The system locale <code>QString::toDouble</code> and friends are used for converting strings into values.</p>
+<hr>
+<p class="indent"><a href="Chapter10.html#printing_three_values_using_a_given_loca">Listing 10-13</a> shows a function using a given <code>QLocale</code> to convert and print three values. The output from the function given a <code>QLocale( QLocale::Swedish, QLocale::Sweden )</code> and a <code>QLocale( QLocale::English, QLocale::UnitedStates )</code> can be seen in <a href="Chapter10.html#the_same_three_values_printed_using_diff">Listing 10-14</a>. Notice the different decimal points and group separators being used.</p>
+<div id="printing_three_values_using_a_given_loca" class="listing">
+<p class="normal"><b>Listing 10-13.</b> <i>Printing three values using a given locale</i></p>
+<code>void printValues( QLocale loc )<br>
+{<br>
+  QLocale::setDefault( loc );<br>
+<br>
+  double v1 = 3.1415;<br>
+  double v2 = 31415;<br>
+  double v3 = 1000.001;<br>
+<br>
+  qDebug() &lt;&lt; loc.toString( v1 );<br>
+  qDebug() &lt;&lt; loc.toString( v2 );<br>
+  qDebug() &lt;&lt; loc.toString( v3 );<br>
+}</code></div>
+<div id="the_same_three_values_printed_using_diff" class="listing">
+<p class="normal"><b>Listing 10-14.</b> <i>The same three values printed using different locales</i></p>
+<code>Swedish<br>
+"3,1415"<br>
+"31 415"<br>
+"1 000"<br>
+US English<br>
+"3.1415"<br>
+"31,415"<br>
+"1,000"</code></div>
+<p class="normal"><b>Currencies</b></p>
+<p class="normal">Handling currencies is something that you have to do without the help of Qt. This is all right because currencies can be treated as a number with limited precision—usually two decimals, but sometimes none or three.</p>
+<p class="indent">When you present currency values to users, it is important to remember some basics. First of all, you can always put the three-letter currency code (ISO 4217) after the value (for example, 280,00 SEK or 8.75 USD). Notice that I used the appropriate decimal point symbol depending on the currency in the examples. (You should, of course, pick a decimal point symbol depending on your user's preference.)</p>
+<p class="indent"><a id="page_298"></a>All currencies have names. For example, <i>SEK</i> is short for Swedish krona or just krona (the plural is kronor). This is also something that can be put after the value being presented.</p>
+<p class="indent">Some currencies have a sign or a symbol that can be used instead of putting a code or a name after the value. This sign can be placed either before the value, be placed after the value, or act as a decimal point symbol. Examples are £12.50 (GBP) and €12.50 (EUR). There are many more symbols available for other currencies. Some symbols are widespread, while others are used only in the local market where the currency is used.</p>
+<p class="indent">From an internationalization perspective, I recommend using the ISO 4217 codes because of neutrality (the codes are part of an international standard) and for ease of handling (the code always goes after the value).</p>
+<h4 class="h4"><a id="dates_and_times"></a>Dates and Times</h4>
+<p class="normal">Dates and times are presented in many different ways across the globe, making them a difficult challenge for developers. Although Qt provides classes to handle the complexity, there is a risk of misinterpreting user input and confusing the user through output.</p>
+<p class="indent">Let's start by having a look at time and how it is presented to the user. Time expressed as text is often presented as a digital clock, with two digits for hours and two digits for minutes. The hours and minutes are separated by a colon or a simple dot. The issue here is that the clock can be of the 24-hour type, where the hours run from zero to 23. The clock can also be of the 12-hour type, where the hours run from zero to 11 twice. In the latter case, the minutes are followed by AM or PM, indicating whether the time indicates a time in the morning or in the evening.</p>
+<p class="indent">You can handle both input and output in the way that the user expects with the <code>QTime</code> methods <code>toString</code> and <code>fromString</code> (in combination with the <code>timeFormat</code> method of the <code>QLocale</code> class) or by using the <code>toString</code> method from <code>QLocale</code> directly. Just make sure that you do not interpret a PM time from a 12-hour clock as a time for a 24-hour clock followed by some nonsense characters.</p>
+<p class="indent"><a href="Chapter10.html#printing_times_using_different_locales">Listing 10-15</a> shows a function that prints times using given locales. The resulting output is shown in <a href="Chapter10.html#the_resulting_strings_when_printing_time">Listing 10-16</a>. The locales are <code>QLocale( QLocale::Swedish, QLocale::Sweden )</code> and <code>QLocale( QLocale::English, QLocale::UnitedStates )</code>.</p>
+<div id="printing_times_using_different_locales" class="listing">
+<p class="normal"><b>Listing 10-15.</b> <i>Printing times using different locales</i></p>
+<code>void printTimes( QLocale loc )<br>
+{<br>
+  QLocale::setDefault( loc );<br>
+<br>
+  QTime t1( 6, 15, 45 );<br>
+  QTime t2( 12, 00, 00 );<br>
+  QTime t3( 18, 20, 25 );<br>
+<br>
+  qDebug() &lt;&lt; "short";<br>
+  qDebug() &lt;&lt; loc.toString( t1, QLocale::ShortFormat );<br>
+  qDebug() &lt;&lt; loc.toString( t2, QLocale::ShortFormat );<br>
+  qDebug() &lt;&lt; loc.toString( t3, QLocale::ShortFormat );<br>
+<a id="page_299"></a>
+  qDebug() &lt;&lt; "long";<br>
+  qDebug() &lt;&lt; loc.toString( t1, QLocale::LongFormat );<br>
+  qDebug() &lt;&lt; loc.toString( t2, QLocale::LongFormat );<br>
+  qDebug() &lt;&lt; loc.toString( t3, QLocale::LongFormat );<br>
+<br>
+  qDebug() &lt;&lt; "default";<br>
+  qDebug() &lt;&lt; loc.toString( t1 );<br>
+  qDebug() &lt;&lt; loc.toString( t2 );<br>
+  qDebug() &lt;&lt; loc.toString( t3 );<br>
+}</code></div>
+<div id="the_resulting_strings_when_printing_time" class="listing">
+<p class="normal"><b>Listing 10-16.</b> <i>The resulting strings when printing times use different locales</i></p>
+<code>Swedish<br>
+short<br>
+"06.15.45"<br>
+"12.00.00"<br>
+"18.20.25"<br>
+long<br>
+"kl. 06.15.45 W. Europe Daylight Time"<br>
+"kl. 12.00.00 W. Europe Daylight Time"<br>
+"kl. 18.20.25 W. Europe Daylight Time"<br>
+default<br>
+"kl. 06.15.45 W. Europe Daylight Time"<br>
+"kl. 12.00.00 W. Europe Daylight Time"<br>
+"kl. 18.20.25 W. Europe Daylight Time"<br>
+US English<br>
+short<br>
+"6:15:45 AM"<br>
+"12:00:00 PM"<br>
+"6:20:25 PM"<br>
+long<br>
+"6:15:45 AM W. Europe Daylight Time"<br>
+"12:00:00 PM W. Europe Daylight Time"<br>
+"6:20:25 PM W. Europe Daylight Time"<br>
+default<br>
+"6:15:45 AM W. Europe Daylight Time"<br>
+"12:00:00 PM W. Europe Daylight Time"<br>
+"6:20:25 PM W. Europe Daylight Time"</code></div>
+<p class="indent">When it comes to representing dates, there are other issues to deal with. Months have different names in different countries, as do the days of the week. When writing dates, the order of the day, month, and year differ between different countries. Just to make things even more complex, the first day of the week can be either Sunday or Monday, depending on your location. To help you manage this, the <code>QLocale</code> class can handle most of these issues.</p>
+<p class="indent"><a id="page_300"></a>You can present and interpret dates properly by using the <code>toString</code> and <code>fromString</code> methods from the <code>QDate</code> class and the <code>dateFormat</code> method from <code>QLocale</code>, or by using the <code>toString</code> method of <code>QLocale</code> directly.</p>
+<p class="indent">To compare the impact of locales <code>QLocale( QLocale::Swedish, QLocale::Sweden )</code> and a <code>QLocale( QLocale::English, QLocale::UnitedStates )</code> when it comes to date formatting, I have used the function shown in <a href="Chapter10.html#printing_dates_using_different_locales">Listing 10-17</a>. The resulting output can be seen in <a href="Chapter10.html#the_resulting_strings_when_printing_date">Listing 10-18</a>.</p>
+<div id="printing_dates_using_different_locales" class="listing">
+<p class="normal"><b>Listing 10-17.</b> <i>Printing dates using different locales</i></p>
+<code>void printDates( QLocale loc )<br>
+{<br>
+  QLocale::setDefault( loc );<br>
+<br>
+  QDate d1( 2006, 10, 12 );<br>
+  QDate d2( 2006, 01, 31 );<br>
+  QDate d3( 2006, 06, 06 );<br>
+<br>
+  qDebug() &lt;&lt; "short";<br>
+  qDebug() &lt;&lt; loc.toString( d1, QLocale::ShortFormat );<br>
+  qDebug() &lt;&lt; loc.toString( d2, QLocale::ShortFormat );<br>
+  qDebug() &lt;&lt; loc.toString( d3, QLocale::ShortFormat );<br>
+<br>
+  qDebug() &lt;&lt; "long";<br>
+  qDebug() &lt;&lt; loc.toString( d1, QLocale::LongFormat );<br>
+  qDebug() &lt;&lt; loc.toString( d2, QLocale::LongFormat );<br>
+  qDebug() &lt;&lt; loc.toString( d3, QLocale::LongFormat );<br>
+<br>
+  qDebug() &lt;&lt; "default";<br>
+  qDebug() &lt;&lt; loc.toString( d1 );<br>
+  qDebug() &lt;&lt; loc.toString( d2 );<br>
+  qDebug() &lt;&lt; loc.toString( d3 );<br>
+}</code></div>
+<div id="the_resulting_strings_when_printing_date" class="listing">
+<p class="normal"><b>Listing 10-18.</b> <i>The resulting strings when printing dates using different locales</i></p>
+<code>Swedish<br>
+short<br>
+"12 okt 2006"<br>
+"31 jan 2006"<br>
+"6 jun 2006"<br>
+long<br>
+"torsdag 12 oktober 2006"<br>
+"tisdag 31 januari 2006"<br>
+"tisdag 6 juni 2006"<br>
+default<br>
+"torsdag 12 oktober 2006"<br>
+"tisdag 31 januari 2006"<br>
+<a id="page_301"></a>
+"tisdag 6 juni 2006"<br>
+US English<br>
+short<br>
+"Oct 12, 2006"<br>
+"Jan 31, 2006"<br>
+"Jun 6, 2006"<br>
+long<br>
+"Thursday, October 12, 2006"<br>
+"Tuesday, January 31, 2006"<br>
+"Tuesday, June 6, 2006"<br>
+default<br>
+"Thursday, October 12, 2006"<br>
+"Tuesday, January 31, 2006"<br>
+"Tuesday, June 6, 2006"</code></div>
+<p class="indent">Notice that in both <a href="Chapter10.html#the_same_three_values_printed_using_diff">Listing 10-14</a> and <a href="Chapter10.html#the_resulting_strings_when_printing_date">Listing 10-18</a> the default format is the long format. If I had to choose between long and short format, I would consider the shorter format easier to read in most cases (unless I really needed all the details about weekdays and time zones).</p>
+<h4 class="h4"><a id="help"></a>Help</h4>
+<p class="normal">The translation tools that ship with Qt catch most of the help you provide: tooltips, status messages, and What's this strings are found as long as they are contained in <code>tr</code> calls. Don't forget your online help documents. You must take care of translating your help documents and make sure to show the correct language when the user requests help. It's not very complicated; it's just something that you must not forget because the Qt workflow doesn't catch it.</p>
+<h3 class="h3"><a id="summary-015"></a>Summary</h3>
+<p class="normal">Internationalization and localization are about much more than just translating an application. You can no longer depend on many things that you take for granted: date format, time format, number format, icons being understood by the user, legal characters, and so on. The process is really about understanding the target culture and its conventions. This is what makes deploying an application worldwide such a big task.</p>
+<p class="indent">By using <code>lupdate</code>, <code>lrelease</code>, and Linguist together with the <code>QLocale</code> class, you have come a long way. Try to keep your text in <code>QString</code> and <code>QChar</code> as much as possible to ensure that Unicode is used (saving you from having to think about encoding characters all the time).</p>
+<p class="indent">Before deploying, be sure to test in all locales that you intend to target. Try to use local testers if possible—they will probably spot more mistakes than you will.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter09.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 9: Providing Help</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter11.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 11: Plugins</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","agent":"","applicationID":"3275661,67267027,67267028","applicationTime":102,"queueTime":9,"licenseKey":"510f1a6865"}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

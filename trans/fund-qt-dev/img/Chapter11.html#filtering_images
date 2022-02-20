@@ -1,0 +1,1204 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter11.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter11.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter11.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter11.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 11: Plugins - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter11.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter11.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter12.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html"/><meta name="description" content=" CHAPTER 11 Plugins Qt offers a rich programming interface that is capable of interacting with many different technologies. This capability is what makes it possible for Qt-driven applications to look ... "><meta property="og:title" content="CHAPTER 11: Plugins" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 11: Plugins" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 11 Plugins Qt offers a rich programming interface that is capable of interacting with many different technologies. This capability is what makes it possible for Qt-driven applications to look ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter11.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%2011%3A%20Plugins&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter11.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter10.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 10: Internationalization and Localization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter12.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 12: Doing Things in Parallel</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_303"></a><a id="plugins"></a>CHAPTER 11<br><br>Plugins</h2>
+<p class="normal"><big><b>Qt</b></big> offers a rich programming interface that is capable of interacting with many different technologies. This capability is what makes it possible for Qt-driven applications to look different on different platforms; images can be stored in many different ways and interact with numerous database solutions. You might be surprised to know that you can create your own new Qt features using a Qt feature known as a <i>plugin</i>.</p>
+<p class="indent">The classes used by Qt to handle plugins are not limited to extending Qt. With the same set of classes you can also create your own plugin interfaces and extend your own applications with custom plugins. This makes it possible to create extendable applications without having to deal with all the platform specifics involved in the process.</p>
+<h3 class="h3"><a id="plugin_basics"></a>Plugin Basics</h3>
+<p class="normal">Before you can start working with plugins, you need to understand how a plugin works. To a Qt application a plugin is just another instance of a class. The methods available are determined by an interface class. An interface class usually contains only pure virtual methods, so no functions are implemented in the interface class. The plugin then inherits the <code>QObject</code> class and the interface class and implements all the methods with their specific functionality. When the application loads a potential plugin with the <code>QPluginLoader</code> class, it gets a <code>QObject</code> pointer. By attempting to cast the given object to the interface class using <code>qobject_cast</code>, the application can tell whether the plugin implements the expected interface and can be treated as an actual plugin.</p>
+<p class="indent">For the <code>QPluginLoader</code> to work properly the interface class must be declared an interface by using the <code>Q_DECLARE_INTERFACE</code> macro, and the plugins must declare that they implement an interface by using the <code>Q_INTERFACES</code> macro. These two macros enable you to safely match a given plugin to the right interface. It is one step in a whole range of criteria that must be fulfilled for Qt to trust the plugin. The following list contains all the checks that Qt performs when attempting to load a plugin. If any criteria are not met, the plugin is not loaded.</p>
+<ul>
+<li>The same version of Qt must have been used for building the plugin and the application. Qt checks that the major (4) and minor (4.<b>2</b>) numbers match, but the revision number (4.2.<b>2</b>) can differ.</li>
+<li>The plugin and application must have been built using the same compiler for the same operating system on the same platform. Versions of the compiler can differ as long as their internal architecture remains the same (for example, name mangling).</li>
+<li><a id="page_304"></a>The Qt library used for the plugin and application must have been configured in the same way and has to be compiled in "shared" mode (you can't use plugins with static Qt).</li>
+</ul>
+<h3 class="h3"><a id="extending_qt_with_plugins"></a>Extending Qt with Plugins</h3>
+<p class="normal">Qt has many interfaces that can be extended. For instance, you can add plugins for styles, database drivers, text codecs, and image formats. If you use Qtopia Core, you can even use plugins to access different hardware such as graphics drivers, mouse drivers, keyboard drivers, and accessibility devices.</p>
+<hr>
+<p class="normal"><b>Note</b> Qtopia Core is a Qt edition for embedded systems such as palm tops, set top boxes, mobile phones, and so on.</p>
+<hr>
+<p class="indent">There are many benefits of Qt being extendable. For starters, it makes Qt more durable because it can be adapted to new technologies. It can also make Qt lighter because unneeded plugins don't need to be deployed. It also ensures that you can keep using Qt's application programming interface even if you need to target special technologies.</p>
+<h4 class="h4"><a id="creating_an_ascii_art_plugin"></a>Creating an ASCII Art Plugin</h4>
+<p class="normal">The principle of making a Qt plugin is the same regardless of the type of extension the plugin actually provides. To understand how to extend Qt and how the interaction between Qt, the plugin, and the application work, you'll have a look at an image format plugin. The plugin will save the images as ASCII art, in which each pixel is converted into a character (an example is shown in <a href="Chapter11.html#an_ascii_art_image">Figure 11-1</a>). This is something of a lost art, but it was quite common back in the 1980s and early 1990s.</p>
+<p class="indent">Before you start looking at the plugin, you should see how Qt loads and saves images. The general idea is to use the <code>save</code> and <code>load</code> methods from the <code>QImage</code> class. (Instead of using <code>load</code> you can specify the file name in the constructor of <code>QImage</code>—it does the same thing.)</p>
+<p class="indent">The <code>QImage</code> class uses a <code>QImageReader</code> class when it loads images. <code>QImageReader</code> checks to see whether there is a <code>QImageIOPlugin</code> that can read the given image. When a plugin is found, it is asked to return a <code>QImageIOHandler</code> that the <code>QImageReader</code> then uses to actually read the image.</p>
+<p class="indent">When writing, the process is about the same, but the file format is not determined from the file but has to be specified when calling <code>save</code>. <code>QImage</code> passes it onto the <code>QImageWriter</code> class that asks whether there is a <code>QImageIOPlugin</code> that can save in the given format. When found, the <code>QImageIOPlugin</code> returns a <code>QImageIOHandler</code> that the <code>QImageWriter</code> uses to actually write the image to a device, usually a file.</p>
+<div id="an_ascii_art_image" class="figure-contents"><a id="page_305"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1101.jpg" alt="image" width="549" height="417">
+</div>
+</div>
+<p class="normal"><b>Figure 11-1.</b> <i>An ASCII art image</i></p>
+<hr>
+<p class="normal"><b>Tip</b> Image readers and writers work with <code>QIODevice</code> objects so an image can be read or written from, and to network streams, memory buffers, files—you name it—because <code>QIODevice</code> is the base class of the classes that manage these interfaces.</p>
+<hr>
+<p class="indent">Both the reading and writing cases are shown in <a href="Chapter11.html#the_classes_involved_in_the_steps_for_re">Figure 11-2</a>. The figure also shows what part is Qt and what part is the plugin. The shown scenario is commonly used with Qt plugins. One is queried for what the plugin has to offer and then returns instances that perform the actual tasks. In the case of image plugins, the <code>QImageIOPlugin</code> is queried and returns a <code>QImageIOHandler</code>.</p>
+<div id="the_classes_involved_in_the_steps_for_re" class="figure-contents"><a id="page_306"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1102.jpg" alt="image" width="549" height="527">
+</div>
+</div>
+<p class="normal"><b>Figure 11-2.</b> <i>The classes involved in the steps for reading and writing images using Qt</i></p>
+<p class="normal"><b>The Plugin</b></p>
+<p class="normal">Now you're ready to have a look at the ASCII art image plugin that can handle text images; the format is called <code>ti</code>. You'll also tell Qt to use <code>ti</code> as the preferred file extension for these text images. The <code>TextImagePlugin</code> class inherits from the <code>QImageIOPlugin</code> class, while the <code>TextImageHandler</code> inherits the <code>QImageIOHandler</code> class (nothing else is in the plugin).</p>
+<p class="indent">Let's start looking at the code, beginning with the class declaration of the <code>TextImagePlugin</code> in <a href="Chapter11.html#the_class_declaration_of_the_image_io_pl">Listing 11-1</a>. The interface consists of three methods: <code>keys</code>, <code>capabilities</code>, and <code>create</code>. The <code>keys</code> method returns a <code>QStringList</code> of the image formats that the plugin supports. The <code>capabilities</code> method takes a <code>QIODevice</code> and an image format as arguments and then returns a value indicating whether the plugin <code>CanRead</code> or <code>CanWrite</code> the specified format to or from the given device. The last method, <code>create</code>, creates a <code>QImageIOHandler</code> for a given device and format.</p>
+<hr>
+<p class="normal"><a id="page_307"></a><b>Note</b> The <code>capabilities</code> method can return the value <code>CanReadIncremental</code> if incremental reading is supported. This means that it reads the image in several passes, making it possible to show the image gradually. The ASCII art image plugin never attempts to implement it.</p>
+<hr>
+<div id="the_class_declaration_of_the_image_io_pl" class="listing">
+<p class="normal"><b>Listing 11-1.</b> <i>The class declaration of the image IO plugin</i></p>
+<code>class TextImagePlugin : public QImageIOPlugin<br>
+{<br>
+public:<br>
+  TextImagePlugin();<br>
+  ~TextImagePlugin();<br>
+<br>
+  QStringList keys() const;<br>
+  Capabilities capabilities( QIODevice *device, const QByteArray &amp;format ) const;<br>
+  QImageIOHandler *create( QIODevice *device,<br>
+    const QByteArray &amp;format = QByteArray() ) const;<br>
+};</code></div>
+<p class="indent">The most interesting of the methods is <code>capabilities</code> (shown in <a href="Chapter11.html#determining_what_the_plugin_can_do_with">Listing 11-2</a>), which determines what the plugin can do for a given format <i>or</i> device. This means that the <code>formatQByteArray</code> must either contain the string <code>ti</code> or be empty for the plugin to be able to do anything with it.</p>
+<p class="indent">If the format <code>QByteArray</code> is empty, you must peek at the <code>QIODevice</code>. If it is open and writeable, you can always write to it. If it is readable, and the plugin can read from it (more about the static <code>canRead</code> method later on), you can read from it. It is important not to affect the device in any way (ensure that you are just peeking; not actually reading, writing, or seeking).</p>
+<hr>
+<p class="normal"><b>Note</b> A <code>QByteArray</code> can be treated as Qt's controlled version of <code>char*</code>. You can use it to carry text just like a plain C string. Never use <code>QString</code> to do that (as you might have been doing with <code>std::string</code>) because it internally converts to Unicode, which might corrupt your binary data.</p>
+<hr>
+<div id="determining_what_the_plugin_can_do_with" class="listing">
+<p class="normal"><b>Listing 11-2.</b> <i>Determining what the plugin can do with the given format and device</i></p>
+<code>QImageIOPlugin::Capabilities TextImagePlugin::capabilities( QIODevice *device,<br>
+  const QByteArray &amp;format ) const<br>
+{<br>
+  if( format == "ti" )<br>
+    return (QImageIOPlugin::CanRead | QImageIOPlugin::CanWrite);<br>
+<br>
+  if( !format.isEmpty() )<br>
+    return 0;<br>
+<a id="page_308"></a>
+  if( !device-&gt;isOpen() )<br>
+    return 0;<br>
+<br>
+  QImageIOPlugin::Capabilities result;<br>
+<br>
+  if( device-&gt;isReadable() &amp;&amp; TextImageHandler::canRead( device ) )<br>
+    result |= QImageIOPlugin::CanRead;<br>
+<br>
+  if( device-&gt;isWritable() )<br>
+    result |= QImageIOPlugin::CanWrite;<br>
+<br>
+  return result;<br>
+}</code></div>
+<p class="indent">So how does Qt know which formats to ask for? All image plugins report which formats they can handle with the <code>keys</code> method. The formats (or format, in this case) are put in a <code>QStringList</code> that is returned. The implementation is shown in <a href="Chapter11.html#putting_the_image_file_formats_in_a_qstr">Listing 11-3</a>.</p>
+<div id="putting_the_image_file_formats_in_a_qstr" class="listing">
+<p class="normal"><b>Listing 11-3.</b> <i>Putting the image file formats in a</i> <code>QStringList</code></p>
+<code>QStringList TextImagePlugin::keys() const<br>
+{<br>
+  return QStringList() &lt;&lt; "ti";<br>
+}</code></div>
+<p class="indent">When the format is correct and can be handled, the last method comes into action. The <code>create</code> method shown in <a href="Chapter11.html#creating_and_configuring_an_image_io_han">Listing 11-4</a> creates an instance of the custom <code>TextImageIOHandler</code>, configures it with a format and a device, and returns the result.</p>
+<p class="indent">A format is set for the handler so it can be made to handle several formats. There are many formats that are almost identical, so it can be useful to reduce the size of the source code.</p>
+<div id="creating_and_configuring_an_image_io_han" class="listing">
+<p class="normal"><b>Listing 11-4.</b> <i>Creating and configuring an image IO handler</i></p>
+<code>QImageIOHandler *TextImagePlugin::create( QIODevice *device,<br>
+  const QByteArray &amp;format ) const<br>
+{<br>
+  QImageIOHandler *result = new TextImageHandler();<br>
+<br>
+  result-&gt;setDevice( device );<br>
+  result-&gt;setFormat( format );<br>
+<br>
+  return result;<br>
+}</code></div>
+<p class="indent">Before you can move on to the handler class, you must tell Qt that this class is a part of the plugin interface. You can do this by using the <code>Q_EXPORT_PLUGIN2</code> macro, as shown in <a href="Chapter11.html#exporting_the_class_as_a_plugin">Listing 11-5</a>. The macro is placed somewhere in the implementation file (not the header). The first argument <a id="page_309"></a>is the class name with all characters in lowercase, whereas the second argument is the actual class name.</p>
+<p class="indent">The macro tells Qt that this class is the interface to the plugin. Each plugin can have only one interface, so this macro must be used exactly one time per plugin.</p>
+<div id="exporting_the_class_as_a_plugin" class="listing">
+<p class="normal"><b>Listing 11-5.</b> <i>Exporting the class as a plugin</i></p>
+<code>Q_EXPORT_PLUGIN2( textimageplugin, TextImagePlugin )</code></div>
+<p class="normal"><b>Reading and Writing Images</b></p>
+<p class="normal">The <code>TextImagePlugin</code> makes up one-half of the plugin. The other half consists of the <code>TextImageHandler</code> class, which is the class that performs all the heavy lifting—reading and writing images to and from devices.</p>
+<p class="indent">Let's start by having a look at the class declaration in <a href="Chapter11.html#the_class_declaration_of_the_image_io_ha">Listing 11-6</a>. The class inherits the <code>QImageIOHandler</code> class and implements the methods <code>read</code>, <code>write</code>, and two variations of <code>canRead</code>. The <code>read</code> and <code>write</code> methods are pretty self-explanatory, but the two <code>canRead</code> versions need a bit of explanation. The nonstatic version simply calls the static version. The reason for having a static version is that it is easier to use from the <code>capabilities</code> method in the <code>TextImagePlugin</code> class (refer to <a href="Chapter11.html#determining_what_the_plugin_can_do_with">Listing 11-2</a>). From Qt's point of view, the static version is not required.</p>
+<div id="the_class_declaration_of_the_image_io_ha" class="listing">
+<p class="normal"><b>Listing 11-6.</b> <i>The class declaration of the image IO handler</i></p>
+<code>class TextImageHandler : public QImageIOHandler<br>
+{<br>
+public:<br>
+  TextImageHandler();<br>
+  ~TextImageHandler();<br>
+<br>
+  bool read( QImage *image );<br>
+  bool write( const QImage &amp;image );<br>
+<br>
+  bool canRead() const;<br>
+  static bool canRead( QIODevice *device );<br>
+};</code></div>
+<p class="indent">The simplest of the more complex methods is the <code>write</code> method, shown in <a href="Chapter11.html#writing_the_image_to_a_device">Listing 11-7</a>. It needs very little error checking and just streams the parts of the image to a <code>QTextStream</code> writing to the device specified. The <code>device</code> method returns the same device as is set using <code>setDevice</code> in the <code>create</code> method of <code>TextImagePlugin</code> (refer to <a href="Chapter11.html#creating_and_configuring_an_image_io_han">Listing 11-4</a>). It is used when creating the text stream <code>stream</code>.</p>
+<p class="indent">When the stream is set up, a prefix is written to the file. All ASCII art images start with a line reading <code>TEXT</code>. Then the dimensions are written as <i>width</i> × <i>height</i>, where the <code>x</code> serves as a separator character. You get the dimensions from the image given as an argument to the method. The prefix and dimensions make up the header; the rest is the image data.</p>
+<p class="indent"><a id="page_310"></a>The image data is calculated by converting the red, green, and blue values of each pixel to an average gray scale value. The value is then shifted down and masked to three bits, giving the value range 0–7. This value corresponds to the darkness of each pixel and is used to look up a character in the <code>map</code> string.</p>
+<p class="indent">The <code>map</code> variable is a <code>char*</code> initialized to <code>.:ilNAM</code> (including an initial space). The characters in the <code>map</code> string have been picked so that the lowest value is white, and each character gets darker and darker as the index increases. The source image and the resulting ASCII art can be seen in <a href="Chapter11.html#the_source_image_alongside_the_resulting">Figure 11-3</a>. The ASCII art is shown in a word processor using a monospace font set to a very small size.</p>
+<p class="indent">When all image data is written to the stream, the stream's good status is ensured before <code>true</code> is returned for a successful write operation.</p>
+<div id="writing_the_image_to_a_device" class="listing">
+<p class="normal"><b>Listing 11-7.</b> <i>Writing the image to a device</i></p>
+<code>bool TextImageHandler::write( const QImage &amp;image )<br>
+{<br>
+  QTextStream stream( device() );<br>
+<br>
+  stream &lt;&lt; "TEXT\n";<br>
+  stream &lt;&lt; image.width() &lt;&lt; "x" &lt;&lt; image.height() &lt;&lt; "\n";<br>
+  for( int y=0; y&lt;image.height(); ++y )<br>
+  {<br>
+    for( int x=0; x&lt;image.width(); ++x )<br>
+    {<br>
+      QRgb rgb = image.pixel( x, y );<br>
+      int r = rgb &amp; 0xff;<br>
+      int g = (rgb &gt;&gt; 8) &amp; 0xff;<br>
+      int b = (rgb &gt;&gt; 16) &amp; 0xff;<br>
+<br>
+      stream &lt;&lt; map[ 7 - (((r+g+b)/3)&gt;&gt;5) &amp; 0x7 ];<br>
+    }<br>
+    stream &lt;&lt; "\n";<br>
+  }<br>
+<br>
+  if( stream.status() != QTextStream::Ok )<br>
+    return false;<br>
+<br>
+  return true;<br>
+}</code></div>
+<p class="indent">Most fonts today are not monospace, which means that the width of a character depends on the character; an <i>i</i> requires less space than an <i>M</i>. Another problem is that most fonts are higher than they are wide. The ASCII art image plugin does not take this into account, so even if a monospace font is used, the result appears to be stretched. It's hard to compensate for this in the <code>write</code> method because you never know which font the user will use to view the image. All in all, the results are not perfect, but you can still tell what the image shows.</p>
+<div id="the_source_image_alongside_the_resulting" class="figure-contents"><a id="page_311"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1103.jpg" alt="image" width="549" height="520">
+</div>
+</div>
+<p class="normal"><b>Figure 11-3.</b> <i>The source image alongside the resulting ASCII art</i></p>
+<p class="indent">Although writing is a straightforward process, reading is quite the opposite because you can never trust the input stream to be valid. It can contain anything, including something completely unexpected (corrupted data or a completely different file format, for example), or the file might be missing data. This means that the <code>read</code> method is more complex than the <code>write</code> method.</p>
+<p class="indent">In <a href="Chapter11.html#determining_whether_you_are_willing_to_r">Listing 11-8</a> you can see how the header is read and validated. As with writing, it starts with a <code>QTextStream</code> being created. The first line is read, and you ensure that it equals <code>TEXT</code>. If it does not, the entire operation is aborted.</p>
+<p class="indent">The dimensions, which follow the first line, are matched and filtered out using a regular expression. If the expression fails to match, or if any of the dimensions fails to convert to a number, the operation is aborted. Now you know that the header is okay so you can start reading the image data.</p>
+<div id="determining_whether_you_are_willing_to_r" class="listing"><a id="page_312"></a>
+<p class="normal"><b>Listing 11-8.</b> <i>Determining whether you are willing to read the file</i></p>
+<code>bool TextImageHandler::read( QImage *image )<br>
+{<br>
+  QTextStream stream( device() );<br>
+  QString line;<br>
+<br>
+  line = stream.readLine();<br>
+  if( line != "TEXT" || stream.status() != QTextStream::Ok )<br>
+    return false;<br>
+<br>
+  line = stream.readLine();<br>
+  QRegExp re( "(\\d+)x(\\d+)" );<br>
+  int width, height;<br>
+  if( re.exactMatch( line ) )<br>
+  {<br>
+    bool ok;<br>
+<br>
+    width = re.cap(1).toInt( &amp;ok );<br>
+    if( !ok )<br>
+      return false;<br>
+<br>
+    height = re.cap(2).toInt( &amp;ok );<br>
+    if( !ok )<br>
+      return false;<br>
+  }<br>
+  else<br>
+    return false;<br>
+<br>
+...<br>
+}</code></div>
+<p class="indent">Because the header is valid, you can see the second half of the <code>read</code> method (the source code is shown in <a href="Chapter11.html#read_the_image_from_the_device_and_deter">Listing 11-9</a>). The reading is very similar to the writing. First, a temporary <code>QImage</code> is created; then each line is read and converted to gray scale. The length of each line is checked against the expected image width, and no unexpected characters in the image data are accepted. If the status of the stream is okay when the entire image has been read, the image given as an argument is updated before <code>true</code> is returned to indicate a successful read.</p>
+<div id="read_the_image_from_the_device_and_deter" class="listing">
+<p class="normal"><b>Listing 11-9.</b> <i>Read the image from the device and determine whether it all went well.</i></p>
+<code>bool TextImageHandler::read( QImage *image )<br>
+{<br>
+...<br>
+  QImage result( width, height, QImage::Format_ARGB32 );<br>
+<br>
+  for( int y=0; y&lt;height; ++y )<br>
+  {<br>
+<a id="page_313"></a>
+    line = stream.readLine();<br>
+    if( line.length() != width )<br>
+      return false;<br>
+<br>
+    for( int x=0; x&lt;width; ++x )<br>
+    {<br>
+      switch( QString(map).indexOf(line[x]) )<br>
+      {<br>
+        case 0:<br>
+          result.setPixel( x, y, 0xffffffff );<br>
+          break;<br>
+        case 1:<br>
+          result.setPixel( x, y, 0xffdfdfdf );<br>
+          break;<br>
+        case 2:<br>
+          result.setPixel( x, y, 0xffbfbfbf );<br>
+          break;<br>
+        case 3:<br>
+          result.setPixel( x, y, 0xff9f9f9f );<br>
+          break;<br>
+        case 4:<br>
+          result.setPixel( x, y, 0xff7f7f7f );<br>
+          break;<br>
+        case 5:<br>
+          result.setPixel( x, y, 0xff5f5f5f );<br>
+          break;<br>
+        case 6:<br>
+          result.setPixel( x, y, 0xff3f3f3f );<br>
+          break;<br>
+        case 7:<br>
+          result.setPixel( x, y, 0xff000000 );<br>
+          break;<br>
+        default:<br>
+          return false;<br>
+      }<br>
+    }<br>
+  }<br>
+<br>
+  if( stream.status() != QTextStream::Ok )<br>
+    return false;<br>
+<br>
+  *image = result;<br>
+<br>
+  return true;<br>
+}</code></div>
+<p class="indent"><a id="page_314"></a>Saving an image as ASCII art and then reading it back results in some losses. The color-to-gray-scale conversion and back is far from perfect. Taking the ASCII art image from <a href="Chapter11.html#the_source_image_alongside_the_resulting">Figure 11-3</a> and saving back to an ordinary pixel-based image results in the image shown in <a href="Chapter11.html#the_ascii_art_is_saved_back_as_an_ordina">Figure 11-4</a>.</p>
+<div id="the_ascii_art_is_saved_back_as_an_ordina" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1104.jpg" alt="image" width="549" height="619">
+</div>
+</div>
+<p class="normal"><b>Figure 11-4.</b> <i>The ASCII art is saved back as an ordinary image.</i></p>
+<p class="indent">The remaining part of the <code>TextImageHandler</code> is the <code>canRead</code> method shown in <a href="Chapter11.html#peek_at_the_device_to_determine_whether">Listing 11-10</a>. The nonstatic method calls the static method. The nonstatic method is really just a wrapper to provide the interface that Qt expects. The static method uses the <code>peek</code> method to see whether the file starts with the <code>TEXT</code> prefix. If the prefix is found, it is assumed that the rest of the file is okay, and <code>true</code> is returned to indicate that the handler can read the file.</p>
+<hr>
+<p class="normal"><b>Tip</b> When designing file formats it is a good idea to prefix your actual data with a unique header. This makes it possible to see whether the file is a good candidate for reading without having to read the entire file.</p>
+<hr>
+<p class="indent"><a id="page_315"></a>It is important to use the <code>peek</code> method here because it leaves the <code>QIODevice</code> unaffected. When attempting to read an image, Qt can pass the same device to several plugins to determine which one to use.</p>
+<div id="peek_at_the_device_to_determine_whether" class="listing">
+<p class="normal"><b>Listing 11-10.</b> <i>Peek at the device to determine whether the image looks right.</i></p>
+<code>bool TextImageHandler::canRead( QIODevice *device )<br>
+{<br>
+  if( device-&gt;peek(4) == "TEXT" )<br>
+    return true;<br>
+<br>
+  return false;<br>
+}<br>
+<br>
+bool TextImageHandler::canRead() const<br>
+{<br>
+  return TextImageHandler::canRead( device() );<br>
+}</code></div>
+<p class="normal"><b>Building and Installing</b></p>
+<p class="normal">To build a plugin and install it so that Qt can find it takes more than just running <code>qmake –project</code>. You can use it to create a starting point, but you have to modify the project file extensively.</p>
+<p class="indent"><a href="Chapter11.html#the_project_file_for_the_textimageplugin">Listing 11-11</a> shows the project file for the ASCII art image format plugin. The <code>HEADERS</code> and <code>SOURCES</code> lines are just the same as for all Qt projects. The lines above them specify that you are building a template, while the lines below indicate where the plugin will be installed.</p>
+<p class="indent">Starting from the top, you set the <code>TEMPLATE</code> to <code>lib</code>, which tells QMake that you are building a library, not an application. The next line tells QMake the name of the plugin: <code>textimage</code>. Following is the <code>CONFIG</code> line, in which you specify that the <code>lib</code> will be used as a <code>plugin</code> and that it should be built in <code>release</code> mode (without debugging information). The last line in the top section is the <code>VERSION</code> line, which is used to tell different plugin versions apart. In this case, the resulting file is named <code>textimage1</code>.</p>
+<p class="indent">The last two lines set up an installation target, which configures the actions that are performed when you run <code>make install</code>. The first line of this section sets the <code>path</code> of the <code>target</code> to <code>$$[QT_INSTALL_PLUGINS]/imageformats</code>—that is, the <code>plugins/imageformats</code> directory inside the Qt installation directory. The second line of this section and the last line of the project file tell Qt to install <code>target</code> when <code>make install</code> is run. It will copy the plugin file to the appropriate directory, making it possible for Qt to find it.</p>
+<div id="the_project_file_for_the_textimageplugin" class="listing">
+<p class="normal"><b>Listing 11-11.</b> <i>The project file for the</i> <code>TextImagePlugin</code> <i>and</i> <code>TextImageHandler</code></p>
+<code>TEMPLATE = lib<br>
+TARGET = textimage<br>
+CONFIG += plugin release<br>
+VERSION = 1.0.0<br>
+<a id="page_316"></a>
+HEADERS += textimagehandler.h textimageplugin.h<br>
+SOURCES += textimagehandler.cpp textimageplugin.cpp<br>
+<br>
+target.path += $$[QT_INSTALL_PLUGINS]/imageformats<br>
+INSTALLS += target</code></div>
+<p class="indent">To build and make this project, you must run <code>qmake</code>, followed by <code>make</code>. If it completes without any problems, you can run <code>make install</code> to make the plugin available to Qt.</p>
+<p class="normal"><b>Using the Plugin</b></p>
+<p class="normal">Before you start using the plugin, you need to know how Qt handles plugins. They are loaded by the <code>QApplication</code> (actually by its superclass— <code>QCoreApplication</code>) object, so you must make sure to have an instance of <code>QApplication</code> available when you use a plugin.</p>
+<p class="indent">After you have a <code>QApplication</code> object, you can query the <code>QImageReader</code> and <code>QImageWriter</code> classes for a list of supported formats by using the static <code>supportedImageFormats</code> method. The reader returns the readable image formats, while the writer returns the writeable image formats. The returned value is a <code>QList</code> of <code>QByteArray</code> objects, which is a list of all the available keys returned from the different <code>QImageIOPlugin</code> objects.</p>
+<p class="indent"><a href="Chapter11.html#asking_qt_for_the_image_formats_that_can">Listing 11-12</a> shows a small <code>foreach</code> loop that queries for all readable image formats and prints them to the debugging console. All formats that can be read can usually also be written—but you can never assume this.</p>
+<div id="asking_qt_for_the_image_formats_that_can" class="listing">
+<p class="normal"><b>Listing 11-12.</b> <i>Asking Qt for the image formats that can be read</i></p>
+<code>   QApplication app( argc, argv );<br>
+<br>
+   foreach( QByteArray ba, QImageReader::supportedImageFormats () )<br>
+     qDebug() &lt;&lt; ba;</code></div>
+<p class="indent">When reading, Qt usually determines the file format by querying the plugin's <code>capabilities</code> methods. This generates a call to the different <code>canRead</code> methods that determine whether the specific plugin can handle the given file. (The application just needs to specify the file name; Qt does the rest of the work.) As shown in <a href="Chapter11.html#reading_an_ascii_art_image">Listing 11-13</a>, the resulting <code>QImage</code> is a null image if the loading fails. If you use the <code>load</code> method of <code>QImage</code>, you can get the return value from it. The method returns <code>true</code> if the image is loaded; it returns <code>false</code> if it fails.</p>
+<div id="reading_an_ascii_art_image" class="listing">
+<p class="normal"><b>Listing 11-13.</b> <i>Reading an ASCII art image</i></p>
+<code>   QImage input( "input.ti" );<br>
+   if( input.isNull() )<br>
+     qDebug() &lt;&lt; "Failed to load.";</code></div>
+<p class="indent">The opposite of reading—saving—is slightly more complex. Because there is no file prefix to look for, you need to specify the file format when calling <code>save</code> (see <a href="Chapter11.html#writing_an_ascii_art_image">Listing 11-14</a>). In the listing, a <code>png</code> image is read from disk. If the read is successful, the image is saved again as a <code>ti</code> image. The <code>save</code> call returns a <code>bool</code> value, which indicates whether the operation was successful. The value <code>true</code> means that it worked.</p>
+<div id="writing_an_ascii_art_image" class="listing"><a id="page_317"></a>
+<p class="normal"><b>Listing 11-14.</b> <i>Writing an ASCII art image</i></p>
+<code>   QImage input( "input.png" );<br>
+   if( input.isNull() )<br>
+     qDebug() &lt;&lt; "Failed to load.";<br>
+   else<br>
+     if( !input.save( "test.ti", "ti" ) )<br>
+       qDebug() &lt;&lt; "Failed to save.";</code>
+</div>
+<h3 class="h3"><a id="extending_your_application_using_plugins"></a>Extending Your Application Using Plugins</h3>
+<p class="normal">Extending Qt is one thing, but making your own application extendable is quite another. It not only involves implementing a given interface; you must also design the interface, look for plugins, load them, and then use them.</p>
+<p class="indent">This is one of the areas where there traditionally have been lots and lots of platform quirks to take into account. With Qt almost all of these quirks go away, and you can focus on providing your users with a modularized and extendable design.</p>
+<h4 class="h4"><a id="filtering_images"></a>Filtering Images</h4>
+<p class="normal">This chapter began with an image file format plugin for Qt; it continues by creating an image filtering application in which the filters are provided as plugins. A quick glance of what to expect can be seen in <a href="Chapter11.html#the_image_filtering_application_in_actio">Figure 11-5</a>: filters are on the left and right; the original image appears above the filtered image.</p>
+<div id="the_image_filtering_application_in_actio" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1105.jpg" alt="image" width="549" height="335">
+</div>
+</div>
+<p class="normal"><b>Figure 11-5.</b> <i>The image filtering application in action</i></p>
+<p class="normal"><a id="page_318"></a><b>The Interface</b></p>
+<p class="normal">A filter is used to take one image and return a new image that is a transformed version of the given image, which means that it needs a method to take an image and return an image. Because you're planning to load it as a plugin, the application can't know the name of each filter from the start—thus it also needs a method returning its name.</p>
+<p class="indent">How do you transform these lines into an actual plugin interface? A Qt plugin <i>interface</i> is defined as a class consisting of pure virtual methods. This means that all the methods that are a part of the plugin are made <code>virtual</code> and are left unimplemented. Instead they are marked as <code>=0</code> in the class declaration.</p>
+<p class="indent">Combining the knowledge of what a plugin interface is and what the filter plugin needs to do, you get something similar to the <code>FilterInterface</code> class shown in <a href="Chapter11.html#the_imagefilter_interface_class">Listing 11-15</a>. The <code>name</code> method returns the name of the filter, and the <code>filter</code> method filters the given <code>QImage</code> and returns the filtered result. The names are clear, and it is easy to understand how things are supposed to work.</p>
+<div id="the_imagefilter_interface_class" class="listing">
+<p class="normal"><b>Listing 11-15.</b> <i>The</i> <code>ImageFilter</code> <i>interface class</i></p>
+<code>class FilterInterface<br>
+{<br>
+public:<br>
+  virtual QString name() const = 0;<br>
+  virtual QImage filter( const QImage &amp;image ) const = 0;<br>
+};</code></div>
+<p class="indent">Before this class can be used as a plugin interface, you must tell Qt that it is an interface by using the lines shown in <a href="Chapter11.html#declaring_the_imagefilter_as_being_a_plu">Listing 11-16</a>. The first argument is the class involved; the second is an identifier string that must be unique for the interface.</p>
+<div id="declaring_the_imagefilter_as_being_a_plu" class="listing">
+<p class="normal"><b>Listing 11-16.</b> <i>Declaring the</i> <code>ImageFilter</code> <i>as being a plugin interface to Qt</i></p>
+<code>Q_DECLARE_INTERFACE( FilterInterface,<br>
+  "se.thelins.CustomPlugin.FilterInterface/0.1" )</code>
+</div>
+<p class="indent">When the interface has been defined, the development can be split into two parts: the plugins and the application (the two sides of the interface).</p>
+<p class="normal"><b>Implementing a Filter</b></p>
+<p class="normal">Let's start by having a look at the filter plugin shown in <a href="Chapter11.html#the_image_filtering_application_in_actio">Figure 11-5</a>. The class is called <code>Flip</code> (its declaration is shown in <a href="Chapter11.html#the_class_declaration_of_the_filter_flip">Listing 11-17</a>). The header file includes the filter interface class declaration so the plugin knows how to define the class according to the interface's specification.</p>
+<p class="indent">As shown in the listing, <code>Flip</code> inherits <code>QObject</code> and <code>FilterInterface</code>. It is important that <code>QObject</code> is inherited first; otherwise the meta-object compiler will fail. The class declaration then starts with the <code>Q_OBJECT</code> macro followed by a <code>Q_INTERFACES</code> macro, indicating that the class implements the <code>FilterInterface</code> interface.</p>
+<p class="indent">Following the macro declarations you'll find the required methods. Since the base class contains only pure virtual methods, all methods must be implemented here. If not, the plugin class can't be instantiated.</p>
+<div id="the_class_declaration_of_the_filter_flip" class="listing"><a id="page_319"></a>
+<p class="normal"><b>Listing 11-17.</b> <i>The class declaration of the filter</i> <code>Flip</code></p>
+<code>#include "filterinterface.h"<br>
+<br>
+class Flip : public QObject, FilterInterface<br>
+{<br>
+  Q_OBJECT<br>
+  Q_INTERFACES(FilterInterface)<br>
+<br>
+public:<br>
+  QString name() const;<br>
+  QImage filter( const QImage &amp;image ) const;<br>
+};</code></div>
+<p class="indent">The implementation of the <code>name</code> method is pretty straightforward. Because the name is used in the user interface, it is passed in a more human-readable form than just <code>Flip</code>. The source code can be seen in <a href="Chapter11.html#the_full_name_of_flip_is_quotation_mark">Listing 11-18</a>.</p>
+<div id="the_full_name_of_flip_is_quotation_mark" class="listing">
+<p class="normal"><b>Listing 11-18.</b> <i>The full name of</i> <code>Flip</code> <i>is</i> <code>"Flip Horizontally"</code></p>
+<code>QString Flip::name() const<br>
+{<br>
+  return "Flip Horizontally";<br>
+}</code></div><br>
+<p class="indent">The <code>filter</code> method is slightly more complex (see the implementation source code in <a href="Chapter11.html#the_filter_method_flips_the_given_image">Listing 11-19</a>). The resulting image is created from the dimensions and format of the given input image. Then the flip is made before the resulting image is returned.</p>
+<div id="the_filter_method_flips_the_given_image" class="listing">
+<p class="normal"><b>Listing 11-19.</b> <i>The</i> <code>filter</code> <i>method flips the given image and returns the result.</i></p>
+<code>QImage Flip::filter( const QImage &amp;image ) const<br>
+{<br>
+  QImage result( image.width(), image.height(), image.format() );<br>
+<br>
+  for( int y=0; y&lt;image.height(); ++y )<br>
+    for( int x=0; x&lt;image.width(); ++x )<br>
+      result.setPixel( x, image.height()-1-y, image.pixel( x, y ) );<br>
+<br>
+  return result;<br>
+}</code></div>
+<p class="indent">Before you finish the implementation of the <code>Flip</code> filter, you must tell Qt that the class implements the interface of the plugin. This is done by using the <code>Q_EXPORT_PLUGIN2</code>, just as with the image file format plugin (see <a href="Chapter11.html#it_is_important_to_tell_qt_that_flip_is">Listing 11-20</a>).</p>
+<div id="it_is_important_to_tell_qt_that_flip_is" class="listing">
+<p class="normal"><b>Listing 11-20.</b> <i>It is important to tell Qt that</i> <code>Flip</code> <i>is the plugin interface.</i></p>
+<code>Q_EXPORT_PLUGIN2( flip, Flip )</code></div>
+<p class="indent"><a id="page_320"></a>Building the <code>Flip</code> plugin is very much like building the image file format plugin. In the project file shown in <a href="Chapter11.html#the_project_file_for_building_the_flip_p">Listing 11-21</a> the template is set to <code>lib</code>, and so on. The filters are placed in the subdirectory <code>filters/flip</code> in the application directory, so the <code>filterinterface.h</code> file needs to be in the <code>INCLUDEPATH</code>. This means setting it to <code>../..</code> to include that search path. The installation path is <code>../../plugins</code>, so set the target's path accordingly.</p>
+<div id="the_project_file_for_building_the_flip_p" class="listing">
+<p class="normal"><b>Listing 11-21.</b> <i>The project file for building the</i> <code>Flip</code> <i>plugin</i></p>
+<code>TEMPLATE = lib<br>
+TARGET = flip<br>
+CONFIG += plugin release<br>
+VERSION = 1.0.0<br>
+<br>
+INCLUDEPATH += ../..<br>
+<br>
+HEADERS += flip.h<br>
+SOURCES += flip.cpp<br>
+<br>
+target.path += ../../plugins<br>
+INSTALLS += target</code>
+</div>
+<p class="indent"><a href="Chapter11.html#the_image_filtering_application_in_actio">Figure 11-5</a> shows the filters <code>Blur</code> and <code>Darken</code> next to the <code>Flip</code> filter. These filters are also implemented as plugins. The implementations are very similar, except for the name returned and actual filtering algorithms.</p>
+<p class="normal"><b>The Application</b></p>
+<p class="normal">On the other side of the <code>FilterInterface</code> class is the application that uses the filter plugins. The application is simple: it consists of a dialog built using Designer, an implementation of the dialog, and a simple <code>main</code> function showing the dialog.</p>
+<p class="indent">The dialog design consists of a <code>QListWidget</code> and two <code>QLabel</code> widgets. The structure of the dialog according to Designer is shown in <a href="Chapter11.html#the_object_inspector_shows_the_structure">Figure 11-6</a>. The dialog consists of a horizontal layout so that the list appears to the left of the labels. (Refer to <a href="Chapter11.html#the_image_filtering_application_in_actio">Figure 11-5</a> to see the dialog in action.)</p>
+<div id="the_object_inspector_shows_the_structure" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1106.jpg" alt="image" width="354" height="223">
+</div>
+</div>
+<p class="normal"><b>Figure 11-6.</b> <i>The Object Inspector shows the structure of the</i> <code>FilterDialog</code>.</p>
+<p class="indent">Before you start going through the <code>FilterDialog</code> class in detail, you have to be familiar with the strategy that you'll use in the application. When using plugins with Qt, you use the <a id="page_321"></a><code>QPluginLoader</code> class to load the plugins and to create an instance of the object implementing the plugin interface. The instances that you find are placed in a <code>QMap</code> that maps filter names to the actual filter objects. The map is then used to access the filters when the user requests them to be applied.</p>
+<p class="indent">Now you are ready to start looking at the source code. <a href="Chapter11.html#the_filterdialog_class_declaration">Listing 11-22</a> shows the class declaration of the <code>FilterDialog</code> class, which implements the Designer dialog kept in the <code>ui</code> member variable. The <code>filters</code> member variable is used to keep the filter plugins that are loaded.</p>
+<p class="indent">The slot <code>filterChanged</code> is invoked when a filter is picked by the user. The <code>findFilters</code> method, which is called from the constructor, looks for loads and lists plugins.</p>
+<div id="the_filterdialog_class_declaration" class="listing">
+<p class="normal"><b>Listing 11-22.</b> <i>The</i> <code>FilterDialog</code> <i>class declaration</i></p>
+<code>class FilterDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+public:<br>
+  FilterDialog( QWidget *parent=0 );<br>
+<br>
+private slots:<br>
+  void filterChanged( QString );<br>
+<br>
+private:<br>
+  void findFilters();<br>
+<br>
+  QMap&lt;QString, FilterInterface*&gt; filters;<br>
+  Ui::FilterDialog ui;<br>
+};</code></div>
+<p class="indent">The constructor shown in <a href="Chapter11.html#the_constructor_for_the_filterdialog_cla">Listing 11-23</a> initializes the user interface using the <code>setupUi</code> method generated by <code>uic</code> from the Designer file. It then sets an original image and connects the <code>QListWidget currentTextChanged</code> signal to the <code>filterChanged</code> slot.</p>
+<p class="indent">When the user interface has been set up and configured, the <code>findFilters</code> method is called before the <code>filterChanged</code> slot is called explicitly once to generate a resulting image.</p>
+<div id="the_constructor_for_the_filterdialog_cla" class="listing">
+<p class="normal"><b>Listing 11-23.</b> <i>The constructor for the</i> <code>FilterDialog</code> <i>class</i></p>
+<code>FilterDialog::FilterDialog( QWidget *parent ) : QDialog( parent )<br>
+{<br>
+  ui.setupUi( this );<br>
+  ui.originalLabel-&gt;setPixmap( QPixmap( "source.jpeg" ) );<br>
+<br>
+  connect( ui.filterList, SIGNAL(currentTextChanged(QString)),<br>
+           this, SLOT(filterChanged(QString)) );<br>
+<br>
+  findFilters();<br>
+  filterChanged( QString() );<br>
+}</code>
+</div>
+<p class="indent"><a id="page_322"></a>Most of the interesting stuff takes place in the <code>findFilters</code> method. The source code of the method is available in <a href="Chapter11.html#finding_the_plugins_comma_loading_them_c">Listing 11-24</a>.</p>
+<p class="indent">As you can tell from the listing, the <code>QPluginLoader</code> itself does not locate the plugins. Instead you use a <code>QDir</code> object to find all files in a directory in which you expect the plugins to be located. The first two highlighted lines create a <code>QPluginLoader</code> object for each file found and try to create an instance of the plugin class.</p>
+<p class="indent">If the instance returned is not null, you attempt to cast it to the <code>FilterInterface</code> class using the <code>qobject_cast</code> method (this is shown in the last highlighted line). If the <code>FilterInterface</code> pointer is not null, you have found an actual filter, so you can add the filter to the <code>filters</code> map and show the name in the <code>QListWidget</code>.</p>
+<p class="indent">If any of the highlighted steps results in a null value, indicating that the file could not be loaded, it can be due to several causes: the file did not contain a plugin, the plugin was built using the wrong tools or the wrong Qt version, or the plugin did not implement the <code>FilterInterface</code> interface. In any case, the plugin is not valid and not of interest to the application.</p>
+<div id="finding_the_plugins_comma_loading_them_c" class="listing">
+<p class="normal"><b>Listing 11-24.</b> <i>Finding the plugins, loading them, and putting them in the list</i></p>
+<code>void FilterDialog::findFilters()<br>
+{<br>
+  QDir path( "./plugins" );<br>
+<br>
+  foreach( QString filename, path.entryList(QDir::Files) )<br>
+  {<br>
+<code class="userinput">    QPluginLoader loader( path.absoluteFilePath( filename ) );</code><br>
+<code class="userinput">    QObject *couldBeFilter = loader.instance();</code><br>
+    if( couldBeFilter )<br>
+    {<br>
+<code class="userinput">      FilterInterface *filter = qobject_cast&lt;FilterInterface*&gt;( couldBeFilter );</code><br>
+      if( filter )<br>
+      {<br>
+        filters[ filter-&gt;name() ] = filter;<br>
+        ui.filterList-&gt;addItem( filter-&gt;name() );<br>
+      }<br>
+    }<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">When the user picks a plugin from the list of filters, the <code>filterChanged</code> slot is invoked (the slot is shown in <a href="Chapter11.html#applying_the_filters_when_the_user_picks">Listing 11-25</a>). If the filter is empty, the original image is shown in the <code>filteredLabel</code> label; otherwise you can use the <code>filters</code> map to find the selected filter. The filter is applied to the image from the <code>originalLabel</code> label, and the resulting <code>QImage</code> is assigned to the <code>filteredLabel</code> label.</p>
+<div id="applying_the_filters_when_the_user_picks" class="listing"><a id="page_323"></a>
+<p class="normal"><b>Listing 11-25.</b> <i>Applying the filters when the user picks one from the list</i></p>
+<code>void FilterDialog::filterChanged( QString filter )<br>
+{<br>
+  if( filter.isEmpty() )<br>
+  {<br>
+    ui.filteredLabel-&gt;setPixmap( *(ui.originalLabel-&gt;pixmap() ) );<br>
+  }<br>
+  else<br>
+  {<br>
+    QImage filtered = filters[ filter ]-&gt;<br>
+      filter( ui.originalLabel-&gt;pixmap()-&gt;toImage() );<br>
+    ui.filteredLabel-&gt;setPixmap( QPixmap::fromImage( filtered ) );<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">The last piece of the puzzle is a <code>main</code> function that creates a <code>QApplication</code> object and then shows the dialog. The project file is not affected by the usage of plugins, so running <code>qmake -project</code>, followed by <code>qmake</code> and <code>make</code>, will do the job.</p>
+<hr>
+<p class="normal"><b>Caution</b> Because the filter's source files are located in a subdirectory placed inside the directory containing the application, the <code>qmake -project</code> command will include the filter's source files in the project alongside the application's files. Make sure to remove the filter's files from the resulting project file before building or adding a <code>-norecursive</code> switch to <code>qmake</code> invocation to stop <code>qmake</code> from peeking into the subdirectories.</p>
+<hr>
+<p class="indent">All this code brings you to the application shown in <a href="Chapter11.html#the_image_filtering_application_in_actio">Figure 11-5</a>. Looking back at the size of the code, it is hard to see how powerful the application is. It can be extended and modified almost without limitations, and the added complexity is relatively small.</p>
+<h4 class="h4"><a id="merging_the_plugin_and_the_application"></a>Merging the Plugin and the Application</h4>
+<p class="normal">You might want to have plugins but also keep some functionality in the application executable (for deployment reasons, for instance). It is always easier to ship one executable than to ship an executable and a bunch of plugins. Perhaps some plugins are required for the application to be useful; for example, a development environment needs at least a code editor to work. Then it would be logical to include that editor in the actual application executable even if it is treated internally as a plugin.</p>
+<p class="indent">Qt enables you to do this in an easy way, and the included plugins can be located using the <code>QPluginLoader</code> and thus added to the same flow that is used for the rest of the plugins (it does involve changes to both the plugin project and the application itself).</p>
+<p class="normal"><a id="page_324"></a><b>Making the Plugin Static</b></p>
+<p class="normal">When you build a plugin, you build a <i>dynamic link library (DLL)</i>. If you add a line reading <code>CONFIG += static</code> to your project file, the resulting library is made for static linking. This means that the library is made for being added to the application at link time instead of being dynamically loaded at run-time.</p>
+<p class="indent">The project file for the <code>Darken</code> plugin, when adapted to static linking, is shown in <a href="Chapter11.html#the_project_file_for_a_statically_linked">Listing 11-26</a>. Compare this with the project file for the <code>Flip</code> plugin from <a href="Chapter11.html#the_project_file_for_building_the_flip_p">Listing 11-21</a>.</p>
+<div id="the_project_file_for_a_statically_linked" class="listing">
+<p class="normal"><b>Listing 11-26.</b> <i>The project file for a statically linked plugin</i></p>
+<code>TEMPLATE = lib<br>
+TARGET = darken<br>
+CONFIG += plugin release<br>
+VERSION = 1.0.0<br>
+<br>
+INCLUDEPATH += ../..<br>
+<br>
+HEADERS += darken.h<br>
+SOURCES += darken.cpp<br>
+<br>
+target.path += ../../plugins<br>
+INSTALLS += target<br>
+<br>
+<code class="userinput">CONFIG += static</code></code>
+</div>
+<p class="normal"><b>Linking and Finding the Plugin</b></p>
+<p class="normal">The changes to the application can be divided into three parts. First you must add the library to the project file so it is linked to the application when the executable is built. <a href="Chapter11.html#the_application_project_file_with_a_refe">Listing 11-27</a> shows the project file for the application.</p>
+<p class="indent">The highlighted line adds a reference to the statically linked library using the <code>–L</code> command line option for adding a search path for libraries and the <code>–l</code> option for adding a library reference. The search path added is dependent on the platform used to build the library.</p>
+<div id="the_application_project_file_with_a_refe" class="listing">
+<p class="normal"><b>Listing 11-27.</b> <i>The application project file with a reference to a statically linked plugin</i></p>
+<code>TEMPLATE = app<br>
+TARGET =<br>
+DEPENDPATH += .<br>
+INCLUDEPATH += .<br>
+<br>
+# Input<br>
+HEADERS += filterdialog.h filterinterface.h<br>
+FORMS += filterdialog.ui<br>
+SOURCES += filterdialog.cpp main.cpp<br>
+<code class="userinput">win32:LIBS += -L./filters/darken/release/ -ldarken</code><br>
+<code class="userinput">!win32:LIBS += -L./filters/darken -ldarken</code></code><br>
+</div>
+<p class="indent"><a id="page_325"></a>Second, make sure that the <code>QPluginLoader</code> can still find the plugin, even if it is statically linked to the application, by adding the line shown in <a href="Chapter11.html#the_qpluginloader_is_notified_of_the_exi">Listing 11-28</a>.</p>
+<p class="indent">Notice that the macro <code>Q_IMPORT_PLUGIN</code> expects the class name with lowercase characters, not the actual class name. This is the string given as the first argument to the <code>Q_EXPORT_PLUGIN2</code> macro in the plugin source code.</p>
+<div id="the_qpluginloader_is_notified_of_the_exi" class="listing">
+<p class="normal"><b>Listing 11-28.</b> <i>The</i> <code>QPluginLoader</code> <i>is notified of the existence of the statically linked</i> <code>Darken</code> <i>plugin.</i></p>
+<code>Q_IMPORT_PLUGIN( darken )<br>
+<br>
+int main( int argc, char **argv )<br>
+{<br>
+...<br>
+}</code>
+</div>
+<p class="indent">The third and last change to the application is in the <code>findFilters</code> method in the <code>FilterDialog</code> class. The updated version of the method is shown in <a href="Chapter11.html#querying_the_qpluginloader_for_staticall">Listing 11-29</a>. The highlighted line shows the call to the <code>QPluginLoader::staticInstances</code> method, which returns <code>QObject</code> pointers to all the statically linked plugins. Pointers can then be cast to <code>FilterInterface</code> pointers using <code>qobject_cast</code>; if the cast operation does not return null, a filter has been found.</p>
+<p class="indent">Compared with loading plugins dynamically, the steps to find a file and load it have been replaced by the <code>staticInstances</code> call. This is an obvious change since the plugin is included in the application's executable file, so there is no external file to look for or load.</p>
+<div id="querying_the_qpluginloader_for_staticall" class="listing">
+<p class="normal"><b>Listing 11-29.</b> <i>Querying the</i> <code>QPluginLoader</code> <i>for statically linked filters</i></p>
+<code>void FilterDialog::findFilters()<br>
+{<br>
+<code class="userinput">  foreach( QObject *couldBeFilter, QPluginLoader::staticInstances() )</code><br>
+  {<br>
+    FilterInterface *filter = qobject_cast&lt;FilterInterface*&gt;( couldBeFilter );<br>
+    if( filter )<br>
+    {<br>
+      filters[ filter-&gt;name() ] = filter;<br>
+      ui.filterList-&gt;addItem( filter-&gt;name() );<br>
+    }<br>
+  }<br>
+<br>
+  QDir path( "./plugins" );<br>
+<br>
+  foreach( QString filename, path.entryList(QDir::Files) )<br>
+  {<br>
+    QPluginLoader loader( path.absoluteFilePath( filename ) );<br>
+    QObject *couldBeFilter = loader.instance();<br>
+    if( couldBeFilter )<br>
+    {<br>
+      FilterInterface *filter = qobject_cast&lt;FilterInterface*&gt;( couldBeFilter );<br>
+      if( filter )<br>
+<a id="page_326"></a>
+      {<br>
+        filters[ filter-&gt;name() ] = filter;<br>
+        ui.filterList-&gt;addItem( filter-&gt;name() );<br>
+      }<br>
+    }<br>
+  }<br>
+}</code></div>
+<p class="indent">The changes made to the application do not change the user's experience. In the example shown previously the only difference is that the <code>Darken</code> filter is always available, even if no plugins can be loaded.</p>
+<p class="indent">Notice that there were no changes made to the method actually using the filters, either. The <code>filterChange</code> method does not care how the plugin has been linked.</p>
+<h4 class="h4"><a id="a_factory_interface"></a>A Factory Interface</h4>
+<p class="normal">Comparing the plugin interface for image filters with the interface for image file formats, there is a small but important difference: the filter plugins can contain only one filter per plugin, while there can be several file formats in one plugin because of the way you design the plugin interface. The file format plugin can be considered a file format factory, so the plugin serves the application with file formats instead of handling them directly.</p>
+<p class="indent">Making plugins act as factories can be very useful because the actual working classes that are created using the factory can share code and inherit each other. You can also simplify the deployment by grouping plugins into a few large plugins instead of having to deal with large amounts of smaller ones. It is even possible to combine several different types of plugins in one single plugin by using smart factory interfaces.</p>
+<p class="indent">Instead of splitting out <code>FilterInterface</code> into a <code>FilterPluginInterface</code> and a <code>FilterWorker</code>, you can quite easily extend the <code>FilterInterface</code> to be able to handle several filter operations through one interface. Doing this requires changes to the interface itself, which means changes to all the plugins as well as to the application itself.</p>
+<p class="normal"><b>A New Interface</b></p>
+<p class="normal">The changes to the interface are made so that each <code>FilterInterface</code> can return several names, and the filter can be specified when calling the <code>filter</code> method. The source code for the new <code>FilterInterface</code> is shown in <a href="Chapter11.html#the_new_filterinterface_can_handle_sever">Listing 11-30</a> (compare it with the original interface shown in <a href="Chapter11.html#the_imagefilter_interface_class">Listing 11-15</a> and <a href="Chapter11.html#declaring_the_imagefilter_as_being_a_plu">Listing 11-16</a>).</p>
+<p class="indent">The <code>name</code> method has been renamed to <code>names</code> and returns a <code>QStringList</code> instead of a <code>QString</code>. The <code>filter</code> method has been given a new argument, specifying the name of the filter to use. Finally, the version number in the identifier string passed to the <code>Q_DECLARE_INTERFACE</code> macro has been updated to indicate that the interface has changed and that older plugins are not compatible.</p>
+<div id="the_new_filterinterface_can_handle_sever" class="listing">
+<p class="normal"><b>Listing 11-30.</b> <i>The new</i> <code>FilterInterface</code> <i>can handle several filters through one interface.</i></p>
+<code>class FilterInterface<br>
+{<br>
+public:<br>
+  virtual QStringList names() const = 0;<br>
+<a id="page_327"></a>
+  virtual QImage filter( const QString &amp;filter, const QImage &amp;image ) const = 0;<br>
+};<br>
+<br>
+Q_DECLARE_INTERFACE( FilterInterface,<br>
+  "se.thelins.CustomPlugin.FilterInterface/0.2" )</code></div>
+<p class="indent">It is important to establish whether it is the responsibility of the application or the plugin to make sure that no invalid filter name is ever passed as an argument to a <code>filter</code> method. If that occurs, the plugins must be ready for it (and not crash the entire application).</p>
+<p class="normal"><b>Updating the Plugin</b></p>
+<p class="normal">Converting an old plugin to the new interface is easy. Just put the name in a <code>QStringList</code> before returning it from <code>names</code> and then ignore the filter name argument in the <code>filter</code> method. Extending an old plugin is almost as easy. Return several names from the <code>names</code> method and determine which filter to use in the <code>filter</code> method by using the filter name argument.</p>
+<p class="indent">The <code>Flip</code> filter covered in <a href="Chapter11.html#the_class_declaration_of_the_filter_flip">Listings 11-17</a> to <a href="Chapter11.html#the_project_file_for_building_the_flip_p">11-21</a> has been extended to support flipping both horizontally and vertically.</p>
+<p class="indent">The small change has been made in the <code>names</code> method shown in <a href="Chapter11.html#returning_several_names_using_a_qstringl">Listing 11-31</a>. It now returns two <code>QString</code> s, one for each filter.</p>
+<div id="returning_several_names_using_a_qstringl" class="listing">
+<p class="normal"><b>Listing 11-31.</b> <i>Returning several names using a</i> <code>QStringList</code></p>
+<code>QStringList Flip::names() const<br>
+{<br>
+  return QStringList() &lt;&lt; "Flip Horizontally" &lt;&lt; "Flip Vertically";<br>
+}</code></div>
+<p class="indent">The <code>filter</code> method is shown in <a href="Chapter11.html#the_filter_acts_differently_depending_on">Listing 11-32</a>. The highlighted line shows where the <code>filter</code> argument is evaluated to determine what to do.</p>
+<p class="indent">Notice that if an unexpected filter name is given, the filter will perform a <i>vertical flip</i>. Although it is probably not what the user expects, it will keep the application running—so it is a good way to handle it because there is no specified solution to the problem. Perhaps an invalid <code>QImage</code> could have been returned instead, but the entire discussion is about how an application bug will show itself (so it is not worth wasting too much energy on the problem). Much better to ensure that there is no such bug in the application!</p>
+<div id="the_filter_acts_differently_depending_on" class="listing">
+<p class="normal"><b>Listing 11-32.</b> <i>The filter acts differently depending on the</i> <code>filter</code> <i>argument.</i></p>
+<code>QImage Flip::filter( const QString &amp;filter, const QImage &amp;image ) const<br>
+{<br>
+<code class="userinput">  bool horizontally = (filter=="Flip Horizontally");</code><br>
+<br>
+  QImage result( image.width(), image.height(), image.format() );<br>
+<br>
+  for( int y=0; y&lt;image.height(); ++y )<br>
+    for( int x=0; x&lt;image.width(); ++x )<br>
+      result.setPixel(<br>
+        horizontally?x:(image.width()-1-x),<br>
+<a id="page_328"></a>
+        horizontally?(image.height()-1-y):y,<br>
+        image.pixel( x, y ) );<br>
+<br>
+  return result;<br>
+}</code></div>
+<p class="indent">The <code>Flip</code> project isn't affected by the changes, so recompiling and installing the resulting plugin is all that's necessary to get things up and running.</p>
+<p class="normal"><b>Changing the Loader</b></p>
+<p class="normal">On the application side, the <code>QPluginLoader</code> is still used in combination with <code>QDir</code> to find and load the plugins from the <code>findFilters</code> method in <code>FilterDialog</code>. However, for each filter found, several filters can be added to the <code>QListWidget</code> and the <code>filtersQMap</code>. The new <code>findFilters</code> method is shown in <a href="Chapter11.html#the_findfilters_method_adds_several_filt">Listing 11-33</a>. The highlighted lines show that the names returned are added one by one to the map and list widget. Compare this listing with <a href="Chapter11.html#querying_the_qpluginloader_for_staticall">Listing 11-29</a>.</p>
+<div id="the_findfilters_method_adds_several_filt" class="listing">
+<p class="normal"><b>Listing 11-33.</b> <i>The</i> <code>findFilters</code> <i>method adds several filters from each plugin.</i></p>
+<code>void FilterDialog::findFilters()<br>
+{<br>
+  foreach( QObject *couldBeFilter, QPluginLoader::staticInstances() )<br>
+  {<br>
+    FilterInterface *filter = qobject_cast&lt;FilterInterface*&gt;( couldBeFilter );<br>
+    if( filter )<br>
+    {<br>
+<code class="userinput">      foreach( QString name, filter-&gt;names() )</code><br>
+<code class="userinput">      {</code><br>
+<code class="userinput">        filters[ name ] = filter;</code><br>
+<code class="userinput">        ui.filterList-&gt;addItem( name );</code><br>
+<code class="userinput">      }</code><br>
+    }<br>
+  }<br>
+<br>
+  QDir path( "./plugins" );<br>
+<br>
+  foreach( QString filename, path.entryList(QDir::Files) )<br>
+  {<br>
+    QPluginLoader loader( path.absoluteFilePath( filename ) );<br>
+    QObject *couldBeFilter = loader.instance();<br>
+    if( couldBeFilter )<br>
+    {<br>
+      FilterInterface *filter = qobject_cast&lt;FilterInterface*&gt;( couldBeFilter );<br>
+      if( filter )<br>
+      {<br>
+<code class="userinput">        foreach( QString name, filter-&gt;names() )</code><br>
+<code class="userinput">        {</code><br>
+<code class="userinput">          filters[ name ]  = filter;</code><br>
+<a id="page_329"></a>
+<code class="userinput">          ui.filterList-&gt;addItem( name );</code><br>
+<code class="userinput">        }</code><br>
+      }<br>
+    }<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">When performing the actual filtering operation, the filter's name must be passed to the <code>filter</code> method (this is handled from the <code>filterChanged</code> slot shown in <a href="Chapter11.html#passing_the_filter_apostrophy_s_name_to">Listing 11-34</a>—the small change has been highlighted in the listing). Compare the listing with <a href="Chapter11.html#applying_the_filters_when_the_user_picks">Listing 11-25</a> to see the difference.</p>
+<div id="passing_the_filter_apostrophy_s_name_to" class="listing">
+<p class="normal"><b>Listing 11-34.</b> <i>Passing the filter's name to the</i> <code>filter</code> <i>method</i></p>
+<code>void FilterDialog::filterChanged( QString filter )<br>
+{<br>
+  if( filter.isEmpty() )<br>
+  {<br>
+    ui.filteredLabel-&gt;setPixmap( *(ui.originalLabel-&gt;pixmap() ) );<br>
+  }<br>
+  else<br>
+  {<br>
+<code class="userinput">    QImage filtered = filters[ filter ]-&gt;filter( filter,</code><br>
+<code class="userinput">      ui.originalLabel-&gt;pixmap()-&gt;toImage() );</code><br>
+    ui.filteredLabel-&gt;setPixmap( QPixmap::fromImage( filtered ) );<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">With these minimal changes to the interface you have made it possible to package several plugins in one file. Compare the development cost of this process with the potential deployment issues that can occur when you have to manage more files that carry one plugin.</p>
+<h3 class="h3"><a id="non-qt_plugins"></a>Non-Qt Plugins</h3>
+<p class="normal">Almost all plugin technologies work by creating a DLL according to the target platform's standard approach. Such a library exposes C symbols that can be resolved and referenced with function pointers. Even Qt uses this approach, but wraps it in easy-to-use classes. If you open up the ASCII art image format plugin from earlier in this chapter by using the Dependency Walker (a free tool available from <a href="http://www.dependencywalker.com">http://www.dependencywalker.com</a>) on the Windows platform (you can use the <code>objdump</code> utility on GCC-based platforms), you can see the two exported symbols: <code>qt_plugin_instance</code> and <code>qt_plugin_query_verification_data</code>. (A screenshot from the tool is shown in <a href="Chapter11.html#a_qt_image_format_plugin_seen_from_the_d">Figure 11-7</a>.) The <code>QPluginLoader</code> uses the <code>QLibrary</code> class internally to interface the C symbols exported to the DLL.</p>
+<hr>
+<p class="normal"><b>Note</b> A dynamic link library can also be referred to as a shared library (as well as a DLL).</p>
+<hr>
+<p class="indent"><a id="page_330"></a>When you want to build support of plugins designed for other applications or earlier non–Qt-based versions of your application, it is important to know how to handle plugins at a lower level. This section shows you how it's done and how Qt can be used to access plugins that were designed for other applications or by using other tools.</p>
+<div id="a_qt_image_format_plugin_seen_from_the_d" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1107.jpg" alt="image" width="549" height="324">
+</div>
+</div>
+<p class="normal"><b>Figure 11-7.</b> <i>A Qt image format plugin seen from the Dependency Walker</i></p>
+<p class="indent">Let's have a look at the source code of the trivial library that you'll interface. <a href="Chapter11.html#the_sum_function_in_all_its_glory">Listing 11-35</a> shows the implementation of the <code>sum</code> function. All the function does is calculate a checksum for a given data stream.</p>
+<div id="the_sum_function_in_all_its_glory" class="listing">
+<p class="normal"><b>Listing 11-35.</b> <i>The</i> <code>sum</code> <i>function in all its glory</i></p>
+<code>int sum( int len, char *data )<br>
+{<br>
+  int i;<br>
+  int sum = 0x5a;<br>
+<br>
+  for( i=0; i&lt;len; ++i )<br>
+    sum ^= data[i];<br>
+<br>
+  return sum;<br>
+}</code></div>
+<p class="indent">On the Windows platform I used the custom <code>Makefile</code> shown in <a href="Chapter11.html#a_makefile_for_building_dlls">Listing 11-36</a> to build a DLL. If you use another platform, you should change the file extension of the resulting file (<code>sum.dll</code> in the file shown in the listing). On Unix the extension usually is <code>.so</code>, and on Mac OS <a id="page_331"></a>it is <code>.dylib</code>. Sometimes a completely custom extension is used if the file is used as a plugin for a specific application.</p>
+<div id="a_makefile_for_building_dlls" class="listing">
+<p class="normal"><b>Listing 11-36.</b> <i>A</i> <code>Makefile</code> <i>for building DLLs</i></p>
+<code>all: sum.dll<br>
+<br>
+sum.o: sum.c<br>
+  gcc -c sum.c<br>
+<br>
+sum.dll: sum.o<br>
+  gcc -shared  o sum.dll sum.o<br>
+<br>
+clean:<br>
+  @del sum.o<br>
+  @del sum.dll</code></div>
+<p class="indent">If you had to deal with the file extension of the DLL when building it, Qt saves you from that hassle when you try to load it using <code>QLibrary</code>. The class first tries to load the library with the exact name as specified. If that fails, it tries to use the platform-specific file extension before giving up.</p>
+<p class="indent"><a href="Chapter11.html#using_qlibrary_to_load_comma_find_comma">Listing 11-37</a> shows how <code>QLibrary</code> is used to load the <code>sum</code> DLL. The library itself is located in the <code>lib</code> directory placed inside the working directory of the application.</p>
+<p class="indent">The working order when using <code>QLibrary</code> is <code>load</code>, <code>isLoaded</code>, <code>resolve</code>. In the listing the file name—without the file extension—of the DLL is specified in the constructor of the <code>QLibrary</code> object (it can also be set with the <code>setFileName</code> method). When the file name has been set, <code>load</code> is called and then the outcome of the loading operation is tested with <code>isLoaded</code>. If <code>isLoaded</code> returns <code>false</code>, something has gone wrong, and the library can't be loaded. There are several reasons for the problem; for example, perhaps the file can't be found or the file is corrupted.</p>
+<p class="indent">When the library is loaded, it's time to try to resolve the symbol that you want to use. In this case, call <code>resolve</code> and pass the string <code>sum</code> as an argument. You must cast the resulting pointer from <code>void*</code> to an appropriate function pointer type (in the listing the type is <code>SumFunction</code>). If the returned pointer is a null pointer, the symbol could not be resolved; otherwise, it is free to use.</p>
+<p class="indent">The result from the successfully loaded library and resolved symbol in <a href="Chapter11.html#using_qlibrary_to_load_comma_find_comma">Listing 11-37</a> is the string <code>sum of 'Qt Rocks!' = 56</code>.</p>
+<div id="using_qlibrary_to_load_comma_find_comma" class="listing">
+<p class="normal"><b>Listing 11-37.</b> <i>Using</i> <code>QLibrary</code> <i>to load, find, and use</i> <code>sum</code></p>
+<code>typedef int (*SumFunction)(int,char*);<br>
+<br>
+int main( int argc, char **argv )<br>
+{<br>
+  QLibrary library( "lib/sum" );<br>
+<br>
+  library.load();<br>
+  if( !library.isLoaded() )<br>
+  {<br>
+<a id="page_332"></a>
+    qDebug() &lt;&lt; "Cannot load library.";<br>
+    return 0;<br>
+  }<br>
+<br>
+  SumFunction sum = (SumFunction)library.resolve( "sum" );<br>
+  if( sum )<br>
+    qDebug() &lt;&lt; "sum of 'Qt Rocks!' = " &lt;&lt; sum( 9, "Qt Rocks!" );<br>
+<br>
+  return 0;<br>
+}</code>
+</div>
+<p class="indent">What are the main differences between using <code>QLibrary</code> and letting Qt help you with the plugins? For starters, <code>QPluginLoader</code> ensures that the plugin will work with the Qt application by seeing that the plugin has been built using the right tools on the right platform. The <code>QPluginLoader</code> also gives you access to a class instance instead of a set of C symbols that you can use to create that class instance.</p>
+<p class="indent">On the other hand, <code>QLibrary</code> enables you to use plugins built without Qt. You can also adapt your Qt application to older, non-Qt specifications.</p>
+<p class="indent">When you must use <code>QLibrary</code>, I recommend that you hide the code in a single class. That way you can contain the complexities in that class and keep the object-orientated Qt style throughout the rest of your application.</p>
+<h3 class="h3"><a id="summary-016"></a>Summary</h3>
+<p class="normal">Qt makes handling plugins easy. It is possible to extend Qt to handle custom database drivers, image formats, and even window decoration styles by inheriting and implementing an interface class. You can also extend your own applications with plugins, either by letting Qt handle the plugin interface or through a low-level interface.</p>
+<p class="indent">If you need to interface plugins made for other applications or defined according to a standard, you can use the <code>QLibrary</code> class for a low-level access to DLLs. This class makes it possible to interface almost any code.</p>
+<p class="indent">It is easier to let Qt handle the plugins through the <code>QPluginLoader</code> class in combination with the <code>Q_DECLARE_INTERFACE</code>, <code>Q_EXPORT_PLUGIN</code>, and <code>Q_INTERFACES</code> macros and the <code>QObject</code> class.</p>
+<p class="indent">When creating new plugin interfaces, it is important to build interfaces that last. Try to make the interfaces as generic as possible and try to make them act as factories. Being able to put several plugins in one can greatly simplify deployment.</p>
+<p class="indent">If you plan to use plugins in your application, you can use the same interface for the plugins as for your internal functionalities. Simply turn the base functionality that you want to be a part of the application into a statically linked plugin. In this way you have only one interface to worry about from your application's viewpoint—and you can still put functionality in your executable file.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter10.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 10: Internationalization and Localization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter12.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 12: Doing Things in Parallel</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","errorBeacon":"bam.nr-data.net","licenseKey":"510f1a6865","queueTime":8,"beacon":"bam.nr-data.net","agent":"","applicationID":"3275661,67267027,67267028","applicationTime":110}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

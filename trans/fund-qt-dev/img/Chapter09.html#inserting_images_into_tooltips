@@ -1,0 +1,998 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter09.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter09.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter09.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter09.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 9: Providing Help - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter09.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter09.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter10.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html"/><meta name="description" content=" CHAPTER 9 Providing Help Sometimes users need a helping hand. With Qt you can give them the instruction they&#39;re looking for in a variety of ways: wizards, tooltips ... "><meta property="og:title" content="CHAPTER 9: Providing Help" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 9: Providing Help" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 9 Providing Help Sometimes users need a helping hand. With Qt you can give them the instruction they&#39;re looking for in a variety of ways: wizards, tooltips ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter09.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%209%3A%20Providing%20Help&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter09.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter08.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 8: Files, Streams, and XML</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter10.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 10: Internationalization and Localization</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_257"></a><a id="providing_help"></a>CHAPTER 9<br><br>Providing Help</h2>
+<p class="normal"><big><b>S</b></big>ometimes users need a helping hand. With Qt you can give them the instruction they're looking for in a variety of ways: wizards, tooltips, status bar messages, and pointers to product documentation, to name a few.</p>
+<p class="indent">When considering how to add help-related features to your application, keep in mind that there's much more to it than simply responding to the F1 key (the de facto mechanism for displaying the application's help window). Assistance is most effective when it's an integral yet nonintrusive part of your entire application.</p>
+<p class="indent">By using a good design that clearly reflects both what users are currently doing and where in the process they are, you can dramatically reduce the need for help. Some of the tools and principles include providing wizards for complex settings, avoiding or clearly indicating different working modes such as insert and overwrite, and alerting users when they're about to do something that can destroy a lot of information.</p>
+<p class="indent">Providing lots and lots of help does not make it easy to use an application; too much help can just make it hard to find the information that the user is looking for. What you need to achieve is an easy-to-use whole: a combination of relevant help and a clear design. This is what makes using your application a joy.</p>
+<h3 class="h3"><a id="creating_tooltips"></a>Creating Tooltips</h3>
+<p class="normal">One of the most common ways to add some additional guidance to the user is to provide tooltips, which are little signs containing information (see <a href="Chapter09.html#the_dialog_and_the_tooltip_for_the_group">Figure 9-1</a>). They appear when you hover the mouse pointer over a control for a short period of time.</p>
+<div id="the_dialog_and_the_tooltip_for_the_group" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0901.jpg" alt="image" width="549" height="165">
+</div>
+</div>
+<p class="normal"><b>Figure 9-1.</b> <i>The dialog and the tooltip for the group box</i></p>
+<p class="indent"><a id="page_258"></a>All widgets can be assigned a tooltip using the <code>setTooltip(const QString&amp;)</code> method, which accepts a string that can either be plain text or formatted using HTML. To demonstrate tooltips, I have put together a <code>QDialog</code> class with a number of widgets. <a href="Chapter09.html#the_dialog_constructor">Listing 9-1</a> presents the constructor used to set up the widgets and layouts (refer to <a href="Chapter09.html#the_dialog_and_the_tooltip_for_the_group">Figure 9-1</a> to see the result).</p>
+<div id="the_dialog_constructor" class="listing">
+<p class="normal"><b>Listing 9-1.</b> <i>The dialog constructor</i></p>
+<code>ToolTipDialog::ToolTipDialog() : QDialog()<br>
+{<br>
+  QGroupBox *groupBox = new QGroupBox( tr("Group") );<br>
+  QGridLayout *gbLayout = new QGridLayout( groupBox );<br>
+<br>
+  QCheckBox *checkBox = new QCheckBox( tr("Check!") );<br>
+  QLabel *label = new QLabel( tr("label") );<br>
+  QPushButton *pushButton = new QPushButton( tr("Push me!") );<br>
+<br>
+  gbLayout-&gt;addWidget( checkBox, 0, 0 );<br>
+  gbLayout-&gt;addWidget( label, 0, 1 );<br>
+  gbLayout-&gt;addWidget( pushButton, 1, 0, 1, 2 );<br>
+<br>
+  QGridLayout *dlgLayout = new QGridLayout( this );<br>
+  dlgLayout-&gt;addWidget( groupBox, 0, 0 );<br>
+<br>
+...<br>
+}</code>
+</div>
+<p class="indent">In <a href="Chapter09.html#setting_simple_tooltip_texts">Listing 9-2</a> the tooltips for the checkbox and group box are set. The checkbox gets a single line, while the group box text is divided into three lines using the standard line break <code>\n</code>. The group box tooltip shows when you hover the mouse pointer around and between the widgets contained in the group box. If you hover over the label, checkbox, or push button, their respective tooltips are shown.</p>
+<div id="setting_simple_tooltip_texts" class="listing">
+<p class="normal"><b>Listing 9-2.</b> <i>Setting simple tooltip texts</i></p>
+    <code>checkBox-&gt;setToolTip( tr("This is a simple tool tip for the check box.") );<br>
+  groupBox-&gt;setToolTip( tr("This is a group box tool tip.\n"<br>
+                           "Notice that it appears between "<br>
+                           "and around the contained widgets.\n"<br>
+                           "It is also spanning several lines.") );</code><br><br>
+</div>
+<hr>
+<p class="normal"><b>Tip</b>  Breaking a string over multiple lines does not affect the result. From the C++ compiler's viewpoint, the string <code>"foo"</code>—line break—<code>"bar"</code> is identical to the string <code>"foobar"</code>. Sometimes it is handy to be able to break down a line because it can be used to increase the readability or simply to fit the code onto the paper when printing it.</p>
+<hr>
+<h4 class="h4"><a id="page_259"></a><a id="creating_html-formatted_tooltips"></a>Creating HTML-Formatted Tooltips</h4>
+<p class="normal">Although it is possible to represent new-lines with the <code>&lt;br /&gt;</code> HTML tag, Qt actually supports many HTML tags that can make formatting tooltips much easier. <a href="Chapter09.html#an_html-formatted_tooltip">Listing 9-3</a> shows some of the formatting that is possible. The resulting tooltip is shown in <a href="Chapter09.html#a_tooltip_with_lists_and_formatting">Figure 9-2</a>.</p>
+<div id="an_html-formatted_tooltip" class="listing">
+<p class="normal"><b>Listing 9-3.</b> <i>An HTML-formatted tooltip</i></p>
+    <code>label-&gt;setToolTip( tr("&lt;p&gt; It is possible to do lists.&lt;/p&gt;"<br>
+                        "&lt;ul&gt;"<br>
+                          "&lt;li&gt;You can &lt;i&gt;format&lt;/i&gt; text.&lt;/li&gt;"<br>
+                          "&lt;li&gt;&lt;b&gt;Bold&lt;/b&gt; is possible too.&lt;/li&gt;"<br>
+                          "&lt;li&gt;And the &lt;font color='#22aaff'&gt;color&lt;/font&gt; and "<br>
+                            "&lt;font size='+2'&gt;size&lt;/font&gt;.&lt;/li&gt;"<br>
+                        "&lt;/ul&gt;"<br>
+                        "&lt;p&gt;You can do ordered lists as well.&lt;/p&gt;"<br>
+                        "&lt;ol&gt;"<br>
+                          "&lt;li&gt;First.&lt;/li&gt;"<br>
+                          "&lt;li&gt;Second.&lt;/li&gt;"<br>
+                          "&lt;li&gt;Third.&lt;/li&gt;"<br>
+                        "&lt;/ol&gt;") );</code>
+</div>
+<div id="a_tooltip_with_lists_and_formatting" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0902.jpg" alt="image" width="190" height="187">
+</div>
+</div>
+<p class="normal"><b>Figure 9-2.</b> <i>A tooltip with lists and formatting</i></p>
+<p class="indent">The following list explains the most common tags that can be used to format your tooltips:</p>
+<ul>
+<li><code>&lt;p&gt;</code> ... <code>&lt;/p&gt;</code>: This tag is used to enclose a paragraph. Paragraphs have some spacing above and below, separating them from other parts of the text.</li>
+<li><code>&lt;br /&gt;</code>: This tag represents a line break. If you have decided to use HTML tags, <code>&lt;br /&gt;</code> works, but <code>\n</code> does not. The <code>\n</code> system works only in texts without tags.</li>
+<li><code>&lt;i&gt;</code> ... <code>&lt;/i&gt;</code>: The enclosed text is shown as <i>italic</i>.</li>
+<li><code>&lt;b&gt;</code> ... <code>&lt;/b&gt;</code>: The enclosed text is shown as <b>bold</b>.</li>
+<li><code>&lt;font color='</code><code class="replaceable">nnn</code><code>'&gt;</code> ... <code>&lt;/font&gt;</code>: The enclosed text is shown in the specified color <code class="replaceable">nnn</code>. The color can be expressed as a color name (such as red, green, black, or white) or as a hexadecimal value prefixed with <code>#</code>. The format is <code class="replaceable">#rrggbb</code>, where <code class="replaceable">rr</code> is the red value, <code class="replaceable">gg</code> is the green value, and <code class="replaceable">bb</code> is the blue value.</li>
+<li><a id="page_260"></a><code>&lt;font size=</code>'<code class="replaceable">nnn</code><code>'&gt;</code> ... <code>&lt;/font&gt;</code>: The enclosed text is shown in an alternate size. The <code class="replaceable">nnn</code> part can either be a relative size prefixed with <code>+</code> or <code>−</code>, or a fixed size (an integer value).</li>
+<li><code>&lt;ul&gt;</code> ... <code>&lt;/ul&gt;</code>: Contains list items that are prefixed by bullets.</li>
+<li><code>&lt;ol&gt;</code> ... <code>&lt;/ol&gt;</code>: Contains list items that are prefixed by numbers.</li>
+<li><code>&lt;li&gt;</code> ... <code>&lt;/li&gt;</code>: The enclosed text is treated as a list item.</li>
+</ul>
+<h4 class="h4"><a id="inserting_images_into_tooltips"></a>Inserting Images into Tooltips</h4>
+<p class="normal">Another very useful tag is the <code>img</code> tag, which is used to insert images from files or resources into the text. <a href="Chapter09.html#a_tooltip_with_text_and_an_image">Figure 9-3</a> shows an example tooltip. The tag's syntax looks like <code>&lt;img src='</code><code class="replaceable">nnn</code><code>'&gt;</code>, where <code class="replaceable">nnn</code> is the file name. If the file name starts with <code>:</code>, it refers to a resource embedded into the executable file. <a href="Chapter09.html#a_tooltip_including_an_image">Listing 9-4</a> presents the source code for creating the example tooltip found in <a href="Chapter09.html#a_tooltip_with_text_and_an_image">Figure 9-3</a>.</p>
+<div id="a_tooltip_with_text_and_an_image" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0903.jpg" alt="image" width="245" height="71">
+</div>
+</div>
+<p class="normal"><b>Figure 9-3.</b> <i>A tooltip with text and an image</i></p>
+<div id="a_tooltip_including_an_image" class="listing">
+<p class="normal"><b>Listing 9-4.</b> <i>A tooltip including an image</i></p>
+<code>  pushButton-&gt; setToolTip( tr("&lt;img src=':/images/qt.png'&gt;"<br>
+                              "You can also insert images into your tool tips.") );</code>
+</div>
+<p class="indent">It is easy to provide tooltips for all your widgets and thus give your users the support they need. A tooltip is often used to answer questions such as "What does this button do?" and "Where did that hide ruler button go?" When you design a tooltip, try to keep the text at a minimum because the tips are often used to quickly obtain an understanding of the various interface widgets.</p>
+<h4 class="h4"><a id="applying_multiple_tooltips_to_a_widget"></a>Applying Multiple Tooltips to a Widget</h4>
+<p class="normal">There are times when you'll want to assign several tooltips to a single widget—usually when you're dealing with views for models and other widgets showing a complex document. In these situations a single widget is used to show several different items, in which each item might need a tooltip of its own. For example, suppose you have a drawing application in which you want to use tooltips to show the diameter of circles and the width and height of rectangles. Because the entire drawing is shown using a single viewing widget, that widget needs to provide different tooltips depending on where the mouse pointer is located.</p>
+<p class="indent">To do this it helps to understand how the tooltip is shown. The actual appearance of a tooltip is triggered through a <code>ToolTip</code> event. By intercepting the event in the <code>event(QEvent*)</code> method, you can change the tooltip depending on where the mouse pointer is located.</p>
+<p class="indent"><a href="Chapter09.html#the_same_widget_shows_different_tooltips">Figure 9-4</a> shows the desired effect: the four squares are all part of one widget, but each square shows a different tooltip text.</p>
+<hr>
+<p class="normal"><a id="page_261"></a><b>Note</b>  When working with a <code>QGraphicsView</code> and friends, you can set tooltips for each <code>QGraphicsItem</code>—avoiding the need to intercept the <code>ToolTip</code> event for the view widget or the scene. When working with item views, you can use the model-view architecture to set tooltips for each item by assigning data to <code>Qt::ToolTipRole</code>. If you want to provide custom tooltips for the view, reimplement the <code>viewportEvent(QEvent*)</code> method instead of <code>event()</code>.</p>
+<hr>
+<div id="the_same_widget_shows_different_tooltips" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0904.jpg" alt="image" width="549" height="403">
+</div>
+</div>
+<p class="normal"><b>Figure 9-4.</b> <i>The same widget shows different tooltips for different parts.</i></p>
+<p class="indent">Let's get started with intercepting the right event and set the tooltip text for each of the four squares. All events are passed through the <code>event</code> method before some of them are distributed to the different handlers, such as the <code>paintEvent</code>, <code>mouseMoveEvent</code>, and <code>keyPressEvent</code> methods. Because there is no <code>toolTipEvent</code> method, you have to intercept the event in the <code>event</code> method.</p>
+<p class="indent">The source code for the interception is shown in <a href="Chapter09.html#intercepting_all_tooltip_events_and_upda">Listing 9-5</a>. Because the <code>event</code> method receives a <code>QEvent</code> object, you must use the type property to determine whether a <code>ToolTip</code> event was received. The <code>QEvent</code> class is the base class for all specialized event classes, so as soon as you can tell that you are dealing with a tooltip, you can cast the <code>QEvent</code> object into a <code>QHelpEvent</code> object.</p>
+<hr>
+<p class="normal"><a id="page_262"></a><b>Note</b>  How can you tell that the <code>ToolTip</code> event is sent as a <code>QHelpEvent</code> object? Look at the documentation for the <code>enum QEvent::Type</code>; you'll see a list of all event types and the type of objects passed along such an event.</p>
+<hr>
+<p class="indent">After the event object has been cast into a <code>QHelpEvent</code> object, the rectangles for the four zones are set up. Then the tooltip is set depending on which rectangle contains the point returned by the <code>pos()</code> method of the <code>QHelpEvent</code> object.</p>
+<p class="indent">When the tooltip text has been set, do not mark the event as accepted. Instead call the default handler (because it knows how to show the actual tooltip) by calling the parent's handler <code>QWidget::event</code>. This is where all the non-<code>ToolTip</code> events go as well—making sure that everything works as expected.</p>
+<div id="intercepting_all_tooltip_events_and_upda" class="listing">
+<p class="normal"><b>Listing 9-5.</b> <i>Intercepting all</i> <code>ToolTip</code> <i>events and updating the tooltip text before passing it on to the default handler</i></p>
+<code>bool TipZones::event( QEvent *event )<br>
+{<br>
+  if( event-&gt;type() == QEvent::ToolTip )<br>
+  {<br>
+    QHelpEvent *helpEvent = static_cast&lt;QHelpEvent*&gt;( event );<br>
+<br>
+    QRect redRect, greenRect, blueRect, yellowRect;<br>
+<br>
+    redRect = QRect( 0, 0, width()/2, height()/2 );<br>
+    greenRect = QRect( width()/2, 0, width()/2, height()/2 );<br>
+    blueRect = QRect( 0, height()/2, width()/2, height()/2 );<br>
+    yellowRect = QRect( width()/2, height()/2, width()/2, height()/2 );<br>
+<br>
+    if( redRect.contains( helpEvent-&gt;pos() ) )<br>
+      setToolTip( tr("Red") );<br>
+    else if( greenRect.contains( helpEvent-&gt;pos() ) )<br>
+      setToolTip( tr("Green") );<br>
+    else if( blueRect.contains( helpEvent-&gt;pos() ) )<br>
+      setToolTip( tr("Blue") );<br>
+    else<br>
+      setToolTip( tr("Yellow") );<br>
+  }<br>
+<br>
+  return QWidget::event( event );<br>
+}</code>
+</div>
+<h3 class="h3"><a id="page_263"></a><a id="providing_what_apostrophy_s_this_help_ti"></a>Providing What's This Help Tips</h3>
+<p class="normal"><i>What's this</i> help looks very much like a tooltip, except the user has invoked the What's this mode and then clicked the widget of interest. The What's this mode is entered by clicking the question mark button that appears on the title bar of the dialog window if any widget has What's this help. The question mark button can be seen in <a href="Chapter09.html#a_dialog_with_the_question_mark_button_i">Figure 9-5</a>.</p>
+<div id="a_dialog_with_the_question_mark_button_i" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0905.jpg" alt="image" width="200" height="178">
+</div>
+</div>
+<p class="normal"><b>Figure 9-5.</b> <i>A dialog with the question mark button in the title bar</i></p>
+<p class="indent">The What's this help text tends to be slightly longer and more detailed than the tooltip text because the user usually wants to know a bit more about a widget.</p>
+<p class="indent">The What's this text is set using the <code>setWhatsThis(const QString&amp;)</code> method and can be set for all widgets. Although the string passed as argument is very similar to the string passed as tooltip, there are some differences.</p>
+<p class="indent">The most important difference is line breaks. When specifying What's this texts it is important to use the <code>&lt;br /&gt;</code> tag, not the <code>\n</code> character to break the lines. Also, the What's this texts are always word-wrapped unless you explicitly specify the paragraph not to be wrapped. <a href="Chapter09.html#the_same_what_apostrophy_s_this_text_wit">Figure 9-6</a> shows the same What's this text with and without word-wrapping.</p>
+<p class="indent">To avoid word-wrapping you must put the text in a paragraph tag with the attribute <code>style='white-space:pre'</code>. For example, the following line shows the word-wrapped text from the figure:</p>
+<code>  checkBox-&gt; setWhatsThis( tr("This is a simple &lt;i&gt;What's This help&lt;/i&gt; "<br>
+                              "for the check box.") );</code>
+<p class="indent">This piece of source code shows the same text without word-wrapping:</p>
+<code>  checkBox-&gt;setWhatsThis( tr("&lt;p style='white-space:pre'&gt;This is a simple "<br>
+                             "&lt;i&gt;What's This help&lt;/i&gt; for the check box.&lt;/p&gt;") );</code>
+<p class="indent">Sometimes it can be useful to prevent word-wrapping, but try to let Qt handle it whenever possible. By letting Qt wrap the lines, the text is more likely to appear properly on the screen. Take the example of a low-resolution screen with a very large font size setting (see <a href="Chapter09.html#the_same_what_apostrophy_s_this_text_wit">Figure 9-6</a>). Your nonwrapped text might not fit the screen.</p>
+<div id="the_same_what_apostrophy_s_this_text_wit" class="figure-contents"><a id="page_264"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0906.jpg" alt="image" width="549" height="164">
+</div>
+</div>
+<p class="normal"><b>Figure 9-6.</b> <i>The same What's this text with and without word-wrapping</i></p>
+<p class="indent">When it comes to formatting, What's this help texts can handle all the tags that tooltip texts can. <a href="Chapter09.html#what_apostrophy_s_this_help_items_handle">Figure 9-7</a> shows What's this help boxes demonstrating formatting and inline images. Although the word-wrapping is slightly different, the results are identical to the tooltip boxes.</p>
+<div id="what_apostrophy_s_this_help_items_handle" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0907.jpg" alt="image" width="411" height="185">
+</div>
+</div>
+<p class="normal"><b>Figure 9-7.</b> <i>What's this help items handles the same formatting as tooltip texts.</i></p>
+<h4 class="h4"><a id="embedding_links_into_what_apostrophy_s_t"></a>Embedding Links into What's This Help Tips</h4>
+<p class="normal">Even though What's this texts usually are a bit more detailed than tooltip texts, sometimes even the expanded text allowance isn't enough. In these cases it can be useful to be able to place a hyperlink in the text. The link can point to anything you please—for example, a dialog, a section in online help, or a page on the Web.</p>
+<p class="indent">When a link in a What's this text is clicked, a <code>WhatsThisClicked</code> event is sent to the widget tied to the What's this help tip. This event can be intercepted in the <code>event</code> method, just as the <code>ToolTip</code> event was intercepted when different tips for different parts of a widget were provided. However, because there might be many dialogs with What's this help containing links, a good solution is to intercept all the <code>WhatsThisClicked</code> events in one place. This process enables you to treat all links in the same way using the same mechanisms. The event inter-ception can be performed using an event filter.</p>
+<p class="indent">The idea is to have an event filter that can be installed on all dialogs that provide What's this help. The filter object then emits a signal each time a link has been clicked. This signal can be connected to a central point that performs the appropriate action (such as opening a help page).</p>
+<p class="indent"><a href="Chapter09.html#the_declaration_of_the_event_filtering_c">Listing 9-6</a> shows the class declaration of the <code>LinkFilter</code> filter class. It provides a signal to emit when a link is clicked, a constructor, and the <code>eventFilter</code> method. The constructor simply passes on the <code>parent</code> pointer to the <code>QObject</code> constructor to keep Qt happy.</p>
+<div id="the_declaration_of_the_event_filtering_c" class="listing"><a id="page_265"></a>
+<p class="normal"><b>Listing 9-6.</b> <i>The declaration of the event filtering class</i></p>
+<code>#ifndef LINKFILTER_H<br>
+#define LINKFILTER_H<br>
+<br>
+#include &lt;QObject&gt;<br>
+<br>
+class LinkFilter : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  LinkFilter( QObject *parent=0 );<br>
+<br>
+signals:<br>
+  void linkClicked( const QString &amp;);<br>
+<br>
+protected:<br>
+  bool eventFilter( QObject*, QEvent* );<br>
+};<br>
+<br>
+#endif // LINKFILTER_H</code>
+</div>
+<p class="indent">The actual filtering takes place in <a href="Chapter09.html#filtering_the_events_for_whatsthisclicke">Listing 9-7</a>. All events of the type <code>WhatsThisClicked</code> are handled. The <code>QEvent</code> object is cast into a <code>QWhatsThisClickedEvent</code> object from which the <code>href</code> property is emitted through the <code>linkClicked</code> signal. Make sure to call the <code>QWhatsThis::hideText</code> method that hides the What's this box before the signal is emitted and any action is taken.</p>
+<p class="indent">Finally, handled events return <code>true</code>, preventing any further event handling. All other events return <code>false</code>—informing Qt that the event is ignored.</p>
+<div id="filtering_the_events_for_whatsthisclicke" class="listing">
+<p class="normal"><b>Listing 9-7.</b> <i>Filtering the events for</i> <code>WhatsThisClicked</code> <i>events</i></p>
+<code>bool LinkFilter::eventFilter( QObject *object, QEvent *event )<br>
+{<br>
+  if( event-&gt;type() == QEvent::WhatsThisClicked )<br>
+  {<br>
+    QWhatsThisClickedEvent *wtcEvent = static_cast&lt;QWhatsThisClickedEvent*&gt;(event);<br>
+    QWhatsThis::hideText();<br>
+    emit linkClicked( wtcEvent-&gt;href() );<br>
+    return true;<br>
+  }<br>
+<br>
+  return false;<br>
+}</code>
+</div>
+<p class="indent">To test the <code>LinkFilter</code> class a simple dialog class, <code>LinkDialog</code>, was created The dialog has a constructor and a slot: <code>showLink(const QString&amp;)</code>. (<a href="Chapter09.html#setting_up_a_dialog_with_the_linkfilter">Listing 9-8</a> shows the constructor of the dialog.)</p>
+<p class="indent"><a id="page_266"></a>First a <code>LinkFilter</code> is created and installed as an event filter for the dialog. The <code>linkClicked</code> signal is connected to the <code>showLink</code> slot of the dialog. Notice that the <code>WhatsThisClicked</code> event is passed through the dialog so you can intercept clicked links for all widgets in the dialog here. Since the filter is installed on the dialog it is possible to install the filter from a main window before showing the dialog.</p>
+<p class="indent">After the filter is installed, a <code>QPushButton</code> widget is created and the What's this text is set. To create a link, the <code>&lt;a href='<i>nnn</i>'&gt;</code> ... <code>&lt;/a&gt;</code> tag is used. The <code class="replaceable">nnn</code> part is the string passed as the <code>href</code> property of the <code>QWhatsThisClickedEvent</code> and then passed on through the <code>linkClicked</code> signal. The text between the <code>&lt;a href=...&gt;</code> and <code>&lt;/a&gt;</code> parts is the text that will be shown as a link.</p>
+<p class="indent">Before the constructor ends, the push button is placed in a layout.</p>
+<div id="setting_up_a_dialog_with_the_linkfilter" class="listing">
+<p class="normal"><b>Listing 9-8.</b> <i>Setting up a dialog with the</i> <code>LinkFilter</code> <i>event filter</i></p>
+<code>LinkDialog::LinkDialog() : QDialog()<br>
+{<br>
+  LinkFilter *filter = new LinkFilter( this );<br>
+  this-&gt;installEventFilter( filter );<br>
+  connect( filter, SIGNAL(linkClicked(const QString&amp;)),<br>
+           this, SLOT(showLink(const QString&amp;)) );<br>
+<br>
+  QPushButton *button = new QPushButton( "What is this?" );<br>
+  button-&gt;setWhatsThis( "This is a &lt;a href='test link'&gt;test link&lt;/a&gt;." );<br>
+<br>
+  QGridLayout *layout = new QGridLayout( this );<br>
+  layout-&gt;addWidget( button, 0, 0 );<br>
+}</code>
+</div>
+<p class="indent"><a href="Chapter09.html#the_what_apostrophy_s_this_text_with_a_l">Figure 9-8</a> shows the <i>What's this</i> text and the link being shown. When the user clicks the link, a <code>QWhatsThisClickedEvent</code> is triggered, the <code>linkClicked</code> signal is emitted, and the <code>showLink</code> slot is triggered. The source code of the slot is shown in <a href="Chapter09.html#showing_the_clicked_link_using_a_message">Listing 9-9</a>.</p>
+<div id="the_what_apostrophy_s_this_text_with_a_l" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0908.jpg" alt="image" width="193" height="117">
+</div>
+</div>
+<p class="normal"><b>Figure 9-8.</b> <i>The What's this text with a link</i></p>
+<div id="showing_the_clicked_link_using_a_message" class="listing">
+<p class="normal"><b>Listing 9-9.</b> <i>Showing the clicked link using a message box</i></p>
+<code>void LinkDialog::showLink( const QString &amp;link )<br>
+{<br>
+  QMessageBox::information( this, tr("Link Clicked"), tr("Link: %1").arg( link ) );<br>
+}</code>
+</div>
+<p class="indent"><a id="page_267"></a>All the slot does is show a message box with the link string (see <a href="Chapter09.html#the_dialog_showing_the_link_text">Figure 9-9</a>). Here, you can add code to interpret the given string and then take the appropriate action instead of just showing a message box.</p>
+<div id="the_dialog_showing_the_link_text" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0909.jpg" alt="image" width="190" height="145">
+</div>
+</div>
+<p class="normal"><b>Figure 9-9.</b> <i>The dialog showing the link text</i></p>
+<h3 class="h3"><a id="taking_advantage_of_the_status_bar"></a>Taking Advantage of the Status Bar</h3>
+<p class="normal">Status bars, which are usually found at the bottom of application windows, are often used to display temporary messages as well as information about working modes, location in the current document, size of the current file, and so on. The information shown is very dependent on the application type, but it is information that is useful to the user.</p>
+<p class="indent">The status bar is represented by a <code>QStatusBar</code> widget. When you use a status bar in a main window you can get a reference to the status bar object with the <code>statusBar()</code> method. The first time you call the method a status bar is created, whereas consecutive calls simply return a pointer to the bar.</p>
+<p class="indent">The most common use of the status bar is to show messages such as <code>"Loading"</code>, <code>"Saving"</code>, <code>"Ready"</code>, <code>"Done"</code>, and so on. These messages are shown using the <code>showMessage(const QString&amp;, int)</code> method. For example, the following line shows the message text <code>"Ready"</code> for two seconds (see <a href="Chapter09.html#a_status_bar_showing_a_temporary_message">Figure 9-10</a>):</p>
+<code>  statusBar-&gt;showMessage( tr("Ready"), 2000 );</code><br><br>
+<div id="a_status_bar_showing_a_temporary_message" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0910.jpg" alt="image" width="311" height="39">
+</div>
+</div>
+<p class="normal"><b>Figure 9-10.</b> <i>A status bar showing a temporary message</i></p>
+<p class="indent">The time given to <code>showMessage</code> is specified in milliseconds (multiply the time in seconds by 1000 to get the time in milliseconds). If you call <code>showMessage</code> without specifying a time or specifying a time of zero milliseconds, the message is shown until you replace the message by calling <code>showMessage</code> or until you call <code>clearMessage()</code> to remove the message.</p>
+<p class="indent">When not used for status messages, the status bar can contain a set of widgets. The usual use for these widgets is to provide the user with information that is useful to have at hand at all times.</p>
+<p class="indent">Widgets can be added to the status bar as normal or permanent. The difference is that <i>normal</i> widgets are covered by messages, whereas <i>permanent</i> widgets are always shown. The widgets are added from left to right, but permanent widgets always appear to the right of normal widgets.</p>
+<p class="indent"><a id="page_268"></a>The status bar shown in <a href="Chapter09.html#a_status_bar_with_a_progress_bar_and_thr">Figure 9-11</a> shows a status bar with a progress bar and three labels. The label reading N indicates that the current document isn't modified. This shows one of the limitations of status bars: the available space is limited so the information will have to be presented in a very compact format. It is possible to set a tooltip for the label to explain what is shown, but it's not a very intuitive solution.</p>
+<div id="a_status_bar_with_a_progress_bar_and_thr" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0911.jpg" alt="image" width="311" height="39">
+</div>
+</div>
+<p class="normal"><b>Figure 9-11.</b> <i>A status bar with a progress bar and three labels</i></p>
+<p class="indent">The creation of the status bar and the widgets are shown in <a href="Chapter09.html#the_status_bar_and_its_widgets_are_set_u">Listing 9-10</a>. The code is taken from a constructor for a class based on <code>QMainWindow</code>. The highlighted lines are the ones that affect the status bar. First a pointer to the status bar is acquired, then the permanent widget is added using <code>addPermanentWidget(QWidget*, int)</code>, and finally the three normal widgets using <code>addWidget(QWidget*, int)</code> are added.</p>
+<div id="the_status_bar_and_its_widgets_are_set_u" class="listing">
+<p class="normal"><b>Listing 9-10.</b> <i>The status bar and its widgets are set up in the constructor of the main window.</i></p>
+<code>MainWindow::MainWindow() : QMainWindow()<br>
+{<br>
+...<br>
+<code class="userinput">  QStatusBar *statusBar = this-&gt;statusBar();</code><br>
+<br>
+  QProgressBar *progressBar = new QProgressBar;<br>
+  QLabel *mode = new QLabel( tr("  EDIT  ") );<br>
+  QLabel *modified = new QLabel( tr("  Y  ") );<br>
+  QLabel *size = new QLabel( tr("  999999kB  ") );<br>
+<br>
+  mode-&gt;setMinimumSize( mode-&gt;sizeHint() );<br>
+  mode-&gt;setAlignment( Qt::AlignCenter );<br>
+  mode-&gt;setText( tr("EDIT") );<br>
+  mode-&gt;setToolTip( tr("The current working mode.") );<br>
+<br>
+<code class="userinput">  statusBar-&gt;addPermanentWidget( mode );</code><br>
+<br>
+  modified-&gt;setMinimumSize( modified-&gt;sizeHint() );<br>
+  modified-&gt;setAlignment( Qt::AlignCenter );<br>
+  modified-&gt;setText( tr("N") );<br>
+  modified-&gt;setToolTip( tr("Indicates if the current document "<br>
+                           "has been modified or not.") );<br>
+<br>
+  size-&gt;setMinimumSize( size-&gt;sizeHint() );<br>
+  size-&gt;setAlignment( Qt::AlignRight | Qt::AlignVCenter );<br>
+  size-&gt;setText( tr("%1kB ").arg(0) );<br>
+  size-&gt;setToolTip( tr("The memory used for the current document.") );<br>
+<a id="page_269"></a>
+  progressBar-&gt;setTextVisible( false );<br>
+  progressBar-&gt;setRange( 0, 0 );<br>
+<br>
+<code class="userinput">  statusBar-&gt;addWidget( progressBar, 1 );</code><br>
+<code class="userinput">  statusBar-&gt;addWidget( modified );</code><br>
+<code class="userinput">  statusBar-&gt;addWidget( size );</code><br>
+...<br>
+}</code>
+</div>
+<p class="indent">Notice that the widgets are created with a large size and the <code>minimumSize</code> policy to the <code>sizeHint</code> is set. This means that the widgets will not be shrunk to a smaller size than this. By setting the second argument to <code>1</code> when adding the progress bar, you enable it to take the rest of the available space. The second argument is the stretch factor, which defaults to zero. By playing with it, you can ensure that the widgets keep their relative sizes when the main window is resized.</p>
+<p class="indent">The labels then get a proper text and a tooltip before they are added to the status bar. Notice that the permanent widget appears on the right even if it is added before the normal widgets. This is so that a message can cover the normal widgets while keeping the permanent widgets visible. An example can be seen in <a href="Chapter09.html#a_status_bar_showing_a_message_and_the_p">Figure 9-12</a>.</p>
+<div id="a_status_bar_showing_a_message_and_the_p" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0912.jpg" alt="image" width="311" height="38">
+</div>
+</div>
+<p class="normal"><b>Figure 9-12.</b> <i>A status bar showing a message and the permanent widget</i></p>
+<p class="indent">One of the more common uses of status bars is to show different working modes. (Don't forget that the status bar is fairly small.) Try to show the different working modes in other ways, too: change the mouse pointer, change the appearance of handles for the objects being processed, or simply change the background color. Just showing a small three-letter code on the status bar is a good way to confuse just about any user.</p>
+<h3 class="h3"><a id="creating_wizards"></a>Creating Wizards</h3>
+<p class="normal">When the user is faced with a multitude of options, a wizard can help by presenting the options in a logical order and provide extra support in the form of explanatory text for each option.</p>
+<p class="indent">According to Qt, a wizard is a <code>QWidgetStack</code> containing all the pages; <code>QPushButton</code> widgets for the Next, Previous, and Cancel buttons; and a <code>QDialog</code> for keeping all the components. Each page is a <code>QWidget</code> in itself that can contain other widgets for settings.</p>
+<p class="indent">A <code>QWidgetStack</code> is a special widget that can hold other widgets. These widgets are kept in a stack (as in a stack of cards), in which only the current widget is visible. This makes it possible to move forward and backward through the pages by simply changing the current widget of the stack.</p>
+<p class="indent">The best tool for designing a wizard is Qt Designer, but to show the concept I'll show you a hand-coded version. Its first page is shown in <a href="Chapter09.html#the_first_page_of_the_example_wizard">Figure 9-13</a>.</p>
+<div id="the_first_page_of_the_example_wizard" class="figure-contents"><a id="page_270"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0913.jpg" alt="image" width="331" height="316">
+</div>
+</div>
+<p class="normal"><b>Figure 9-13.</b> <i>The first page of the example wizard</i></p>
+<p class="indent">A wizard is nothing more than a dialog to the rest of the application. <a href="Chapter09.html#the_declaration_of_a_wizard_class">Listing 9-11</a> shows the declaration of the <code>Wizard</code> dialog class. The public interface contains only a constructor. The private part of the interface consists of slots for the Next and Previous buttons, followed by a number of pointers to the different widgets from which the dialog is composed.</p>
+<div id="the_declaration_of_a_wizard_class" class="listing">
+<p class="normal"><b>Listing 9-11.</b> <i>The declaration of a wizard class</i></p>
+<code>class Wizard : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  Wizard();<br>
+<br>
+private slots:<br>
+  void doNext();<br>
+  void doPrev();<br>
+<br>
+private:<br>
+  QPushButton *next;<br>
+  QPushButton *previous;<br>
+<br>
+  QStackedWidget *pages;<br>
+<br>
+  PageOne *pageOne;<br>
+  PageTwo *pageTwo;<br>
+  PageThree *pageThree;<br>
+};</code>
+</div>
+<p class="indent">In the wizard I chose to place all logic in the <code>Wizard</code> class, so all the pages simply handle the visual details. The controls that can be accessed later, such as checkboxes and line edits <a id="page_271"></a>with user configurations, are made public members in the page classes. The first page from <a href="Chapter09.html#the_first_page_of_the_example_wizard">Figure 9-13</a> is shown in <a href="Chapter09.html#the_first_page_of_the_wizard">Listing 9-12</a>.</p>
+<p class="indent">The listing starts with the class declaration. For the first page, only the constructor and the checkbox for accepting the rules are available because the <code>Wizard</code> class needs to be able to tell whether the Next button is to be enabled or disabled.</p>
+<p class="indent">The other half of the listing consists of the implementation of the constructor, in which the widgets are created, set up, and put in the layout. The <code>QTextEdit</code> widget is used as a reader, so the <code>readOnly</code> property is set to <code>true</code> before the text is set using <code>setHtml</code>.</p>
+<div id="the_first_page_of_the_wizard" class="listing">
+<p class="normal"><b>Listing 9-12.</b> <i>The first page of the wizard</i></p>
+<code>class PageOne : public QWidget<br>
+{<br>
+public:<br>
+  PageOne( QWidget *parent = 0 );<br>
+<br>
+  QCheckBox *acceptDeal;<br>
+};<br>
+<br>
+PageOne::PageOne( QWidget *parent ) : QWidget(parent)<br>
+{<br>
+  QGridLayout *layout = new QGridLayout( this );<br>
+<br>
+  QTextEdit *textEdit = new QTextEdit;<br>
+  textEdit-&gt;setReadOnly( true );<br>
+  textEdit-&gt;setHtml( tr("&lt;h1&gt;The Rules&lt;/h1&gt;"<br>
+                        "&lt;p&gt;The rules are to be followed!&lt;/p&gt;") );<br>
+<br>
+  acceptDeal = new QCheckBox( tr("I accept") );<br>
+<br>
+  layout-&gt;addWidget( textEdit, 0, 0, 1, 2 );<br>
+  layout-&gt;addWidget( acceptDeal, 1, 1 );<br>
+}</code>
+</div>
+<p class="indent">There is still one piece missing before you can show the first page in the wizard dialog: the constructor. The constructor takes care of creating the Next, Previous, and Cancel buttons; creates the pages; and puts them in a stack before applying layouts and making the needed connections.</p>
+<p class="indent">The source code for the constructor is shown in <a href="Chapter09.html#the_constructor_of_the_wizard">Listing 9-13</a>. Following the code from the top down, it starts with the creation of the layout and the widgets. The widgets are then placed in the layout before the buttons are configured. Both Next and Previous are disabled from the start because there is nothing to go back to, and the user has to approve of the rules before it is possible to continue. These buttons are connected to the <code>doNext()</code> and <code>doPrev()</code> slots, while the Cancel button is connected to the <code>reject()</code> slot that closes the dialog.</p>
+<p class="indent">When the buttons are connected, the pages are created and added to the widget stack. The final step is to connect the <code>toggled(bool)</code> signal of the checkbox from the first page to the <code>setEnabled(bool)</code> slot of the Next button.</p>
+<div id="the_constructor_of_the_wizard" class="listing"><a id="page_272"></a>
+<p class="normal"><b>Listing 9-13.</b> <i>The constructor of the wizard</i></p>
+<code>Wizard::Wizard() : QDialog()<br>
+{<br>
+  QGridLayout *layout = new QGridLayout( this );<br>
+<br>
+  QPushButton *cancel = new QPushButton( tr("Cancel") );<br>
+  next = new QPushButton( tr("Next") );<br>
+  previous = new QPushButton( tr("Previous" ) );<br>
+<br>
+  pages = new QStackedWidget;<br>
+<br>
+  layout-&gt;addWidget( pages, 0, 0, 1, 5 );<br>
+  layout-&gt;setColumnMinimumWidth( 0, 50 );<br>
+  layout-&gt;addWidget( previous, 1, 1 );<br>
+  layout-&gt;addWidget( next, 1, 2 );<br>
+  layout-&gt;setColumnMinimumWidth( 3, 5 );<br>
+  layout-&gt;addWidget( cancel, 1, 4 );<br>
+<br>
+  previous-&gt;setEnabled( false );<br>
+  next-&gt;setEnabled( false );<br>
+<br>
+  connect( next, SIGNAL(clicked()), this, SLOT(doNext()) );<br>
+  connect( previous, SIGNAL(clicked()), this, SLOT(doPrev()) );<br>
+  connect( cancel, SIGNAL(clicked()), this, SLOT(reject()) );<br>
+<br>
+  pages-&gt;addWidget( pageOne = new PageOne( pages ) );<br>
+  pages-&gt;addWidget( pageTwo = new PageTwo( pages ) );<br>
+  pages-&gt;addWidget( pageThree = new PageThree( pages ) );<br>
+<br>
+  connect( pageOne-&gt;acceptDeal, SIGNAL(toggled(bool)),<img src="/library/view/foundations-of-qt/9781590598313/images/U002.jpg" alt="image" width="15" height="10"><br>
+next, SLOT(setEnabled(bool)) );<br>
+}</code>
+</div>
+<p class="indent">When the user has checked the box and clicked the Next button, the dialog shown in <a href="Chapter09.html#the_second_page_of_the_example_wizard">Figure 9-14</a> is displayed. There are a number of things to deal with when the next button is clicked: the <code>enabled</code> property of the Next button is no longer depending on the state of the checkbox, the Previous button needs to be enabled, and you mustn't forget to show the next page. All this is managed in the <code>doNext</code> slot.</p>
+<div id="the_second_page_of_the_example_wizard" class="figure-contents"><a id="page_273"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0914.jpg" alt="image" width="331" height="316">
+</div>
+</div>
+<p class="normal"><b>Figure 9-14.</b> <i>The second page of the example wizard</i></p>
+<p class="indent">The source code for the <code>doNext</code> slot is shown in <a href="Chapter09.html#handling_the_next_button">Listing 9-14</a>. The basis of the method is a <code>switch</code> operation that determines what to do depending on the page that the user was on when clicking the Next button. Because this wizard contains three pages, there are three cases to handle. When leaving the first page, the connection to handle the enabled property of the Next button is disconnected, and the Previous button is enabled. When leaving the second page for the last page, the text of the Next button is changed to Finish, as shown in <a href="Chapter09.html#the_final_page_of_the_example_wizard">Figure 9-15</a>.</p>
+<div id="handling_the_next_button" class="listing">
+<p class="normal"><b>Listing 9-14.</b> <i>Handling the Next button</i></p>
+<code>void Wizard::doNext()<br>
+{<br>
+  switch( pages-&gt;currentIndex() )<br>
+  {<br>
+    case 0:<br>
+      previous-&gt;setEnabled( true );<br>
+<br>
+      disconnect( pageOne-&gt;acceptDeal, SIGNAL(toggled(bool)),<br>
+                  next, SLOT(setEnabled(bool)) );<br>
+<br>
+      break;<br>
+    case 1:<br>
+      next-&gt;setText( tr("Finish") );<br>
+<br>
+      break;<br>
+    case 2:<br>
+      QMessageBox::information( this, tr("Finishing"),<br>
+                                tr("Here is where the action takes place.") );<br>
+      accept();<br>
+<br>
+      return;<br>
+  }<br>
+<br>
+  pages-&gt;setCurrentIndex( pages-&gt;currentIndex()+1 );<br>
+}</code>
+</div>
+<div id="the_final_page_of_the_example_wizard" class="figure-contents"><a id="page_274"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0915.jpg" alt="image" width="331" height="316">
+</div>
+</div>
+<p class="normal"><b>Figure 9-15.</b> <i>The final page of the example wizard</i></p>
+<p class="indent">When leaving the last page, a message box is shown before the dialog is closed by using the <code>accept</code> method before returning from the slot. This is where you would have completed the wizard by actually doing something. The actual work can be done in the dialog or in the code bringing up the dialog. Because you close the dialog using <code>accept</code> here and <code>reject</code> in all other cases, you can check the dialog result and take action if the dialog was accepted.</p>
+<p class="indent">The last task of the <code>doNext</code> slot is to update the <code>currentIndex</code> property of the widget stack, which shows the next page. Because this is done for all pages, the code for it is placed outside the <code>switch</code> block.</p>
+<p class="indent">The final piece needed to complete the wizard is the ability to go back, which is handled from the <code>doPrev</code> slot shown in <a href="Chapter09.html#handling_the_previous_button">Listing 9-15</a>. The principle is the same as used in the <code>doNext</code> slot: a switch operation to determine what to do depending on what page is being shown when the button is clicked.</p>
+<div id="handling_the_previous_button" class="listing">
+<p class="normal"><b>Listing 9-15.</b> <i>Handling the Previous button</i></p>
+<code>void Wizard::doPrev()<br>
+{<br>
+  switch( pages-&gt;currentIndex() )<br>
+  {<br>
+    case 1:<br>
+      previous-&gt;setEnabled( false );<br>
+      next-&gt;setEnabled( pageOne-&gt;acceptDeal-&gt;isChecked() );<br>
+<br>
+      connect( pageOne-&gt;acceptDeal, SIGNAL(toggled(bool)),<br>
+               next, SLOT(setEnabled(bool)) );<br>
+<br>
+      break;<br>
+    case 2:<br>
+      next-&gt;setText( tr("Next") );<br>
+<a id="page_275"></a>
+      break;<br>
+  }<br>
+<br>
+  pages-&gt;setCurrentIndex( pages-&gt;currentIndex()-1 );<br>
+}</code>
+</div>
+<p class="indent">The actions being performed can be traced back to the <code>doNext</code> slot. When moving from page 1 to 0, you reconnect the toggled signal to the enabled property of the Next button and disable the Previous button. When moving from page 2 to 1, you reset the text of the Next button to Next.</p>
+<p class="indent">As you can see, creating wizards is a fairly straightforward task. Because all wizards are application-dependent, you're bound to end up with a large amount of application-specific code for each wizard. By designing the wizard using Qt Designer, you can reduce the amount of work to implement a <code>doNext</code> and a <code>doPrev</code> slot. Nearly all the other code is there only to handle the appearance of the dialog and the different pages.</p>
+<h3 class="h3"><a id="assisting_the_user"></a>Assisting the User</h3>
+<p class="normal">Of course, you might want to rely on the de facto standard for supplying help to users: the F1 key. The reference documentation is made available through the Qt Assistant that is bundled with Qt. When you need to provide help, you can also use Assistant as the help system for your application. Doing so is a two-stage process: configure Assistant and then integrate Assistant in your application.</p>
+<h4 class="h4"><a id="creating_the_help_documentation"></a>Creating the Help Documentation</h4>
+<p class="normal">Qt Assistant can render HTML documentation, so you have to format your help files using HTML format to take advantage of this feature. The HTML files and images are placed in a directory next to the executable file alongside two more files needed by Assistant. The first and most important file is the Assistant Documentation Profile called <code>qtbookexample.adp</code>. This file configures Assistant so the right documentation set is used and the window title is set up correctly. You can see the contents of the file in <a href="Chapter09.html#the_assistant_documentation_profile_file">Listing 9-16</a>.</p>
+<p class="indent">The second file needed by Assistant is the <code>about.txt</code> file used to customize the about box in Assistant. You can see that it is referenced from the <code>profile</code> part of the <code>adp</code> file. The <code>profile</code> part configures the appearance of Assistant, configuring it with a window title, an icon, a start page, a text for the about menu, the file that contains the text for the about box, and the relative path to the rest of the documents.</p>
+<div id="the_assistant_documentation_profile_file" class="listing">
+<p class="normal"><b>Listing 9-16.</b> <i>The Assistant documentation profile file</i></p>
+<code>&lt;!DOCTYPE DCF&gt;<br>
+<br>
+&lt;assistantconfig version="3.2.0"&gt;<br>
+<br>
+&lt;profile&gt;<br>
+  &lt;property name="name"&gt;qtbookexample&lt;/property&gt;<br>
+  &lt;property name="title"&gt;Qt Book Example&lt;/property&gt;<br>
+  &lt;property name="applicationicon"&gt;images/qt.png&lt;/property&gt;<br>
+<a id="page_276"></a>
+  &lt;property name="startpage"&gt;index.html&lt;/property&gt;<br>
+  &lt;property name="aboutmenutext"&gt;About The Qt Book Example&lt;/property&gt;<br>
+  &lt;property name="abouturl"&gt;about.txt&lt;/property&gt;<br>
+  &lt;property name="assistantdocs"&gt;.&lt;/property&gt;<br>
+&lt;/profile&gt;<br>
+<br>
+&lt;DCF ref="index.html" icon="images/qt.png" title="Qt Book Example"&gt;<br>
+  &lt;section ref="./basics.html" title="Basics"&gt;<br>
+    &lt;section ref="./index.html" title="The first basic thing" /&gt;<br>
+    &lt;section ref="./index.html" title="The second basic thing" /&gt;<br>
+    &lt;section ref="./easystuff.html" title="Another basic topic" /&gt;<br>
+<br>
+    &lt;keyword ref="./index.html"&gt;Basic Thing One&lt;/keyword&gt;<br>
+    &lt;keyword ref="./index.html"&gt;Basic Thing Two&lt;/keyword&gt;<br>
+    &lt;keyword ref="./easystuff.html"&gt;Another Basic Thing&lt;/keyword&gt;<br>
+  &lt;/section&gt;<br>
+  &lt;section ref="./advanced.html" title="Advanced Topics"&gt;<br>
+    &lt;section ref="./adv1.html" title="The first advanced thing" /&gt;<br>
+    &lt;section ref="./adv2.html" title="The second advanced thing" /&gt;<br>
+<br>
+    &lt;keyword ref="./adv1.html"&gt;Advanced Topic One&lt;/keyword&gt;<br>
+    &lt;keyword ref="./adv2.html"&gt;Advanced Topic Two&lt;/keyword&gt;<br>
+  &lt;/section&gt;<br>
+<br>
+  &lt;section ref="./appendix.html" title="Appendix" /&gt;<br>
+  &lt;section ref="./faq.html" title="F.A.Q." /&gt;<br>
+&lt;/DCF&gt;<br>
+<br>
+&lt;/assistantconfig&gt;</code>
+</div>
+<p class="indent">The second half of the <code>adp</code> file contains the different sections and keywords to use. <a href="Chapter09.html#the_documentation_profile_is_shown_as_a">Figure 9-16</a> shows how the information is shown in the Contents and Index tabs of Assistant.</p>
+<p class="indent">The other tabs take care of themselves. The bookmarks are added by the user, and the Search tab offers searching throughout all files referenced from the <code>adp</code> file.</p>
+<p class="indent">To test your <code>adp</code> file with Assistant, you can start Assistant with the parameter <code>-profile</code> and then refer to your profile. For example, <code>assistant -profile qtbookexample.adp</code> starts Assistant with the <code>qtbookexample.adp</code> documentation, as shown in <a href="Chapter09.html#the_documentation_profile_is_shown_as_a">Figure 9-16</a>.</p>
+<div id="the_documentation_profile_is_shown_as_a" class="figure-contents"><a id="page_277"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P0916.jpg" alt="image" width="549" height="238">
+</div>
+</div>
+<p class="normal"><b>Figure 9-16.</b> <i>The documentation profile is shown as a contents tree and a list of keywords in Assistant.</i></p>
+<h4 class="h4"><a id="putting_it_together"></a>Putting It Together</h4>
+<p class="normal">To use Assistant as your help documentation browser, you need to create a <code>QAssistantClient</code> object. Make sure that you create only one object for your entire application—the user might be confused if you start several Assistant instances at once.</p>
+<p class="indent"><a href="Chapter09.html#creating_and_configuring_assistant">Listing 9-17</a> shows how to create an assistant client object. The first argument given to the constructor is a path to the Assistant executable. If you assume that the users have a working Qt development environment installed, you can use the <code>QLibraryInfo</code> object to find the executables. In the most common situation, the user doesn't have Qt installed so you have to ship the Assistant executable with your application and place it relative to your application's executable. You can find the location of your file by using the <code>QApplication::applicationDirPath()</code> method.</p>
+<div id="creating_and_configuring_assistant" class="listing">
+<p class="normal"><b>Listing 9-17.</b> <i>Creating and configuring Assistant</i></p>
+<code>   QAssistantClient *assistantClient =<br>
+     new QAssistantClient( QApplication::applicationDirPath(), qApp );<br>
+   QStringList arguments;<br>
+   arguments &lt;&lt; "-profile" &lt;&lt; "./documentation/qtbookexample.adp";<br>
+   assistantClient-&gt;setArguments( arguments );</code>
+</div>
+<p class="indent">When you want to show the Assistant, simply call one of the <code>openAssistant()</code> or <code>showPage(const QString&amp;)</code> methods of your assistant client object. When your application closes, make sure to call <code>closeAssistant()</code> on your client object to close down any open instance of Assistant.</p>
+<p class="indent">To be able to build a project using the <code>QAssistantClient</code> class, you must add the line <code>CONFIG += assistant</code> to your project file.</p>
+<h3 class="h3"><a id="page_278"></a><a id="summary-014"></a>Summary</h3>
+<p class="normal">Providing help is about much more than just responding to the F1 key; it's about providing an intuitive user interface and adding support when the user needs it. The support must be made available through the channels that the user knows so the help is intuitive. By providing tooltips and What's this help for most widgets, many questions can be avoided.</p>
+<p class="indent">When tooltips no longer help, a wizard can be used, or you can attempt to redesign the user interface to avoid problems. The latter must always be an option, but sometimes a wizard is the best alternative.</p>
+<p class="indent">To make information available, you can use the status bar to give the user the same information regardless of what the user is doing. But don't count on the user seeing the status bar at all times—if the working mode is changed by accident, users usually don't go for the status bar; instead they go to wherever they were when the change took place.</p>
+<p class="indent">The final piece of a help system is online documentation. The Qt Assistant can help you by providing a nice interface to your documentation. Simply compile your documentation into a set of HTML documents, create a documentation profile, and use the Assistant as your help client.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter08.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 8: Files, Streams, and XML</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter10.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 10: Internationalization and Localization</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","licenseKey":"510f1a6865","applicationTime":121,"applicationID":"3275661,67267027,67267028","agent":"","beacon":"bam.nr-data.net","queueTime":9}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

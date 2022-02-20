@@ -1,0 +1,1322 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter16.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter16.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter16.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter16.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 16: Unit Testing - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter16.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter16.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/AppendixA.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html"/><meta name="description" content=" CHAPTER 16 Unit Testing With software complexity on the rise and development schedules tightening all the time, developers are constantly seeking out new ways to more efficiently create and ... "><meta property="og:title" content="CHAPTER 16: Unit Testing" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 16: Unit Testing" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 16 Unit Testing With software complexity on the rise and development schedules tightening all the time, developers are constantly seeking out new ways to more efficiently create and ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter16.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%2016%3A%20Unit%20Testing&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter16.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter15.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 15: Building Qt Projects</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/AppendixA.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">PART 3: Appendixes</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_471"></a><a id="unit_testing"></a>CHAPTER 16<br><br>Unit Testing</h2>
+<p class="normal"><big><b>W</b></big>ith software complexity on the rise and development schedules tightening all the time, developers are constantly seeking out new ways to more efficiently create and develop their applications. Because testing tends to be a task that consumes vast amounts of the allotted schedule, it shouldn't come as a surprise that considerable thought has been put into how to streamline the testing process.</p>
+<p class="indent">One commonplace strategy that has arisen as a result of this work is known as <i>unit testing</i>, which is about testing all sections of a project independently to ensure that they work according to specification. When putting the parts together, you will know that each section works as expected, making the final testing and debugging easier.</p>
+<p class="indent">Take, for instance, a unit conversion application in which there are hundreds of units and even more cases that you might want to test. By automatically testing the conversion engine unit and the user interface, you would avoid lots of testing. For example, it would be enough to test that the user interface can submit a value, a source unit, and a destination unit; you wouldn't have to test all possible conversions from the user interface. All the conversion possibilities would be tested as part of the testing of the conversion engine. If you would run into a conversion problem, you could catch it while testing the conversion engine (you could debug it without having to involve the user interface).</p>
+<p class="indent">The tests can be built from the specifications for the interfaces within the applications, thus making sure that the specifications are fulfilled. Some even argue that the tests make specifications and that they should be written before the actual code being tested is written.</p>
+<p class="indent">The concept of unit testing has received attention recently because it is a fundamental part of the agile software development concept. Unit testing enables the code implementing a function to be changed. As long as the tests are passed, the code will still work with the rest of the application. This means that you can change your code any time you want, and—provided that the tests all validate—the application will continue to run as expected. This is one of the key concepts of agile software development.</p>
+<hr>
+<p class="normal"><b>Tip</b> You can find out more about agile software development at <code><a href="http://www.agilemanifesto.org">www.agilemanifesto.org</a></code> and <code><a href="http://www.extremeprogramming.org">www.extremeprogramming.org</a></code>.</p>
+<hr>
+<p class="indent">Unit tests can be seen as a complement to the compiler and linker. These tools discover the apparent problems when constructing your software. The inner problems—such as a non-functioning stack, a function miscalculating the results, and so on—must be caught using <a id="page_472"></a>beta testers, unit tests, or (beware!) actual users. By using unit tests, you can make sure that your beta testers focus on important issues and that your users will be less likely to find bugs in your software. The result will be a product of better quality.</p>
+<h3 class="h3"><a id="unit_testing_and_qt"></a>Unit Testing and Qt</h3>
+<p class="normal">Qt comes with a lightweight unit testing module, the <code>QtTest</code> module (which might be expected because Qt encourages building components). When developing with this approach, it is important to be able to test each component individually.</p>
+<h4 class="h4"><a id="the_structure_of_a_test"></a>The Structure of a Test</h4>
+<p class="normal">With the <code>QtTest</code> module, each unit test is constructed from a class, which must inherit the <code>QObject</code> class and start with the <code>Q_OBJECT</code> macro. A unit test consists of several test cases, and each test case is a private slot. Four special slots are not treated as test cases:</p>
+<ul>
+<li><code>initTestCase</code>: Initializes the unit test class and is called before the test cases are run.</li>
+<li><code>cleanupTestCase</code>: Cleans up the unit test and is called after all the tests cases have been run.</li>
+<li><code>init</code>: This method is run before each test case.</li>
+<li><code>cleanup</code>: This method is run after each test case.</li>
+</ul>
+<p class="indent">All other slots are considered test cases and run accordingly. The execution order, including the special slots listed previously, can be seen in <a href="Chapter16.html#the_order_of_execution_when_a_unit_test">Figure 16-1</a>.</p>
+<p class="indent">The purpose of each test case is to test one or more aspects of a class. For instance, you might test a function so that it always performs the right calculation or you might test an interface to ensure that the internal state of an object behaves as expected.</p>
+<p class="indent">In both these situations, it is important to test both common cases and borderline cases. Tests validating the common cases can be few, but they should ensure that most of the used unit functionality works properly. The test must also include handling bad user input. For example, when a user enters an invalid input, a null string can be returned or a warning message might be emitted. The borderline cases ensure that the function actually performs, even close to the borders facing the users (for instance, to ensure that both ends of a list are accessible or that the user can enter an arbitrarily large value in an input field, but also that a mathematical function can handle all the extreme points of its function, even the biggest possible number that can be passed to it).<a id="page_473"></a></p>
+<div id="the_order_of_execution_when_a_unit_test" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1601.jpg" alt="image" width="549" height="540">
+</div>
+</div>
+<p class="normal"><b>Figure 16-1.</b> <i>The order of execution when a unit test is run</i></p>
+<p class="indent"><a href="Chapter16.html#basic_structure_of_a_unit_test">Listing 16-1</a> presents the basic structure of the class implementing the tests and the <code>QTEST_MAIN</code> macro that runs the actual tests using a special unit test <code>main</code> function. The <code>main</code> function macro can be placed anywhere—even in a different file from the test class.</p>
+<div id="basic_structure_of_a_unit_test" class="listing">
+<p><b>Listing 16-1.</b> <i>Basic structure of a unit test</i></p>
+<code>class MyTestClass : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+private slots:<br>
+  // Test cases goes here<br>
+};<br>
+<br>
+...<br>
+<br>
+QTEST_MAIN( DateTest )</code>
+</div>
+<p class="indent"><a id="page_474"></a>The project file for the test case needs to include the class being tested, the test class, and a configuration line reading <code>CONFIG += qtestlib</code>. It is possible to create such a file by running <code>qmake -project CONFIG+=qtestlib</code>. Let's have a look at it in detail.</p>
+<p class="indent">To Qt, tests are really just applications, so the project file starts with the <code>app</code> template (you also use the standard include and dependency paths):</p>
+<code>TEMPLATE = app<br>
+INCLUDEPATH = .<br>
+DEPENDPATH = .</code>
+<p class="indent">Then you give the target application a name:</p>
+<code>TARGET = mytestapp</code>
+<p class="indent">Next follows the class being tested—both the headers and sources:</p>
+<code>HEADERS += myclass.h<br>
+SOURCES += myclass.cpp</code>
+<p class="indent">Then follows the test class—headers and sources—as well as a <code>main.cpp</code> file that contains the <code>main</code> function:</p>
+<code>HEADERS += mytestclass.h<br>
+SOURCES += mytestclass.cpp main.cpp</code>
+<p class="indent">Finally, the configuration line:</p>
+<code>CONFIG += qtestlib</code><br><br>
+<hr>
+<p class="normal"><b>Note</b> The results from the tests are output to the console; on the Windows platform, you must also add a line reading <code>CONFIG += console</code> to your project file.</p>
+<hr>
+<p class="indent">Because the test is a normal application, all you need to do is run <code>qmake &amp;&amp; make</code> to build it. Then you can run the resulting <code>mytestapp</code> to perform the test.</p>
+<h3 class="h3"><a id="testing_dates"></a>Testing Dates</h3>
+<p class="normal">Let's use the <code>QtTest</code> module to test a data class. For this test, you'll use the <code>QDate</code> class because it has an internal state as it somehow represents the date to itself. It also has an interface made up from the <code>isValid</code>, <code>day</code>, <code>month</code>, and <code>year</code> property getters; and from the <code>addDays</code>, <code>addMonths</code>, and <code>addYears</code> methods.</p>
+<p class="indent">So what should be tested? It's possible to add days, months, and years to dates. Adding days can change the day, month, and year of the date. Adding months modifies only the month and year, while adding years affects only the <code>year</code> property. I also like to test that the dates are valid (February 29 is valid in leap years but not in other years).<a id="page_475"></a></p>
+<h4 class="h4"><a id="implementing_the_tests"></a>Implementing the Tests</h4>
+<p class="normal">All these tests are implemented in the unit test class shown in <a href="Chapter16.html#the_datetest_class_holds_the_tests_for_t">Listing 16-2</a>. The class inherits <code>QObject</code> and includes <code>Q_OBJECT</code>. The different tests are then implemented as private slots. Notice that the special slots have been left out because you won't be doing any special initialization or cleaning up.</p>
+<p class="indent">The tests have been divided into <code>testAddDays</code>, <code>testAddMonths</code>, <code>testAddYears</code>, and <code>testValid</code>. The first three tests add days, months and years; the last test checks that <code>isValid</code> method works correctly.</p>
+<div id="the_datetest_class_holds_the_tests_for_t" class="listing">
+<p><b>Listing 16-2.</b> <i>The</i> <code>DateTest</code> <i>class holds the tests for the</i> <code>QDate</code> <i>class.</i></p>
+<code>class DateTest : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+private slots:<br>
+  void testAddDay();<br>
+  void testAddMonth();<br>
+  void testAddYear();<br>
+  void testValid();<br>
+};</code>
+</div>
+<p class="indent">Starting from the bottom, look at the <code>testValid</code> method (its implementation is shown in <a href="Chapter16.html#testing_that_the_is_valid_method_works_a">Listing 16-3</a>). The test starts by setting a date and then testing the <code>QVERIFY</code> macro to see whether the <code>isValid</code> method returns the expected value.</p>
+<p class="indent">The <code>QVERIFY(bool)</code> macro is part of the <code>QtTest</code> module, used to verify whether a given expression is <code>true</code>. If you want to associate a specific error message when the expression is <code>false</code>, you can use the <code>QVERIFY2(bool,string)</code> macro, which prints the string when a problem occurs.</p>
+<p class="indent">As soon as a test macro fails, the current test case is aborted, so you don't have to worry about future macros failing as a result of the first problem. If you need to clean anything up, do so in the special <code>cleanup</code> slot.</p>
+<p class="indent">The first test checks that an unspecified date is invalid and a valid date is valid. So February 29 is valid in 1980 (a leap year), but is invalid in 1979.</p>
+<div id="testing_that_the_is_valid_method_works_a" class="listing">
+<p class="normal"><b>Listing 16-3.</b> <i>Testing that the is</i> <code>Valid</code> <i>method works as expected</i></p>
+<code>void DateTest::testValid()<br>
+{<br>
+  QDate date;<br>
+<br>
+<br>
+  QVERIFY( !date.isValid() );<br>
+<br>
+  date = QDate( 1979, 5, 16 );<br>
+  QVERIFY( date.isValid() );<br>
+<a id="page_476"></a>
+<br>
+  date = QDate( 1980, 2, 29 );<br>
+  QVERIFY( date.isValid() );<br>
+<br>
+  date = QDate( 1979, 2, 29 );<br>
+  QVERIFY( !date.isValid() );<br>
+}</code>
+</div>
+<p class="indent">It is possible to use <code>QVERIFY</code> to check values as well. For example, <code>QVERIFY(x==4)</code> checks to see whether <code>x</code> equals <code>4</code>. The alternative is to write <code>QCOMPARE(x,4)</code> instead. This uses the <code>QCOMPARE</code> macro to see whether the actual value, <code>x</code>, equals the expected value, <code>4</code>. The benefit is that the message returned when a test fails tells you the actual and expected values.</p>
+<p class="indent"><a href="Chapter16.html#adding_months_and_checking_the_results">Listing 16-4</a> shows the <code>QCOMPARE</code> macro in action. The slot shown, <code>testAddMonths</code>, starts by setting a date. It then adds one month to the given date and ensures that the month part of the date is updated correctly. It then adds 12 months to the date and sees that the year part of the data also works.</p>
+<div id="adding_months_and_checking_the_results" class="listing">
+<p class="normal"><b>Listing 16-4.</b> <i>Adding months and checking the results</i></p>
+<code>void DateTest::testAddMonth()<br>
+{<br>
+  QDate date( 1973, 8, 16 );<br>
+  QCOMPARE( date.year(), 1973 );<br>
+  QCOMPARE( date.month(), 8 );<br>
+  QCOMPARE( date.day(), 16 );<br>
+<br>
+  QDate next = date.addMonths( 1 );<br>
+  QCOMPARE( next.year(), 1973 );<br>
+  QCOMPARE( next.month(), 9 );<br>
+  QCOMPARE( next.day(), 16 );<br>
+<br>
+  next = date.addMonths( 12 );<br>
+  QCOMPARE( next.year(), 1974 );<br>
+  QCOMPARE( next.month(), 8 );<br>
+  QCOMPARE( next.day(), 16 );<br>
+}</code>
+</div>
+<p class="indent">The <code>testAddDays</code> and <code>testAddYears</code> slots looks very much like the <code>testAddMonths</code> slot. The year testing slot simply adds a number of years. This is the only test case because the number of years added affects only the year returned. The test for adding days, however, has three cases: adding one day (affects only the <code>day</code> property), adding 31 days (affects the <code>month</code> property), and adding 366 days (affects the <code>year</code> property).</p>
+<p class="normal"><b>Putting It Together</b></p>
+<p class="normal">The <code>DateTest</code> class is kept in the <code>datetest.cpp</code> and <code>datetest.h</code> files. To create an application, you must add a <code>main</code> function, which is kept in the <code>main.cpp</code> file shown in <a href="Chapter16.html#the_main_function_is_implemented_using_t">Listing 16-5</a>.</p>
+<p class="indent">The <code>QtTest</code> header that is included first contains all the macros from the <code>QtTest</code> module (including <code>QVERIFY</code>, <code>QCOMPARE</code>, and so on). The next line includes the class implementing the actual test. The <code>QTEST_MAIN</code> macro then creates a <code>main</code> function that runs the test cases.<a id="page_477"></a></p>
+<div id="the_main_function_is_implemented_using_t" class="listing">
+<p class="normal"><b>Listing 16-5.</b> <i>The</i> <code>main</code> <i>function is implemented using the</i> <code>QTEST_MAIN</code> <i>macro.</i></p>
+<code>#include &lt;QtTest&gt;<br>
+<br>
+#include "datetest.h"<br>
+<br>
+QTEST_MAIN( DateTest )</code>
+</div>
+<p class="indent">This is all referenced from a project file, which has been autogenerated through a call to <code>qmake –project "CONFIG+=qtestlib console"</code>. The <code>qtestlib</code> reference adds a reference to the <code>QtTest</code> module, while <code>console</code> is required for Windows users. Without it, no messages are shown. The resulting file is shown in <a href="Chapter16.html#the_project_file_puts_it_all_together">Listing 16-6</a>.</p>
+<div id="the_project_file_puts_it_all_together" class="listing">
+<p class="normal"><b>Listing 16-6.</b> <i>The project file puts it all together</i></p>
+<code>######################################################################<br>
+# Automatically generated by qmake (2.01a) ti 23. jan 18:26:56 2007<br>
+######################################################################<br>
+<br>
+TEMPLATE = app<br>
+TARGET =<br>
+DEPENDPATH += .<br>
+INCLUDEPATH += .<br>
+<br>
+# Input<br>
+HEADERS += datetest.h<br>
+SOURCES += datetest.cpp main.cpp<br>
+CONFIG += qtestlib console</code>
+</div>
+<p class="indent">When all files are in place, it's then just a matter of building and executing the test.</p>
+<p class="normal"><b>Running the Tests</b></p>
+<p class="normal">The result of building a unit test is an ordinary application. If you run that application without any command-line arguments, it will produce something like <a href="Chapter16.html#running_the_test_without_any_arguments">Listing 16-7</a>. The output shows the version of Qt and the version of the <code>qtestlib</code> used, which is followed by the result of each test case. In this case, all get a <code>PASS</code>, and the summary at the end shows that all tests have passed.</p>
+<hr>
+<p class="normal"><b>Tip</b> If you want colored output, set the environment variable <code>QTEST_COLORED</code> to 1.</p>
+<hr>
+<div id="running_the_test_without_any_arguments" class="listing">
+<p class="normal"><b>Listing 16-7.</b> <i>Running the test without any arguments</i></p>
+<code>********* Start testing of DateTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+PASS   : DateTest::initTestCase()<br>
+PASS   : DateTest::testAddDay()<br>
+<a id="page_478"></a>
+PASS   : DateTest::testAddMonth()<br>
+PASS   : DateTest::testAddYear()<br>
+PASS   : DateTest::testValid()<br>
+PASS   : DateTest::cleanupTestCase()<br>
+Totals: 6 passed, 0 failed, 0 skipped<br>
+********* Finished testing of DateTest *********</code>
+</div>
+<p class="indent">Sometimes a test case hangs. When this occurs, it is handy to use the <code>–v1</code> command-line argument when executing the test application. When this flag is given, the output tells you when each test is entered and passed, so you can tell where the test hangs. A snippet of an output is shown in <a href="Chapter16.html#running_the_test_with_the_-v1_flag">Listing 16-8</a>.</p>
+<div id="running_the_test_with_the_-v1_flag" class="listing">
+<p class="normal"><b>Listing 16-8.</b> <i>Running the test with the</i> <code>-v1</code> <i>flag</i></p>
+<code>********* Start testing of DateTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+INFO   : DateTest::initTestCase() entering<br>
+PASS   : DateTest::initTestCase()<br>
+INFO   : DateTest::testAddDay() entering<br>
+PASS   : DateTest::testAddDay()<br>
+INFO   : DateTest::testAddMonth() entering<br>
+PASS   : DateTest::testAddMonth()<br>
+INFO   : DateTest::testAddYear() entering<br>
+...</code>
+</div>
+<p class="indent">If you still have a problem locating a hang or just want to make sure that all tests are run, you can use the <code>–v2</code> argument, which makes the test output when each test is entered and passed (just as when using <code>-v1</code>), but it also shows when each testing macro is reached. <a href="Chapter16.html#running_the_test_with_the_-v2_flag">Listing 16-9</a> shows how this looks. Each macro has a line that tells you where it is located—it reads something like this: <code>filename.ext (line) : failure location</code>.</p>
+<div id="running_the_test_with_the_-v2_flag" class="listing">
+<p class="normal"><b>Listing 16-9.</b> <i>Running the test with the</i> <code>-v2</code> <i>flag</i></p>
+<code>********* Start testing of DateTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+INFO   : DateTest::initTestCase() entering<br>
+PASS   : DateTest::initTestCase()<br>
+INFO   : DateTest::testAddDay() entering<br>
+INFO   : DateTest::testAddDay() COMPARE()<br>
+datetest.cpp(10) : failure location<br>
+INFO   : DateTest::testAddDay() COMPARE()<br>
+datetest.cpp(11) : failure location<br>
+INFO   : DateTest::testAddDay() COMPARE()<br>
+datetest.cpp(12) : failure location<br>
+INFO   : DateTest::testAddDay() COMPARE()<br>
+...</code>
+</div>
+<p class="indent"><a id="page_479"></a>When a test fails, the current test case is stopped immediately. The macro causing the failure will report what went wrong and where it is located, just as for the <code>–v2</code> flag. An example of a failure can be seen in <a href="Chapter16.html#a_test_fails">Listing 16-10</a>. The output is from a test being executed without any command-line arguments.</p>
+<p class="indent">If a test case fails, the others still run, so you can obtain a complete accounting of the test status.</p>
+<div id="a_test_fails" class="listing">
+<p class="normal"><b>Listing 16-10.</b> <i>A test fails.</i></p>
+<code>********* Start testing of DateTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+PASS   : DateTest::initTestCase()<br>
+PASS   : DateTest::testAddDay()<br>
+<code class="userinput">FAIL!  : DateTest::testAddMonth() Compared values are not the same</code><br>
+<code class="userinput">   Actual (next.day()): 16</code><br>
+<code class="userinput">   Expected (15): 15</code><br>
+<code class="userinput">datetest.cpp(43) : failure location</code><br>
+PASS   : DateTest::testAddYear()<br>
+PASS   : DateTest::testValid()<br>
+PASS   : DateTest::cleanupTestCase()<br>
+Totals: 5 passed, 1 failed, 0 skipped<br>
+********* Finished testing of DateTest *********</code>
+</div>
+<p class="indent">The reason for the failure was that the expected value in the <code>QCOMPARE</code> macro was changed on line 43 in <code>datetest.cpp</code>.</p>
+<p class="indent">If you want to limit the tests to just one test case, you can pass the name of the slot as a command-line argument. For example, running <code>datetest testValid</code> runs only the <code>testValid</code> test case.</p>
+<h4 class="h4"><a id="data-driven_testing"></a>Data-Driven Testing</h4>
+<p class="normal">The tests implemented in <code>DateTest</code> had a lot of duplicated code. For example, the <code>testAddMonths</code> method in <a href="Chapter16.html#adding_months_and_checking_the_results">Listing 16-4</a> adds a date and checks the result twice. The <code>testAddDays</code> adds days three times, and <code>testValid</code> tests three dates in the same way.</p>
+<p class="indent">All this code duplication encourages copy-and-paste programming, which leads to mistakes. To avoid duplication, you can design the test cases to be data-driven instead. Put simply, it is about putting the data in a table that is commonly referred to as a <i>test vector</i>. You then perform the same test for each row of the table. Although it might be easy to implement this yourself, the <code>QtTest</code> module provides built-in support because the scenario is very common.</p>
+<p class="indent">To let the <code>QtTest</code> module take care of the data-serving details for you, you have to implement a certain structure. For each test case slot that is data-driven, you need a slot with the same name, but ending with <code>_data</code>, which generates data for that test case. <a href="Chapter16.html#the_data-driven_datetest_class">Listing 16-11</a> shows that the <code>testAddDays</code>, <code>testAddMonths</code>, and <code>testAddYears</code> have been merged into the <code>testAdd</code> slot. This slot is fed data from the <code>testAdd_data</code> slot. The same goes for the <code>testValid</code> slot, which gets its data from <code>testValid_data</code>. It is possible to have one or more data-driven test cases in the same class as non–data-driven test cases, but in this case all tests were (more or less) data-driven by themselves.<a id="page_480"></a></p>
+<div id="the_data-driven_datetest_class" class="listing">
+<p class="normal"><b>Listing 16-11.</b> <i>The data-driven</i> <code>DateTest</code> <i>class</i></p>
+<code>class DateTest : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+private slots:<br>
+  void testAdd();<br>
+  void testAdd_data();<br>
+<br>
+  void testValid();<br>
+  void testValid_data();<br>
+};</code>
+</div>
+<p class="indent">The new <code>testValid</code> slot and its data slot are shown in <a href="Chapter16.html#checking_to_see_whether_a_range_of_dates">Listing 16-12</a>. Let's start by looking at the <code>testValid_data</code> data slot. It starts by creating four columns with <code>QTest::addColumn&lt;type&gt;: year, month, day</code>, and <code>valid</code>, where <code>valid</code> is the value that you expect the <code>isValid</code> method to return for a date made up from the <code>year</code>, <code>month</code>, and <code>day</code>. Then the data rows are added by using the <code>QTest::newRow</code> method. Each row is given a name, and then the data for the columns is entered by using the &lt;&lt; operator.</p>
+<p class="indent">The <code>testValid</code> test case slot—and the <code>year</code>, <code>month</code>, and <code>day</code> values—are fetched by using the <code>QFETCH</code> macro. Notice that the <code>testValid</code> knows only what columns there are and that there is a current row. How many rows there are and which row is active now is not relevant; the <code>QtTest</code> module makes sure that the slot is called once for each row of data.</p>
+<p class="indent">The <code>QFETCH</code> macro takes two arguments: the type of data to fetch and the name of the column to fetch. The value is available from a variable with the column name, which is why you can use <code>year</code>, <code>month</code>, and <code>day</code> in the <code>QDate</code> constructor as ordinary variables.</p>
+<p class="indent">It is possible to use the <code>QFETCH</code> macro to get the value from the <code>value</code> column and then use <code>QCOMPARE</code> or even <code>QVERIFY</code> to check that it matches the expected value. Instead of doing this, however, you can use the <code>QTEST</code> macro right away. It works just like <code>QCOMPARE</code>, but takes a column name instead of an expected value. It then compares the given value to the value for the given column of the current row of data.</p>
+<hr>
+<p class="normal"><b>Note</b> In the process of turning <code>testValid</code> into a data-driven test case, the check of an empty constructor was lost.</p>
+<hr>
+<div id="checking_to_see_whether_a_range_of_dates" class="listing">
+<p class="normal"><b>Listing 16-12.</b> <i>Checking to see whether a range of dates is valid</i></p>
+<code>void DateTest::testValid()<br>
+{<br>
+  QFETCH( int, year );<br>
+  QFETCH( int, month );<br>
+  QFETCH( int, day );<br>
+<a id="page_481"></a>
+  QDate date( year, month, day );<br>
+  QTEST( date.isValid(), "valid" );<br>
+}<br>
+<br>
+void DateTest::testValid_data()<br>
+{<br>
+  QTest::addColumn&lt;int&gt;( "year" );<br>
+  QTest::addColumn&lt;int&gt;( "month" );<br>
+  QTest::addColumn&lt;int&gt;( "day" );<br>
+  QTest::addColumn&lt;bool&gt;( "valid" );<br>
+<br>
+  QTest::newRow( "Valid, normal" ) &lt;&lt; 1973 &lt;&lt; 8 &lt;&lt; 16 &lt;&lt; true;<br>
+  QTest::newRow( "Invalid, normal" ) &lt;&lt; 1973 &lt;&lt; 9 &lt;&lt; 31 &lt;&lt; false;<br>
+  QTest::newRow( "Valid, leap-year" ) &lt;&lt; 1980 &lt;&lt; 2 &lt;&lt; 29 &lt;&lt; true;<br>
+  QTest::newRow( "Invalid, leap-year" ) &lt;&lt; 1981 &lt;&lt; 2 &lt;&lt; 29 &lt;&lt; false;<br>
+}</code>
+</div>
+<p class="indent">The <code>testAdd</code> slot has seen slightly bigger changes than <code>testValid</code>. (The slot and its accompanying data slot can be seen in <a href="Chapter16.html#checking_to_see_whether_the_adddays_comm">Listing 16-13</a>.) The data is structured in six columns: <code>addDay</code>, <code>addMonth</code>, <code>addYear</code>, <code>day</code>, <code>month</code>, and <code>year</code>. The test case works by taking a predetermined date (in this case, May 16, 1979) and then adds the <code>addXxx</code> columns to it. The day, month, and year columns are then used for keeping the expected results.</p>
+<p class="indent">As you can see in the <code>testAdd</code> slot implementation, the <code>addXxx</code> values are retrieved using <code>QFETCH</code>. The resulting date is then checked using the <code>QTEST</code> macro. The data created in the <code>testAdd_data</code> slot corresponds to the tests performed in the <code>testAddXxx</code> methods in the non–data-driven class.</p>
+<div id="checking_to_see_whether_the_adddays_comm" class="listing">
+<p class="normal"><b>Listing 16-13.</b> <i>Checking to see whether the</i> <code>addDays</code>, <code>addMonths</code>, <i>and</i> <code>addYears</code> <i>methods work as expected</i></p>
+<code>void DateTest::testAdd()<br>
+{<br>
+  QDate date( 1979, 5, 16 );<br>
+<br>
+  QFETCH( int, addYear );<br>
+  QFETCH( int, addMonth );<br>
+  QFETCH( int, addDay );<br>
+<br>
+  QDate next = date.addYears( addYear ).addMonths( addMonth ).addDays( addDay );<br>
+<br>
+  QTEST( next.year(), "year" );<br>
+  QTEST( next.month(), "month" );<br>
+  QTEST( next.day(), "day" );<br>
+}<br>
+<br>
+void DateTest::testAdd_data ()<br>
+{<br>
+  QTest::addColumn&lt;int&gt;( "addYear" );<br>
+<a id="page_482"></a>
+  QTest::addColumn&lt;int&gt;( "addMonth" );<br>
+  QTest::addColumn&lt;int&gt;( "addDay" );<br>
+  QTest::addColumn&lt;int&gt;( "year" );<br>
+  QTest::addColumn&lt;int&gt;( "month" );<br>
+  QTest::addColumn&lt;int&gt;( "day" );<br>
+<br>
+  QTest::newRow( "Start date" )    &lt;&lt; 0 &lt;&lt; 0 &lt;&lt; 0 &lt;&lt; 1979 &lt;&lt; 5 &lt;&lt; 16;<br>
+...<br>
+}</code>
+</div>
+<p class="indent">The rest of the project does not need to be updated for the data-driven version of <code>DateTest</code> to work. The results seen when running the tests from the command line are also similar. The actual test cases are listed as they are run, while the data slots are left out.</p>
+<p class="indent">One interesting side effect of using data-driven tests is that the name given for each row of data is returned when a test fails (making the error messages more clear). In <a href="Chapter16.html#when_a_test_fails_in_a_data-driven_test">Listing 16-14</a> you can see an example of this. Instead of just saying that the <code>next.year()</code> value was unexpected, you know that the test case was <code>testAdd(Twenty days)</code>.</p>
+<div id="when_a_test_fails_in_a_data-driven_test" class="listing">
+<p class="normal"><b>Listing 16-14.</b> <i>When a test fails in a data-driven test case, the name of the current row is given as a part of the failure message.</i></p>
+<code>********* Start testing of DateTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+PASS   : DateTest::initTestCase()<br>
+<code class="userinput">FAIL!  : DateTest::testAdd(Twenty days) Compared values are not the same</code><br>
+<code class="userinput">   Actual (next.year()): 1979</code><br>
+<code class="userinput">   Expected ("year"): 2979</code><br>
+<code class="userinput">datetest.cpp(18) : failure location</code><br>
+PASS   : DateTest::testValid()<br>
+PASS   : DateTest::cleanupTestCase()<br>
+Totals: 3 passed, 1 failed, 0 skipped<br>
+********* Finished testing of DateTest *********</code>
+</div>
+<p class="indent">The consequences of shifting to data-driven tests are summarized in the following list:</p>
+<ul>
+<li>Less code: You implement the test only once, but run different cases using that one test.</li>
+<li>Less code redundancy: Because the test is only implemented once, it is not duplicated. This also means not having to fix bugs in all tests if something is wrong.</li>
+<li>Potentially better failure messages: Because each test vector row has a name, you can clearly see which case failed.</li>
+<li>Some test cases can no longer be performed: This is a drawback. Because the test vector always contains data, it is hard to use it for testing some special cases (for instance, an empty constructor). This would require you to have a special case in your test code and a flag indicating no data, which would clutter the test code.</li>
+</ul>
+<p class="indent">The last point can be fixed by putting these tests in a non–data-driven test case. It is not a limitation because they can be combined with data-driven tests in one class.<a id="page_483"></a></p>
+<h3 class="h3"><a id="testing_widgets"></a>Testing Widgets</h3>
+<p class="normal">An aspect that is difficult to check with automated testing such as unit testing is user interaction. While most widgets have setters and getters that can be tested, to test user interaction you must be able to simulate mouse and keyboard activity. The <code>QtTest</code> module can help.</p>
+<h4 class="h4"><a id="testing_a_spin_box"></a>Testing a Spin Box</h4>
+<p class="indent">To test a widget, you'll put the <code>QSpinBox</code> class to the test, focusing on the capability to change values up and down and that the minimum value and maximum value are respected. Because the value can be changed in three different ways, the test class shown in <a href="Chapter16.html#a_class_for_testing_the_qspinbox_class">Listing 16-15</a> contains three test case slots:</p>
+<ul>
+<li><code>testKeys</code>: Tests altering the value using keyboard interaction</li>
+<li><code>testClicks</code>: Tests altering the value using mouse interaction</li>
+<li><code>testSetting</code>: Tests altering the value using the <code>setValue</code> method</li>
+</ul>
+<p class="normal">There are no differences between a unit test class testing a widget and a nonwidget.</p>
+<div id="a_class_for_testing_the_qspinbox_class" class="listing">
+<p class="normal"><b>Listing 16-15.</b> <i>A class for testing the</i> <code>QSpinBox</code> <i>class</i></p>
+<code>class SpinBoxTest : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+private slots:<br>
+  void testKeys();<br>
+  void testClicks();<br>
+  void testSetting();<br>
+};</code>
+</div>
+<p class="indent">The first test case you'll consider is the <code>testSetting</code> slot, shown in <a href="Chapter16.html#testing_the_value_property_using_a_progr">Listing 16-16</a>. In this test case, it doesn't matter that the class being tested is a widget; you'll just test the value property. First a <code>QSpinBox</code> object is created; subsequently its range is set to 1–10.</p>
+<p class="indent">The tests then try setting a valid value, setting a too-small value and finally setting a too-large value. The valid value is expected to stick, while the other two are expected to be kept within the specified range.</p>
+<div id="testing_the_value_property_using_a_progr" class="listing">
+<p class="normal"><b>Listing 16-16.</b> <i>Testing the</i> <code>value</code> <i>property using a programmatic interface</i></p>
+<code>void SpinBoxTest::testSetting()<br>
+{<br>
+  QSpinBox spinBox;<br>
+<br>
+  spinBox.setRange( 1, 10 );<br>
+<br>
+  spinBox.setValue( 5 );<br>
+  QCOMPARE( spinBox.value(), 5 );<br>
+<br>
+<a id="page_484"></a>
+  spinBox.setValue( 0 );<br>
+  QCOMPARE( spinBox.value(), 1 );<br>
+<br>
+  spinBox.setValue( 11 );<br>
+  QCOMPARE( spinBox.value(), 10 );<br>
+}</code>
+</div>
+<p class="indent"><a href="Chapter16.html#testing_changing_the_value_using_keyboar">Listing 16-17</a> shows the first of the interaction tests: <code>testKeys</code>. The test begins with a <code>QSpinBox</code> being created and set up with the same range as in the <code>testSetting</code> test. The spin box is then initialized to a valid value before up and down keys are pressed. The values are tested between each of the key presses so the <code>value</code> property is altered as expected. The next two tests set the value to a limit value and try to move outside the allowed range by using key presses. Here you ensure that the <code>value</code> property doesn't change.</p>
+<p class="indent">The key presses are sent to the spin box using the <code>QTest::keyClick(QWidget*,Qt::Key)</code> method. By sending a key event to the widget using <code>keyClick</code>, Qt automatically sends both a <code>keyPress</code> event and a <code>keyRelease</code> event for the key.</p>
+<div id="testing_changing_the_value_using_keyboar" class="listing">
+<p class="normal"><b>Listing 16-17.</b> <i>Testing changing the</i> <code>value</code> <i>using keyboard interaction</i></p>
+<code>void SpinBoxTest::testKeys()<br>
+{<br>
+  QSpinBox spinBox;<br>
+<br>
+  spinBox.setRange( 1, 10 );<br>
+  spinBox.setValue( 5 );<br>
+<br>
+  QTest::keyClick( &amp;spinBox, Qt::Key_Up );<br>
+  QCOMPARE( spinBox.value(), 6 );<br>
+<br>
+  QTest::keyClick( &amp;spinBox, Qt::Key_Down );<br>
+  QCOMPARE( spinBox.value(), 5 );<br>
+<br>
+  spinBox.setValue( 10 );<br>
+  QTest::keyClick( &amp;spinBox, Qt::Key_Up );<br>
+  QCOMPARE( spinBox.value(), 10 );<br>
+<br>
+  spinBox.setValue( 1 );<br>
+  QTest::keyClick( &amp;spinBox, Qt::Key_Down );<br>
+  QCOMPARE( spinBox.value(), 1 );<br>
+}<br>
+<br>
+void SpinBoxTest::testClicks()<br>
+{<br>
+  QSpinBox spinBox;<br>
+<br>
+  spinBox.setRange( 1, 10 );<br>
+  spinBox.setValue( 5 );<br>
+<a id="page_485"></a>
+  QSize size = spinBox.size();<br>
+  QPoint upButton = QPoint( size.width()-2, 2 );<br>
+  QPoint downButton = QPoint( size.width()-2, size.height()-2 );<br>
+<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  QCOMPARE( spinBox.value(), 6 );<br>
+<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  QCOMPARE( spinBox.value(), 5 );<br>
+<br>
+  spinBox.setValue( 10 );<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  QCOMPARE( spinBox.value(), 10 );<br>
+<br>
+  spinBox.setValue( 1 );<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  QCOMPARE( spinBox.value(), 1 );<br>
+}<br>
+<br>
+void SpinBoxTest::testSetting()<br>
+{<br>
+  QSpinBox spinBox;<br>
+<br>
+  spinBox.setRange( 1, 10 );<br>
+<br>
+  spinBox.setValue( 5 );<br>
+  QCOMPARE( spinBox.value(), 5 );<br>
+<br>
+  spinBox.setValue( 0 );<br>
+  QCOMPARE( spinBox.value(), 1 );<br>
+<br>
+  spinBox.setValue( 11 );<br>
+  QCOMPARE( spinBox.value(), 10 );<br>
+}</code>
+</div>
+<p class="indent">The final test slot checks mouse interaction. The tests are the same as for the two earlier test cases: Try moving in the valid range; then try to move outside it. You can see its implementation in the <code>testClicks</code> slot shown in <a href="Chapter16.html#testing_changing_the_value_by_using_mous">Listing 16-18</a>.</p>
+<p class="indent">The <code>testClicks</code> slot is very similar to the <code>testKeys</code> slot, except that instead of key clicks, you send mouse clicks, which must be aimed at a point on the widget. The three highlighted lines calculate where the up and down buttons are located. Look at these lines and <a href="Chapter16.html#a_spin_box_widget">Figure 16-2</a>, which shows the widget being tested.</p>
+<p class="indent">The mouse clicks are sent to the widget using the <code>QTest::mouseClick(QWidget*, Qt::MouseButton, Qt::KeyboardModifiers, QPoint)</code> method. The arguments used in the listing simulate a click from the left mouse button without any keyboard modifier keys (Shift, Alternate, Ctrl, and so on) being active. The point clicked depends on whether you try to click the up or down button.</p>
+<hr>
+<p class="normal"><a id="page_486"></a><b>Caution</b> The points used expect the up and down buttons to appear as they do in the Windows XP style. Changing the style or using a right-to-left layout can cause the test to stop working.</p>
+<hr>
+<div id="testing_changing_the_value_by_using_mous" class="listing">
+<p class="normal"><b>Listing 16-18.</b> <i>Testing changing the</i> <code>value</code> <i>by using mouse interaction</i></p>
+<code>void SpinBoxTest::testClicks()<br>
+{<br>
+  QSpinBox spinBox;<br>
+<br>
+  spinBox.setRange( 1, 10 );<br>
+  spinBox.setValue( 5 );<br>
+<br>
+<code class="userinput">  QSize size = spinBox.size();</code><br>
+<code class="userinput">  QPoint upButton = QPoint( size.width()-2, 2 );</code><br>
+<code class="userinput">  QPoint downButton = QPoint( size.width()-2, size.height()-2 );</code><br>
+<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  QCOMPARE( spinBox.value(), 6 );<br>
+<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  QCOMPARE( spinBox.value(), 5 );<br>
+<br>
+  spinBox.setValue( 10 );<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  QCOMPARE( spinBox.value(), 10 );<br>
+<br>
+  spinBox.setValue( 1 );<br>
+  QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  QCOMPARE( spinBox.value(), 1 );<br>
+}</code><br><br>
+</div>
+<div id="a_spin_box_widget" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1602.jpg" alt="image" width="149" height="73">
+</div>
+</div>
+<p class="normal"><b>Figure 16-2.</b> <i>A spin box widget</i></p>
+<p class="indent">The <code>QTEST_MAIN</code> function macro treats unit tests intended to test widgets and those to test other aspects of an application equally. The project file doesn't have to be changed, either. By building and running the unit test shown previously, you get a list of passed test cases.</p>
+<a id="page_487"></a>
+<h4 class="h4"><a id="driving_widgets_with_data"></a>Driving Widgets with Data</h4>
+<p class="normal">You've run into the same redundancy problem as with the <code>QDate</code> class—the unit test of <code>QSpinBox</code> contains a lot of duplicated code. The solution is to convert the tests into data-driven tests, which is done in exactly the same way—regardless of the class being tested.</p>
+<p class="indent">All test cases are converted in similar ways, so start by focusing on the <code>testKeys</code> slot. The new version of the slot is shown along with <code>testKeys_data</code> in <a href="Chapter16.html#testing_keyboard_interaction_using_a_dat">Listing 16-19</a>.</p>
+<p class="indent">Most of the source code shown in the listing should be clear. However, the two highlighted lines are important. When you add a column of the type <code>Qt::Key</code>, you see a compilation error if you do not declare it as a meta-type. The registration is made by using the <code>Q_DECLARE_METATYPE</code> macro.</p>
+<p class="indent">The test case works like all data-driven tests: It fetches data using <code>QFETCH</code> and uses the data before using <code>QTEST</code> to check the outcome of the test.</p>
+<div id="testing_keyboard_interaction_using_a_dat" class="listing">
+<p class="normal"><b>Listing 16-19.</b> <i>Testing keyboard interaction using a data-driven test case</i></p>
+<code><code class="userinput">Q_DECLARE_METATYPE( Qt::Key )</code><br>
+<br>
+void SpinBoxTest::testKeys()<br>
+{<br>
+  QSpinBox spinBox;<br>
+  spinBox.setRange( 1, 10 );<br>
+<br>
+  QFETCH( Qt::Key, key );<br>
+  QFETCH( int, startValue );<br>
+<br>
+  spinBox.setValue( startValue );<br>
+  QTest::keyClick( &amp;spinBox, key );<br>
+  QTEST( spinBox.value(), "endValue" );<br>
+}<br>
+<br>
+void SpinBoxTest::testKeys_data()<br>
+{<br>
+<code class="userinput">  QTest::addColumn&lt;Qt::Key&gt;( "key" );</code><br>
+  QTest::addColumn&lt;int&gt;( "startValue" );<br>
+  QTest::addColumn&lt;int&gt;( "endValue" );<br>
+<br>
+  QTest::newRow( "Up" ) &lt;&lt; Qt::Key_Up &lt;&lt; 5 &lt;&lt; 6;<br>
+  QTest::newRow( "Down" ) &lt;&lt; Qt::Key_Down &lt;&lt; 5 &lt;&lt; 4;<br>
+  QTest::newRow( "Up, limit" ) &lt;&lt; Qt::Key_Up &lt;&lt; 10 &lt;&lt; 10;<br>
+  QTest::newRow( "Down, limit" ) &lt;&lt; Qt::Key_Down &lt;&lt; 1 &lt;&lt; 1;<br>
+}<br>
+<br>
+void SpinBoxTest::testClicks()<br>
+{<br>
+  QSpinBox spinBox;<br>
+  spinBox.setRange( 1, 10 );<br>
+<a id="page_488"></a>
+  QSize size = spinBox.size();<br>
+  QPoint upButton = QPoint( size.width()-2, 2 );<br>
+  QPoint downButton = QPoint( size.width()-2, size.height()-2 );<br>
+<br>
+  QFETCH( QString, direction );<br>
+  QFETCH( int, startValue );<br>
+<br>
+  spinBox.setValue( startValue );<br>
+<br>
+  if( direction.toLower() == "up" )<br>
+    QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  else if (direction.toLower() == "down" )<br>
+    QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  else<br>
+    QWARN( "Unknown direction - no clicks issued." );<br>
+<br>
+  QTEST( spinBox.value(), "endValue" );<br>
+}<br>
+<br>
+void SpinBoxTest::testClicks_data()<br>
+{<br>
+  QTest::addColumn&lt;QString&gt;( "direction" );<br>
+  QTest::addColumn&lt;int&gt;( "startValue" );<br>
+  QTest::addColumn&lt;int&gt;( "endValue" );<br>
+<br>
+  QTest::newRow( "Up" ) &lt;&lt; "Up" &lt;&lt; 5 &lt;&lt; 6;<br>
+  QTest::newRow( "Down" ) &lt;&lt; "Down" &lt;&lt; 5 &lt;&lt; 4;<br>
+  QTest::newRow( "Up, limit" ) &lt;&lt; "Up" &lt;&lt; 10 &lt;&lt; 10;<br>
+  QTest::newRow( "Down, limit" ) &lt;&lt; "Down" &lt;&lt; 1 &lt;&lt; 1;<br>
+}<br>
+<br>
+void SpinBoxTest::testSetting()<br>
+{<br>
+  QSpinBox spinBox;<br>
+  spinBox.setRange( 1, 10 );<br>
+<br>
+  QFETCH( int, value );<br>
+<br>
+  spinBox.setValue( value );<br>
+  QTEST( spinBox.value(), "endValue" );<br>
+}<br>
+<br>
+void SpinBoxTest::testSetting_data()<br>
+{<br>
+  QTest::addColumn&lt;int&gt;( "value" );<br>
+  QTest::addColumn&lt;int&gt;( "endValue" );<br>
+<a id="page_489"></a>
+  QTest::newRow( "Valid" ) &lt;&lt; 5 &lt;&lt; 5;<br>
+  QTest::newRow( "Over" ) &lt;&lt; 11 &lt;&lt; 10;<br>
+  QTest::newRow( "Under" ) &lt;&lt; 0 &lt;&lt; 1;<br>
+}</code>
+</div>
+<p class="indent">The <code>testClicks</code> slot is similar to the <code>testKeys</code> slot, but you can't add a column for holding the <code>QPoint</code> to click because the point is calculated when you know the size of the widget being tested. A column called <code>direction</code> has been added instead. The direction can be either <code>"Up"</code> or <code>"Down"</code> (see <a href="Chapter16.html#testing_mouse_interaction_using_a_data-d">Listing 16-20</a>).</p>
+<p class="indent">The test case slot works as expected: It sets up the <code>QSpinBox</code>, uses <code>QFETCH</code> to get the input data, performs the task according to the data, and then evaluates using <code>QTEST</code>. What's new is that if it runs in to an unexpected direction, it uses the <code>QWARN</code> macro to inform the user. This warning does not affect the result of the test; it simply emits a warning in the log.</p>
+<div id="testing_mouse_interaction_using_a_data-d" class="listing">
+<p class="normal"><b>Listing 16-20.</b> <i>Testing mouse interaction using a data-driven test case</i></p>
+<code>void SpinBoxTest::testClicks()<br>
+{<br>
+  QSpinBox spinBox;<br>
+  spinBox.setRange( 1, 10 );<br>
+<br>
+  QSize size = spinBox.size();<br>
+  QPoint upButton = QPoint( size.width()-2, 2 );<br>
+  QPoint downButton = QPoint( size.width()-2, size.height()-2 );<br>
+<br>
+  QFETCH( QString, direction );<br>
+  QFETCH( int, startValue );<br>
+<br>
+  spinBox.setValue( startValue );<br>
+<br>
+  if( direction.toLower() == "up" )<br>
+    QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, upButton );<br>
+  else if (direction.toLower() == "down" )<br>
+    QTest::mouseClick( &amp;spinBox, Qt::LeftButton, 0, downButton );<br>
+  else<br>
+    QWARN( "Unknown direction - no clicks issued." );<br>
+<br>
+  QTEST( spinBox.value(), "endValue" );<br>
+}<br>
+<br>
+void SpinBoxTest::testClicks_data()<br>
+{<br>
+  QTest::addColumn&lt;QString&gt;( "direction" );<br>
+  QTest::addColumn&lt;int&gt;( "startValue" );<br>
+  QTest::addColumn&lt;int&gt;( "endValue" );<br>
+<br>
+  QTest::newRow( "Up" ) &lt;&lt; "Up" &lt;&lt; 5 &lt;&lt; 6;<br>
+...<br>
+}</code>
+</div>
+<p class="indent"><a id="page_490"></a>The <code>textSetting</code> slot is converted in a similar manner and is not shown here. The result from the unit test is also unchanged. Tests are performed (and the results are presented) in the same way.</p>
+<h3 class="h3"><a id="testing_signals"></a>Testing Signals</h3>
+<p class="normal">Qt classes emit signals when they are stimulated by programmatic calls or user interaction. Because signals and slots are key components of Qt applications, they must not be left out during testing.</p>
+<p class="indent">You can use the <code>QSignalSpy</code> class to listen to signals without connecting to them. A signal spy is hooked up to listen to a certain signal from a certain object. The spy object then records the argument values for each signal caught.</p>
+<p class="indent"><a href="Chapter16.html#testing_keyboard_interactionmnow_with_ad">Listing 16-21</a> shows the data-driven <code>testKeys</code> method extended with signal listening capabilities. (The original implementation slot was shown in <a href="Chapter16.html#testing_keyboard_interaction_using_a_dat">Listing 16-19</a>.)</p>
+<p class="indent">The highlighted lines in the listing show major additions to the slot. Looking at the changes from the top down, the first line creates a <code>QSignalSpy</code> object for monitoring the <code>valueChanged(int)</code> signal emitted from the <code>spinBox</code> object. The signal spy is created after the spin box has been set up with the start value to avoid catching a signal by mistake.</p>
+<hr>
+<p class="normal"><b>Note</b> This test checks only one signal. In real life, you would include the <code>valueChanged(QString)</code> signal, too.</p>
+<hr>
+<p class="indent">When the spy has been created, the actual test is being performed. After the test has been performed, fetch the value for the new column <code>willSignal</code>. If the value is <code>true</code>, a signal is expected.</p>
+<p class="indent">If a signal is expected, verify that the spy has caught exactly one signal. Before you look at how this is done, you must understand that <code>QSignalSpy</code> inherits <code>QList&lt;QList&lt;QVariant&gt; &gt;</code>. This means that it is a list of lists holding variant objects.</p>
+<p class="indent">Check the number of signals caught using the <code>count</code> property. To get the value from the first argument from the signal, use the <code>takeFirst</code> method to get a list of argument values for the signal. The zeroth index of the list returned (that is, the first argument of the signal) is converted from <code>QVariant</code> to an integer using <code>toInt</code> before it is compared with the expected end value.</p>
+<p class="indent">If <code>willSignal</code> tells you that no signal was expected, verify that no signal was emitted. It is easy to forget to check the no-signal case. If you miss it and a signal is emitted without a change, two objects connected to each other will hang in an infinite loop.</p>
+<p class="indent">The changes to the test case data slot are limited to the new column <code>willSignal</code> holding a Boolean telling the test whether a signal is expected or not.</p>
+<div id="testing_keyboard_interactionmnow_with_ad" class="listing">
+<p class="normal"><b>Listing 16-21.</b> <i>Testing keyboard interaction—now with additional signal-monitoring skills</i></p>
+<code>void SpinBoxTest::testKeys()<br>
+{<br>
+  QSpinBox spinBox;<br>
+  spinBox.setRange( 1, 10 );<br>
+<a id="page_491"></a>
+  QFETCH( Qt::Key, key );<br>
+  QFETCH( int, startValue );<br>
+<br>
+  spinBox.setValue( startValue );<br>
+<br>
+<code class="userinput">  QSignalSpy spy( &amp;spinBox, SIGNAL(valueChanged(int)) );</code><br>
+<br>
+  QTest::keyClick( &amp;spinBox, key );<br>
+  QTEST( spinBox.value(), "endValue" );<br>
+<br>
+<code class="userinput">  QFETCH( bool, willSignal );</code><br>
+<code class="userinput">  if( willSignal )</code><br>
+<code class="userinput">  {</code><br>
+<code class="userinput">    QCOMPARE( spy.count(), 1 );</code><br>
+<code class="userinput">    QTEST( spy.takeFirst()[0].toInt(), "endValue" );</code><br>
+<code class="userinput">  }</code><br>
+<code class="userinput">  else</code><br>
+<code class="userinput">    QCOMPARE( spy.count(), 0 );</code><br>
+}<br>
+<br>
+void SpinBoxTest::testKeys_data()<br>
+{<br>
+  QTest::addColumn&lt;Qt::Key&gt;( "key" );<br>
+  QTest::addColumn&lt;int&gt;( "startValue" );<br>
+  QTest::addColumn&lt;int&gt;( "endValue" );<br>
+<code class="userinput">  QTest::addColumn&lt;bool&gt;( "willSignal" );</code><br>
+<br>
+  QTest::newRow( "Up" ) &lt;&lt; Qt::Key_Up &lt;&lt; 5 &lt;&lt; 6 &lt;&lt; true;<br>
+  QTest::newRow( "Down" ) &lt;&lt; Qt::Key_Down &lt;&lt; 5 &lt;&lt; 4 &lt;&lt; true;<br>
+  QTest::newRow( "Up, limit" ) &lt;&lt; Qt::Key_Up &lt;&lt; 10 &lt;&lt; 10 &lt;&lt; false;<br>
+  QTest::newRow( "Down, limit" ) &lt;&lt; Qt::Key_Down &lt;&lt; 1 &lt;&lt; 1 &lt;&lt; false;<br>
+}</code>
+</div>
+<p class="indent">The changes to the other two test case slots, <code>testClicks</code> and <code>testSetting</code>, are almost identical to the ones made to <code>testKeys</code>. The biggest change is that <code>testSetting</code> had to be extended with a <code>startValue</code> column and a new test case testing the no-signal case.</p>
+<p class="indent">The changes to the tests are limited to adding a new object. The state of this object is then checked by using the standard macros from the <code>QtTest</code> module. This means that the unit is being built and used in exactly the same way as for tests not checking for signals.</p>
+<h3 class="h3"><a id="testing_for_real"></a>Testing for Real</h3>
+<p class="normal">Until now, you have been testing only parts of the interfaces of classes that are shipped with Qt. Now you'll create a unit test for the <code>ImageCollection</code> class from <a href="Chapter13.html#databases">Chapter 13</a>.<a id="page_492"></a></p>
+<h4 class="h4"><a id="the_interface"></a>The Interface</h4>
+<p class="normal">Before looking at the unit test class, let's quickly review the <code>ImageCollection</code> class, which is used to keep images and tags. It is possible to add new images, add tags to images, retrieve all tags, retrieve all ids for images matching a set of tags, and get a specific image from an id. The available methods are listed as follows:</p>
+<ul>
+<li><code>QImage getImage(int id)</code>: Gets an image from a given id.</li>
+<li><code>QList &lt;int&gt; getIds(QStringList tags)</code>: Retrieves the ids for the images matching any of the tags specified. If no tags are specified, the method returns all ids.</li>
+<li><code>QStringList getTags()</code>: Retrieves a list of all tags.</li>
+<li><code>addTag(int id, QString tag)</code>: Adds a tag to a given image.</li>
+<li><code>addImage(QImage image, QStringList tags)</code>: Adds an image to the collection with the given tags.</li>
+</ul>
+<h4 class="h4"><a id="the_tests"></a>The Tests</h4>
+<p class="normal">To test these methods, divide the tests into three sections: one for testing tags, one for testing images, and one for testing the images from tag associations. These three sections can be seen as slots in the unit test class declaration shown in <a href="Chapter16.html#the_unit_test_class_for_testing_the_imag">Listing 16-22</a>.</p>
+<p class="indent">The class contains a private member function called <code>pixelCompareImages</code>. It is used to ensure that two images are exactly identical, pixel by pixel. It is needed to see whether an image is properly stored in the database.</p>
+
+<div id="the_unit_test_class_for_testing_the_imag" class="listing">
+<p class="normal"><b>Listing 16-22.</b> <i>The unit test class for testing the</i> <code>ImageCollection</code> <i>class</i></p>
+<code>class ImageCollectionTest : public QObject<br>
+{<br>
+  Q_OBJECT<br>
+private slots:<br>
+  void testTags();<br>
+  void testImages();<br>
+  void testImagesFromTags();<br>
+<br>
+private:<br>
+  bool pixelCompareImages( const QImage &amp;a, const QImage &amp;b );<br>
+};</code>
+</div>
+<p class="normal"><b>Testing Tags</b></p>
+<p class="normal"><a href="Chapter16.html#testing_the_tag-keeping_capabilities">Listing 16-23</a> shows the <code>testTags</code> test slot implementation. The tests performed are simple, and the procedure is the following:</p>
+<ol>
+<li>Make sure that there are no tags from the start—tests <code>getIds</code>.</li>
+<li>Add one image and ensure that the image is in the collection—tests <code>addImage</code>.</li>
+<li><a id="page_493"></a>Add one tag to the image and verify that the collection contains one tag—tests <code>addTag</code> and <code>getTags</code>.</li>
+<li>Add one more tag to the image and verify that the collection contains two tags—tests <code>addTag</code> and <code>getTags</code>.</li>
+<li>Add one more tag to the image and verify that the collection contains three tags—tests <code>addTag</code> and <code>getTags</code>.</li>
+<li>Add a duplicate tag to the image and verify that the collection contains three tags—tests <code>addTag</code> and <code>getTags</code>.</li>
+<li>Add a new tag to a nonexistent image and verify that the collection contains three tags—tests <code>addTag</code> and <code>getTags</code>.</li>
+</ol>
+<p class="indent">In the listing, you can see that the <code>ImageCollection</code> object is created and then the tests are carried out. The last test is preceded by a <code>QEXPECT_FAIL</code> macro, which indicates that the test is expected to fail because the image collection fails to check whether an image id exists before adding a tag to it.</p>
+<p class="indent">The last line in the test slot removes the database connection used by the image collection. This is necessary because the image collection class relies on the default connection. If a new image collection object is created (in the next test case, for example), the <code>QtSql</code> module will warn that the database connection is being replaced if the original connection isn't removed.</p>
+<div id="testing_the_tag-keeping_capabilities" class="listing">
+<p class="normal"><b>Listing 16-23.</b> <i>Testing the tag-keeping capabilities</i></p>
+<code>void ImageCollectionTest::testTags()<br>
+{<br>
+  ImageCollection c;<br>
+<br>
+  // Make sure that the collection is empty<br>
+  QCOMPARE( c.getTags().count(), 0 );<br>
+<br>
+  // At least one image is needed to be able to add tags<br>
+  c.addImage( QImage( "test.png" ), QStringList() );<br>
+<br>
+  // Verify that we have one image and get the id for it<br>
+  QList&lt;int&gt; ids = c.getIds( QStringList() );<br>
+  QCOMPARE( ids.count(), 1 );<br>
+  int id = ids[0];<br>
+<br>
+  // Add one tag, total one<br>
+  c.addTag( id, "Foo" );<br>
+  QCOMPARE( c.getTags().count(), 1 );<br>
+<br>
+  // Add one tag, total two<br>
+  c.addTag( id, "Bar" );<br>
+  QCOMPARE( c.getTags().count(), 2 );<br>
+<br>
+<a id="page_494"></a>
+  // Add one tag, total three<br>
+  c.addTag( id, "Baz" );<br>
+  QCOMPARE( c.getTags().count(), 3 );<br>
+<br>
+  // Add a duplicate tag, total three<br>
+  c.addTag( id, "Foo" );<br>
+  QCOMPARE( c.getTags().count(), 3 );<br>
+<br>
+  // Try to add a tag to a nonexisting id<br>
+  QEXPECT_FAIL("", "The tag will be added to the non-existing image.", Continue);<br>
+  c.addTag( id+1, "Foz" );<br>
+  QCOMPARE( c.getTags().count(), 3 );<br>
+<br>
+  // The ImageConnection adds a database that we close here<br>
+  QSqlDatabase::removeDatabase( QLatin1String( QSqlDatabase::defaultConnection ) );<br>
+}</code>
+</div>
+<p class="normal"><b>Testing Image Storage and Retrieval</b></p>
+<p class="normal">The next test case, which is shown in <a href="Chapter16.html#testing_storing_and_retrieving_images">Listing 16-24</a>, checks that the image storage and retrieval mechanisms work and are implemented in the <code>testImages</code> slot.</p>
+<p class="indent">The test procedure is very simple: Add an image to the database (tests <code>addImage</code>), make sure it is there (tests <code>getIds</code>), retrieve it (tests <code>getImage</code>), and compare it with the original image.</p>
+<p class="indent">One final test, which has been commented out, attempts to retrieve an image using an invalid id. This results in a call to <code>qFatal</code> in the <code>ImageCollection</code> class, and the application will end even if you call <code>QTest::ignoreMessage(QString)</code>. The <code>ignoreMessage</code> can otherwise be handy to avoid showing expected warning messages emitted using <code>qDebug</code> or <code>qWarning</code>.</p>
+<div id="testing_storing_and_retrieving_images" class="listing">
+<p class="normal"><b>Listing 16-24.</b> <i>Testing storing and retrieving images</i></p>
+<code>void ImageCollectionTest::testImages()<br>
+{<br>
+  ImageCollection c;<br>
+<br>
+  QCOMPARE( c.getIds( QStringList() ).count(), 0 );<br>
+<br>
+  QImage image( "test.png" );<br>
+  c.addImage( image, QStringList() );<br>
+<br>
+  // Verify that we have one image and get the id for it<br>
+  QList&lt;int&gt; ids = c.getIds( QStringList() );<br>
+  QCOMPARE( ids.count(), 1 );<br>
+  int id = ids[0];<br>
+<br>
+  QImage fromDb = c.getImage( id );<br>
+  QVERIFY( pixelCompareImages( image, fromDb ) );<br>
+<a id="page_495"></a>
+// Will call qFatal and end the application<br>
+//  QTest::ignoreMessage( QtFatalMsg, "Failed to get image id" );<br>
+//  fromDb = c.getImage( id+1 );<br>
+//  QVERIFY( fromDb.isNull() );<br>
+<br>
+  // The ImageConnection adds a database that we close here<br>
+  QSqlDatabase::removeDatabase( QLatin1String( QSqlDatabase::defaultConnection ) );<br>
+}</code>
+</div>
+<p class="normal"><b>Testing Images and Tags</b></p>
+<p class="normal">The final test case, <code>testImagesFromTags</code>, is shown in <a href="Chapter16.html#testing_images_and_tags_at_once">Listing 16-25</a>. The test can seem rather confusing at first, but the principle is to check that the correct number of image ids is returned for each given tag. To do this, one image is added at a time; then the <code>getIds</code> method is called, and the number of returned ids is compared with the expected result. The entire procedure is described as follows:</p>
+
+<ol>
+<li>Add an image with the tags <code>Foo</code> and <code>Bar</code>.</li>
+<li>Verify that <code>getTags</code> returns two tags.</li>
+<li>Verify the number of ids returned for <code>Foo</code>, <code>Bar</code>, and <code>Baz</code>; and a list containing <code>Foo</code> and <code>Bar</code>.</li>
+<li>Add an image with the tag <code>Baz</code>.</li>
+<li>Verify that <code>getTags</code> returns three tags.</li>
+<li>Verify the number if ids returned for <code>Foo</code>, <code>Bar</code>, and <code>Baz</code>.</li>
+<li>Add an image with the tags <code>Bar</code> and <code>Baz</code>.</li>
+<li>Verify that <code>getTags</code> returns three tags.</li>
+<li>Verify the number of ids returned for <code>Foo</code>, <code>Bar</code>, and <code>Baz</code>; and a list containing <code>Bar</code> and <code>Baz</code>.</li>
+</ol>
+<p class="indent">To determine the number of expected ids for each set of tags, it is important to remember that <code>getIds</code> is expected to return each image that has at least one of the given tags. This means that when querying for images with <code>Bar</code> or <code>Baz</code>, all three image ids are returned. The first image contains <code>Bar</code>, the second contains <code>Baz</code>, and the third contains both.</p>
+<div id="testing_images_and_tags_at_once" class="listing">
+<p class="normal"><b>Listing 16-25.</b> <i>Testing images and tags at once</i></p>
+<code>void ImageCollectionTest::testImagesFromTags()<br>
+{<br>
+  ImageCollection c;<br>
+<br>
+  QCOMPARE( c.getIds( QStringList() ).count(), 0 );<br>
+<br>
+  QImage image( "test.png" );<br>
+<a id="page_496"></a>
+  QStringList tags;<br>
+  tags &lt;&lt; "Foo" &lt;&lt; "Bar";<br>
+<br>
+  c.addImage( image, tags );<br>
+  QCOMPARE( c.getTags().count(), 2 );<br>
+  QCOMPARE( c.getIds( QStringList() ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Foo" ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Bar" ).count(), 1 );<br>
+  QCOMPARE( c.getIds( tags ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Baz" ).count(), 0 );<br>
+<br>
+  tags.clear();<br>
+  tags &lt;&lt; "Baz";<br>
+  c.addImage( image, tags );<br>
+  QCOMPARE( c.getTags().count(), 3 );<br>
+  QCOMPARE( c.getIds( QStringList() ).count(), 2 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Foo" ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Bar" ).count(), 1 );<br>
+  QCOMPARE( c.getIds( tags ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Baz" ).count(), 1 );<br>
+<br>
+  tags.clear();<br>
+  tags &lt;&lt; "Bar" &lt;&lt; "Baz";<br>
+  c.addImage( image, tags );<br>
+  QCOMPARE( c.getTags().count(), 3 );<br>
+  QCOMPARE( c.getIds( QStringList() ).count(), 3 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Foo" ).count(), 1 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Bar" ).count(), 2 );<br>
+  QCOMPARE( c.getIds( tags ).count(), 3 );<br>
+  QCOMPARE( c.getIds( QStringList() &lt;&lt; "Baz" ).count(), 2 );<br>
+<br>
+  // The ImageConnection adds a database that we close here<br>
+  QSqlDatabase::removeDatabase( QLatin1String( QSqlDatabase::defaultConnection ) );<br>
+}<br>
+<br>
+bool ImageCollectionTest::pixelCompareImages( const QImage &amp;a, const QImage &amp;b )<br>
+{<br>
+  if( a.size() != b.size() )<br>
+    return false;<br>
+<br>
+  if( a.format() != b.format() )<br>
+    return false;<br>
+<br>
+  for( int x=0; x&lt;a.width(); ++x )<br>
+    for( int y=0; y&lt;a.height(); ++y )<br>
+      if( a.pixel(x,y) != b.pixel(x,y) )<br>
+        return false;<br>
+<br>
+  return true;<br>
+}</code>
+</div>
+<h4 class="h4"><a id="page_497"></a><a id="handling_deviations"></a>Handling Deviations</h4>
+<p class="normal">Having looked at the test cases, you might want to see the results from testing a class that was designed for a specific application. The lessons learned are that things are not perfect and that you must handle the imperfections in the test cases.</p>
+<p class="indent">When you run into debug and warning messages, you can suppress them by using a call to the <code>QTest::ignoreMessage(QString)</code> method. It is good to know that this method can't be used to stop a <code>qFatal</code> message from stopping the unit test application.</p>
+<p class="indent">If a test fails, you can prevent the unit test from stopping by using the <code>QEXPECT_FAIL</code> macro. The macro is reported as an <code>XFAIL</code> item in the results log, but the test case is still considered to be passed. See <a href="Chapter16.html#the_results_from_testing_the_imagecollec">Listing 16-26</a> for an example.</p>
+<p class="indent">The most disturbing adaptation that had to be made in the <code>ImageCollectionTest</code> class was the workaround for avoiding the <code>QtSql</code> module warning about the default connection being replaced. This message could have been removed by using the <code>QTest::ignoreMessage</code> method. Instead the issue was fixed from the unit test by removing the default connection at the end of each test case. Either method is an indication that the <code>ImageCollection</code> class is limited to being created only once for each time the application using it is being run.</p>
+<div id="the_results_from_testing_the_imagecollec" class="listing">
+<p class="normal"><b>Listing 16-26.</b> <i>The results from testing the</i> <code>ImageCollection</code> <i>class</i></p>
+<code>********* Start testing of ImageCollectionTest *********<br>
+Config: Using QTest library 4.2.2, Qt 4.2.2<br>
+PASS   : ImageCollectionTest::initTestCase()<br>
+XFAIL  : ImageCollectionTest::testTags() The tag will be added to the<br>
+non-existing image.<br>
+imagecollectiontest.cpp(43) : failure location<br>
+PASS   : ImageCollectionTest::testTags()<br>
+PASS   : ImageCollectionTest::testImages()<br>
+PASS   : ImageCollectionTest::testImagesFromTags()<br>
+PASS   : ImageCollectionTest::cleanupTestCase()<br>
+Totals: 5 passed, 0 failed, 0 skipped<br>
+********* Finished testing of ImageCollectionTest *********</code>
+</div>
+<p class="indent">Each of the symptoms and methods described here is an indication that something needs to be adjusted in the class being tested. When testing, sometimes the unexpected warnings might have to be suppressed, but that should not be necessary with ordinary usage.</p>
+<p class="indent">When looking at what to test, it is important to try to go beyond the expected. By testing how the code reacts to invalid input data, you can create more robust code. By not letting your code enter undefined states, you make the rest of the application easier to debug. Otherwise, the discovery of an error can be delayed because the error is not made visible until later interaction between the flawed component and the rest of the application.</p>
+<h3 class="h3"><a id="summary-024"></a>Summary</h3>
+<p class="normal">Unit testing is a method to ensure that your software comhtponents fulfill the specifications, which makes it possible to focus the testing resources in the project on more useful areas.</p>
+<p class="indent">It is important to focus on testing the interface, not the internals of the class begin tested. The tests should not only test the valid and expected data; they should also "provoke" by <a id="page_498"></a>passing unexpected data. This "provocation" helps to make your software components more robust.</p>
+<p class="indent">Qt's unit testing framework, the <code>QtTest</code> module, can be included in the project by adding a line reading <code>CONFIG += qtestlib</code> to the project file. The module consists of a set of macros for testing:</p>
+<ul>
+<li><code>QCOMPARE( actual value, expected value )</code>: Compares the actual value to the expected value.</li>
+<li><code>QVERIFY( expression )</code>: Evaluates the expression and considers the test to have passed if the result is <code>true</code>.</li>
+<li><code>QTEST( actual value, column name )</code>: Compares the actual value to the column value from the current data row.</li>
+</ul>
+<p class="indent">When using the <code>QTEST</code> macro, you need to provide your test with a test vector of data by using a data slot, which has the same name as the test slot, but ends with <code>_data</code>. The data slot creates a set of columns by using the static <code>QTest::addColumn&lt;type&gt;(char*)</code> method, and rows of data are then added with the static <code>QTest::newRow(char*)</code> method to which the data is fed by using the <code>&lt;&lt;</code> operator. The data can be retrieved from the test slot with the <code>QFETCH(type, column name)</code> macro or the <code>QTEST</code> macro.</p>
+<p class="indent">When testing Qt components, it is important to be able to intercept signals. They are intercepted and recorded by using the <code>QSignalSpy</code> class.</p>
+<p class="indent">When building an executable from a unit test, the <code>main</code> function is created using the <code>QTEST_MAIN( test class )</code> macro. The <code>main</code> function takes care of creating an instance of the unit test class and performing the tests.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter15.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 15: Building Qt Projects</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/AppendixA.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">PART 3: Appendixes</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","errorBeacon":"bam.nr-data.net","licenseKey":"510f1a6865","queueTime":7,"beacon":"bam.nr-data.net","agent":"","applicationID":"3275661,67267027,67267028","applicationTime":109}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

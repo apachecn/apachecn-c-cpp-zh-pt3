@@ -1,0 +1,1496 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter13.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter13.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/foundations-of-qt/9781590598313/Chapter13.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="3862897"
+  data-user-uuid="30abbfe7-62e9-48ec-97e2-7db733c44391"
+  data-username="emmanuelgiroux"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="11/30/2018"
+
+
+  data-archive="9781590598313"
+  data-publishers="Apress"
+
+
+
+  data-htmlfile-name="Chapter13.html"
+  data-epub-title="Foundations of Qt Development" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781590598313"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>CHAPTER 13: Databases - Foundations of Qt Development</title><link rel="stylesheet" href="/static/CACHE/css/5e586a47a3b7.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div.booksection{margin-top:3em;margin-bottom:3em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content .h1{font-family:"Times New Roman",serif;font-weight:normal;text-align:center;font-size:200%;margin-top:1em;margin-bottom:1em}#sbo-rt-content .h2{font-family:"Times New Roman",serif;text-align:left;font-weight:normal;font-size:xx-large;margin-top:1.5em;margin-bottom:1em}#sbo-rt-content .h3{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:x-large;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .h4{font-family:"Times New Roman",serif;text-align:left;font-weight:bold;font-size:120%;margin-top:.5em;margin-bottom:.5em}#sbo-rt-content .normal{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:justify}#sbo-rt-content .indent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-indent:1em;text-align:justify}#sbo-rt-content .hangingindent{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;padding-left:22px;text-indent:-22;text-align:justify}#sbo-rt-content .extract{font-family:"Times New Roman",serif;font-size:medium;margin-top:1em;margin-bottom:1em;margin-left:2em;margin-right:2em;text-align:justify}#sbo-rt-content .cover{text-align:center;margin-top:1em;margin-bottom:1em}#sbo-rt-content .center{font-family:"Times New Roman",serif;font-size:medium;margin-top:.5em;margin-bottom:.5em;text-align:center}#sbo-rt-content .right{font-family:"Times New Roman",serif;font-size:small;margin-top:.5em;margin-bottom:.5em;text-align:right}#sbo-rt-content .pbreak{page-break-before:always}#sbo-rt-content .replaceable{font-style:italic}#sbo-rt-content .userinput{font-weight:bold}#sbo-rt-content .smallcap{font-variant:small-caps}#sbo-rt-content .sidebar{border:thin solid black;background-color:#F5F5F5}#sbo-rt-content .sidebar>*{margin-left:.5em}#sbo-rt-content .bg{text-align:center;color:white;background-color:gray}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781590598313/chapter/Chapter13.html",
+          "book_id": "9781590598313",
+          "chapter_uri": "Chapter13.html",
+          "position": 0,
+          "user_uuid": "30abbfe7-62e9-48ec-97e2-7db733c44391",
+          "next_chapter_uri": "/library/view/foundations-of-qt/9781590598313/Chapter14.html"
+        
+      },
+      title: "Foundations of Qt Development",
+      author_list: "Johan Thelin",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html"/><meta name="description" content=" CHAPTER 13 Databases Databases are an integral part of even the simplest modern applications. While most readers might tend to relate databases to websites and large corporate solutions, you ... "><meta property="og:title" content="CHAPTER 13: Databases" /><meta itemprop="isPartOf" content="/library/view/foundations-of-qt/9781590598313/" /><meta itemprop="name" content="CHAPTER 13: Databases" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781590598313/" /><meta property="og:description" itemprop="description" content=" CHAPTER 13 Databases Databases are an integral part of even the simplest modern applications. While most readers might tend to relate databases to websites and large corporate solutions, you ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Apress" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781590598313" /><meta property="og:book:author" itemprop="author" content="Johan Thelin" /><meta property="og:book:tag" itemprop="about" content="C++" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '30abbfe7-62e9-48ec-97e2-7db733c44391' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '30abbfe7-62e9-48ec-97e2-7db733c44391');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.218bb2719961.js"></script><script defer src="/static/js/build/reader.c105963eb6bb.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/30abbfe7-62e9-48ec-97e2-7db733c44391/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Foundations of Qt Development
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781590598313/chapter/Chapter13.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html&text=Foundations%20of%20Qt%20Development&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: CHAPTER%2013%3A%20Databases&body=https://www.safaribooksonline.com/library/view/foundations-of-qt/9781590598313/Chapter13.html%0D%0Afrom Foundations%20of%20Qt%20Development%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.aeaa99fa9aac.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter12.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 12: Doing Things in Parallel</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter14.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 14: Networking</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="booksection">
+<h2 class="h2"><a id="page_371"></a><a id="databases"></a>CHAPTER 13<br><br>Databases</h2>
+<p class="normal"><big><b>D</b></big>atabases are an integral part of even the simplest modern applications. While most readers might tend to relate databases to websites and large corporate solutions, you might be surprised to know that you can also use one to store data managed within a Qt application.</p>
+<p class="indent">Qt offers a module for relational databases called <code>QtSql</code>. <i>SQL</i>, which stands for <i>structured query language</i>, is a language used for manipulating relational databases. Using SQL, you can communicate between different database engines and your application.</p>
+<p class="indent">Qt supports many of the most popular databases, including MySQL, Oracle, PostgreSQL, Sybase, DB2, SQLite, Interbase, and ODBC. These drivers can be built as plugins or can be integrated in Qt.</p>
+<p class="indent">In this chapter you'll learn how to integrate both the MySQL and SQLite databases with your Qt applications. You might use MySQL in more sophisticated situations and use SQLite when a database is handy but a full-featured database server might be considered overkill.</p>
+<h3 class="h3"><a id="a_quick_introduction_to_sql"></a>A Quick Introduction to SQL</h3>
+<p class="normal">Before you begin looking at some basic SQL statements, you should understand that SQL is another programming language. This book will not teach you to develop using SQL; it will show you only the very basic information. You also need to know that the different database servers supported by Qt support different dialects of SQL. This means that a statement can look slightly different for a MySQL connection when compared with an SQLite connection. By sticking to the very basics, these disparities can be avoided, but be prepared to read up on the database engine you choose to use in the SQL manuals.</p>
+<p class="indent">The statements used and described in this section have been tested with both MySQL and SQLite, so there will be no dialectal hiccups.</p>
+<hr>
+<p class="normal"><b>Note</b> An SQL statement is also known as a <i>query</i> because some statements are used to query the database for information.</p>
+<hr>
+<h4 class="h4"><a id="what_is_a_database_question"></a>What Is a Database?</h4>
+<p class="normal">The rest of this chapter discusses <i>relational databases</i>, which are collections of tables. The tables each have a name and a set of columns and rows. The columns define the structure of <a id="page_372"></a>the table, while the rows contain the data. The tables are then tied together through relations, in which column values from different tables are linked to each other.</p>
+<p class="indent">Each column has a name and a type, which make it possible to control what goes where and to retrieve by name. You can also control the allowed contents so that a <code>NULL</code> value will be replaced by a default, or you can disallow <code>NULL</code> values altogether.</p>
+<p class="indent">The rows contain the data as defined by the columns. When you are working with a database you usually search for rows, add them, update them, or remove them.</p>
+<p class="indent">The first thing you need to do is create an actual database, and the way you create it depends on the database server that you plan to use. Please refer to the user manual of your server for details.</p>
+<p class="indent">Before you can start adding rows, you need to create a table by using the <code>CREATE TABLE</code> command. Let's call the table <code>names</code>. The following statement creates a table with an integer column called <code>id</code> and two strings called <code>firstname</code> and <code>lastname</code>:</p>
+<code>CREATE TABLE names (<br>
+id INTEGER PRIMARY KEY,<br>
+firstname VARCHAR(30),<br>
+lastname VARCHAR(30)<br>
+)</code>
+<p class="indent">In the statement, you specify <code>id</code> as a <code>PRIMARY KEY</code>, which means that there can't be two identical <code>id</code> values in the same table. You can identify each row by its <code>id</code> column, which can be used when searching for data.</p>
+<p class="indent">The types used are <code>INTEGER</code> for integer values and <code>VARCHAR(30)</code> for the strings. The <code>VARCHAR</code> type is a string of variable length. The value inside the parentheses limits the length of the strings, so the <code>firstname</code> and <code>lastname</code> strings must be 30 characters or fewer.</p>
+<p class="indent">One problem with the statement is that if the table already exists, it will fail. You can solve this problem by adding the <code>IF NOT EXISTS</code> to it to create the following statement:</p>
+<code>CREATE TABLE IF NOT EXISTS names (<br>
+id INTEGER PRIMARY KEY,<br>
+firstname VARCHAR(30),<br>
+lastname VARCHAR(30)<br>
+)</code>
+<p class="indent">This statement adds the table or just passes by if it already exists.</p>
+<p class="indent">To remove a table, use the <code>DROP TABLE</code> command. To drop the <code>names</code> table you just created, simply execute the following:</p>
+<code>DROP TABLE names</code>
+<h4 class="h4"><a id="inserting_comma_viewing_comma_modifying"></a>Inserting, Viewing, Modifying, and Deleting Data</h4>
+<p class="normal">The most basic operations needed to interact with a database are the capabilities to view, add, modify, and delete data stored in the tables. As soon as you have set up your tables properly, this is what you will be doing the rest of the time. These four operations make up what is sometimes called a <i>CRUD</i> interface (which stands for <i>Create, Read, Update</i>, and <i>Delete</i>).</p>
+<p class="indent">The SQL commands for performing these tasks include <code>INSERT</code> for adding data, <code>SELECT</code> for viewing, <code>UPDATE</code> for modifying, and <code>DELETE</code> for deleting. All four tasks are described in the following sections.</p>
+<p class="normal"><a id="page_373"></a><b>Inserting Data</b></p>
+<p class="normal">Inserting a name into the <code>names</code> table is easy. Using the <code>INSERT INTO</code> statement, you can list the column names, followed by the <code>VALUES</code> keyword and the actual values:</p>
+<code>INSERT INTO names (id, firstname, lastname) VALUES (1, 'John', 'Doe')</code>
+<p class="indent">It is possible to skip the column names, but that means you rely on the order of the columns in the table—something that Murphy tells you is bound to change if you rely on it. Although I placed the command on a single line, feel free to break your larger queries into multiple lines for readability's sake because SQL is not sensitive to line breaks.</p>
+<p class="indent">When inserting items into the <code>names</code> table, you can have the database generate the <code>id</code> values automatically by telling it that the column will <code>AUTOINCREMENT</code> when creating the table.</p>
+<hr>
+<p class="normal"><b>Caution</b> This feature is called <code>AUTOINCREMENT</code> by SQLite and <code>AUTO_INCREMENT</code> by MySQL, but other databases might not support it at all. This means that the table creation statements might be incompatible.</p>
+<hr>
+<p class="normal"><b>Viewing Data</b></p>
+<p class="normal">When you have put your data into a database, you need to be able to retrieve it to view it. This is where the <code>SELECT</code> command enters the picture. The command can be used to dump the entire contents of a table, but it can also be instructed to look for specific data, sort it, group it, and perform calculations.</p>
+<p class="indent">Let's start by asking for the entire contents of the <code>names</code> table:</p>
+<code>SELECT * FROM names</code>
+<p class="indent">This line returns the entire <code>names</code> table, as follows. I have executed additional <code>INSERT</code> statements. The asterisk between the <code>SELECT</code> and <code>FROM</code> works means that you are interested in all columns.</p>
+<table width="60%" cellpadding="3" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top"><b>id</b></td>
+<td align="left" valign="top"><b>firstname</b></td>
+<td align="left" valign="top"><b>lastname</b></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>1</code></td>
+<td align="left" valign="top"><code>John</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>2</code></td>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>3</code></td>
+<td align="left" valign="top"><code>James</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>4</code></td>
+<td align="left" valign="top"><code>Judy</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>5</code></td>
+<td align="left" valign="top"><code>Richard</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>6</code></td>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>7</code></td>
+<td align="left" valign="top"><code>John</code></td>
+<td align="left" valign="top"><code>Noakes</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>8</code></td>
+<td align="left" valign="top"><code>Donna</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>9</code></td>
+<td align="left" valign="top"><code>Ralph</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+</tbody>
+</table>
+<p class="normal">There are a number of different last names represented in this table, so let's ask for all individuals with the last name <i>Roe</i> residing in the database. To do this, the <code>SELECT</code> statement is <a id="page_374"></a>combined with a <code>WHERE</code> clause. The <code>id</code> column is not really that interesting, so ask for the <code>firstname</code> and <code>lastname</code> columns instead of using an asterisk:</p>
+<code>SELECT firstname, lastname FROM names WHERE lastname = 'Roe'</code>
+<p class="indent">The results from the query are shown in the following table:</p>
+<table width="70%" cellpadding="2" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top">firstname</td>
+<td align="left" valign="top">lastname</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>Richard</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Ralph</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent"><code>WHERE</code> clauses contain several comparisons that can be combined using <code>AND</code>, <code>OR</code>, <code>NOT</code>, and parentheses to form more complex filters.</p>
+<p class="indent">Notice that the order of the first names in the preceding table is not ideal. You can use the <code>ORDER BY</code> clause to specify the sort order:</p>
+<code>SELECT firstname, lastname FROM names WHERE lastname = 'Roe' ORDER BY firstname</code>
+<p class="indent">The results from the command are shown in the following table (the ordering has been fixed):</p>
+<table width="60%" cellpadding="2" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="40%">
+<col align="left" valign="top" width="40%">
+<thead>
+<tr>
+<td align="left" valign="top">firstname</td>
+<td align="left" valign="top">lastname</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Ralph</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Richard</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent">Another clause that can be used with the <code>SELECT</code> statement is <code>GROUP BY</code>, which divides the results into groups. It can be combined with the <code>COUNT(*)</code> function, which means the number or rows found. If you group by last names, you can count the number of members of each family:</p>
+<code>SELECT lastname, COUNT(*) as 'members'<br>
+FROM names<br>
+GROUP BY lastname<br>
+ORDER BY lastname</code>
+<p class="indent">The results from the command are shown in the following table. I named the calculated column <code>members</code> by using the <code>AS</code> keyword. I also sorted the on the <code>lastname</code> column so that the last names appear in alphabetical order:</p>
+<table width="60%" cellpadding="2" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top">lastname</td>
+<td align="left" valign="top">members</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>5</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Noakes</code></td>
+<td align="left" valign="top"><code>1</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>3</code></td>
+</tr>
+</tbody>
+</table>
+<p class="normal"><a id="page_375"></a><b>Modifying Data</b></p>
+<p class="normal">Changing the data stored in the database tables is handled with the <code>UPDATE</code> statement. After being combined with a <code>WHERE</code> clause, the changes can now be controlled. Because the <code>id</code> column is unique for each row, it can be used to change the name of one individual. The following line renames John Noakes to Nisse Svensson:</p>
+<code>UPDATE names SET firstname = 'Nisse', lastname = 'Svensson' WHERE id = 7</code>
+<p class="indent">In this example, the <code>WHERE</code> clause is used to limit the update to the row with an <code>id</code> value of <code>7</code>. The changes are delimited by commas, and you can change both the <code>firstname</code> and <code>lastname</code> fields.</p>
+<p class="indent">You can use a more open <code>WHERE</code> clause to update several rows at once. The following line changes the <code>lastname</code> field for all rows in which the <code>firstname</code> is Jane; it renames both Jane Doe and Jane Roe to Jane Johnson:</p>
+<code>UPDATE names SET lastname = 'Johnson' WHERE firstname = 'Jane'</code>
+<hr>
+<p class="normal"><b>Caution</b> Leaving out the <code>WHERE</code> clause will apply the change to all rows in the table.</p>
+<hr>
+<p class="normal"><b>Deleting Data</b></p>
+<p class="normal">The <code>DELETE</code> statement is used to delete data from database tables. It looks very much like the <code>UPDATE</code> statement—you specify which table you want to delete rows from (and which rows) by using a <code>WHERE</code> clause.</p>
+<p class="indent">You can start by removing the Nisse Svensson (formerly known as John Noakes) row:</p>
+<code>DELETE FROM names WHERE id = 7</code>
+<p class="indent">Just as with updating, you can use less specific <code>WHERE</code> clauses to delete several rows at once. The following statement removes the two Johnsons that were created from the two Janes:</p>
+<code>DELETE FROM names WHERE lastname = 'Johnson'</code>
+<h4 class="h4"><a id="more_tables_mean_more_power"></a>More Tables Mean More Power</h4>
+<p class="normal">When you work with databases, you often need several tables that contain information about different aspects of the same things. By using the <code>JOIN</code> clause together with <code>SELECT</code>, you can still extract the information you need with a single query.</p>
+<p class="indent">You join tables by specifying a <i>relation</i>—you define what ties the two tables together.</p>
+<p class="indent">In the database used here there is a second table for salaries called <code>salaries</code>. The columns are <code>id</code> and <code>annual</code>, and both are of the <code>INTEGER</code> type. The <code>id</code> column is used to link a salary to an individual in the <code>names</code> table (this is the relation between the tables), while the <code>annual</code> column holds the annual income for each individual. The contents of the table can be seen as follows (notice that some values for <code>id</code> are missing from the table):</p>
+<table width="60%" cellpadding="2" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top"><a id="page_376"></a>id</td>
+<td align="left" valign="top">annual</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>1</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>2</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>3</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>5</code></td>
+<td align="left" valign="top"><code>1100</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>6</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>8</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>9</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent">Now you can <code>SELECT</code> from <code>names</code> and ask the database to <code>JOIN</code> the tables <code>names</code> and <code>salaries ON</code> the <code>id</code> columns. This is expressed in SQL as follows:</p>
+<code>SELECT names.firstname, names.lastname, salaries.annual<br>
+FROM names JOIN salaries ON names.id = salaries.id</code>
+<p class="indent">The result from this statement is shown as follows (the rows not represented in both tables are left out):</p>
+<table width="60%" cellpadding="3" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top">firstname</td>
+<td align="left" valign="top">lastname</td>
+<td align="left" valign="top">annual</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>John</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>James</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Richard</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1100</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Donna</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Ralph</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent">To get all the rows from the <code>names</code> table, replace <code>JOIN</code> with <code>LEFT JOIN</code>. All the rows are returned from the first table (the one on the left in the statement). The resulting statement is this:</p>
+<code>SELECT names.firstname, names.lastname, salaries.annual<br>
+FROM names LEFT JOIN salaries ON names.id = salaries.id</code>
+<p class="indent">The rows not represented in the <code>salaries</code> table get the value <code>NULL</code>. The result from the query can be seen in the following table:</p>
+<table width="60%" cellpadding="3" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top">firstname</td>
+<td align="left" valign="top">lastname</td>
+<td align="left" valign="top">annual</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>John</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Jane</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>James</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>900</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Judy</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>NULL</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Richard</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1100</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><a id="page_377"></a><code>Jane</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>John</code></td>
+<td align="left" valign="top"><code>Noakes</code></td>
+<td align="left" valign="top"><code>NULL</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Donna</code></td>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Ralph</code></td>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent">When working with databases with several tables, it is important to have a <i>normalized</i> structure. Under normal circumstances, no information should appear more than once. An example of the opposite is if the <code>salaries</code> table contains the <code>lastname</code> and <code>id</code>. In such a case, changing the <code>lastname</code> requires two <code>UPDATE</code> calls.</p>
+<p class="indent">The tables used this far are pretty simple, but try to remember to keep data in only one place (which might sometimes require additional <code>id</code> columns just to tie things together). This is a time well spent because it makes the structure easier to work with.</p>
+<p class="indent">This introduction to SQL only scratches the surface of database design and join statements. There are many more aspects to take into account before implementing a complex database, and there are numerous other ways of joining tables and creating relationships. Some of them are standardized, and others are very dependent on the database server you are using. Before implementing any complex database design I suggest that you consult you database server's documentation as well as books focusing on the topic.</p>
+<h4 class="h4"><a id="counting_and_calculating"></a>Counting and Calculating</h4>
+<p class="normal">When querying for data, the database can perform calculations on the data before returning it. You saw such an example earlier in the chapter when <code>COUNT(*)</code> was used to count the number of family members for each <code>lastname</code>.</p>
+<p class="indent">There are a whole range of mathematical functions available in SQL. Some of the most common include <code>SUM</code>, <code>MIN</code>, and <code>MAX</code>, which are used to summarize the values of a column or to get the minimum or maximum value. These functions provide you with a powerful tool. When used in <code>SELECT</code> statements, it is possible to combine these functions with <code>GROUP BY</code> clauses to calculate results based on groups of rows.</p>
+<p class="indent">The results from these calculations can be combined using normal arithmetic operations such as <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code>. The following statement uses the <code>SUM</code> function, division, and <code>COUNT(*)</code> to calculate the average annual salary for each family:</p>
+<code>SELECT<br>
+  names.lastname,<br>
+  SUM(salaries.annual)/COUNT(*) AS 'Average',<br>
+  MIN(salaries.annual) AS 'Minimum',<br>
+  MAX(salaries.annual) AS 'Maximum'<br>
+FROM names<br>
+LEFT JOIN salaries ON names.id = salaries.id<br>
+GROUP BY names.lastname</code>
+<p class="indent">Because you do a left join, the family members that do not have an income will be included in the <code>COUNT(*)</code>, but not in the functions summarizing and picking out the minimum and maximum values. This means that the minimum salary for those named Doe stays at 900, <a id="page_378"></a>but the average salary is calculated at 800. The complete results from the statement can be seen in the following table:</p>
+<table width="60%" cellpadding="4" cellspacing="1" rules="groups" frame="hsides">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<col align="left" valign="top" width="20%">
+<thead>
+<tr>
+<td align="left" valign="top">lastname</td>
+<td align="left" valign="top">Average</td>
+<td align="left" valign="top">Minimum</td>
+<td align="left" valign="top">Maximum</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><code>Doe</code></td>
+<td align="left" valign="top"><code>800</code></td>
+<td align="left" valign="top"><code>900</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Noakes</code></td>
+<td align="left" valign="top"><code>NULL</code></td>
+<td align="left" valign="top"><code>NULL</code></td>
+<td align="left" valign="top"><code>NULL</code></td>
+</tr>
+<tr>
+<td align="left" valign="top"><code>Roe</code></td>
+<td align="left" valign="top"><code>1100</code></td>
+<td align="left" valign="top"><code>1000</code></td>
+<td align="left" valign="top"><code>1200</code></td>
+</tr>
+</tbody>
+</table>
+<p class="indent">It is easy to let the database perform lots of interesting functions on your data, which is both good and bad. The potentially negative consequence can be a heavier workload on a central server. The benefits are that less data is sent over the network and that the client code is less complex.</p>
+<h3 class="h3"><a id="qt_and_databases"></a>Qt and Databases</h3>
+<p class="normal">Qt's classes for handling and interfacing databases can be split into three groups. The first layer is based around a set of database drivers, which make it possible to access different types of database servers using Qt.</p>
+<p class="indent">The second layer handles connections to databases, queries, and their results, as well as error messages from the database servers. This layer is based on the driver layer because a driver is required to connect to a database.</p>
+<p class="indent">The third layer, which is called the user interface layer, offers a set of models for use with Qt's model view framework.</p>
+<hr>
+<p class="normal"><b>Caution</b> It is recommended that you work with a test database when you are developing new software instead of the live version. It is easy to make a mistake in an SQL statement that renders the contents of an entire database useless. Using a development database instead of the production database (used for the real stuff) can save you huge headaches. At best, you will not have to restore the database from backups; at worst, it can save your job.</p>
+<hr>
+<h4 class="h4"><a id="making_the_connection-018"></a>Making the Connection</h4>
+<p class="normal">Each database connection is represented by a <code>QSqlDatabase</code> object, and the connections are made via a driver. After picking a driver, you can set up the relevant properties such as <code>hostName</code>, <code>databaseName</code>, <code>userName</code>, and <code>password</code>. After the connection is set up, you have to <code>open</code> it before you can work with it.</p>
+<p class="indent">To avoid having to pass around the same <code>QSqlDatabase</code> object, the entire <code>QtSql</code> module has the concept of the default connection. As long as you connect to one database at a time, all the classes interacting with databases already know which connection to use.</p>
+<p class="indent"><a href="Chapter13.html#connecting_to_a_mysql_server">Listing 13-1</a> shows a connection to a MySQL server being set up and established. The process is easy. First you add a database connection using the <code>QMYSQL</code> driver through the static <a id="page_379"></a><code>QSqlDatabase::addDatabase</code> method. Because you pass only a driver name and no connection name, it will be the default connection.</p>
+<p class="indent">The returned <code>QSqlDatabase</code> object is then set up. The properties for <code>hostName</code>, <code>databaseName</code>, <code>userName</code>, and <code>password</code> are set. Then the database connection is opened using the <code>open</code> method. If <code>false</code> is returned, the connection was not established. The reason for the failure is returned through a <code>QSqlError</code> object that you can get by using the <code>lastError</code> method. If <code>true</code> is returned, the connection has been successfully established.</p>
+<hr>
+<p class="normal"><b>Note</b> The properties that can be used when connecting to a database are <code>hostName</code>, <code>databaseName</code>, <code>userName</code>, <code>password</code>, <code>port</code>, and <code>connectOptions</code>. The contents of these properties are dependent on the database driver used.</p>
+<hr>
+<div id="connecting_to_a_mysql_server" class="listing">
+<p class="normal"><b>Listing 13-1.</b> <i>Connecting to a MySQL server</i></p>
+<code>QSqlDatabase db = QSqlDatabase::addDatabase( "QMYSQL" );<br>
+<br>
+db.setHostName( "localhost" );<br>
+db.setDatabaseName( "qtbook" );<br>
+<br>
+db.setUserName( "user" );<br>
+db.setPassword( "password" );<br>
+<br>
+if( !db.open() )<br>
+{<br>
+  qDebug() &lt;&lt; db.lastError();<br>
+  qFatal( "Failed to connect." );<br>
+}</code>
+</div>
+<p class="indent"><a href="Chapter13.html#connecting_to_an_sqlite_file">Listing 13-2</a> shows how a connection is made to an SQLite database using the <code>QSQLITE</code> driver. The SQLite database is different from the MySQL database because it is not based around a server, so you don't need to log in to the database using a username and password. Instead, you only specify a file name through the <code>databaseName</code> property. The file contains the database and is opened or created when the connection is opened successfully.</p>
+<div id="connecting_to_an_sqlite_file" class="listing">
+<p class="normal"><b>Listing 13-2.</b> <i>Connecting to an SQLite file</i></p>
+<code>QSqlDatabase db = QSqlDatabase::addDatabase( "QSQLITE" );<br>
+<br>
+db.setDatabaseName( "testdatabase.db" );<br>
+<br>
+if( !db.open() )<br>
+{<br>
+  qDebug() &lt;&lt; db.lastError();<br>
+  qFatal( "Failed to connect." );<br>
+}</code>
+</div>
+<p class="indent"><a id="page_380"></a>A nice feature of the SQLite database engine is that the database can be created in memory. This means that the execution is very fast because no loading from and saving to disk is required. If you want the information to last beyond the termination of the application, you have to store it explicitly to a file or another database.</p>
+<p class="indent">By specifying the file name <code>":memory: "</code>, as shown in the following code line, the database will be contained in memory:</p>
+<code>db.setDatabaseName( ":memory:" );</code>
+<p class="indent">When a <code>QSqlDatabase</code> object represents a connection that is not longer used, you can close it using the <code>close</code> method. Any open connection is automatically closed by the <code>QSqlDatabase</code> destructor if left opened.</p>
+<h4 class="h4"><a id="querying_data"></a>Querying Data</h4>
+<p class="normal">When passing an SQL query to a database, a <code>QSqlQuery</code> object is used to represent both the query and the results returned from the database engine. Let's start by looking at a simple <code>SELECT</code> query.</p>
+<p class="indent"><a href="Chapter13.html#preparing_and_executing_an_sql_query">Listing 13-3</a> shows a query being executed. The SQL statement is simply passed to the <code>exec</code> method of a <code>QSqlQuery</code> object. If the execution fails, the <code>exec</code> method returns <code>false</code>. Upon failure, the <code>lastError</code> method of the query object contains more information about what went wrong. Because you are dealing with a server being queried by a client application, it is not necessarily the SQL statement that is wrong—it can also be connection failure, user authentication issues, or many other reasons.</p>
+<div id="preparing_and_executing_an_sql_query" class="listing">
+<p class="normal"><b>Listing 13-3.</b> <i>Preparing and executing an SQL query</i></p>
+<code>if( !qry.exec( "SELECT firstname, lastname FROM names "<br>
+               "WHERE lastname = 'Roe' ORDER BY firstname" ) )<br>
+  qDebug() &lt;&lt; qry.lastError();</code>
+</div>
+<p class="indent">If the execution of the query completes without problems, it is time to look at the results. <a href="Chapter13.html#iterating_over_the_column_names_and_the">Listing 13-4</a> shows how that is done. First a <code>QSqlRecord</code> is retrieved. The record represents a row in the results, and you can get the total number of columns using the <code>count</code> method. The names of the returned columns are available from the <code>fieldName(int)</code> method. With these two methods, a string with the column names is created in the first <code>for</code> loop.</p>
+<p class="indent">In the <code>while</code> loop the first results row is requested from the <code>QSqlQuery</code> object by using the <code>next</code> method. When a query object returns from a successful <code>exec</code> call, the current row is nothing (that is, <code>NULL</code>). This is indicated as <code>isValid</code> is <code>false</code>. When calling <code>next</code>, the next row from the results is returned if available. The first time the method is called, the first row is called. When the call tries to move beyond the last available row, the return value is <code>false</code>.</p>
+<hr>
+<p class="normal"><b>Note</b> The <code>next</code> method works only on <code>SELECT</code> queries. You can see whether a <code>QSqlQuery</code> object is a <code>SELECT</code> query with the <code>isSelect</code> method.</p>
+<hr>
+<p class="indent"><a id="page_381"></a>For each row, the values from the columns are gathered by using the <code>value(int)</code> method. The <code>value</code> method returns a <code>QVariant</code>, so it has to be converted into a <code>QString</code> by using the <code>toString</code> method. Different columns can be of different values, so it is not necessary to use the <code>toString</code> method. The <code>QVariant</code> class has methods for converting the value into most types. The most common are <code>toInt</code>, <code>toDouble</code>, <code>toBool</code>, and <code>toString</code>.</p>
+<div id="iterating_over_the_column_names_and_the" class="listing">
+<p class="normal"><b>Listing 13-4.</b> <i>Iterating over the column names and the results rows</i></p>
+<code>QSqlRecord rec = qry.record();<br>
+int cols = rec.count();<br>
+<br>
+QString temp;<br>
+for( int c=0; c&lt;cols; c++ )<br>
+  temp += rec.fieldName(c) + ((c&lt;cols-1)?"\t":"");<br>
+qDebug() &lt;&lt; temp;<br>
+<br>
+while( qry.next() )<br>
+{<br>
+  temp = "";<br>
+  for( int c=0; c&lt;cols; c++ )<br>
+    temp += qry.value(c).toString() + ((c&lt;cols-1)?"\t":"");<br>
+  qDebug() &lt;&lt; temp;<br>
+}</code>
+</div>
+<p class="indent">In the previous listings, you passed the entire SQL query as an entire string. This might work for simple queries, but it might be a problem as soon as you start adding user input to the query. For example, if the user supplied the <code>lastname</code> string in <a href="Chapter13.html#preparing_and_executing_an_sql_query">Listing 13-3</a>, you would have a problem if the name contained a single quote mark <code>(')</code>. It can also be an issue handling floating-point values because the decimal character differs between locales.</p>
+<p class="indent">The solution to these problems is to <i>bind</i> the values used in the query in a preparation stage before the query is executed. <a href="Chapter13.html#binding_values_to_a_query_containing_an">Listing 13-5</a> shows how this is done for an <code>INSERT</code> query. The preparation of a query, which is an optional step, might consist of a syntax check for some databases, while others will fail at execution. If the syntax check fails, the <code>prepare</code> call will return <code>false</code>. Because you have tested the SQL statement before, you do not have to check for that. However, even if the statements have been tested, the <code>exec</code> call can still fail due to problems with the database connection.</p>
+<p class="indent">In <a href="Chapter13.html#binding_values_to_a_query_containing_an">Listing 13-5</a>, the query is prepared with the <code>prepare</code> method. Instead of the actual values, placeholders are placed in the query. The placeholders consist of a name prefixed by a colon (<code>:</code>). When the query has been prepared, the <code>bindValue(QString,QVariant)</code> is used to bind a value to each placeholder.</p>
+<hr>
+<p class="normal"><b>Note</b> You can use a question mark (<code>?</code>) as a placeholder and then bind values to it from left to right using <code>addBindValue(QVariant)</code>. I recommend against this procedure because it is far easier to alter and far less error-prone when using code with named placeholders.</p>
+<hr>
+<div id="binding_values_to_a_query_containing_an" class="listing">
+<p class="normal"><b>Listing 13-5.</b> <i>Binding values to a query containing an</i> <code>INSERT</code> <i>call</i></p>
+<code><a id="page_382"></a>qry.prepare( "INSERT INTO names (id, firstname, lastname) "<br>
+             "VALUES (:id, :firstname, :lastname)" );<br>
+qry.bindValue( ":id", 9 );<br>
+qry.bindValue( ":firstname", "Ralph" );<br>
+qry.bindValue( ":lastname", "Roe" );<br>
+if( !qry.exec() )<br>
+  qDebug() &lt;&lt; qry.lastError();</code>
+</div>
+<h4 class="h4"><a id="establishing_several_connections"></a>Establishing Several Connections</h4>
+<p class="normal">If you need to use several database connections at once, you have to name them. If the connection name is not specified, the default connection is always used. If a new connection is established using the same name as a previous connection, it will replace the previous connection. This goes for the default connection as well.</p>
+<p class="indent">When you add the connection using <code>QSqlDatabase::addDatabase(QString,QString)</code>, the first parameter is the name of the database driver (for example, <code>QMYSQL</code>), while the second optional parameter is the name of the connection.</p>
+<p class="indent">When creating your <code>QSqlQuery</code> object, you can pass a database object to the constructor if you want it to use a specific connection. If you need to retrieve the <code>QSqlDatabase</code> object for a connection name, you can use the static <code>QSqlDatabase::database(QString)</code> method.</p>
+<h3 class="h3"><a id="putting_it_all_together"></a>Putting It All Together</h3>
+<p class="normal">To try using the database classes for real, you will look at an image collection application, which enables you to apply tags to images and then show the images with the selected tags. The images and tags will be stored in an SQLite database. Because the database is contained in a file, it can be considered the file format of the application.</p>
+<p class="indent">The application consists of a simple dialog (see <a href="Chapter13.html#the_image_book_application_in_action">Figure 13-1</a>). The tags are shown on the right, and the number of images with any of the selected tags is shown in the label below the list. The left half is used for showing the current image and for the buttons used for moving between the images, adding images, and adding tags.</p>
+<p class="indent">As you can see from the available buttons the application does not implement a complete CRUD interface. It focuses on the two first parts: Create, as in adding tags and images; and Read, as in showing the images and tags.</p>
+<div id="the_image_book_application_in_action" class="figure-contents"><a id="page_383"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1301.jpg" alt="image" width="549" height="424">
+</div>
+</div>
+<p class="normal"><b>Figure 13-1.</b> <i>The Image Book application in action</i></p>
+<p class="indent">The database used in the application (shown in <a href="Chapter13.html#the_tags_and_images_tables">Figure 13-2</a>) consists of two tables: one for the tags and one for the images (called <code>tags</code> and <code>images</code>, respectively). The <code>images</code> table keeps one image per row. The rows each contain an <code>INTEGER</code> called <code>id</code> that is used to identify each image. The images are stored in a <code>BLOB</code> column called <code>data</code> alongside each <code>id</code>. A <code>BLOB</code> is a binary large object, which pretty much means anything. The application stores the images in PNG format in this column.</p>
+<p class="indent">The <code>tags</code> table consists of an <code>INTEGER</code> column called <code>id</code> and a <code>VARCHAR</code> column called <code>tag</code>. The <code>id</code> column connects the tags to the different images. Notice that there can be several tags for each image.</p>
+<div id="the_tags_and_images_tables" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1302.jpg" alt="image" width="549" height="111">
+</div>
+</div>
+<p class="normal"><b>Figure 13-2.</b> <i>The</i> <code>tags</code> <i>and</i> <code>images</code> <i>tables</i></p>
+<h4 class="h4"><a id="page_384"></a><a id="the_structure_of_the_application"></a>The Structure of the Application</h4>
+<p class="normal">The application is split into two major parts: the user interface class and the database interface class. The user interface uses the database interface to access the classes from the <code>QtSql</code> module. The user interface is contained in the <code>ImageDialog</code> class, and the database interface is found in the <code>ImageCollection</code> class.</p>
+<p class="indent">By splitting the code that uses SQL into a specific class, you avoid having SQL strings throughout the source code. There are several reasons to split the code containing SQL from the rest of the code. First of all, that part of the code can be tested in detail, which is important since any syntax errors in the SQL statements are detected first at run-time. It is convenient to convert between the types used in the database and Qt's classes in one place. And when you change database engines, it might be necessary to review and update some of the SQL statements used.</p>
+<h4 class="h4"><a id="the_user_interface"></a>The User Interface</h4>
+<p class="normal">The user interface is implemented in the <code>ImageDialog</code> class. The public part of the class declaration, shown in <a href="Chapter13.html#half_of_the_imagedialog_class_declaratio">Listing 13-6</a>, consists of a constructor and a set of slots, where each slot represents a user action.</p>
+<p class="indent">What can the user do? Looking at the class declaration and <a href="Chapter13.html#the_image_book_application_in_action">Figure 13-1</a> you can see a number of possible user actions. The following lists them and their corresponding slots:</p>
+<ul>
+<li>Move between the images: <code>nextClicked</code> and <code>previousClicked</code></li>
+<li>Change the selection in the list of tags: <code>tagsChanged</code></li>
+<li>Add a new image: <code>addImageClicked</code></li>
+<li>Add a new tag: <code>addTagClicked</code></li>
+</ul>
+<p class="indent">Add to this list the inherited tasks, such as being able to close the dialog to exit the application.</p>
+<div id="half_of_the_imagedialog_class_declaratio" class="listing">
+<p class="normal"><b>Listing 13-6.</b> <i>Half of the</i> <code>ImageDialog</code> <i>class declaration</i></p>
+<code>class ImageDialog : public QDialog<br>
+{<br>
+  Q_OBJECT<br>
+<br>
+public:<br>
+  ImageDialog();<br>
+<br>
+private slots:<br>
+  void nextClicked();<br>
+  void previousClicked();<br>
+  void tagsChanged();<br>
+<br>
+  void addImageClicked();<br>
+  void addTagClicked();<br>
+...<br>
+};</code>
+</div>
+<p class="indent"><a id="page_385"></a>The other half of the class declaration tells you something about how the application works (the source code is shown in <a href="Chapter13.html#the_private_half_of_the_imagedialog_clas">Listing 13-7</a>). It starts with four private support methods: <code>selectedTags</code>, <code>updateImages</code>, <code>updateTags</code>, and <code>updateCurrentImage</code>. You will look at each one of them soon.</p>
+<p class="indent">After the methods, the Designer-generated user interface class is included as <code>ui</code> before the member variables used for keeping track of the images. The <code>imageIds</code> list contains the <code>id</code> values for the images that are shown according to the selected tags. The <code>currentImage</code> is an index into the <code>imageIds</code> list that indicates which image is active. Finally, the <code>images</code> variable is an instance of the <code>ImageCollection</code> class that handles the database.</p>
+<div id="the_private_half_of_the_imagedialog_clas" class="listing">
+<p class="normal"><b>Listing 13-7.</b> <i>The private half of the</i> <code>ImageDialog</code> <i>class declaration</i></p>
+<code>class ImageDialog : public QDialog<br>
+{<br>
+...<br>
+private:<br>
+  QStringList selectedTags();<br>
+<br>
+  void updateImages();<br>
+  void updateTags();<br>
+  void updateCurrentImage();<br>
+<br>
+  Ui::ImageDialog ui;<br>
+<br>
+  QList&lt;int&gt; imageIds;<br>
+  int currentImage;<br>
+<br>
+  ImageCollection images;<br>
+};</code>
+</div>
+<p class="normal"><b>Widgets and Slots</b></p>
+<p class="normal">The <code>ImageDialog</code> was created using Designer, so you can start by having a look at it (<a href="Chapter13.html#the_design_of_the_image_dialog">Figure 13-3</a> shows the basic design of the dialog). Apart from the text properties and the names of the different widgets, the only property that was altered is the <code>SelectionMode</code> of the <code>QListWidget</code>; it was set to <code>MultiSelection</code>.</p>
+<div id="the_design_of_the_image_dialog" class="figure-contents"><a id="page_386"></a>
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1303.jpg" alt="image" width="549" height="425">
+</div>
+</div>
+<p class="normal"><b>Figure 13-3.</b> <i>The design of the image dialog</i></p>
+<p class="indent"><a href="Chapter13.html#the_object_hierarchy_of_the_image_dialog">Figure 13-4</a> shows the object hierarchy of the dialog (you can also see the names of the different widgets). The only thing not apparent is that the layout of the dialog itself is a grid layout.</p>
+<div id="the_object_hierarchy_of_the_image_dialog" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1304.jpg" alt="image" width="397" height="342">
+</div>
+</div>
+<p class="normal"><b>Figure 13-4.</b> <i>The object hierarchy of the image dialog</i></p>
+<p class="indent"><a id="page_387"></a>Let's now look at the source code of the <code>ImageDialog</code> class, starting from the constructor and user actions. (The code run before the dialog is shown, the constructor, can be seen in <a href="Chapter13.html#the_constructor_of_the_imagedialog_class">Listing 13-8</a>.)</p>
+<p class="indent">It starts by setting up the user interface generated from the Designer file. When the widgets are in place, it initializes <code>currentImage</code> to an invalid value to ensure that no image is visible before updating the tag list and the images to be shown. When this is done, the connections are made. Each button's clicked signal is connected to a corresponding slot. The tag list's <code>itemSelectionChanged</code> signal is connected to the <code>tagsChanged</code> slot.</p>
+<div id="the_constructor_of_the_imagedialog_class" class="listing">
+<p class="normal"><b>Listing 13-8.</b> <i>The constructor of the</i> <code>ImageDialog</code> <i>class</i></p>
+<code>ImageDialog::ImageDialog()<br>
+{<br>
+  ui.setupUi( this );<br>
+<br>
+  currentImage = −1;<br>
+<br>
+  updateTags();<br>
+  updateImages();<br>
+<br>
+  connect( ui.previousButton, SIGNAL(clicked()), this, SLOT(previousClicked()) );<br>
+  connect( ui.nextButton, SIGNAL(clicked()), this, SLOT(nextClicked()) );<br>
+  connect( ui.addTagButton, SIGNAL(clicked()), this, SLOT(addTagClicked()) );<br>
+  connect( ui.addImageButton, SIGNAL(clicked()), this, SLOT(addImageClicked()) );<br>
+  connect( ui.tagList, SIGNAL(itemSelectionChanged()), this, SLOT(tagsChanged()) );<br>
+}</code>
+</div>
+<p class="indent">Remember that the <code>updateCurrentImage</code> method disables the Next, Previous, and Add Tag buttons. The <code>updateCurrentImage</code> method is called from <code>updateImages</code>, which is called from the constructor. This means that if the Next, Previous, or Add Tag buttons are clicked, there is a current image.</p>
+<p class="indent">Looking at the slots, notice that three of them are fairly simple (see their implementations in <a href="Chapter13.html#three_simple_slots">Listing 13-9</a>). First up is the pair <code>nextClicked</code> and <code>previousClicked</code>. As discussed earlier, the <code>currentImage</code> variable acts as an index into the <code>imageIds</code> list of <code>id</code> values. When a user clicks the Next button, the <code>currentImage</code> value is increased. If the value is too large, it starts at zero again. The same goes for the Previous button. The value is decreased and starts from the other end of the list when needed.</p>
+<p class="indent">The last simple slot is the <code>tagsChanged</code> slot, which is reached if the selection of tags is changed. If they are changed, you need to get a new list of images. Calling <code>updateImages</code> takes care of that.</p>
+<div id="three_simple_slots" class="listing">
+<p class="normal"><b>Listing 13-9.</b> <i>Three simple slots</i></p>
+<code>void ImageDialog::nextClicked()<br>
+{<br>
+  currentImage = (currentImage+1) % imageIds.count();<br>
+  updateCurrentImage();<br>
+}<br>
+<a id="page_388"></a>
+void ImageDialog::previousClicked()<br>
+{<br>
+  currentImage --;<br>
+  if( currentImage == −1 )<br>
+    currentImage = imageIds.count()-1;<br>
+<br>
+  updateCurrentImage();<br>
+}<br>
+<br>
+void ImageDialog::tagsChanged()<br>
+{<br>
+  updateImages();<br>
+}</code>
+</div>
+<p class="indent">The next slot, <code>addTagClicked</code>, can be seen in <a href="Chapter13.html#adding_a_tag_to_the_current_image">Listing 13-10</a>. The slot is invoked when the user wants to add a tag to the current image.</p>
+<p class="indent">The slot starts by asking the user for a tag by showing a <code>QInputDialog</code>. If the user specifies a string, the text entered is converted to lowercase and is checked so that it meets the standards for a tag. In this case, that means that it consists of only the characters a–z. No spaces, no special characters, no umlauts or other local characters; just a–z. The actual check is performed using a regular expression.</p>
+<p class="indent">If the text is found to be an actual tag, ask the <code>ImageCollection</code> object <code>images</code> to add the tag to the current image. When the tag has been added, you need to update the tag list and call <code>updateTags</code>.</p>
+<div id="adding_a_tag_to_the_current_image" class="listing">
+<p class="normal"><b>Listing 13-10.</b> <i>Adding a tag to the current image</i></p>
+<code>void ImageDialog::addTagClicked()<br>
+{<br>
+  bool ok;<br>
+  QString tag = QInputDialog::getText(<br>
+    this, tr("Image Book"), tr("Tag:"),<br>
+    QLineEdit::Normal, QString(), &amp;ok );<br>
+<br>
+  if( ok )<br>
+  {<br>
+    tag = tag.toLower();<br>
+    QRegExp re( "[a-z]+" );<br>
+    if( re.exactMatch(tag))<br>
+    {<br>
+      QMessageBox::warning( this, tr("Image Book"),<br>
+        tr("This is not a valid tag. "<br>
+           "Tags consists of lower case characters a-z.") );<br>
+      return;<br>
+    }<br>
+<a id="page_389"></a>
+    images.addTag( imageIds[ currentImage ], tag );<br>
+    updateTags();<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">The remaining slot, <code>addImageClicked</code> (shown in <a href="Chapter13.html#adding_an_image_to_the_collection_with_t">Listing 13-11</a>), is used when the user wants to add a new image to the collection. The slot also applies the currently selected tags to the image to make sure that it stays visible.</p>
+<p class="indent">The first thing the slot does is ask the user to pick a PNG image using a <code>QFileDialog</code>. When an image has been picked, it is loaded. If the loading fails, the rest of the slot is aborted.</p>
+<p class="indent">If the loading succeeds, the image is added to the <code>ImageCollection</code>, along with the currently selected tags. To get the tags, use the <code>selectedTags</code> method. When the image has been added, you need to update the list of image <code>id</code> values. To take care of this, call the <code>updateImages</code> method.</p>
+<div id="adding_an_image_to_the_collection_with_t" class="listing">
+<p class="normal"><b>Listing 13-11.</b> <i>Adding an image to the collection with the current tags</i></p>
+<code>void ImageDialog::addImageClicked()<br>
+{<br>
+  QString filename = QFileDialog::getOpenFileName(<br>
+    this, tr("Open file"), QString(), tr("PNG Images (*.png)") );<br>
+  if( !filename.isNull() )<br>
+  {<br>
+    QImage image( filename );<br>
+<br>
+    if( image.isNull() )<br>
+    {<br>
+      QMessageBox::warning( this, tr("Image Book"),<br>
+        tr("Failed to open the file '%1'").arg( filename ) );<br>
+      return;<br>
+    }<br>
+<br>
+    images.addImage( image, selectedTags() );<br>
+    updateImages();<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">As you can see, slots are fairly simple. They sometimes ensure that the user input is valid before passing it on to the <code>ImageCollection</code> object. When something has to be updated, the appropriate support method is used.</p>
+<p class="normal"><b>Support Methods</b></p>
+<p class="normal">The <code>selectedTags</code> method is used with slots and support methods to take the selected tags from the tag list and put them in a <code>QStringList</code> (the source code can be seen in <a href="Chapter13.html#having_the_current_selection_of_tags_in">Listing 13-12</a>).</p>
+<p class="indent">The method simply iterates through all items in the list widget. If an item is selected, its text is added to the <code>QStringList</code> object result, which is then returned as the result from the method.</p>
+<div id="having_the_current_selection_of_tags_in" class="listing">
+<p class="normal"><b>Listing 13-12.</b> <i>Having the current selection of tags in a list can be handy</i></p>
+<code><a id="page_390"></a>QStringList ImageDialog::selectedTags()<br>
+{<br>
+  QStringList result;<br>
+  foreach( QListWidgetItem *item, ui.tagList-&gt;selectedItems() )<br>
+    result &lt;&lt; item-&gt;text();<br>
+  return result;<br>
+}</code>
+</div>
+<p class="indent">The first support method called from the constructor is <code>updateTags</code>, which updates the tag list without losing the current selection (the source code can be seen in <a href="Chapter13.html#updating_the_tag_list_without_losing_the">Listing 13-13</a>).</p>
+<p class="indent">The method starts by getting the current selection from the <code>selectedTags</code> method. It then asks the <code>ImageCollection</code> object for a new set of tags, clears the list, and adds the new tags. When the new tags are in place, the method iterates over the list items and sets the <code>selected</code> property to <code>true</code> for the items that were selected before the update.</p>
+<div id="updating_the_tag_list_without_losing_the" class="listing">
+<p class="normal"><b>Listing 13-13.</b> <i>Updating the tag list without losing the selection</i></p>
+<code>void ImageDialog::updateTags()<br>
+{<br>
+  QStringList selection = selectedTags();<br>
+<br>
+  QStringList tags = images.getTags();<br>
+  ui.tagList-&gt;clear();<br>
+  ui.tagList-&gt;addItems( tags );<br>
+<br>
+  for( int i=0; i&lt;ui.tagList-&gt;count(); ++i )<br>
+    if( selection.contains( ui.tagList-&gt;item(i)-&gt;text() ) )<br>
+      ui.tagList-&gt;item(i)-&gt;setSelected( true );<br>
+}</code>
+</div>
+<p class="indent">When the constructor has updated the tag list, it's time to update the images by calling the <code>updateImages</code> method. The method takes care of updating the <code>imageIds</code> list. It also keeps the currently shown image if it is still available in the new list of <code>id</code> values.</p>
+<p class="indent">The source code for the method is shown in <a href="Chapter13.html#get_a_new_list_of_image_id_values_and_ke">Listing 13-14</a>. It begins by trying to retrieve the <code>id</code> of the currently shown image. If no images are available, the <code>id</code> is set to <code>−1</code>, which is an invalid <code>id</code>.</p>
+<p class="indent">The method then continues by getting a new list of image <code>id</code> values from the <code>ImageCollection</code>. This list is based on the current selection of tags.</p>
+<p class="indent">If the <code>id</code> of the previous image is still in the list of <code>id</code> values, the <code>currentImage</code> index is updated to keep showing the same image. If the same image can't be shown, the first image is shown (obviously, no image is shown if there are no images).</p>
+<p class="indent">Because the method affects the <code>currentImage</code> index value, it calls the <code>updateCurrentImage</code> method to update the user interface accordingly.</p>
+<div id="get_a_new_list_of_image_id_values_and_ke" class="listing">
+<p class="normal"><b>Listing 13-14.</b> <i>Get a new list of image</i> <code>id</code> <i>values and keep showing the current image if possible.</i></p>
+<code><a id="page_391"></a>void ImageDialog::updateImages()<br>
+{<br>
+  int id;<br>
+<br>
+  if( currentImage != −1 )<br>
+    id = imageIds[ currentImage ];<br>
+  else<br>
+    id = −1;<br>
+<br>
+  imageIds = images.getIds( selectedTags() );<br>
+  currentImage = imageIds.indexOf( id );<br>
+  if( currentImage == −1 &amp;&amp; !imageIds.isEmpty() )<br>
+    currentImage = 0;<br>
+<br>
+  ui.imagesLabel-&gt;setText( QString::number( imageIds.count() ) );<br>
+<br>
+  updateCurrentImage();<br>
+}</code>
+</div>
+<p class="indent">The <code>updateCurrentImage</code> method, which is shown in <a href="Chapter13.html#update_the_currently_shown_image_and_mak">Listing 13-15</a>, checks to see whether there is a current image. If there is, the method gets it from the <code>ImageCollection</code> object and shows it by using the <code>imageLabel</code> widget. It also enables the Next, Previous, and Add Tag buttons.</p>
+<p class="indent">If there is no current image, the <code>imageLabel</code> is set to display the text <code>"No Image"</code>, and the buttons are disabled.</p>
+<div id="update_the_currently_shown_image_and_mak" class="listing">
+<p class="normal"><b>Listing 13-15.</b> <i>Update the currently shown image and make the right buttons available.</i></p>
+<code>void ImageDialog::updateCurrentImage()<br>
+{<br>
+  if( currentImage == −1 )<br>
+  {<br>
+    ui.imageLabel-&gt;setPixmap( QPixmap() );<br>
+    ui.imageLabel-&gt;setText( tr("No Image") );<br>
+<br>
+    ui.addTagButton-&gt;setEnabled( false );<br>
+    ui.nextButton-&gt;setEnabled( false );<br>
+    ui.previousButton-&gt;setEnabled( false );<br>
+  }<br>
+  else<br>
+  {<br>
+    ui.imageLabel-&gt;setPixmap(<br>
+      QPixmap::fromImage(<br>
+        images.getImage( imageIds[ currentImage ] ) ) );<br>
+    ui.imageLabel-&gt;clear();<br>
+<a id="page_392"></a>
+    ui.addTagButton-&gt;setEnabled( true );<br>
+    ui.nextButton-&gt;setEnabled( true );<br>
+    ui.previousButton-&gt;setEnabled( true );<br>
+  }<br>
+}</code>
+</div>
+<p class="indent">As helpful as the support methods seem to be, the heavy lifting is actually performed somewhere else. All the methods do is ask the <code>ImageCollection</code> object to do things and fetch things.</p>
+<h4 class="h4"><a id="the_database_class"></a>The Database Class</h4>
+<p class="normal">The <code>ImageCollection</code> class, which takes you one step closer to the database, is responsible for all contact with the database. It has been implemented so that it interacts with the rest of the application using relevant types. The rest of the application should not need to know that the <code>ImageCollection</code> is based around a database. The class declaration is shown in <a href="Chapter13.html#the_imagecollection_class_definition">Listing 13-16</a>.</p>
+<p class="indent">You might notice that some of the methods are named <code>getXxx</code>, which is not the common way to name a getter method in Qt application. The reason for this naming is to be able to tell the rest of the application that these methods actually reach out and get something from somewhere else; to indicate that the operation can take time depending on the circumstances.</p>
+<p class="indent">All methods perform a limited task, so you should be able to get an idea of what they do from their names.</p>
+<div id="the_imagecollection_class_definition" class="listing">
+<p class="normal"><b>Listing 13-16.</b> <i>The</i> <code>ImageCollection</code> <i>class definition</i></p>
+<code>class ImageCollection<br>
+{<br>
+public:<br>
+  ImageCollection();<br>
+<br>
+  QImage getImage( int id );<br>
+  QList&lt;int&gt; getIds( QStringList tags );<br>
+  QStringList getTags();<br>
+<br>
+  void addTag( int id, QString tag );<br>
+  void addImage( QImage image, QStringList tags );<br>
+<br>
+private:<br>
+  void populateDatabase();<br>
+};</code>
+</div>
+<p class="indent">The class constructor, shown in <a href="Chapter13.html#the_constructor_and_the_populatedatabase">Listing 13-17</a>, opens a database connection and populates it. The entire class uses the default connection, so there is no need to keep a <code>QSqlDatabase</code> object. The database being accessed is an SQLite database stored in memory, so its content is lost each time the application is ended. This can be handy when developing, and it is easy to replace the database name <code>:memory:</code> with a proper file name and let the database be the file format of the application.</p>
+<p class="indent"><a id="page_393"></a>The <code>populateDatabase</code> method, shown in the same listing as the constructor, attempts to create the two tables in the database. It uses the <code>IF NOT EXISTS</code> clause because a saved file will contain the two tables—and that should not cause a failure.</p>
+<div id="the_constructor_and_the_populatedatabase" class="listing">
+<p class="normal"><b>Listing 13-17.</b> <i>The constructor and the</i> <code>populateDatabase</code> <i>method</i></p>
+<code>ImageCollection::ImageCollection()<br>
+{<br>
+  QSqlDatabase db = QSqlDatabase::addDatabase( "QSQLITE" );<br>
+<br>
+  db.setDatabaseName( ":memory:" );<br>
+  if( !db.open() )<br>
+    qFatal( "Failed to open database" );<br>
+<br>
+  populateDatabase();<br>
+}<br>
+void ImageCollection::populateDatabase()<br>
+{<br>
+  QSqlQuery qry;<br>
+<br>
+  qry.prepare( "CREATE TABLE IF NOT EXISTS images "<br>
+               "(id INTEGER PRIMARY KEY, data BLOB)" );<br>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to create table images" );<br>
+<br>
+  qry.prepare( "CREATE TABLE IF NOT EXISTS tags (id INTEGER, tag VARCHAR(30))" );<br>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to create table tags" );<br>
+}</code>
+</div>
+<p class="normal"><b>Working with the Image Tags</b></p>
+<p class="normal">Some of the image collection's responsibilities include managing the list of tags and keeping track of which tag belongs to which image. Let's start by having a look at the <code>getTags</code> method. Its role is to return a list of all available tags.</p>
+<p class="indent">The method's source code can be seen in <a href="Chapter13.html#querying_for_a_list_of_tags_comma_packag">Listing 13-18</a>. Because you use the default connection, you create a query, prepare it, and execute it. The query itself contains a <code>DISTINCT</code> clause since the same tag can occur several times for different images. This ensures that you do not get a list with duplicates. When the query has been executed, the results are put in a <code>QStringList</code> that is returned.</p>
+<div id="querying_for_a_list_of_tags_comma_packag" class="listing">
+<p class="normal"><b>Listing 13-18.</b> <i>Querying for a list of tags, packaging them in a</i> <code>QStringList</code><i>, and returning</i></p>
+<code>QStringList ImageCollection::getTags()<br>
+{<br>
+  QSqlQuery qry;<br>
+<a id="page_394"></a>
+  qry.prepare( "SELECT DISTINCT tag FROM tags" );<br>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to get tags" );<br>
+<br>
+  QStringList result;<br>
+  while( qry.next() )<br>
+    result &lt;&lt; qry.value(0).toString();<br>
+<br>
+  return result;<br>
+}</code>
+</div>
+<p class="indent">The other tag management method, the <code>addTag</code> method (see <a href="Chapter13.html#adding_a_new_tag_to_an_image">Listing 13-19</a>), adds a tag to a given image. Which image the tag belongs to is specified using an <code>id</code> value. The method does not check for duplicates because the <code>getTags</code> method filters them away, so it is possible to add the same tag several times to the same image.</p>
+<div id="adding_a_new_tag_to_an_image" class="listing">
+<p class="normal"><b>Listing 13-19.</b> <i>Adding a new tag to an image</i></p>
+<code>void ImageCollection::addTag( int id, QString tag )<br>
+{<br>
+  QSqlQuery qry;<br>
+<br>
+  qry.prepare( "INSERT INTO tags (id, tag) VALUES (:id, :tag)" );<br>
+  qry.bindValue( ":id", id );<br>
+  qry.bindValue( ":tag", tag );<br>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to add tag" );<br>
+}</code>
+</div>
+<p class="normal"><b>The Images</b></p>
+<p class="normal">The <code>getIds</code> method deals with images from a tag point of view. It takes a <code>QStringList</code> of tags and returns a list of <code>id</code> values for the images that have at least one of the tags. If no tags are given to the method, it returns all image <code>id</code> values. This is why there are two different queries prepared in the source code shown in <a href="Chapter13.html#getting_every_id_for_a_given_set_of_tags">Listing 13-20</a>.</p>
+<p class="indent">In the SQL statement handling one or more tags, the <code>IN</code> clause is used. Writing <code>x IN (1, 2, 3)</code> is equal to writing <code>x=1 OR x=2 or x=3</code>. Because the user interface ensures that the tags consist of only the letters a–z, you can safely join them together and use them directly in the SQL query.</p>
+<hr>
+<p class="normal"><b>Caution</b> You should always try to avoid inserting strings manually into SQL statements; use <code>bindValue</code> whenever possible.</p>
+<hr>
+<p class="indent"><a id="page_395"></a>The SQL statement is ended by a <code>GROUP BY</code> clause, ensuring that you do not get more than one <code>id</code>. The results from the query are put together in a list of integers that is returned.</p>
+<div id="getting_every_id_for_a_given_set_of_tags" class="listing">
+<p class="normal"><b>Listing 13-20.</b> <i>Getting every</i> <code>id</code> <i>for a given set of tags (or every</i> <code>id</code> <i>if no tags are given)</i></p>
+<code>QList&lt; int&gt; ImageCollection::getIds( QStringList tags )<br>
+{<br>
+  QSqlQuery qry;<br>
+<br>
+  if( tags.count() == 0 )<br>
+    qry.prepare( "SELECT images.id FROM images" );<br>
+  else<br>
+    qry.prepare( "SELECT id FROM tags WHERE tag IN ('" +<br>
+                 tags.join("','") + "') GROUP BY id" );<br>
+<br>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to get IDs" );<br>
+<br>
+  QList&lt;int&gt; result;<br>
+  while( qry.next() )<br>
+    result &lt;&lt; qry.value(0).toInt();<br>
+<br>
+  return result;<br>
+}</code>
+</div>
+<p class="normal"><b>Storing Images in the Database</b></p>
+<p class="normal">Storing images in a database is not a straightforward task because there are no data types for storing graphics. Instead you have to rely on the <code>BLOB</code> type, which is a binary large object (in plain English: a chunk of raw data).</p>
+<p class="indent">The process of getting a <code>QImage</code> object into a blob can be broken down into three steps. First you create a buffer in memory and save the image to that buffer. The buffer is then converted to a <code>QByteArray</code>, which is bound to a variable in an SQL <code>INSERT</code> query. That query is then executed.</p>
+<p class="indent">This is all done in the <code>addImage</code> method shown in <a href="Chapter13.html#add_an_image_and_its_tags_to_the_databas">Listing 13-21</a>. As you can see from the highlighted lines, a <code>QBuffer</code> object is created. The image is written to the buffer as a PNG with a <code>QImageWriter</code>. When the buffer contains the image data, you use the data from the buffer in a <code>bindValue</code> call when you prepare the <code>INSERT</code> query to put the image in the database.</p>
+<p class="indent">Looking at the rest of the code, you query the database for the number of images to be able to determine a new <code>id</code>. This method doesn't work if you let the user remove images from the database. It is possible to let the database assign a new <code>id</code> automatically using <code>AUTOINCREMENT</code> when creating the table. That would have solved the problem. But since you support only adding new images, i.e., not removing them, and it is assumed that only one client application is using the database at a time, this solution works.</p>
+<p class="indent"><a id="page_396"></a>The <code>INSERT</code> statement is pretty straightforward; the <code>id</code> and <code>data</code> are bound to the query before it is executed. When the image has been inserted, all the tags given to the method are passed to <code>addTag</code> so that they are inserted into the database.</p>
+<div id="add_an_image_and_its_tags_to_the_databas" class="listing">
+<p class="normal"><b>Listing 13-21.</b> <i>Add an image and its tags to the database.</i></p>
+<code>void ImageCollection::addImage( QImage image, QStringList tags )<br>
+{<br>
+<code class="userinput">  QBuffer buffer;</code><br>
+<code class="userinput">  QImageWriter writer(&amp;buffer, "PNG");</code><br>
+<br>
+<code class="userinput">  writer.write(image);</code><br>
+<br>
+  QSqlQuery qry;<br>
+<br>
+  int id;<br>
+<br>
+  qry.prepare( "SELECT COUNT(*) FROM images" );<br>
+  qry.exec();<br>
+  qry.next();<br>
+  id = qry.value(0).toInt() + 1;<br>
+<br>
+  qry.prepare( "INSERT INTO images (id, data) VALUES (:id, :data)" );<br>
+  qry.bindValue( ":id", id );<br>
+<code class="userinput">  qry.bindValue( ":data", buffer.data() );</code><br>
+  qry.exec();<br>
+<br>
+  foreach( QString tag, tags )<br>
+    addTag( id, tag );<br>
+}</code>
+</div>
+<p class="indent">The process for getting a stored image back from the database into a <code>QImage</code> object involves the same classes. <a href="Chapter13.html#from_the_query_comma_through_a_buffer_co">Listing 13-22</a> shows you how it's done. Because the <code>getImage</code> method doesn't have to worry about generating new <code>id</code> values or tags, it is more straight-forward than the <code>addImage</code> method.</p>
+<p class="indent">First the query is prepared and executed; then the <code>QByteArray</code> is extracted from the result. The array is passed on to a <code>QBuffer</code>, which you can use from a <code>QImageReader</code>. Notice that you must open the buffer for reading before passing it to the image reader. From the image reader you can get the <code>QImage</code> object that you return as a result.</p>
+<div id="from_the_query_comma_through_a_buffer_co" class="listing">
+<p class="normal"><b>Listing 13-22.</b> <i>From the query, through a buffer, to the reader</i></p>
+<code>QImage ImageCollection::getImage( int id )<br>
+{<br>
+  QSqlQuery qry;<br>
+<br>
+  qry.prepare( "SELECT data FROM images WHERE id = :id" );<br>
+  qry.bindValue( ":id", id );<br>
+<a id="page_397"></a>
+  if( !qry.exec() )<br>
+    qFatal( "Failed to get image" );<br>
+  if( !qry.next() )<br>
+    qFatal( "Failed to get image id" );<br>
+<br>
+  QByteArray array = qry.value(0).toByteArray();<br>
+  QBuffer buffer(&amp;array);<br>
+  buffer.open( QIODevice::ReadOnly );<br>
+<br>
+  QImageReader reader(&amp;buffer, "PNG");<br>
+  QImage image = reader.read();<br>
+<br>
+  return image;<br>
+}</code>
+</div>
+<p class="indent">As you can see, it is fairly easy to store data as a file embedded in a database. Because the <code>QIODevice</code> class is what is used by all Qt streams, and the class is base class of both <code>QFile</code> and <code>QBuffer</code>, you can use this method for pretty much any file format.</p>
+<h4 class="h4"><a id="putting_everything_together"></a>Putting Everything Together</h4>
+<p class="normal">The <code>ImageDialog</code> class contains an instance of the <code>ImageCollection</code> class, so all the <code>main</code> function has to do is create a <code>QApplication</code> and an <code>ImageDialog</code>, show the dialog, and start the event loop (the code is shown in <a href="Chapter13.html#the_main_function">Listing 13-23</a>). It should all be familiar by now.</p>
+<div id="the_main_function" class="listing">
+<p class="normal"><b>Listing 13-23.</b> <i>The</i> <code>main</code> <i>function</i></p>
+<code>int main( int argc, char **argv )<br>
+{<br>
+  QApplication app( argc, argv );<br>
+<br>
+  ImageDialog dlg;<br>
+  dlg.show();<br>
+<br>
+  return app.exec();<br>
+}</code>
+</div>
+<p class="indent">The project file used can be generated by calling <code>qmake –project</code> and then appending the line <code>QT += sql</code> to the resulting file. <a href="Chapter13.html#the_image_book_application_being_used">Figure 13-5</a> shows what the application looks like just after it starts.</p>
+<p class="indent">If you look at the code, you can see that most of the work is performed by the database engine. Instead of having to iterate over your custom data structures to locate all unique tags, you just pass the appropriate <code>SELECT</code> statement through a query.</p>
+<p class="indent">When it comes to storing information, you can use <code>SQLite</code> as the file format of your application. There are several methods to ensure that the file is valid. For example, you can have a special table with information about your application, the version used for writing the file, and so on. Load the file and then check that table before using the file.</p>
+<a id="page_398"></a>
+<div id="the_image_book_application_being_used" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1305.jpg" alt="image" width="549" height="424">
+</div>
+</div>
+<p class="normal"><b>Figure 13-5.</b> <i>The Image Book application being used</i></p>
+<h3 class="h3"><a id="model_databases"></a>Model Databases</h3>
+<p class="normal">Until now, you have written queries for the databases and then extracted the data to lists and values. But it is also possible to manage the data in a more straightforward way. Because the data received from the database is usually the same data that you show to the users, it makes sense to use a generic SQL model to do the job. Qt provides three different models:</p>
+<ul>
+<li><code>QSqlQueryModel</code>: Provides a read-only model for displaying results from a given <code>SELECT</code> query</li>
+<li><code>QSqlTableModel</code>: Provides an editable model for showing a single table</li>
+<li><code>QSqlRelationalModel</code>: Provides an editable model for showing data from a single table with references to other tables</li>
+</ul>
+<p class="indent">These models work just like all other database classes. So when you understand how the Qt SQL module works, you will also know how these models can be used.</p>
+<h4 class="h4"><a id="page_399"></a><a id="the_query_model"></a>The Query Model</h4>
+<p class="normal">The <code>QSqlQueryModel</code> enables you to show the results from a query through a view (<a href="Chapter13.html#showing_the_results_of_an_sql_query_in_a">Listing 13-24</a> shows you how it is used). The model is easy to set up: Simply create a <code>QSqlQueryModel</code> object and specify a query using the <code>setQuery</code> call.</p>
+<p class="indent">The rest of the code creates and configures a table model for showing the query model.</p>
+<div id="showing_the_results_of_an_sql_query_in_a" class="listing">
+<p class="normal"><b>Listing 13-24.</b> <i>Showing the results of an SQL query in a table view</i></p>
+<code>QSqlQueryModel *model = new QSqlQueryModel();<br>
+model-&gt;setQuery( "SELECT firstname, lastname FROM names" );<br>
+<br>
+QTableView *view = new QTableView();<br>
+view-&gt;setModel( model );<br>
+view-&gt;show();</code>
+</div>
+<p class="indent">The query is passed to the tables used in the SQL introduction at the beginning of this chapter. The resulting table model is shown in <a href="Chapter13.html#the_results_of_a_query_model">Figure 13-6</a>.</p>
+<div id="the_results_of_a_query_model" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1306.jpg" alt="image" width="298" height="418">
+</div>
+</div>
+<p class="normal"><b>Figure 13-6.</b> <i>The results of a query model</i></p>
+<h4 class="h4"><a id="the_table_model"></a>The Table Model</h4>
+<p class="normal">With the <code>QSqlTableModel</code> you get an editable model showing the contents of an entire table. A short piece of source code using the class is shown in <a href="Chapter13.html#setting_up_a_table_model_showing_the_doe">Listing 13-25</a>.</p>
+<p class="indent">When using the class, you select the table to show by using the <code>setTable</code> method. If you want to add a <code>WHERE</code> clause, you can add the conditions using the <code>setFilter</code> method. By default there is no filter, and the entire table is shown. When you have set up a filter and a table, call <code>select</code> to perform the actual query to the database.</p>
+<p class="indent"><a id="page_400"></a>You can avoid showing a column by passing the ordinal position of the column in the table when calling <code>removeColumn</code>. In the listing column, 0 is hidden; this corresponds to the <code>id</code> column.</p>
+<div id="setting_up_a_table_model_showing_the_doe" class="listing">
+<p class="normal"><b>Listing 13-25.</b> <i>Setting up a table model showing the Doe names</i></p>
+<code>QSqlTableModel *model = new QSqlTableModel();<br>
+<br>
+model-&gt;setTable( "names" );<br>
+model-&gt;setFilter( "lastname = 'Doe'" );<br>
+model-&gt;select();<br>
+<br>
+model-&gt;removeColumn( 0 );<br>
+<br>
+QTableView *view = new QTableView();<br>
+view-&gt;setModel( model );<br>
+view-&gt;show();</code>
+</div>
+<p class="indent">The resulting table view is shown in <a href="Chapter13.html#the_results_of_a_query_model-019">Figure 13-7</a>. The resulting view is editable because the model is editable. By setting the <code>editTriggers</code> property of the view to <code>QAbstractItemView:: NoEditTriggers</code>, you can prevent the user from editing the data.</p>
+<div id="the_results_of_a_query_model-019" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1307.jpg" alt="image" width="290" height="280">
+</div>
+</div>
+<p class="normal"><b>Figure 13-7.</b> <i>The results of a query model</i></p>
+<h4 class="h4"><a id="the_relational_table_model"></a>The Relational Table Model</h4>
+<p class="normal">The <code>QSqlRelationalTableModel</code> is a more advanced incarnation of the table model. By creating a relational model and specifying the relations between the different tables in the database, it is possible to let the model look up information from several tables and present them as one.</p>
+<p class="indent"><a href="Chapter13.html#a_relational_table_model_showing_the_nam">Listing 13-26</a> shows how such a relation is used to link the <code>id</code> column from the <code>names</code> table to the corresponding column in the <code>salaries</code> table. The result is that the <code>annual</code> value from the <code>salaries</code> table is shown instead of the <code>id</code>. This relation is set up in the <code>setRelation(int,QSqlRelation)</code> call in the listing. The first argument is the ordinal number of the column to be used in the relation. The <code>QSqlRelation</code> given as the second argument takes <a id="page_401"></a>three arguments: first, the name of the table to relate to; second, the column name in the related-to table used when joining the tables; and third, the name of the column to take from the table being joined in. In the example, you join with the <code>salaries</code> table based on <code>salaries.id</code> and use the <code>salaries.annual</code> column. Just as with the table model, you need to call <code>select</code> to get the data into the model.</p>
+<p class="indent">To get nice headers, you can use the <code>setHeaderData</code> method to specify the orientation and text of each column header. This can be done for all models, not only the relational one.</p>
+<div id="a_relational_table_model_showing_the_nam" class="listing">
+<p class="normal"><b>Listing 13-26.</b> <i>A relational table model showing the names and annual salaries with nice headers</i></p>
+<code>QSqlRelationalTableModel *model = new QSqlRelationalTableModel();<br>
+<br>
+model-&gt;setTable( "names" );<br>
+model-&gt;setRelation( 0, QSqlRelation( "salaries", "id", "annual" ) );<br>
+model-&gt;select();<br>
+<br>
+model-&gt;setHeaderData( 0, Qt::Horizontal, QObject::tr("Annual Pay") );<br>
+model-&gt;setHeaderData( 1, Qt::Horizontal, QObject::tr("First Name") );<br>
+model-&gt;setHeaderData( 2, Qt::Horizontal, QObject::tr("Last Name") );<br>
+<br>
+QTableView *view = new QTableView();<br>
+view-&gt;setModel( model );<br>
+view-&gt;show();</code>
+</div>
+<p class="indent">The result from <a href="Chapter13.html#a_relational_table_model_showing_the_nam">Listing 13-26</a> can be seen in <a href="Chapter13.html#the_results_of_the_relational_table_mode">Figure 13-8</a>. Notice that the model is editable, so the user can edit the view if you do not adjust the <code>editTriggers</code> property of the view.</p>
+<div id="the_results_of_the_relational_table_mode" class="figure-contents">
+<div class="mediaobject">
+<img src="/library/view/foundations-of-qt/9781590598313/images/P1308.jpg" alt="image" width="351" height="285">
+</div>
+</div>
+<p class="normal"><b>Figure 13-8.</b> <i>The results of the relational table model</i></p>
+<p class="indent">The relational model really helps when you look up something like the city name for a Zip code instead of just a number. You can use a <code>QSqlRelationalDelegate</code> to let users pick a city from a list instead of having to type in the name.</p>
+<h3 class="h3"><a id="page_402"></a><a id="summary-020"></a>Summary</h3>
+<p class="normal">The Qt SQL module makes it possible to access almost any conceivable database in a cross-platform manner. In fact, the SQL database drivers are plugins, so if you need to access a custom database, you can still write a driver and use Qt's classes to access it. In most cases, it is easier to get an ODBC driver for such a database and use that as a layer between Qt and the database in question.</p>
+<p class="indent">When accessing databases, use the <code>QSqlDatabase</code> class to represent a connection. The database module has a default connection, so you can avoid lots of extra fuzz as long as you stick to using one connection at a time.</p>
+<p class="indent">After you have connected to a database, use the <code>QSqlQuery</code> class to pass SQL queries to the database. Be aware of SQL dialects, however—what one database accepts as a valid statement can be considered invalid by another. It is important to try all SQL statements before releasing a product because they are not checked for errors during compilation.</p>
+<p class="indent">You can often avoid having to query the database and transforming the results into something that you can show your users by using the SQL models that are a part of the SQL module. The available models are <code>QSqlQueryModel</code>, <code>QSqlTableModel</code>, and <code>QSqlRelationalTableModel</code>. Try to use these models as often as possible—they can save you a lot of time and effort.</p>
+</div>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter12.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">CHAPTER 12: Doing Things in Parallel</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/foundations-of-qt/9781590598313/Chapter14.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">CHAPTER 14: Networking</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","applicationTime":170,"queueTime":10,"applicationID":"3275661,67267027,67267028","licenseKey":"510f1a6865"}</script>
+
+
+    
+    
+      <img src="//www.oreilly.com/library/view/oreilly_set_cookie/" alt="" style="display:none;" />
+    
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>
