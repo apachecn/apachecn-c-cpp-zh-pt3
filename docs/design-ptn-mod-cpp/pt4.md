@@ -1,5 +1,4 @@
-# 第四部分
-附录 A:功能设计模式
+# 第四部分：附录 A：函数式设计模式
 
 Appendix A: Functional Design Patterns
 
