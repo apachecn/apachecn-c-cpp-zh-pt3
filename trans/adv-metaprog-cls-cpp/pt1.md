@@ -1,9 +1,5 @@
-第一部分
+# 第一部分：先决条件
 
-![image](img/image00564.jpeg)
-
-**#包括<先决条件>**
-
-#包括
-
-#包括
+```cpp
+#incluse<prerequisites>
+```

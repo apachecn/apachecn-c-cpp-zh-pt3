@@ -1,9 +1,5 @@
-第三部分
+# 第三部分：应用
 
-![image](img/image00564.jpeg)
-
-#包括
-
-#包括
-
-**#包含<应用>**
+```cpp
+#include<applications>
+```

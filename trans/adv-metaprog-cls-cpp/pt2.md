@@ -1,9 +1,5 @@
-第二部分
+# 第二部分：技巧
 
-![image](img/image00564.jpeg)
-
-#包括
-
-**#包括<技法>**
-
-#包括
+```cpp
+#include<techniques>
+```
